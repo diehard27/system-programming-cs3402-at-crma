@@ -14,6 +14,17 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 ||http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg||
 ||การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space||
 
+{{{
+#include <fcntl.h>
+int main()
+{
+    int fd, count; char buf[1000];
+    fd=open("mydata", O_RDONLY);
+    count = read(fd, buf, 1000);
+    write(1, buf, count);
+    close(fd);
+}
+}}}
 
 ==Program แบบไหน?==
 จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter
