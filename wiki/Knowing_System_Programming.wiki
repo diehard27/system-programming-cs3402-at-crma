@@ -7,6 +7,8 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 
 || http://osr600doc.sco.com/en/USE_oview/graphics/kernel.gif || http://getfile4.posterous.com/getfile/files.posterous.com/temp-2011-12-22/lltizmHgbsDetcxAuIJzEpGFAaHqlwvsJuxlaDDziiklrbwhcboxuuGoxFeI/unix_architecture.gif.scaled696.gif ||
 
+การเข้าถึงเคอร์เนิ่ลนั้นสามารถทำได้ผ่านการเรียกระบบ (system calls) เท่านั้น โดยที่โปรแกรมต่าง ๆ เช่น เชลล์ การเรียก library routines ต้องเรียกผ่าน system call ด้วยพารามิเตอร์ที่ถูกต้อง และตรงกับสิทธิที่ได้รับ
+
 ==Program แบบไหน?==
 จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter
 
