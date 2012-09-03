@@ -4,7 +4,17 @@
 System ในที่นี้หมายถึง ระบบคอมพิวเตอร์ หรือระบบปฏิบัติการ (OS) ที่รันอยู่ในคอมพิวเตอร์ ในวิชานี้เราจะหมายถึงระบบปฏิบัติการ Linux ซึ่งเป็นหนึ่งในระบบปฏิบัติการแบบ Unix ที่ได้รับความนิยมแพร่หลายในการใช้เป็นเครื่องแม่ข่ายที่มีความเชื่อถึอได้สูง
 
 ==Program==
+จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter
 [http://www.tcl.tk/images/scripting.anc.gif]
 
 ==System Programming==
-ความหมายของ System Programming ที่เป็นที่ยอมรับสามารถดูได้จาก Wikipedia ในภาษา [[http://en.wikipedia.org/wiki/System_programming อังกฤษ]] และ สามารถดูฉบับที่แปลโดย Google Translate ได้ใน [[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url ภาษาไทย]])
+ความหมายของ System Programming ที่เป็นที่ยอมรับสามารถดูได้จาก Wikipedia ในภาษา [[http://en.wikipedia.org/wiki/System_programming อังกฤษ]] และ สามารถดูฉบับที่แปลโดย Google Translate ได้ใน [[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url ภาษาไทย]]
+
+ในขอบเขตของวิชานี้ จะหมายถึงการเขียนโปรแกรมด้วยภาษา C, Perl, Shell Script เพื่อควบคุมระบบคอมพิวเตอร์ให้สามารถทำงานได้ตามต้องการของผู้ควบคุมระบบ หรือผู้ใช้ โดยจะขอยกเว้นการเขียนโปรแกรมระบบด้วยภาษาแอสเซมบลี้ เนื่องจากขอบเขตของเวลาที่จำกัด
+
+==วัตถุประสงค์==
+  # เพื่อให้นักเรียนมีความเข้าใจพื้นของระบบคอมพิวเตอร์ ที่รันด้วยระบบปฏิบัติการลิหนิกซ์
+  # เพื่อให้นักเรียนมีความเข้าใจคำสั่งต่าง ๆ ผ่านเชลล์ของลิหนิกซ์
+  # เพื่อให้นักเรียนสามารถเขียนสคริปต์ของคำสั่งในเชลล์ (shell script) ได้
+  # เพื่อให้นักเรียนสามารถเขียนโปรแกรมด้วยภาษา C เพื่อควบคุมระบบเบื้องต้นได้
+  # เพื่อให้นักเรียนสามารถประยุกต์ใช้ภาษา Perl เพื่อควบคุมระบบเบื้องต้นได้
