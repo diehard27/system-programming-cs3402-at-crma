@@ -6,6 +6,9 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 ||http://exeqzalie.files.wordpress.com/2009/02/655px-unix_history-en-svg.png||
 ||รูปที่ 1.1 ประวัติความเป็นมาของระบบปฏิบัติการยูหนิกซ์ และที่มาของลิหนิกซ์ [[http://exeqzalie.files.wordpress.com/2009/02/655px-unix_history-en-svg.png src]]||
 
+||http://d3pnguju6g7vh.cloudfront.net/blog/wp-content/uploads/2011/10/linux-distributions.jpg||
+||รูปที่ 1.1a ระบบปฏิบัติการ Linux ในรูปแบบดิสโทร (distribution) ต่าง ๆ ที่ได้รับความนิยม [[http://d3pnguju6g7vh.cloudfront.net/blog/wp-content/uploads/2011/10/linux-distributions.jpg src]]||
+
 ระบบปฏิบัติการจะถูกออกแบบให้สามารถควบคุมฮาร์ดแวร์ของคอมพิวเตอร์ เพื่อให้ผู้ใช้และโปรแกรมต่าง ๆ ใช้ทรัพยากรของระบบได้อย่างมีประสิทธิภาพ และเป็นไปตามการกำหนดสิทธิของผู้ใช้งาน  โดยฮาร์ดแวร์ของคอมพิวเตอร์จะถูกควบคุมโดยแก่น หรือ เคอร์เนิ่ล (kernel) ของระบบปฏิบัติการ ซึ่งเป็นโปรแกรมขนาดเล็กที่จะถูกโหลดเข้าไปในหน่วยความจำก่อนโปรแกรมอื่นใดของผู้ใช้ ทั้งนี้เพื่อเข้าจัดการและควบคุมทรัพยากรต่าง ๆ พร้อมทั้งจัดเตรียมการเชื่อมต่อให้พร้อมสำหรับการใช้งาน
 
 || http://osr600doc.sco.com/en/USE_oview/graphics/kernel.gif || http://getfile4.posterous.com/getfile/files.posterous.com/temp-2011-12-22/lltizmHgbsDetcxAuIJzEpGFAaHqlwvsJuxlaDDziiklrbwhcboxuuGoxFeI/unix_architecture.gif.scaled696.gif ||
