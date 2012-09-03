@@ -15,7 +15,7 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 เคอร์เนิ่ลจะติดต่อกับฮาร์ดแวร์ผ่าน system call ทั้งในส่วนที่เป็น user space และ kernel space ผ่าน library function ต่าง ๆ ที่มีหน้าที่ติดต่อกับฮาร์ดแวร์ที่ถูกควบคุมไว้โดย OS เช่น การเข้าถึงไฟล์ต่าง ๆ ที่อยู่ในดีไวซ์หลายรูปแบบต้องใช้คำสั่งของ system call เช่น open(), close(), read(), write() เป็นต้น
 
 ||http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg||
-||การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space [[http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg src]]||
+||รูปที่ 1.3 การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space [[http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg src]]||
 
 ตัวอย่างการเขียน system programming ด้วยภาษา C ผ่านการเรียก system call ที่อยู่ใน library function สำหรับการติดต่อกับไฟล์
 
@@ -35,7 +35,8 @@ int main()
 ==Program แบบไหน?==
 จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter
 
-[http://www.tcl.tk/images/scripting.anc.gif]
+||[http://www.tcl.tk/images/scripting.anc.gif]||
+||รูปที่ 1.4 การจัดกลุ่มของภาษาโปรแกรมสำหรับระบบ [[http://www.tcl.tk/images/scripting.anc.gif src]]||
 
 ==System Programming==
 ความหมายของ System Programming ที่เป็นที่ยอมรับสามารถดูได้จาก Wikipedia ในภาษา [[http://en.wikipedia.org/wiki/System_programming อังกฤษ]] และ สามารถดูฉบับที่แปลโดย Google Translate ได้ใน [[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url ภาษาไทย]]
