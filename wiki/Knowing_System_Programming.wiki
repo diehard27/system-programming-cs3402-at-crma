@@ -5,6 +5,7 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 
 ==Program==
 จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter
+
 [http://www.tcl.tk/images/scripting.anc.gif]
 
 ==System Programming==
