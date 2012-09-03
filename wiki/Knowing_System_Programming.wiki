@@ -14,6 +14,8 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 ||http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg||
 ||การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space||
 
+ตัวอย่างการเขียน system programming ด้วยภาษา C ผ่านการเรียก system call ที่อยู่ใน library function สำหรับการติดต่อกับไฟล์
+
 {{{
 #include <fcntl.h>
 int main()
