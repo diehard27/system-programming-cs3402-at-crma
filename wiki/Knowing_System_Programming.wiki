@@ -7,3 +7,4 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 [http://www.tcl.tk/images/scripting.anc.gif]
 
 ==System Programming==
+ความหมายของ System Programming ที่เป็นที่ยอมรับสามารถดูได้จาก Wikipedia ในภาษา [[http://en.wikipedia.org/wiki/System_programming อังกฤษ]] และ สามารถดูฉบับที่แปลโดย Google Translate ได้ใน [[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url ภาษาไทย]])
