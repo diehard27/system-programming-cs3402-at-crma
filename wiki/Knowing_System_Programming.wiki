@@ -12,7 +12,7 @@ System ในที่นี้หมายถึง ระบบคอมพิ
 เคอร์เนิ่ลจะติดต่อกับฮาร์ดแวร์ผ่าน system call ทั้งในส่วนที่เป็น user space และ kernel space ผ่าน library function ต่าง ๆ ที่มีหน้าที่ติดต่อกับฮาร์ดแวร์ที่ถูกควบคุมไว้โดย OS เช่น การเข้าถึงไฟล์ต่าง ๆ ที่อยู่ในดีไวซ์หลายรูปแบบต้องใช้คำสั่งของ system call เช่น open(), close(), read(), write() เป็นต้น
 
 ||http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg||
-||การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space||
+||การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space [[http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg src]]||
 
 ตัวอย่างการเขียน system programming ด้วยภาษา C ผ่านการเรียก system call ที่อยู่ใน library function สำหรับการติดต่อกับไฟล์
 
