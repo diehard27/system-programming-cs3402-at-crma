@@ -6,7 +6,7 @@
 ภาคการศึกษาที่ ๒ ปีการศึกษา ๒๕๕๕
 นักเรียนนายร้อยชั้นปีที่ ๓ สาขาวิทยาการคอมพิวเตอร์
 
-*ชื่อวิชา การเขียนโปรแกรมระบบ (System Programming)*
+*ชื่อวิชา การเขียนโปรแกรมระบบ (System Programming [Wiki [[http://en.wikipedia.org/wiki/System_programming EN]][[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url TH]]])*
 
 *รหัสวิชา CS3402*
 
