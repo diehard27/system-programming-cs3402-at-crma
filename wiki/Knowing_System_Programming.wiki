@@ -26,6 +26,7 @@ int main()
     write(1, buf, count);
     close(fd);
 }
+//http://www.tuxradar.com/content/how-linux-kernel-works
 }}}
 
 ==Program แบบไหน?==
