@@ -30,11 +30,12 @@
   * พฤหัสบดี เวลา ๐๘๐๐ – ๐๙๓๐ ห้องเรียน ชั้นปีที่ ๓ กคศ.ฯ
 ==ตำราเรียน==
   * หนังสืออ้างอิง 
-  * เอกสารประกอบการสอนจากอาจารย์ Online
-  # [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming รู้จักกับ system programming]
-  # ระบบปฏิบัติการ Linux
-  # คำสั่งต่าง ๆ ที่รันผ่านเชลล์
-  # การเขียนเชลสคริปต์
+  #  Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [PDF]
+  * เอกสารประกอบการสอนจากอาจารย์ Online <font color='grey>(ดูจากลิงค์ในตารางเรียน)</font>
+  # แนะนำวิชา {teachers, students, books, environments, servers, grading} , รู้จักกับ system programming {system, programming languages, system programming}
+  # ระบบปฏิบัติการ Linux {About Linux OS, process control, various shells, bash, scheduling, Linux FS, shell input/output, terminal, nul device, display control}
+  # คำสั่งต่าง ๆ ที่รันผ่านเชลล์ { built-in commands, essential commands, editors, compilers, interpreters }
+  # การเขียนเชลสคริปต์ {shell syntax, variable, conditions, control structure, logical AND/OR, functions, advance examples}
   # การเรียก system call จากโปรแกรมภาษา C
   # การเขียนสคริปต์ด้วย Perl
 ==วิธีการวัดผล และประเมินผล==
@@ -48,7 +49,7 @@
   * สถาปัตยกรรมคอมพิวเตอร์
 ==ตารางเรียน ๒๕๕๕/๒==
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑ || อ. ๑๑ ก.ย.๕๕ || แนะนำวิชา [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ] การใข้งานบนลีนุกซ์ ||ทดสอบความรู้เบื้องต้น || งานมอบ ๑ ||
+|| ๑ || อ. ๑๑ ก.ย.๕๕ || [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/introduction_to_cs3402 แนะนำวิชา],  [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ] การใข้งานบนลีนุกซ์ ||ทดสอบความรู้เบื้องต้น || งานมอบ ๑ ||
 || ๒ || พฤ. ๑๓ ก.ย. ๕๕ || การเขียนโปรแกรมบนลีนุกซ์ ด้วยโปรแกรมภาษาต่าง ๆ || || ||
 || _ || อ.๑๘ ก.ย.๕๕ || <font color='green'>---*งดการศึกษา*---</font> || เทอดเกียรตินายพล || ||
 || ๓ || พฤ. ๒๐ ก.ย. ๕๕ || เชลล์คืออะไร? การเขียนโปรแกรมบนเชลล์ || || งานมอบ ๒ ||		
