@@ -30,7 +30,8 @@
   * พฤหัสบดี เวลา ๐๘๐๐ – ๐๙๓๐ ห้องเรียน ชั้นปีที่ ๓ กคศ.ฯ
 ==ตำราเรียน==
 ===หนังสืออ้างอิง=== 
-  #  Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http:// PDF]
+  # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http:// PDF]
+  #   # Robert Love, *Linux System Programming*, O'Rielly, 2007. [[http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=0CHQQFjAD&url=http%3A%2F%2Fwww.downloadpdffree.com%2Flinux-system-programming-robert-love.pdf&ei=RcYgUN7HMYL3rQfWi4HYDQ&usg=AFQjCNFP0tBLjHWDT9K-UHF9iMvJS536tw PDF]], [[http://seesee.pbworks.com/f/linux.pdf PDF]] 
 ===เอกสารประกอบการสอน===
 ผลิดโดยอาจารย์ในรูปแบบ Online <font color='grey'>(ดูจากลิงค์ในตารางเรียน)</font>
   # แนะนำวิชา {teachers, students, books, environments, servers, grading} , รู้จักกับ system programming {system, programming languages, system programming}
