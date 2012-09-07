@@ -30,8 +30,8 @@
   * พฤหัสบดี เวลา ๐๘๐๐ – ๐๙๓๐ ห้องเรียน ชั้นปีที่ ๓ กคศ.ฯ
 ==ตำราเรียน==
   * หนังสืออ้างอิง 
-  #  Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [PDF]
-  * เอกสารประกอบการสอนจากอาจารย์ Online <font color='grey>(ดูจากลิงค์ในตารางเรียน)</font>
+  #  Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http:// PDF]
+  * เอกสารประกอบการสอนจากอาจารย์ Online <font color='grey'>(ดูจากลิงค์ในตารางเรียน)</font>
   # แนะนำวิชา {teachers, students, books, environments, servers, grading} , รู้จักกับ system programming {system, programming languages, system programming}
   # ระบบปฏิบัติการ Linux {About Linux OS, process control, various shells, bash, scheduling, Linux FS, shell input/output, terminal, nul device, display control}
   # คำสั่งต่าง ๆ ที่รันผ่านเชลล์ { built-in commands, essential commands, editors, compilers, interpreters }
