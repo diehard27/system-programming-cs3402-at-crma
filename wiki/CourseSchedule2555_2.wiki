@@ -50,7 +50,7 @@
   # สอบระหว่างภาค ๔๐ คะแนน (ไม่เกิน ๒ ใน ๕ ของคะแนนรวมทั้งภาค)
   # สอบประจำภาค ๔๐ คะแนน (ไม่ต่ำกว่า ๒ใน ๕ ของคะแนนรวมทั้งภาค)
 
-http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=20โดยอาจารย์|40|40&nonsense=something_that_ends_with.png
+http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=20% โดยอาจารย์|40|40&nonsense=something_that_ends_with.png
 
 ==พื้นฐานความรู้ก่อนเรียน==
   * ระบบปฏิบัติการ Operating System
