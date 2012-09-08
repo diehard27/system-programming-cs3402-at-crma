@@ -1,8 +1,6 @@
 #summary เกี่ยวกับผู้เขียน
 <table width=500>
 <td>
-<table>
 <img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yavinci-ukulele.jpeg'  width=150>
-</table>
 </td>
 </table>
