@@ -51,6 +51,9 @@
   # สอบประจำภาค ๔๐ คะแนน (ไม่ต่ำกว่า ๒ใน ๕ ของคะแนนรวมทั้งภาค)
 http://chart.apis.google.com/chart?chs=200x125&chd=t:20,40,40&chl=สอบโดยอาจารย์|สอบระหว่างภาค|สอบประจำภาค&cht=p&nonsense=something_that_ends_with.png
 
+http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png
+
+
 ==พื้นฐานความรู้ก่อนเรียน==
   * ระบบปฏิบัติการ Operating System
   * การเขียนโปรแกรมภาษา C
