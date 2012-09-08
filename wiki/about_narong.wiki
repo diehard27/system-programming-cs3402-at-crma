@@ -1,5 +1,8 @@
 #summary เกี่ยวกับอาจารย์ผู้สอน ร.ต.ณรงค์ ภูมิสุข
-
+<table widht=500>
+<td>
 ==Publication==
     *  Narong Phoomsuk and Anan Phonphoem
 "A Light-weight BitTorrent Detection Mechanism for Wireless LAN Environment" , To be appeared in 7th International Joint Conference on Computer Science and Software Engineering , JCSSE 2010 , Ramkhamhaeng University, Bangkok,Thailand , May 2010 [http://iwing.cpe.ku.ac.th/viewpublication/76 Link]
+</td>
+</table>
