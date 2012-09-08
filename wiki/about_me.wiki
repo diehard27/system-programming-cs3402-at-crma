@@ -9,7 +9,7 @@
 ปัจจุบันเป็นรองผู้อำนวยการกองวิชาเคมี ส่วนการศึกษา รร.จปร. และเป็นที่ปรึกษาด้านเทคนิคให้กับ กองเทคโนโลยีสารสนเทศ รร.จปร.  ติดต่อ prachya@crma.ac.th 
 
 =Publications=
-  * [http://ntrs.nasa.gov/search.jsp?R=19980236602 NASA Technical Report] <img src='http://spacegrant.oregonstate.edu/sites/default/files/images/nasa_logo.gif' width=40>
+  * Chalermwat, Prachya; El-Ghazawi, Tarek; LeMoigne, Jacqueline, "_Image registration by parts_" [http://ntrs.nasa.gov/search.jsp?R=19980236602 NASA Technical Report] <img src='http://spacegrant.oregonstate.edu/sites/default/files/images/nasa_logo.gif' width=40>
   * List in [http://arnetminer.org/person/prachya-chalermwat-339721.html;jsessionid=37EA99039D0467581BE864DE4999E84D.tt ArnetMiner]
   * List in [http://dl.acm.org/results.cfm?h=1&cfid=153714258&cftoken=41730592 ACM Digital Library] 
   * List in [http://en.scientificcommons.org/prachya_chalermwat Scientific Common]
