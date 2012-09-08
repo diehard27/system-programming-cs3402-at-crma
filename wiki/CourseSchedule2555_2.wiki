@@ -49,10 +49,8 @@
   # สอบโดยอาจารย์ ๒๐ คะแนน (ไม่เกิน ๑ ใน ๕ ของคะแนนรวมทั้งภาค)
   # สอบระหว่างภาค ๔๐ คะแนน (ไม่เกิน ๒ ใน ๕ ของคะแนนรวมทั้งภาค)
   # สอบประจำภาค ๔๐ คะแนน (ไม่ต่ำกว่า ๒ใน ๕ ของคะแนนรวมทั้งภาค)
-http://chart.apis.google.com/chart?chs=200x125&chd=t:20,40,40&chl=สอบโดยอาจารย์|สอบระหว่างภาค|สอบประจำภาค&cht=p&nonsense=something_that_ends_with.png
 
-http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png
-
+http://chart.apis.google.com/chart?chs=300x225&cht=p3&chd=s:MYY&chdl=20%25|40%25|40%25&chl=%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%82%E0%B8%94%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B9%8C|%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A0%E0%B8%B2%E0%B8%84|%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%A0%E0%B8%B2%E0%B8%84&chtt=%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B0%E0%B9%81%E0%B8%99%E0%B8%99
 
 ==พื้นฐานความรู้ก่อนเรียน==
   * ระบบปฏิบัติการ Operating System
