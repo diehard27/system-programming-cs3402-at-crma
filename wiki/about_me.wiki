@@ -1,7 +1,6 @@
 #summary เกี่ยวกับผู้เขียน
-<table>
+<table width=500>
 <td>
-
 <img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yavinci-ukulele.jpeg'  width=150>
 
 </td>
