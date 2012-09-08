@@ -2,14 +2,14 @@
 <img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yavinci-ukulele.jpeg'  width=150>
 <table width=500>
 <td>
-เกิดที่ จ.อุบลราชธานี สำเร็จการศึกษาชั้นประถม ที่โรงเรียนเชิงชุมราษฏร์นุกูล อ.เมือง จ.สกลนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด สำเร็จการศึกษาชั้นมัธยม ๓ ที่โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ วิทยาลัยครูพระนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด  สอบติดโรงเรียนเตรียมอุดมศึกษา (วิทย์ไม่มีชีวะ ๑๒๐ คน) เทคนิคไทย-เยอรมัน และโรงเรียนเตรียมทหาร ก่อนเลือกเข้าศึกษา ณ โรงเรียนเตรียมทหาร (นตท. รุ่น ๒๑) จากนั้นเข้าศึกษาต่อในระดับอุดมศึกษาที่ โรงเรียนนายร้อยพระจุลจอมเกล้า (จปร.๓๒) BS (Electrical Engineering) ได้รับการคัดเลือกให้รับทุนศึกษาต่อในระดับปริญญาโท สำเร็จการศึกษา MS Computer Science จาก The George Washington University, Washington DC, USA และได้รับทุนศึกษาต่อในระดับปริญญาเอก ณ George Mason University, Virginia, USA ได้รับปริญญา Ph.D. (Computational Science)  ระหว่างการศึกษาได้รับทุน Stipend ซึ่งเป็นทุนให้เปล่า และได้รับทุนวิจัยร่วมทำงานกับองค์การ ​NAZA  ณ Goddard Space Flight Center (GSFC)  Greenbelt MD ในโครงการวิจัย High Performance Computing โดยใช้ Linux Cluster
+เกิดที่ จ.อุบลราชธานี สำเร็จการศึกษาชั้นประถม ที่โรงเรียนเชิงชุมราษฏร์นุกูล อ.เมือง จ.สกลนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด สำเร็จการศึกษาชั้นมัธยม ๓ ที่โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ วิทยาลัยครูพระนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด  สอบติดโรงเรียนเตรียมอุดมศึกษา (วิทย์ไม่มีชีวะ ๑๒๐ คน) เทคนิคไทย-เยอรมัน และโรงเรียนเตรียมทหาร ก่อนเลือกเข้าศึกษา ณ โรงเรียนเตรียมทหาร (นตท. รุ่น ๒๑) จากนั้นเข้าศึกษาต่อในระดับอุดมศึกษาที่ โรงเรียนนายร้อยพระจุลจอมเกล้า (จปร.๓๒) BS (Electrical Engineering) ได้รับการคัดเลือกให้รับทุนศึกษาต่อในระดับปริญญาโท สำเร็จการศึกษา MS Computer Science จาก The George Washington University, Washington DC, USA และได้รับทุนศึกษาต่อในระดับปริญญาเอก ณ George Mason University, Virginia, USA ได้รับปริญญา Ph.D. (Computational Science)  ระหว่างการศึกษาได้รับทุน Stipend ซึ่งเป็นทุนให้เปล่า และได้รับทุนวิจัยร่วมทำงานกับองค์การ ​NASA  ณ Goddard Space Flight Center (GSFC)  Greenbelt MD ในโครงการวิจัย High Performance Computing โดยใช้ Linux Cluster
 
 เป็นอาจารย์ส่วนการศึกษา โรงเรียนนายร้อยพระจุลจอมเกล้า และเป็นที่ปรึกษาด้านไอที (IT advisor) ให้บริษัทหาดทิพย์ จำกัด มหาชน ซึ่งเป็นผู้ผลิต Coca-Cola ในภาคใต้ของประเทศไทย เคยเป็นอาจารย์พิเศษในค่ายคอมพิวเตอร์โอลิมปิค มหาวิทยาลัยธรรมศาสตร์ มหาวิทยาลัยอัสสัมชัญ มหาวิทยาลัยอีสเทอร์นเอเซีย
 
 ปัจจุบันเป็นรองผู้อำนวยการกองวิชาเคมี ส่วนการศึกษา รร.จปร. และเป็นที่ปรึกษาด้านเทคนิคให้กับ กองเทคโนโลยีสารสนเทศ รร.จปร.  ติดต่อ prachya@crma.ac.th 
 
 =Publications=
-  * [http://ntrs.nasa.gov/search.jsp?R=19980236602 NAZA Technical Report] <img src='http://spacegrant.oregonstate.edu/sites/default/files/images/nasa_logo.gif' width=100>
+  * [http://ntrs.nasa.gov/search.jsp?R=19980236602 NASA Technical Report] <img src='http://spacegrant.oregonstate.edu/sites/default/files/images/nasa_logo.gif' width=40>
   * List in [http://arnetminer.org/person/prachya-chalermwat-339721.html;jsessionid=37EA99039D0467581BE864DE4999E84D.tt ArnetMiner]
   * List in [http://dl.acm.org/results.cfm?h=1&cfid=153714258&cftoken=41730592 ACM Digital Library] 
   * List in [http://en.scientificcommons.org/prachya_chalermwat Scientific Common]
