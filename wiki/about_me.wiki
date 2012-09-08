@@ -13,4 +13,4 @@
   * List in [http://arnetminer.org/person/prachya-chalermwat-339721.html;jsessionid=37EA99039D0467581BE864DE4999E84D.tt ArnetMiner]
   * List in [http://dl.acm.org/results.cfm?h=1&cfid=153714258&cftoken=41730592 ACM Digital Library] 
   * List in [http://en.scientificcommons.org/prachya_chalermwat Scientific Common]
-  * เฉลิมวัฒน์, ปรัชญา, Chalermwat P.  2009.  การทดสอบประสิทธิภาพของคลัสเตอร์คอมพิวเตอร์และโปรแกรมวิทยาการเชิงคอมพิวเตอร์บนคลัสเตอร์คอมพิวเตอร์, สวทช. [http://www.nstda.or.th/thairesearch/index.php?q=repositories/author/9817  html]
+  * เฉลิมวัฒน์, ปรัชญา, Chalermwat P.  2009.  _การทดสอบประสิทธิภาพของคลัสเตอร์คอมพิวเตอร์และโปรแกรมวิทยาการเชิงคอมพิวเตอร์บนคลัสเตอร์คอมพิวเตอร์_, สวทช. [http://www.nstda.or.th/thairesearch/index.php?q=repositories/author/9817  html]
