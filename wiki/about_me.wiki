@@ -1,16 +1,13 @@
 #summary เกี่ยวกับผู้เขียน
 <table width=500>
-<td>
+<tr>
 <img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yavinci-ukulele.jpeg'  width=150>
 
 เกิดที่ จ.อุบลราชธานี สำเร็จการศึกษาชั้นประถม ที่โรงเรียนเชิงชุมราษฏร์นุกูล อ.เมือง จ.สกลนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด สำเร็จการศึกษาชั้นมัธยม ๓ ที่โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ วิทยาลัยครูพระนคร ได้คะแนนเป็นลำดับที่ ๑ ของนักเรียนทั้งหมด  สอบติดโรงเรียนเตรียมอุดมศึกษา (วิทย์ไม่มีชีวะ ๑๒๐ คน) เทคนิคไทย-เยอรมัน และโรงเรียนเตรียมทหาร ก่อนเลือกเข้าศึกษา ณ โรงเรียนเตรียมทหาร (นตท. รุ่น ๒๑) จากนั้นเข้าศึกษาต่อในระดับอุดมศึกษาที่ โรงเรียนนายร้อยพระจุลจอมเกล้า (จปร.๓๒) BS (Electrical Engineering) 
 
-<table>
-<tr>
-<td><img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yav_at_nasa.jpeg'  width=200> </td>
-<td>ได้รับการคัดเลือกให้รับทุนศึกษาต่อในระดับปริญญาโท สำเร็จการศึกษา MS Computer Science จาก The George Washington University, Washington DC, USA และได้รับทุนศึกษาต่อในระดับปริญญาเอก ณ George Mason University, Virginia, USA ได้รับปริญญา Ph.D. (Computational Science)  ระหว่างการศึกษาได้รับทุน Stipend ซึ่งเป็นทุนให้เปล่า และได้รับทุนวิจัยร่วมทำงานกับองค์การ ​NASA  ณ Goddard Space Flight Center (GSFC)  Greenbelt MD ในโครงการวิจัย High Performance Computing โดยใช้ Linux Cluster</td>
-</tr>
-</table>
+<img src='http://system-programming-cs3402-at-crma.googlecode.com/files/yav_at_nasa.jpeg'  width=200>
+
+ได้รับการคัดเลือกให้รับทุนศึกษาต่อในระดับปริญญาโท สำเร็จการศึกษา MS Computer Science จาก The George Washington University, Washington DC, USA และได้รับทุนศึกษาต่อในระดับปริญญาเอก ณ George Mason University, Virginia, USA ได้รับปริญญา Ph.D. (Computational Science)  ระหว่างการศึกษาได้รับทุน Stipend ซึ่งเป็นทุนให้เปล่า และได้รับทุนวิจัยร่วมทำงานกับองค์การ ​NASA  ณ Goddard Space Flight Center (GSFC)  Greenbelt MD ในโครงการวิจัย High Performance Computing โดยใช้ Linux Cluster
 
 เป็นอาจารย์ส่วนการศึกษา โรงเรียนนายร้อยพระจุลจอมเกล้า และเป็นที่ปรึกษาด้านไอที (IT advisor) ให้บริษัทหาดทิพย์ จำกัด มหาชน ซึ่งเป็นผู้ผลิต Coca-Cola ในภาคใต้ของประเทศไทย เคยเป็นอาจารย์พิเศษในค่ายคอมพิวเตอร์โอลิมปิค มหาวิทยาลัยธรรมศาสตร์ มหาวิทยาลัยอัสสัมชัญ มหาวิทยาลัยอีสเทอร์นเอเซีย
 
