@@ -39,9 +39,9 @@
   # แนะนำวิชา {teachers, students, books, environments, servers, grading} , รู้จักกับ system programming {system, programming languages, system programming}
   # ระบบปฏิบัติการ Linux {About Linux OS, process control, various shells, bash, scheduling, Linux FS, shell input/output, terminal, nul device, display control}
   # คำสั่งต่าง ๆ ที่รันผ่านเชลล์ { built-in commands, essential commands, editors, compilers, interpreters }
-  # การเขียนเชลสคริปต์ {shell syntax, variable, conditions, control structure, logical AND/OR, functions, advance examples}
+  # การเขียนเชลสคริปต์ {shell syntax, variable, conditions, control structure, logical AND/OR, functions, parameter passing, advance examples}
   # การเขียนสคริปต์ด้วยภาษา Perl
-  # การเรียก system call จากโปรแกรมภาษา C { gcc compiler, debugger, available library functions} 
+  # การเรียก system call จากโปรแกรมภาษา C { gcc compiler, debugger, available library functions, parameter passing from shell, output to terminal} 
   # การเรียกใช้ภาษาจาวา ในระบบลิหนิกซ์ {java compiler, running a java program}
   # การใช้ภาษาแอสเซมบลี้ {assembler, debugger}
 ==วิธีการวัดผล และประเมินผล==
