@@ -7,7 +7,7 @@
   # หน่วยความจำ (หลัก [cache<primary, secondary>, physical memory], สำรอง)
   # Input/Output
 
-||<img src='http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/400px-Computer_system_bus.svg.png' width=300>||
+||<img src='http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/400px-Computer_system_bus.svg.png' width=250>||
 ||แหล่งที่มา [http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/400px-Computer_system_bus.svg.png link]||
 
 นักเรียนควรมีความเข้าใจในการทำงานของระบบคอมพิวเตอร์ ก่อนที่จะมีความเข้าใจอย่างลึกซึ้งได้กับ system programming พื้นฐานความเข้าใจการทำงานของสถาปัตยกรรมคอมพิวเตอร์ ว่าโปรแกรมรัน^1^ได้อย่างไรในระบบคอมพิวเตอร์ โดยควรเข้าใจว่าโปรแกรมที่จะรันต้องถูกโหลดเข้ามาในหน่วยความจำ และคำสั่งที่อยู่ในโปรแกรมจะถูกกระทำ (executed) โดยการชี้ของ program counterู^2^ ซึ่งจะทำงานไปตามนาฬิกาของระบบ เช่น ระบบที่มีนาฬิกา 1 gigahertz หมายความว่า สัญญาณนาฬิกามีความถี่ 1000 ล้านครั้งต่อ ๑ วินาที ถ้าหนึ่งคำสั่งของซีพียู ใช้เวลา ๑ สัญญาณนาฬิกา คอมพิวเตอร์นั้นก็จะสามารถทำงานได้ถึง 1000 ล้านคำสั่งภายใน ๑ วินาที 
