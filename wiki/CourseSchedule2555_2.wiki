@@ -24,7 +24,7 @@
 รวมถึงการเขียนโปรแกรมเข้ากับระบบคอมพิวเตอร์อื่นๆ
 ==อาจารย์ผู้สอน==
   * <font color='green'>พ.อ.ปรัชญา เฉลิมวัฒน์</font>, Ph.D. หน.วิชา B.S.(EE) CRMA, MS Comp Sci (GWU, Washington DC, USA), Ph.D. Comp Sci (GMU, Virginia, USA) และ 
-  * <font color='green'>ร.ต.ณรงค์ ภูมิสุข</font>, BS Comp Sci (KU), MS Comp Eng (KU)
+  * <font color='green'>ร.ต.ณรงค์ ภูมิสุข</font>, BS Comp Sci (KU), MEng Comp Eng (KU)
 ==วิธีการศึกษา==
 สอนเชิงบรรยายและฝึกปฏิบัติ
 ==วัน /เวลา==
