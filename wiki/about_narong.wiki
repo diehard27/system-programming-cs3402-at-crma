@@ -11,7 +11,7 @@ http://iwing.cpe.ku.ac.th/sites/default/files/pictures/picture-76.jpg
 ปัจจุบันเป็นอาจารย์ประจำกองวิชาคณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา รร.จปร. ติดต่อ phnarong(at)hotmail.com
 
 ==Publication==
-    *  Narong Phoomsuk and Anan Phonphoem, "A Light-weight BitTorrent Detection Mechanism for Wireless LAN Environment" , To be appeared in 7th International Joint Conference on Computer Science and Software Engineering , JCSSE 2010 , Ramkhamhaeng University, Bangkok,Thailand , May 2010 [http://iwing.cpe.ku.ac.th/viewpublication/76 Link]
+    *  Narong Phoomsuk and Anan Phonphoem, "A Light-weight [http://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B8%95%E0%B8%97%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%95%E0%B9%8C BitTorrent] Detection Mechanism for Wireless LAN Environment" , To be appeared in 7th International Joint Conference on Computer Science and Software Engineering , JCSSE 2010 , Ramkhamhaeng University, Bangkok,Thailand , May 2010 [http://iwing.cpe.ku.ac.th/viewpublication/76 Link]
 
 </td>
 </table>
