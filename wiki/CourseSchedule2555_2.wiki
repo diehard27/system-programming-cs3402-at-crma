@@ -62,7 +62,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
   * สถาปัตยกรรมคอมพิวเตอร์
 ==ตารางเรียน ๒๕๕๕/๒==
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑ || อ. ๑๑ ก.ย.๕๕ || [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/introduction_to_cs3402 แนะนำวิชา],  [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ] [introLinuxEnv การใข้งานบนลีนุกซ์] ||<PreTest ทดสอบความรู้เบื้องต้น> || [assignment01  งานมอบ ๑] ||
+|| ๑ || อ. ๑๑ ก.ย.๕๕ || [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/introduction_to_cs3402 แนะนำวิชา],  [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ] [introLinuxEnv การใข้งานบนลีนุกซ์] || [PreTest ทดสอบความรู้เบื้องต้น] || [assignment01  งานมอบ ๑] ||
 || ๒ || พฤ. ๑๓ ก.ย. ๕๕ || [ProgrammingInLinux การเขียนโปรแกรมบนลีนุกซ์] ด้วยโปรแกรมภาษาต่าง ๆ || || ||
 || _ || อ.๑๘ ก.ย.๕๕ || <font color='green'>---*งดการศึกษา*---</font> || เทอดเกียรตินายพล || ||
 || ๓ || พฤ. ๒๐ ก.ย. ๕๕ || [IntroShell เชลล์คืออะไร?] [ShellProgramming การเขียนโปรแกรมบนเชลล์] || || [assignment02 งานมอบ ๒] ||		
