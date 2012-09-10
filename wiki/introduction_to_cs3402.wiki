@@ -20,4 +20,4 @@
 
 </td>
 </table>
-[CourseSchedule2555_2 หน้าหลัก]-->[Knowing_System_Programming  ทำความรู้จักกับ System Programming]
+[CourseSchedule2555_2 หน้าหลัก]-->Next:[Knowing_System_Programming  ทำความรู้จักกับ System Programming]
