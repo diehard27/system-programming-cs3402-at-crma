@@ -1,5 +1,5 @@
 #summary ทบทวน _ ระบบคอมพิวเตอร์ โดย pc
-[CourseSchedule2555_2 กลับไปหน้าหลัก]
+[CourseSchedule2555_2 หน้าหลัก]-->[Knowing_System_Programming รู้จัก system programming]
 
 <table width=500>
 <td>
