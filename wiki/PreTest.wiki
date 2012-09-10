@@ -72,6 +72,7 @@ main()
 <li> Richard Stallman เป็นผู้ให้กำเนิดระบบปฏิบัติการ Linux </li>
 <li> ความหมายของ GNU คือ "GNU ไม่ใช่ UNIX" </li>
 <li> เกี่ยวกับ Logic Operation: 1 AND 1 ได้เท่ากับ 1 แต่ 1 OR 0 ได้เท่ากับ 1 เช่นกัน</li>
+<li>บรรทัดในโปรแกรมภาษา C ที่บอกว่า <font color=green>#include<stdio.h></font> ในที่นี้เป็นการบอกคอมไพเลอร์ว่าให้ใช้โปรโตคอล http สำหรับฟังก์ชันในไฟล์ stdio.h</li>
 </ol>
 </td>
 </table>
