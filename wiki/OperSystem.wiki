@@ -13,6 +13,3 @@
 http://ph7spot.com/diagrams/unix_kernel_and_application_layers.png
 
 ฮาร์ดแวร์ถูกควบคุมการใช้งานโดยระบบปฏิบัติการ ในลักษณะ layers ([http://ph7spot.com/diagrams/unix_kernel_and_application_layers.png ที่มา])
-
-</td>
-</table>
