@@ -6,6 +6,10 @@
 
 [http://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3 ระบบปฏิบัติการ] (OS: Operating System) เป็นซอฟท์แวร์หลักที่รันเป็นลำดับแรก ไม่นับรวม [http://en.wikipedia.org/wiki/Bootstrap_program โปรแกรม bootstrap] ซึ่งจะเข้าทำการเข้าควบคุม/ตรวจสอบการทำงานของฮาร์ดแวร์รวมถึงทรัพยากรต่าง ๆ ในระบบคอมพิวเตอร์ ก่อนที่จะเริ่มเปิดบริการให้กับผู้ใช้งาน
 
+<img src=http://karbosguide.com/images/u1881.gif width=300>
+
+ระบบปฏิบัติการติดต่อฮาร์ดแวร์ผ่านฟังก์ชันต่าง ๆ ใน BIOS และ device driver สำหรับแต่ละอุปกรณ์ 
+
 http://ph7spot.com/diagrams/unix_kernel_and_application_layers.png
 
 ฮาร์ดแวร์ถูกควบคุมการใช้งานโดยระบบปฏิบัติการ ในลักษณะ layers ([http://ph7spot.com/diagrams/unix_kernel_and_application_layers.png ที่มา])
