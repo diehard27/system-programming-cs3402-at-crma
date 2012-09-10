@@ -1,4 +1,6 @@
 #summary 1  ทำความรู้จักกับ System Programming
+[CourseSchedule2555_2 หน้าหลัก]
+
 <table width=500>
 <td>
 ==1.1 System อะไร?==
