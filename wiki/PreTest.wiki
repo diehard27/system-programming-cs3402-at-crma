@@ -1,5 +1,5 @@
 #summary ทดสอบความรู้พื้นฐานก่อนเข้าเรียน โดย pc และ np
-[กลับไปหน้าหลัก ]
+[CourseSchedule2555_2 กลับไปหน้าหลัก ]
 <table width=500>
 <td>
 = <font color=red>Pre Test</font> (30 นาที)=
