@@ -1,5 +1,5 @@
 #summary ระบบปฏิบัติการ โดย narong
-[CourseSchedule2555_2 กลับไปหน้าหลัก]
+[CourseSchedule2555_2 หน้าหลัก]-->[Knowing_System_Programming รู้จัก system programming]
 
 Add your content here.
 
