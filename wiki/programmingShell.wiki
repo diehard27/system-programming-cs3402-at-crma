@@ -1,7 +1,7 @@
 #summary แนะนำ shell programming
 <table width=500>
 <td>
-[CourseSchedule2555_2 หน้าหลัก]
+<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 
 Shell เปรียบเสมือนเปลือกนอกของระบบปฏิบัติการซึ่งมี kernel ควบคุมการใช้งานฮาร์ดแวร์อยู่ภายใน ผู้ใช้ไม่สามารถติดต่อกับฮาร์ดแวร์โดยตรงได้ ต้องกระทำผ่าน system call หรือ ส่งคำสั่งผ่าน shell ในลิหนิกซ์ bash ถือว่าเป็น shell ที่เป็นที่นิยมและใช้เป็นมาตรฐานในการใช้งานลิหนิกซ์
 
