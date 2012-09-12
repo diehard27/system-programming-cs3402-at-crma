@@ -1,0 +1,14 @@
+#summary แนะนำการเขียนโปรแกรมด้วย Perl
+[CourseSchedule2555_2 หน้าหลัก]
+<table width=500>
+<td>
+
+ก่อนอื่นตรวจสอบดูว่าระบบมีโปรแกรม perl อยู่หรือเปล่า
+{{{
+which perl
+}}}
+
+{{{
+     #!/usr/local/bin/perl
+     print "Hi there!\n";
+}}}
