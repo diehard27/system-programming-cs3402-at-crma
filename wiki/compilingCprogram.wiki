@@ -48,7 +48,7 @@ int main() {
 prachya@pcubusrv104:~/hello$ gcc hello.c
 }}}
 โดยหลังจากกด enter แล้ว gcc จะทำการคอมไพล์โปรแกรม hello.c พร้อมทั้งสร้างไฟล์ไบนารี่ชื่อ a.out โดยสามารถตรวจสอบดูว่ามีไฟล์อยู่หรือไม่ด้วยคำสั่ง ls
-{{
+{{{
 prachya@pcubusrv104:~/hello$ ls
 a.out  hello.c
-}}
+}}}
