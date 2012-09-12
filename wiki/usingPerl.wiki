@@ -5,7 +5,8 @@
 
 ก่อนอื่นตรวจสอบดูว่าระบบมีโปรแกรม perl อยู่หรือเปล่า
 {{{
-which perl
+prachya@pcubusrv104:~$ which perl
+/usr/bin/perl
 }}}
 
 {{{
