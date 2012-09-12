@@ -1,31 +1,8 @@
 #summary การคอมไพล์ภาษาแอสเซมบลี้เบื้องต้น
 
-Two steps to using Assembly in Linux (ubuntu 9.10) 
-Most programmers shy away from assembly language. The reason is not that
-they don't have a solid background of assembly but that they don't know
-how to write code outside the simulators etc that they are familiar.
-Especially when it comes using assembly under linux.
+ขั้นตอนง่าย ๆ ในการคอมไพล์โปรแกรมภาษาแอสเซมบลี้ใน Linux (ubuntu 10.04) ด้วยโปรแกรมแอสเซมเบลอร์ as ประกอบด้วยขั้นตอนหลัก คือ 
 
-It comprises two steps.
-
-1. Compiling with assembler The assembly language compiler in linux is
-as. The code to compile a program say helloWorld.s is the following
-{{{
-$ as helloWorld.s -o helloWorld.o
-}}}
-2. Linking and Executing the code The output of assembling is object
-code which needs linking. The code for linking the object file
-"helloWorld.o".
-{{{
-$ ld -o helloWorld.out helloWorld.o 
-}}}
-To execute the code we need to do
-the following. 
-{{{
-$ ./helloWorld.out
-}}}
-
-โปรแกรม hello.s
+1) เขียนโปรแกรม hello.s ตามตัวอย่างข้างล่างขึ้นมาด้วยการใช้เอดิเตอร์ เช่น vi หรือ nano โดยเรียกคำสั่ง {{{ nano hello.s }}} จากนั้นให้บันทึกไฟล์แล้วออกจากเอดิเตอร์
 {{{
 .text
                            .global _start _start:
@@ -48,6 +25,23 @@ msg:
         .ascii "Hello, world!\n" # our dear string
         len = . - msg # length of our dear string
 }}}
+
+
+2) คอมไพล์ไฟล์โปรแกรม (hello.s) ด้วยแอสเซมเบลอร์ as ซึ่งจะให้ผลลัพธ์เป็นอ็อบเจ็คไฟล์ .o 
+{{{
+$ as hello.s -o hello.o
+}}}
+
+3) ลิงค์อ็อบเจ็คโค้ด (hello.o) เข้ากับไลบรารี่ด้วยโปรแกรม ld และให้สร้างไบนารี่ไฟล์ที่รันได้ (executable file) ชื่อว่า hello.out
+{{{
+$ ld -o hello.out hello.o 
+}}}
+
+4) เอาพุทที่ได้จากการลิงค์ชื่อไฟล์ hello.out สามารถรันได้จากคำสั่งในเชลล์ ขึ้นต้นด้วย ./ (เพื่อบอกว่าโปรแกรมนี้อยู่ในไดเร็กทอรี่ที่เราทำงานในปัจจุบัน เนื่องจากโปรแกรมนี้ไม่อยู่ใน PATH environment ของเชลล์ที่เรารันอยู่)
+{{{
+$ ./hello.out
+}}}
+
 
 ==อ้างอิง==
   # http://asm.sourceforge.net/howto/hello.html
