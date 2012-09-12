@@ -38,6 +38,20 @@ prachya@pcubusrv104:~/perl$ echo $SHELL
 /bin/bash
 }}}
 
+โปรแกรมแรกในการเขียน shell script ถูกเขียนไว้ในไฟล์ hello.sh
+{{{
+#!/bin/bash
+# My first script
 
+echo "Hello World!"
+}}}
+
+การรัน shell script สามารถทำได้ด้วยคำสั่ง sh hello.sh
+{{{
+prachya@pcubusrv104:~/shell$ sh hello.sh
+Hello World!
+}}}
+
+รายละเอียดการประยุกต์ใช้เชลล์สคริปต์ จะกล่าวถึงในบทถัดไป
 ==อ้างอิง==
   # http://www.freeos.com/guides/lsst/ch01sec07.html
