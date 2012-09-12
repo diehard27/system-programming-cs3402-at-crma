@@ -3,8 +3,35 @@
 <td>
 [CourseSchedule2555_2 หน้าหลัก]
 
+Shell เปรียบเสมือนเปลือกนอกของระบบปฏิบัติการซึ่งมี kernel ควบคุมการใช้งานฮาร์ดแวร์อยู่ภายใน ผู้ใช้ไม่สามารถติดต่อกับฮาร์ดแวร์โดยตรงได้ ต้องกระทำผ่าน system call หรือ ส่งคำสั่งผ่าน shell ในลิหนิกซ์ bash ถือว่าเป็น shell ที่เป็นที่นิยมและใช้เป็นมาตรฐานในการใช้งานลิหนิกซ์
+
 ||ชือ Shell||พัฒนาโดย||จาก||หมายเหตุ||
 ||BASH ( Bourne-Again SHell )||	Brian Fox และ Chet Ramey||Free Software Foundation||เป็น shell ที่เป็นที่นิยมและใช้มากที่สุดในลิหนิกซ์||
 ||CSH (C SHell)|| Bill Joy||	University of California (สำหรับ BSD)||โครงสร้างประโยคคำสั่ง ใกล้เคียงกับการเขียนโปรแกรมภาษา C ||
 ||KSH (Korn SHell)|| David Korn|| AT & T Bell Labs||--||
 ||TCSH||	ดู man page|| $ man tcsh||TCSH เป็นการพัฒนา csh ให้มีขีดความสามารถมากขึ้นแต่ยังคง  compatible กับ Berkeley UNIX C shell (CSH).||
+
+คำสั่งต่าง ๆ ที่พิมพ์ผ่าน shell สามารถนำมาเรียงกันเช่นเดียวกับการเขียนโปรแกรมในภาษาอื่นๆ shell ยังสนับสนุนการควบคุมโปรแกรม (control structure) เช่น การวนซ้ำ (loop) หรือการสร้างตัวแปร เป็นต้น  ตัวอย่างของ shell script 
+
+เราสามารถตรวจสอบว่าระบบมี shell แบบไหนบ้างด้วยคำสั่ง cat /etc/shells
+{{{
+prachya@pcubusrv104:~/perl$ cat /etc/shells
+# /etc/shells: valid login shells
+/bin/csh
+/bin/sh
+/usr/bin/es
+/usr/bin/ksh
+/bin/ksh
+/usr/bin/rc
+/usr/bin/tcsh
+/bin/tcsh
+/usr/bin/esh
+/bin/dash
+/bin/bash
+/bin/rbash
+/usr/bin/screen
+}}}
+
+
+==อ้างอิง==
+  # http://www.freeos.com/guides/lsst/ch01sec07.html
