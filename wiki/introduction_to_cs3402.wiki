@@ -1,5 +1,5 @@
 #summary แนะนำวิชา System Programming
-[CourseSchedule2555_2 กลับไปหน้าหลัก]
+[CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒ กลับไปหน้าหลัก]
 <table width=500>
 <td>
 = เกี่ยวกับอาจารย์ผู้สอน =
