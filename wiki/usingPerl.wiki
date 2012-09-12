@@ -54,5 +54,7 @@ prachya@pcubusrv104:~/perl$ perl exp1.pl
 25
 }}}
 
+รายละเอียดของการประยุกต์ใช้ perl ใน system programming จะกล่าวในบทถัดไป
+
 ==อ้างอิง==
   # http://www.perl.com/pub/2000/10/begperl1.html
