@@ -1,5 +1,5 @@
 #summary ทดสอบความรู้พื้นฐานก่อนเข้าเรียน โดย pc และ np
-[CourseSchedule2555_2 กลับไปหน้าหลัก ]
+<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 <table width=500>
 <td>
 = <font color=red>Pre Test</font> (30 นาที)=
