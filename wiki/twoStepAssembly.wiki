@@ -1,4 +1,5 @@
 #summary การคอมไพล์ภาษาแอสเซมบลี้เบื้องต้น
+[CourseSchedule2555_2 กลับไปหน้าหลัก]
 <table width=500>
 <td>
 ||http://www.nptel.iitm.ac.in/courses/Webcourse-contents/IIT-KANPUR/compiler-desing/chapter_2/images/sanjeev2.gif||http://www.bogotobogo.com/cplusplus/images/assembly/linker_loader.png||
