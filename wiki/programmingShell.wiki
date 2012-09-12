@@ -1,0 +1,10 @@
+#summary แนะนำ shell programming
+<table width=500>
+<td>
+[CourseSchedule2555_2 หน้าหลัก]
+
+||Shell Name||Developed by||Where||Remark||
+||BASH ( Bourne-Again SHell )||	Brian Fox and Chet Ramey||Free Software Foundation||Most common shell in Linux. It's Freeware shell.||
+||CSH (C SHell)|| Bill Joy||	University of California (For BSD)||The C shell's syntax and usage are very similar to the C programming language.||
+||KSH (Korn SHell)|| David Korn|| AT & T Bell Labs||--||
+||TCSH||	See the man page.||Type $ man tcsh||TCSH is an enhanced but completely compatible version of the Berkeley UNIX C shell (CSH).||
