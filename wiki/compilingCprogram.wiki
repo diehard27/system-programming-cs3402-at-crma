@@ -52,3 +52,12 @@ prachya@pcubusrv104:~/hello$ gcc hello.c
 prachya@pcubusrv104:~/hello$ ls
 a.out  hello.c
 }}}
+หากต้องการกำหนดชื่อไฟล์ไบนารี่ให้ใช้ตัวเลือก -o ร่วมกับการคอมไพล์
+{{{
+prachya@pcubusrv104:~/hello$ gcc hello.c -o hello
+}}}
+จะได้ไฟล์ไบนารี่ชื่อว่า hello และสามารถรันโปรแกรมนี้จากเชลล์ด้วยคำสั่ง
+{{{
+./hello
+Hello, world!
+}}}
