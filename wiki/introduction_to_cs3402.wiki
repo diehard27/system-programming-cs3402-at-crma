@@ -1,5 +1,5 @@
 #summary แนะนำวิชา System Programming
-<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">หน้าหลัก</a>
+<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 <table width=500>
 <td>
 = เกี่ยวกับอาจารย์ผู้สอน =
