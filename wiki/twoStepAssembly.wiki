@@ -1,0 +1,54 @@
+#summary การคอมไพล์ภาษาแอสเซมบลี้เบื้องต้น
+
+Two steps to using Assembly in Linux (ubuntu 9.10) 
+Most programmers shy away from assembly language. The reason is not that
+they don't have a solid background of assembly but that they don't know
+how to write code outside the simulators etc that they are familiar.
+Especially when it comes using assembly under linux.
+
+It comprises two steps.
+
+1. Compiling with assembler The assembly language compiler in linux is
+as. The code to compile a program say helloWorld.s is the following
+{{{
+$ as helloWorld.s -o helloWorld.o
+}}}
+2. Linking and Executing the code The output of assembling is object
+code which needs linking. The code for linking the object file
+"helloWorld.o".
+{{{
+$ ld -o helloWorld.out helloWorld.o 
+}}}
+To execute the code we need to do
+the following. 
+{{{
+$ ./helloWorld.out
+}}}
+
+โปรแกรม hello.s
+{{{
+.text
+                           .global _start _start:
+
+        movl $len,%edx # third argument: message length
+        movl $msg,%ecx # second argument: pointer to message to write
+        movl $1,%ebx # first argument: file handle (stdout)
+        movl $4,%eax # system call number (sys_write)
+        int $0x80 # call kernel
+
+# and exit
+
+        movl $0,%ebx # first argument: exit code
+        movl $1,%eax # system call number (sys_exit)
+        int $0x80 # call kernel
+
+.data # section declaration
+
+msg:
+        .ascii "Hello, world!\n" # our dear string
+        len = . - msg # length of our dear string
+}}}
+
+==อ้างอิง==
+  # http://asm.sourceforge.net/howto/hello.html
+  # http://zahidirfan.blogspot.com/2010/01/two-steps-to-using-assembly-in-linux.html
