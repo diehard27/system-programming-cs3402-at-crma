@@ -52,6 +52,13 @@ prachya@pcubusrv104:~/shell$ sh hello.sh
 Hello World!
 }}}
 
+นอกจากจะรันเชลล์สคริปต์ด้วยการเรียกผ่านคำสั่ง sh โดยตรงแล้วเรายังสามารถเปลี่ยน mode ของไฟล์สคริปต์ให้เป็นแบบ executable และรันโดยไม่ต้องเรียกคำสั่ง sh ได้
+{{{
+chmod 755 hello.sh
+./hello.sh
+Hello World!
+}}}
+
 รายละเอียดการประยุกต์ใช้เชลล์สคริปต์ จะกล่าวถึงในบทถัดไป
 ==อ้างอิง==
   # http://www.freeos.com/guides/lsst/ch01sec07.html
