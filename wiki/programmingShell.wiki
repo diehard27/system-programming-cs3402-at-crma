@@ -32,6 +32,12 @@ prachya@pcubusrv104:~/perl$ cat /etc/shells
 /usr/bin/screen
 }}}
 
+หากต้องการตรวจสอบว่าเราอยู่ใน shell ใดอยู่ให้ใช้คำสั่ง echo $SHELL
+{{{
+prachya@pcubusrv104:~/perl$ echo $SHELL
+/bin/bash
+}}}
+
 
 ==อ้างอิง==
   # http://www.freeos.com/guides/lsst/ch01sec07.html
