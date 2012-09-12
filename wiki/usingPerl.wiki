@@ -8,8 +8,14 @@
 prachya@pcubusrv104:~$ which perl
 /usr/bin/perl
 }}}
-
+จากนั้นใช้เอดิเตอร์ vi หรือ nano เขียนโปรแกรมภาษา perl ตามตัวอย่างต่อไปนี้ ตั้งชื่อไฟล์ว่า hello.pl
 {{{
-     #!/usr/local/bin/perl
-     print "Hi there!\n";
+#!/usr/bin/perl
+print "Hi there!\n";
+}}}
+
+จากนั้นรันโปรแกรม hello.pl ด้วยคำสั่ง perl  hello.pl ตามตัวอย่างต่อไปนี้
+{{{
+prachya@pcubusrv104:~/perl$  perl hello.pl
+Hi there!
 }}}
