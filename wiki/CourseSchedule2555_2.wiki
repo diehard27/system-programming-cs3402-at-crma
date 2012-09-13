@@ -88,5 +88,10 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๒๒ || อ. ๑๑ ธ.ค. ๕๕ || การอินเตอร์รัพโปรเซส สร้างไปป์ || || ||
 || ๒๓ || พฤ. ๑๓ ธ.ค. ๕๕ || ใช้ไปป์ส่งผ่านข้อมูลระหว่างโปรเซส	|| || ||
 || ** || ๑๗-๒๑ ธ.ค. ๕๕ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
+
+==Links==
+  * "GCC and Make
+Compiling, Linking and Building
+C/C++ Applications", http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
 </td>
 </table>
