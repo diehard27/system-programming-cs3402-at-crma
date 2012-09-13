@@ -2,6 +2,8 @@
 <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 <table width=500>
 <td>
+_"You are what you think."_
+
 = การใช้คำสั่งของลินหนิกซ์เบื้องต้น =
 โดย พ.อ.ปรัชญา เฉลิมวัฒน์, Ph.D   pchalermwat@gmail.com
 ๒๗ ตุลาคม ๒๕๕๒
