@@ -7,5 +7,5 @@
 
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45 จากนั้นสร้าง symbolic link ด้วยคำสั่ง *ln  -s  /var/www/cXXNNNNNN www* (ให้แทน XXNNNNNN ด้วยชื่อล็อกอินของตนเอง) ซึ่งจะทำให้เราได้ symbolic link ชื่อว่า www ลิงค์ไปที่เว็บไดเร็กทอรี่ของตนเอง
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45 รันคำสั่ง *cd www* แล้วรันคำสั่ง *mkdir asm02* และคำสั่ง *cd asm02* 
-  # จากนั้นให้ดูจากโปรแกรมตัวอย่างในภาษา [twoStepAssembly assembly], [compilingCprogram C], [usingPerl perl], และ [programmingShell shell] ให้นักเรียน edit โปรแกรม, compile, และ run 
+  # จากนั้นให้ดูจากโปรแกรมตัวอย่างในภาษา [twoStepAssembly assembly], [compilingCprogram C], [usingPerl perl], และ [programmingShell shell] ให้นักเรียน edit โปรแกรม, compile, และ run ตามขั้นตอนในตัวอย่าง ทีละภาษา
   # ตรวจสอบผ่านเว็บไดเร็กทอรี่ว่า มีไฟล์ต่าง ๆ เช่น hello.c, hello.s เป็นต้น ในไดเร็กทอรี่ asm02
