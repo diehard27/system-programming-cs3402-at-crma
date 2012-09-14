@@ -3,4 +3,4 @@
 <td>
 <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 
-  # edit, compile, และ run โปรแกรมตัวอย่างในภาษา [twoStepAssembly assembly], [compilingCprogram C], [usingPerl perl], และ [programmingShell shell]
+  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45 รันคำสั่ง *mkdir  asm02* และคำสั่ง *cd asm02* จากนั้นให้ดูจากโปรแกรมตัวอย่างในภาษา [twoStepAssembly assembly], [compilingCprogram C], [usingPerl perl], และ [programmingShell shell] ให้นักเรียน edit โปรแกรม, compile, และ run 
