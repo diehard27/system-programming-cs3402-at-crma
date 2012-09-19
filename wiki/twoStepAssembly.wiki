@@ -55,3 +55,5 @@ Hello, world!
 ==อ้างอิง==
   # http://asm.sourceforge.net/howto/hello.html
   # http://zahidirfan.blogspot.com/2010/01/two-steps-to-using-assembly-in-linux.html
+
+[compilingCprogram Next: ภาษา C]
