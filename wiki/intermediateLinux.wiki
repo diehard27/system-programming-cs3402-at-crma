@@ -132,7 +132,7 @@
 ||man -t subject | lpr||พิมพ์คู่มือการใช้งานสำหรับโปรแกรม subject เป็นแบบ Postscript (เวคเตอร์กราฟฟิก)||
 ||printtool||เริ่มโปรแกรมควบคุมเครื่องพิมพ์ใน  X วินโดวส์||
 
-==เอกสารอ้างอิง==
+==เอกสารอ้างอิง==:
 # Introduction to Linux - A hands on guide by Machtelts Garrels http://tldp.org/LDP/intro-linux/html/
 # Basic Introduction to Linux -  http://rcsg-gsir.imsb-dsgi.nrc-cnrc.gc.ca/documents/basic/basic.html
 # Linux Online - Linux Courses   - http://www.linux.org/lessons/
@@ -144,7 +144,7 @@
 # GNU/Linux Commandline tools summary - http://tldp.org/LDP/GNU-Linux-Tools-Summary/GNU-Linux-Tools-Summary.pdf
 # Linux In a Nutshell- Command summary -  http://www.oreillynet.com/linux/cmd/
 
-==Text books:==
+==Text books==:
 # A practical guide to Linux, Mark Sobell, Pearson Education
 # Unix Power Tools - 3rd edition, Shelley Powers et al, Oreilly
 
