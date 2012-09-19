@@ -26,6 +26,13 @@ ls *.{jpg,jpeg,png}    # ขยาย  *.jpg *.jpeg *.png - คำสั่ง l
   * เมื่อออกจาก shell -- Bash อ่านและรันไฟล์ ~/.bash_logout (ถ้ามี)
   * เมื่อใช้ interactive shell (แต่ไม่ใช่ login shell) -- Bash อ่านและรันไฟล์  ~/.bashrc (ถ้ามี)  หากต้องการยกเลิกสามารถใช้ตัวเลือก  --norc  ส่วนตัวเลือก --rcfile จะบังคับให้อ่านและรันคำสั่งในไฟล์ที่ต้องการ แทนที่จะใช้ไฟล์ ~/.bashrc.
 
+=คีย์บอร์ด=
+  * Tab ↹ : Autocompletes from the cursor position.
+  * Ctrl+a : Moves the cursor to the line start (equivalent to the key Home).
+  * Ctrl+b : Moves the cursor back one character (equivalent to the key ←).
+  * Ctrl+c : Sends the signal SIGINT to the current task, which aborts and closes it.
+  * Ctrl+d: Sends an EOF marker, which (unless disabled by an option) closes the current shell (equivalent to the command exit). (Only if there is no text on the current line) If there is text on the current line, deletes the current character (then equivalent to the key Delete).
+
 =อ้างอิง=
   # GNU Bash Reference Manual, http://www.gnu.org/software/bash/manual/bashref.html
   # Bash (Unix Shell) - Wikipedia, http://en.wikipedia.org/wiki/Bash_(Unix_shell)
