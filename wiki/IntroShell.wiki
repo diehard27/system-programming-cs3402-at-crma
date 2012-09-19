@@ -19,6 +19,13 @@ echo {a,b,c}{d,e,f} # ad ae af bd be bf cd ce cf
 ls *.{jpg,jpeg,png}    # ขยาย  *.jpg *.jpeg *.png - คำสั่ง ls ให้ทำซ้ำสำหรับตัวแปรอื่นในลิสต์
 }}}
 
+=สคริปต์เริ่มต้น/ออก=
+เมื่อ bash เริ่มทำงานมันจะรันคำสั่งต่าง ๆ ในสคริปต์ที่กำหนดไว้ดังนี้
+
+  * เมื่อเริ่มใน interactive login shell -- Bash อ่านและรันคำสั่งใน /etc/profile (ถ้ามี) บางครั้ง อาจเรียกสคริปต์ใน /etc/bash.bashrc อีกชั้น หลังจากนั้นจะหาไฟล์ ~/.bash_profile,  ~/.bash_login, และ ~/.profile ตามลำดับ เพื่ออ่านไฟล์ และรันคำสั่งต่าง ๆ ที่อยู่ในไฟล์ (ถ้ามี)
+  * เมื่อออกจาก shell -- Bash อ่านและรันไฟล์ ~/.bash_logout (ถ้ามี)
+  * เมื่อใช้ interactive shell (แต่ไม่ใช่ login shell) -- Bash อ่านและรันไฟล์  ~/.bashrc (ถ้ามี)  หากต้องการยกเลิกสามารถใช้ตัวเลือก  --norc  ส่วนตัวเลือก --rcfile จะบังคับให้อ่านและรันคำสั่งในไฟล์ที่ต้องการ แทนที่จะใช้ไฟล์ ~/.bashrc.
+
 =อ้างอิง=
   # GNU Bash Reference Manual, http://www.gnu.org/software/bash/manual/bashref.html
   # Bash (Unix Shell) - Wikipedia, http://en.wikipedia.org/wiki/Bash_(Unix_shell)
