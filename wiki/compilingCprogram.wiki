@@ -63,3 +63,5 @@ prachya@pcubusrv104:~/hello$ gcc hello.c -o hello
 ./hello
 Hello, world!
 }}}
+
+[usingPerl Next: โปรแกรม Perl]
