@@ -37,3 +37,5 @@ ls *.{jpg,jpeg,png}    # ขยาย  *.jpg *.jpeg *.png - คำสั่ง l
 =อ้างอิง=
   # GNU Bash Reference Manual, http://www.gnu.org/software/bash/manual/bashref.html
   # Bash (Unix Shell) - Wikipedia, http://en.wikipedia.org/wiki/Bash_(Unix_shell)
+
+Next: [https://dl.dropbox.com/u/37142998/2012%20System%20Programming/Doc/shell-program%20by%20pc.pdf  การเขียนโปรแกรมเชลล์สคริปต์]
