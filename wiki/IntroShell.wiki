@@ -1,4 +1,5 @@
 #summary เชลล์คืออะไร?
+[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]
 <table width=500>
 <td>
 = เชลล์คืออะไร? =
