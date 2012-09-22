@@ -1,0 +1,25 @@
+#summary จากอินเทอร์เน็ต ต้องการเข้าถึงเว็บภายใน intranet 10.134.64.45
+
+{{{
+Apples-MacBook-Pro:~ Apple$ ssh   -L  8000:10.134.64.45:80   prachya@webmail.crma.ac.th
+prachya@webmail.crma.ac.th's password: 
+Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
+[prachya@webmail ~]$
+}}}
+
+{{{
+apples-macbook-pro:~ Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
+prachya@webmail.crma.ac.th's password: 
+Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
+[prachya@webmail ~]$ 
+}}}
+
+{{{
+Apples-MacBook-Pro:~ Apple$ ssh -p 8022 prachya@localhost 
+The authenticity of host '[localhost]:8022 ([127.0.0.1]:8022)' can't be established.
+RSA key fingerprint is cc:0e:0a:cb:1a:3d:d2:06:a2:b9:df:87:36:86:ef:b7.
+Are you sure you want to continue connecting (yes/no)? yes
+
+Last login: Fri Sep 21 11:31:40 2012 from 10.134.68.113
+prachya@pcubusrv104:~$
+}}}
