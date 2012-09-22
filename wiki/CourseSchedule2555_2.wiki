@@ -92,6 +92,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 
 ==Links==
   * "GCC and Make Compiling, Linking and Building C/C++ Applications", http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+  * [portForwardHowTo วิธีการใช้ port forward ] เพื่อเปิดเว็บ/ssh เข้ามายังเครื่อง intranet 10.134.64.45 จากภายนอก CRMA
 
 </td>
 </table>
