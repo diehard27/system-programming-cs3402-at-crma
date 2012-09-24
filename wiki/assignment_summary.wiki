@@ -8,7 +8,7 @@
   *  L = Late
   *  - = None
  
-
+||User Name||Assignment 1||Assignment 2||
 ||c01aekbur||C||C||
 ||c02sanwut||C||C||
 ||c03tassap||C||C||
