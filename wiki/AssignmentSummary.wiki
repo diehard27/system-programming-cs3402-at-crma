@@ -1,0 +1,41 @@
+#summary สรุปข้อมูลการส่งงานมอบ
+
+= Assignment Summary =
+
+==Legend==
+  *  C = Complete
+  *  I = Incomplete
+  *  L = Late
+  *  - = None
+ 
+||User Name||Assignment 1||Assignment 2||
+||c01aekbur||C||C||
+||c02sanwut||C||C||
+||c03tassap||C||C||
+||c04piyana||C||C||
+||c05pathom||C||C||
+||c06kitsan||C||C||
+||c07baworn||C||C||
+||c08teerap||C||C||
+||c09patais||C||C||
+||c10theera||C||C||
+||c11patcha||C||C||
+||c12mongko||C||C||
+||c13hasana||C||C||
+||c14jirawa||C||C||
+||c15athiwa||C||C||
+||c16kittis||C||C||
+||c17piyana||C||C||
+||c18chinna||C||C||
+||c19thanan||C||C||
+||c20kulsir||C||C||
+||c21nitinu||C||C||
+||c22wasawa||C||C||
+||c23thanaw||C||C||
+||c24puchon||C||C||
+||c25apichi||C||C||
+||c26jatupo||C||C||
+||c27sinlap||C||C||
+||c28nophan||C||C||
+||c29wuttic||C||C||
+||c30chaiya||C||C||
