@@ -4,38 +4,39 @@
 
 
 <h4> Legend </h4>
- * <font color=green>C</font> = <font color=green>Complete</font>
- * <font color=yellow>I</font> = <font color=yellow>Incomplete</font>
- * <font color=orange>L</font> = <font color=orange>Late</font>
- * <font color=red>-</font> = <font color=red>None</font>
+ * <font color=green> C </font> = <font color=green> Complete </font>
+ * <font color=yellow> I </font> = <font color=yellow> Incomplete </font>
+ * <font color=orange> L </font> = <font color=orange> Late </font>
+ * <font color=red> - </font> = <font color=red> None </font>
 
-||c01aekbur||<font color=green>C</font>||<font color=red>-</font>||
-||c02sanwut||<font color=green>C</font>||<font color=red>-</font>||
-||c03tassap||<font color=green>C</font>||<font color=red>-</font>||
-||c04piyana||<font color=green>C</font>||<font color=red>-</font>||
-||c05pathom||<font color=green>C</font>||<font color=red>-</font>||
-||c06kitsan||<font color=green>C</font>||<font color=red>-</font>||
-||c07baworn||<font color=green>C</font>||<font color=red>-</font>||
-||c08teerap||<font color=red>-</font>||<font color=red>-</font>||
-||c09patais||<font color=green>C</font>||<font color=red>-</font>||
-||c10theera||<font color=green>C</font>||<font color=red>-</font>||
-||c11patcha||<font color=green>C</font>||<font color=red>-</font>||
-||c12mongko||<font color=green>C</font>||<font color=red>-</font>||
-||c13hasana||<font color=green>C</font>||<font color=red>-</font>||
-||c14jirawa||<font color=green>C</font>||<font color=red>-</font>||
-||c15athiwa||<font color=green>C</font>||<font color=red>-</font>||
-||c16kittis||<font color=red>-</font>||<font color=red>-</font>||
-||c17piyana||<font color=green>C</font>||<font color=red>-</font>||
-||c18chinna||<font color=red>-</font>||<font color=red>-</font>||
-||c19thanan||<font color=green>C</font>||<font color=red>-</font>||
-||c20kulsir||<font color=red>-</font>||<font color=red>-</font>||
-||c21nitinu||<font color=green>C</font>||<font color=red>-</font>||
-||c22wasawa||<font color=red>-</font>||<font color=red>-</font>||
-||c23thanaw||<font color=green>C</font>||<font color=red>-</font>||
-||c24puchon||<font color=red>-</font>||<font color=red>-</font>||
-||c25apichi||<font color=green>C</font>||<font color=red>-</font>||
-||c26jatupo||<font color=red>-</font>||<font color=red>-</font>||
-||c27sinlap||<font color=red>-</font>||<font color=red>-</font>||
-||c28nophan||<font color=orange>L</font>||<font color=green>C</font>||
-||c29wuttic||<font color=red>-</font>||<font color=red>-</font>||
-||c30chaiya||<font color=red>-</font>||<font color=red>-</font>||
+||User Name||Assignment 1||Assignment 2||
+||c01aekbur||<font color=green> C </font>||<font color=red> - </font>||
+||c02sanwut||<font color=green> C </font>||<font color=red> - </font>||
+||c03tassap||<font color=green> C </font>||<font color=red> - </font>||
+||c04piyana||<font color=green> C </font>||<font color=red> - </font>||
+||c05pathom||<font color=green> C </font>||<font color=red> - </font>||
+||c06kitsan||<font color=green> C </font>||<font color=red> - </font>||
+||c07baworn||<font color=green> C </font>||<font color=red> - </font>||
+||c08teerap||<font color=red> - </font>||<font color=red> - </font>||
+||c09patais||<font color=green> C </font>||<font color=red> - </font>||
+||c10theera||<font color=green> C </font>||<font color=red> - </font>||
+||c11patcha||<font color=green> C </font>||<font color=red> - </font>||
+||c12mongko||<font color=green> C </font>||<font color=red> - </font>||
+||c13hasana||<font color=green> C </font>||<font color=red> - </font>||
+||c14jirawa||<font color=green> C </font>||<font color=red> - </font>||
+||c15athiwa||<font color=green> C </font>||<font color=red> - </font>||
+||c16kittis||<font color=red> - </font>||<font color=red> - </font>||
+||c17piyana||<font color=green> C </font>||<font color=red> - </font>||
+||c18chinna||<font color=red> - </font>||<font color=red> - </font>||
+||c19thanan||<font color=green> C </font>||<font color=red> - </font>||
+||c20kulsir||<font color=red> - </font>||<font color=red> - </font>||
+||c21nitinu||<font color=green> C </font>||<font color=red> - </font>||
+||c22wasawa||<font color=red> - </font>||<font color=red> - </font>||
+||c23thanaw||<font color=green> C </font>||<font color=red> - </font>||
+||c24puchon||<font color=red> - </font>||<font color=red> - </font>||
+||c25apichi||<font color=green> C </font>||<font color=red> - </font>||
+||c26jatupo||<font color=red> - </font>||<font color=red> - </font>||
+||c27sinlap||<font color=red> - </font>||<font color=red> - </font>||
+||c28nophan||<font color=orange> L </font>||<font color=green> C </font>||
+||c29wuttic||<font color=red> - </font>||<font color=red> - </font>||
+||c30chaiya||<font color=red> - </font>||<font color=red> - </font>||
