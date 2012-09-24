@@ -35,6 +35,7 @@
 ===หนังสืออ้างอิง=== 
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Robert Love, *Linux System Programming*, O'Rielly, 2007. [[http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=0CHQQFjAD&url=http%3A%2F%2Fwww.downloadpdffree.com%2Flinux-system-programming-robert-love.pdf&ei=RcYgUN7HMYL3rQfWi4HYDQ&usg=AFQjCNFP0tBLjHWDT9K-UHF9iMvJS536tw PDF]], [[http://seesee.pbworks.com/f/linux.pdf PDF]] 
+  # Sams Teach Yourself Shell Programming in 24 Hours, [[http://www.google.co.th/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&ved=0CCoQFjAB&url=http%3A%2F%2Fubuntuman.com%2Fsites%2Fdefault%2Ffiles%2Frepository%2FShell%2520Programming%5BUbunruMan.com%5D.pdf&ei=VYJgUIK7C4LJrAelvYC4Bg&usg=AFQjCNG7n9V68UcAIs00MMOd5nu7PlqgJw PDF]]
 ===เอกสารประกอบการสอน===
 ผลิดโดยอาจารย์ในรูปแบบ Online <font color='grey'>(ดูจากลิงค์ในตารางเรียน)</font>
   # แนะนำวิชา {teachers, students, books, environments, servers, grading} , รู้จักกับ system programming {system, programming languages, system programming}
