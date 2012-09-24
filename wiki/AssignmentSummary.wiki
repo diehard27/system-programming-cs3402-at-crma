@@ -2,41 +2,40 @@
 
 = Assignment Summary =
 
-{{{
-== Legend ==
- * C = Complete
- * I = Incomplete
- * L = Late
- * - = None
-}}}
-||User Name||Assignment 1||Assignment 2||
-||c01aekbur||C||-||
-||c02sanwut||C||-||
-||c03tassap||C||-||
-||c04piyana||C||-||
-||c05pathom||C||-||
-||c06kitsan||C||-||
-||c07baworn||C||-||
-||c08teerap||-||-||
-||c09patais||C||-||
-||c10theera||C||-||
-||c11patcha||C||-||
-||c12mongko||C||-||
-||c13hasana||C||-||
-||c14jirawa||C||-||
-||c15athiwa||C||-||
-||c16kittis||-||-||
-||c17piyana||C||-||
-||c18chinna||-||-||
-||c19thanan||C||-||
-||c20kulsir||-||-||
-||c21nitinu||C||-||
-||c22wasawa||-||-||
-||c23thanaw||C||-||
-||c24puchon||-||-||
-||c25apichi||C||-||
-||c26jatupo||-||-||
-||c27sinlap||-||-||
-||c28nophan||L||C||
-||c29wuttic||-||-||
-||c30chaiya||-||-||
+
+<h4> Legend </h4>
+ * <font color=green>C</font> = <font color=green>Complete</font>
+ * <font color=yellow>I</font> = <font color=yellow>Incomplete</font>
+ * <font color=orange>L</font> = <font color=orange>Late</font>
+ * <font color=red>-</font> = <font color=red>None</font>
+
+||c01aekbur||<font color=green>-</font>||<font color=red>-</font>||
+||c02sanwut||<font color=green>-</font>||<font color=red>-</font>||
+||c03tassap||<font color=green>-</font>||<font color=red>-</font>||
+||c04piyana||<font color=green>-</font>||<font color=red>-</font>||
+||c05pathom||<font color=green>-</font>||<font color=red>-</font>||
+||c06kitsan||<font color=green>-</font>||<font color=red>-</font>||
+||c07baworn||<font color=green>-</font>||<font color=red>-</font>||
+||c08teerap||<font color=red>-</font>||<font color=red>-</font>||
+||c09patais||<font color=green>-</font>||<font color=red>-</font>||
+||c10theera||<font color=green>-</font>||<font color=red>-</font>||
+||c11patcha||<font color=green>-</font>||<font color=red>-</font>||
+||c12mongko||<font color=green>-</font>||<font color=red>-</font>||
+||c13hasana||<font color=green>-</font>||<font color=red>-</font>||
+||c14jirawa||<font color=green>-</font>||<font color=red>-</font>||
+||c15athiwa||<font color=green>-</font>||<font color=red>-</font>||
+||c16kittis||<font color=red>-</font>||<font color=red>-</font>||
+||c17piyana||<font color=green>-</font>||<font color=red>-</font>||
+||c18chinna||<font color=red>-</font>||<font color=red>-</font>||
+||c19thanan||<font color=green>-</font>||<font color=red>-</font>||
+||c20kulsir||<font color=red>-</font>||<font color=red>-</font>||
+||c21nitinu||<font color=green>-</font>||<font color=red>-</font>||
+||c22wasawa||<font color=red>-</font>||<font color=red>-</font>||
+||c23thanaw||<font color=green>-</font>||<font color=red>-</font>||
+||c24puchon||<font color=red>-</font>||<font color=red>-</font>||
+||c25apichi||<font color=green>-</font>||<font color=red>-</font>||
+||c26jatupo||<font color=red>-</font>||<font color=red>-</font>||
+||c27sinlap||<font color=red>-</font>||<font color=red>-</font>||
+||c28nophan||<font color=orange>-</font>||<font color=green>-</font>||
+||c29wuttic||<font color=red>-</font>||<font color=red>-</font>||
+||c30chaiya||<font color=red>-</font>||<font color=red>-</font>||
