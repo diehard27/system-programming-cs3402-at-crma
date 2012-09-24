@@ -2,12 +2,15 @@
 
 = Assignment Summary =
 
-==Legend==
-  *  C = Complete
-  *  I = Incomplete
-  *  L = Late
-  *  - = None
- 
+
+
+{{{
+== Legend ==
+ * C = Complete
+ * I = Incomplete
+ * L = Late
+ * - = None
+}}}
 ||User Name||Assignment 1||Assignment 2||
 ||c01aekbur||C||C||
 ||c02sanwut||C||C||
@@ -24,7 +27,7 @@
 ||c13hasana||C||C||
 ||c14jirawa||C||C||
 ||c15athiwa||C||C||
-||c16kittis||C||C||
+||c16kittis||-||C||
 ||c17piyana||C||C||
 ||c18chinna||C||C||
 ||c19thanan||C||C||
