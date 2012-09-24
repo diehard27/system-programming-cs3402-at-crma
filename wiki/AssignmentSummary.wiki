@@ -16,7 +16,7 @@
 ||c05pathom||C||C||
 ||c06kitsan||C||C||
 ||c07baworn||C||C||
-||c08teerap||C||C||
+||c08teerap||-||C||
 ||c09patais||C||C||
 ||c10theera||C||C||
 ||c11patcha||C||C||
