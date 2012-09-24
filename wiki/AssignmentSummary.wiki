@@ -2,8 +2,6 @@
 
 = Assignment Summary =
 
-
-
 {{{
 == Legend ==
  * C = Complete
@@ -12,33 +10,33 @@
  * - = None
 }}}
 ||User Name||Assignment 1||Assignment 2||
-||c01aekbur||C||C||
-||c02sanwut||C||C||
-||c03tassap||C||C||
-||c04piyana||C||C||
-||c05pathom||C||C||
-||c06kitsan||C||C||
-||c07baworn||C||C||
-||c08teerap||-||C||
-||c09patais||C||C||
-||c10theera||C||C||
-||c11patcha||C||C||
-||c12mongko||C||C||
-||c13hasana||C||C||
-||c14jirawa||C||C||
-||c15athiwa||C||C||
-||c16kittis||-||C||
-||c17piyana||C||C||
-||c18chinna||-||C||
-||c19thanan||C||C||
-||c20kulsir||C||C||
-||c21nitinu||C||C||
-||c22wasawa||C||C||
-||c23thanaw||C||C||
-||c24puchon||C||C||
-||c25apichi||C||C||
-||c26jatupo||C||C||
-||c27sinlap||C||C||
-||c28nophan||C||C||
-||c29wuttic||C||C||
-||c30chaiya||C||C||
+||c01aekbur||C||-||
+||c02sanwut||C||-||
+||c03tassap||C||-||
+||c04piyana||C||-||
+||c05pathom||C||-||
+||c06kitsan||C||-||
+||c07baworn||C||-||
+||c08teerap||-||-||
+||c09patais||C||-||
+||c10theera||C||-||
+||c11patcha||C||-||
+||c12mongko||C||-||
+||c13hasana||C||-||
+||c14jirawa||C||-||
+||c15athiwa||C||-||
+||c16kittis||-||-||
+||c17piyana||C||-||
+||c18chinna||-||-||
+||c19thanan||C||-||
+||c20kulsir||-||-||
+||c21nitinu||C||-||
+||c22wasawa||-||-||
+||c23thanaw||C||-||
+||c24puchon||-||-||
+||c25apichi||C||-||
+||c26jatupo||-||-||
+||c27sinlap||-||-||
+||c28nophan||L||C||
+||c29wuttic||-||-||
+||c30chaiya||-||-||
