@@ -1,0 +1,10 @@
+#summary One-sentence summary of this page.
+
+= Assignment Summary =
+
+Legend
+  *C = Complete
+  *I = Incomplete
+  *L = Late
+  *- = None
+ 
