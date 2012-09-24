@@ -29,7 +29,7 @@
 ||c15athiwa||C||C||
 ||c16kittis||-||C||
 ||c17piyana||C||C||
-||c18chinna||C||C||
+||c18chinna||-||C||
 ||c19thanan||C||C||
 ||c20kulsir||C||C||
 ||c21nitinu||C||C||
