@@ -22,6 +22,8 @@ prachya@webmail.crma.ac.th's password:
 Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$
 }}}
+ใน putty กำหนดใน connection-->ssh-->tunnel ให้ source port = 8000 และ destination = 10.134.64.45:80 แล้วล็อกอินตามปกติ
+
 (2) เข้าเว็บ intranet ผ่าน localhost:8000 โดยใช้บราวเซอร์ปกติ
 
 ==ขั้นตอน เข้าถึง ssh ของเครื่อง 10.134.64.45==
@@ -35,6 +37,7 @@ prachya@webmail.crma.ac.th's password:
 Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$ 
 }}}
+ใน putty กำหนดใน connection-->ssh-->tunnel ให้ source port = 8000 และ destination = 10.134.64.45:80 แล้วล็อกอินตามปกติ
 
 (2) ssh ไปยัง localhost:8022 
 {{{
@@ -46,3 +49,6 @@ Are you sure you want to continue connecting (yes/no)? yes
 Last login: Fri Sep 21 11:31:40 2012 from 10.134.68.113
 prachya@pcubusrv104:~$
 }}}
+
+==อ้างอิง==
+  # Port forwarding with SSH (putty), http://www.akadia.com/services/ssh_putty.html
