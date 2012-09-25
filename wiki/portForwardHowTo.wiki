@@ -19,7 +19,7 @@
 {{{
 Apple$ ssh -L 8000:10.134.64.45:80   prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
-Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
+Last login: Sat Sep 22 21:37:28 2012 from ppp.asianet.co.th
 [prachya@webmail ~]$
 }}}
 ใน putty กำหนดใน connection-->ssh-->tunnel ให้ source port = 8000 และ destination = 10.134.64.45:80 แล้วล็อกอินตามปกติ
@@ -34,7 +34,7 @@ Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 {{{
 Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
-Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
+Last login: Sat Sep 22 21:57:38 2012 from ppp.asianet.co.th
 [prachya@webmail ~]$ 
 }}}
 ใน putty กำหนดใน connection-->ssh-->tunnel ให้ source port = 8000 และ destination = 10.134.64.45:80 แล้วล็อกอินตามปกติ
