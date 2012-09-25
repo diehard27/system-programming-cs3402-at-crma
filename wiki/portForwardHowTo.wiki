@@ -1,5 +1,20 @@
 #summary จากอินเทอร์เน็ต ต้องการเข้าถึงเว็บภายใน intranet 10.134.64.45
 
+==ปัญหา==
+  * เครื่องแม่ข่าย 10.134.64.45 อยู่หลังไฟร์วอลล์ ไม่สามารถเข้าถึงได้จากอินเทอร์เน็ต
+  * ต้องการใช้งานเว็บ (พอร์ต 80) และ ssh (พอร์ต 22) บนเครื่อง 10.134.64.45
+==ข้อมูลพื้นฐาน==
+  * เครื่อง webmail.crma.ac.th สามารถเข้าถึงด้วย ssh ได้จากอินเทอร์เน็ต
+  * เครื่อง webmail อยู่ใน intranet เดียวกับเครื่อง 10.134.64.45
+==แนวทาง==
+  * ใช้ port ของเครื่อง localhost (เครื่องที่จะรัน ssh client) map ไปที่พอร์ตของเครื่อง webmail
+  * ใช้ port forward ของ ssh เพื่อให้เครื่อง webmail ส่งการติดต่อพอร์ตที่ต้องการไปยังเครื่อง 10.134.64.45
+
+==ขั้นตอน เข้าถึงเว็บของ 10.134.64.45==
+  # ทำ port forward ระหว่างเครื่อง localhost กับเครื่อง webmail ด้วย ssh -L
+  # เข้าถึงเว็บของเครื่อง 10.134.64.45 ผ่านพอร์ต 8000 ของเครื่อง localhost
+
+(1) ทำ port
 {{{
 Apples-MacBook-Pro:~ Apple$ ssh   -L  8000:10.134.64.45:80   prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
@@ -13,6 +28,8 @@ prachya@webmail.crma.ac.th's password:
 Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$ 
 }}}
+
+==ขั้นตอน เข้าถึง ssh ของเครื่อง 10.134.64.45==
 
 {{{
 Apples-MacBook-Pro:~ Apple$ ssh -p 8022 prachya@localhost 
