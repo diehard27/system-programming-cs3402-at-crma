@@ -1,4 +1,4 @@
-#summary AssignmentSummary
+#summary สรุปผลการส่งงานมอบ
 
 = Assignment Summary =
 
