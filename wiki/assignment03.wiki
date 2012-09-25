@@ -1,13 +1,4 @@
 #summary Asssignment 3
-[CourseSchedule2555_2 กลับไปหน้าหลัก]
-
-<table border="1" bgcolor="#00FFFF">
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-</table>
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->
+<table width=500>
+<td>
