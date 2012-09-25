@@ -44,7 +44,8 @@ http://www.akadia.com/img/ssh_putty_1.gif
 (2) ssh ไปยัง localhost:8022 
 {{{
 Apple$ ssh -p 8022 prachya@localhost 
-The authenticity of host '[localhost]:8022 ([127.0.0.1]:8022)' can't be established.
+The authenticity of host '[localhost]:8022 ([127.0.0.1]:8022)' 
+can't be established.
 RSA key fingerprint is cc:0e:0a:cb:1a:3d:d2:06:a2:b9:df:87:36:86:ef:b7.
 Are you sure you want to continue connecting (yes/no)? yes
 
