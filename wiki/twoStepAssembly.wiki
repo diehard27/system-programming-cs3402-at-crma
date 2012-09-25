@@ -13,7 +13,7 @@ nano hello.s
 โปรแกรมภาษาแอสเซมบลี้ในไฟล์ hello.s เป็นดังนี้
 {{{
 .text
-                           .global _start _start:
+                           .global _start
 
         movl $len,%edx # third argument: message length
         movl $msg,%ecx # second argument: pointer to message to write
