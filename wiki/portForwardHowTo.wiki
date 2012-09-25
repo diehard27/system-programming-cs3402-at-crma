@@ -14,7 +14,7 @@
   # ทำ port forward ระหว่างเครื่อง localhost กับเครื่อง webmail ด้วย ssh -L
   # เข้าถึงเว็บของเครื่อง 10.134.64.45 ผ่านพอร์ต 8000 ของเครื่อง localhost
 
-(1) ทำ port forward (localhost:8000<==>webmail:22<==>10.134.64.45:80)
+(1) ทำ port forward (localhost:8000<==>webmail:22<==>10.134.64.45:80) ป้อนรหัสผ่านตามปกติ และให้ทิ้ง session ค้างไว้ขณะใช้งาน
 {{{
 Apples-MacBook-Pro:~ Apple$ ssh   -L  8000:10.134.64.45:80   prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
@@ -27,7 +27,7 @@ Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
   # ทำ port forward ระหว่างเครื่อง localhost พอร์ต 8022 กับ webmail ssh session โดยให้ทำ tunnel ไปยังเครื่อง 10.134.64.45 พอร์ต 22
   # ล็อกอินเข้าที่เครื่อง localhost:8022 ฟังก์ชัน port forward จะทำการเชื่อมต่อไปยัง intranet โดยอัตโนมัติ
 
-(1) ทำ port forward (localhost:8022<==>webmail:22<==>10.134.64.45:22)
+(1) ทำ port forward (localhost:8022<==>webmail:22<==>10.134.64.45:22) ป้อนรหัสผ่านตามปกติ และให้ทิ้ง session ค้างไว้ขณะใช้งาน
 {{{
 apples-macbook-pro:~ Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
