@@ -17,7 +17,7 @@
 
 (1) ทำ port forward (localhost:8000<==>webmail:22<==>10.134.64.45:80) ป้อนรหัสผ่านตามปกติ และให้ทิ้ง session ค้างไว้ขณะใช้งาน
 {{{
-Apples-MacBook-Pro:~ Apple$ ssh   -L  8000:10.134.64.45:80   prachya@webmail.crma.ac.th
+Apple$ ssh -L 8000:10.134.64.45:80   prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
 Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$
@@ -30,7 +30,7 @@ Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 
 (1) ทำ port forward (localhost:8022<==>webmail:22<==>10.134.64.45:22) ป้อนรหัสผ่านตามปกติ และให้ทิ้ง session ค้างไว้ขณะใช้งาน
 {{{
-apples-macbook-pro:~ Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
+Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
 Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$ 
@@ -38,7 +38,7 @@ Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 
 (2) ssh ไปยัง localhost:8022 
 {{{
-Apples-MacBook-Pro:~ Apple$ ssh -p 8022 prachya@localhost 
+Apple$ ssh -p 8022 prachya@localhost 
 The authenticity of host '[localhost]:8022 ([127.0.0.1]:8022)' can't be established.
 RSA key fingerprint is cc:0e:0a:cb:1a:3d:d2:06:a2:b9:df:87:36:86:ef:b7.
 Are you sure you want to continue connecting (yes/no)? yes
