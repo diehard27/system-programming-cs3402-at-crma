@@ -14,14 +14,20 @@
   # ทำ port forward ระหว่างเครื่อง localhost กับเครื่อง webmail ด้วย ssh -L
   # เข้าถึงเว็บของเครื่อง 10.134.64.45 ผ่านพอร์ต 8000 ของเครื่อง localhost
 
-(1) ทำ port
+(1) ทำ port forward (localhost:8000<==>webmail:22<==>10.134.64.45:80)
 {{{
 Apples-MacBook-Pro:~ Apple$ ssh   -L  8000:10.134.64.45:80   prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
 Last login: Sat Sep 22 21:37:28 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$
 }}}
+(2) เข้าเว็บ intranet ผ่าน localhost:8000 โดยใช้บราวเซอร์ปกติ
 
+==ขั้นตอน เข้าถึง ssh ของเครื่อง 10.134.64.45==
+  # ทำ port forward ระหว่างเครื่อง localhost พอร์ต 8022 กับ webmail ssh session โดยให้ทำ tunnel ไปยังเครื่อง 10.134.64.45 พอร์ต 22
+  # ล็อกอินเข้าที่เครื่อง localhost:8022 ฟังก์ชัน port forward จะทำการเชื่อมต่อไปยัง intranet โดยอัตโนมัติ
+
+(1) ทำ port forward (localhost:8022<==>webmail:22<==>10.134.64.45:22)
 {{{
 apples-macbook-pro:~ Apple$ ssh -L 8022:10.134.64.45:22 prachya@webmail.crma.ac.th
 prachya@webmail.crma.ac.th's password: 
@@ -29,8 +35,7 @@ Last login: Sat Sep 22 21:57:38 2012 from ppp-124-121-155-4.revip2.asianet.co.th
 [prachya@webmail ~]$ 
 }}}
 
-==ขั้นตอน เข้าถึง ssh ของเครื่อง 10.134.64.45==
-
+(2) ssh ไปยัง localhost:8022 
 {{{
 Apples-MacBook-Pro:~ Apple$ ssh -p 8022 prachya@localhost 
 The authenticity of host '[localhost]:8022 ([127.0.0.1]:8022)' can't be established.
