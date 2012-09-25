@@ -23,3 +23,5 @@ mkdir   asm01
 ----
 <font color=red>Due date: 2012-09-18</font>
 ----
+
+สามารถดูผลการส่งงานได้ที่ [AssignmentSummary]
