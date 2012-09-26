@@ -33,7 +33,7 @@
 ||c21nitinu||<font color=green> C </font>||<font color=red> - </font>||
 ||c22wasawa||<font color=orange> L </font>||<font color=red> - </font>||
 ||c23thanaw||<font color=green> C </font>||<font color=red> - </font>||
-||c24puchon||<font color=red> - </font>||<font color=red> - </font>||
+||c24puchon||<font color=orange> L </font>||<font color=red> - </font>||
 ||c25apichi||<font color=green> C </font>||<font color=red> - </font>||
 ||c26jatupo||<font color=orange> L </font>||<font color=red> - </font>||
 ||c27sinlap||<font color=red> - </font>||<font color=red> - </font>||
