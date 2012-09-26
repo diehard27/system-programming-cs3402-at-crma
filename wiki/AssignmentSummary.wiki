@@ -39,4 +39,4 @@
 ||c27sinlap||<font color=red> - </font>||<font color=red> - </font>||
 ||c28nophan||<font color=orange> L </font>||<font color=green> C </font>||
 ||c29wuttic||<font color=red> - </font>||<font color=red> - </font>||
-||c30chaiya||<font color=red> L </font>||<font color=green> I </font>||
+||c30chaiya||<font color=red> L </font>||<font color=darkyellow> I </font>||
