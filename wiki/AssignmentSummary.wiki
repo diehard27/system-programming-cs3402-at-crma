@@ -10,7 +10,7 @@
  * <font color=red> - </font> = <font color=red> None </font>
 
 ||User Name||Assignment 1||Assignment 2||
-||c01aekbur||<font color=green> C </font>||<font color=red> - </font>||
+||c01aekbur||<font color=green> C </font>||<font color=green> C </font>||
 ||c02sanwut||<font color=green> C </font>||<font color=red> - </font>||
 ||c03tassap||<font color=green> C </font>||<font color=red> - </font>||
 ||c04piyana||<font color=green> C </font>||<font color=red> - </font>||
@@ -25,7 +25,7 @@
 ||c13hasana||<font color=green> C </font>||<font color=red> - </font>||
 ||c14jirawa||<font color=green> C </font>||<font color=red> - </font>||
 ||c15athiwa||<font color=green> C </font>||<font color=red> - </font>||
-||c16kittis||<font color=darkyellow> I </font>||<font color=darkyellow> I I  </font>||
+||c16kittis||<font color=darkyellow> I </font>||<font color=darkyellow> I  </font>||
 ||c17piyana||<font color=green> C </font>||<font color=red> - </font>||
 ||c18chinna||<font color=red> - </font>||<font color=red> - </font>||
 ||c19thanan||<font color=green> C </font>||<font color=red> - </font>||
