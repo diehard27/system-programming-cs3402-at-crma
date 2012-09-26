@@ -35,7 +35,7 @@
 ||c23thanaw||<font color=green> C </font>||<font color=red> - </font>||
 ||c24puchon||<font color=red> - </font>||<font color=red> - </font>||
 ||c25apichi||<font color=green> C </font>||<font color=red> - </font>||
-||c26jatupo||<font color=red> - </font>||<font color=red> - </font>||
+||c26jatupo||<font color=orange> L </font>||<font color=red> - </font>||
 ||c27sinlap||<font color=red> - </font>||<font color=red> - </font>||
 ||c28nophan||<font color=orange> L </font>||<font color=green> C </font>||
 ||c29wuttic||<font color=red> - </font>||<font color=red> - </font>||
