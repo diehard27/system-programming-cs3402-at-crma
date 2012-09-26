@@ -5,7 +5,7 @@
 
 <h4> Legend </h4>
  * <font color=green> C </font> = <font color=green> Complete </font>
- * <font color=magenta> I </font> = <font color=yellow> Incomplete </font>
+ * <font color=darkyellow> I </font> = <font color=darkyellow> Incomplete </font>
  * <font color=orange> L </font> = <font color=orange> Late </font>
  * <font color=red> - </font> = <font color=red> None </font>
 
