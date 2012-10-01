@@ -135,8 +135,72 @@ done
 สคริปต์นี้เรียกใช้โปรแกรม lpr ซึ่งจะส่งรายชื่อของไฟล์ด้วยการใช้ RE (regular expression)
 
 ===while loop===
+while เป็นคำสั่งในการวนลูปคล้ายกับ for แต่ผู้ใช้สามารถกำหนดเงื่อนไขในการหยุดการวนซ้ำได้ตามต้องการไม่จำเป็นต้องไล่ไปตามลิสต์ที่กำหนดไว้ล่วงหน้าเหมือน for การใช้ while มีรูปแบบดังนี้
+{{{
+while conditions
+do
+	statements
+done
+}}}
+ตัวอย่างต่อไปเป็นการใช้ลูป while ร่วมกับการทดสอบเงื่อนไขและการประมวลผลตัวเลข
+{{{
+#!/bin/bash
+#while1.sh - by pyavincy@gmail.com
+c=1
+while [ "$c" -le 20 ]
+do
+	echo "Counting $c"
+	c=$(($c+1))
+done
+exit 0
+}}}
 ===until loop===
+การใช้งาน until เป็นการควบคุมลูปคล้ายกับ while ต่างกันที่ until จะทดสอบเงื่อนไขหลังจากทำคำสั่ง done แล้วแต่ while จะทดสอบเงื่อนไขก่อนคำสั่ง do ตัวอย่างของการใช้ until มีดังนี้
+{{{
+until who | grep "$1" > /dev/null
+do
+	sleep 10
+done
+echo -e \\a
+echo "$1 has just logged in!!""
+exit 0
+}}}
+สคริปต์นี้จะทำงานไปเรื่อย ๆ จนกว่าจะมีคนล็อกอิน แล้วจะส่งสัญญาณเป็น ASCII ของ alert (bell) ด้วยการใช้ -e ร่วมกับเครื่องหมาย \ (backslash) คือ -e \\a  หรือบางครั้งเรียกว่า escaped characters เช่น \a = alert(bell), \b = backspace, \c suppress trailing newline, \f = form feed, \n = new line, \r = carriage return, \t horizontal tab, \v = vertical tab, \\ = backslash เป็นต้น
+
 ===case===
+	ถึงแม้ว่าในการควบคุมทางเลือกของโปรแกรมจะสามารถใช้ if .. elif .. else .. fi ได้ก็ตาม หากมีทางเลือกหลายทางและมีความจำเป็นต้องประเมินเงื่อนไขที่ซับซ้อนขึ้น การใช้ case .. esac จะช่วยให้ผู้เขียนโปรแกรมมีความสะดวกมากขึ้น  รูปแบบของการใช้ case มีดังนี้
+{{{
+case variable in values
+    pattern [ | pattern] ...) statements;;
+    pattern [ | pattern] ...) statements;;
+    ...
+esac
+}}}
+ตัวอย่างต่อไปนี้เป็นการใช้งาน case ในการสร้างทางเลือกให้กับผู้ใช้
+{{{
+#!/bin/bash
+echo "Is it morning? Pleas answer yes or no"
+read answ
+case "$answ" in
+   "yes") echo "Good Morning";;
+   "no") echo "Good Afternoon";;
+   "y") echo "Good Morning";;
+   "n") echo "Good Afternoon";;
+   * ) echo "Sorry, answer not recognized";;
+esac
+}}}
+เครื่องหมาย * ใช้เป็นค่า default สำหรับตัวเลือก  ตัวอย่างต่อไปเป็นการปรับปรุงสคริปต์ให้เรียบง่ายและเข้าใจได้ง่ายขึ้น
+{{{
+#!/bin/bash
+echo "Is it morning? Please answer yes or no"
+read answ
+case "$answ" in
+    "yes" | "y" | "Yes" | "YES" ) echo "Good Morning";;
+    "no" | "n" | "N" )  echo "Good Afternoon";;
+    * ) echo "Sorry, anwser not recognized";;
+esac
+exit 0
+}}}
 ==โอเปอเรเตอร์ทางตรรก AND และ OR==
 
 
