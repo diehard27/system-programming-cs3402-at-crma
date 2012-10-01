@@ -23,6 +23,9 @@ $ if [ $string1 = $string2 ]; then
 > else
 > echo "Strings are different"
 > fi
+}}}
+ผลลัพธ์
+{{{
 Strings are different
 }}}
 
@@ -55,8 +58,49 @@ $ if [ $num1 -gt $num2 ]; then
 นอกจากนั้นแล้วยังสามารถใช้เครื่องหมายวงเล็บสองชั้น เช่น ((c=c+1)) หรือ ((X<5)) เพื่อช่วยในการประมวลผลทางคณิตศาสตร์ของสตริงให้เป็นแบบตัวเลข
 
 ==โครงสร้างการควบคุม==
+โครงสร้างการควบคุม (control structures) เป็นคำสั่งที่เกี่ยวข้องกับการกำหนดทิศทาง หรือขั้นตอนการทำงานของโปรแกรม ซึ่งสามารถใช้คำสั่ง if, else if, for, while, until, หรือ case ได้ตามรายละเอียดและตัวอย่างต่อไปนี้
 ===if===
+if ใช้สำหรับกำหนดเงื่อนไขให้โปรแกรมทำงานตามเงื่อนไขที่กำหนด มีรูปแบบการใช้งานที่ง่ายและเป็นไปตามธรรมชาติความเข้าใจของภาษา
+{{{
+if conditions
+then
+	statement
+else
+	statements
+fi
+}}}
+ตัวอย่าง
+{{{
+#!/bin/bash
+echo "Is it morning? Please answer yes or no"
+read answ
+if [$answ = "yes" ]; then
+	echo "Good morning na ja"
+else
+	echo "Good afternoon na ka"
+fi
+exit 0
+}}}
+สคริปต์ดังกล่าวตรวจสอบค่าของ $answ ว่าผู้ใช้ตอบกลับมาเป็น yes หรือไม่ และถ้าไม่ตอบ yes เราไม่จำเป็นต้องตรวจสอบว่าเป็น no ซึ่งจะเข้าอยู่ในเงื่อนไขของ else
+
 ===elif===
+elif ย่อมาจาก else-if ใช้กรณีที่มีเงื่อนไขที่มากกว่าสอง และใช้อยู่ภายในกรอบ if...fi ตามตัวอย่างต่อไปนี้
+{{{
+#!/bin/bash
+echo "Is it morning? Please answer yes or no"
+read answ
+if [$answ = "yes" ]; then
+	echo "Good morning na ja"
+elif [$answ = "no" ]; then
+	echo "Good afternoon na ka"
+else
+	echo "Please enter only yes or no"
+	exit 1
+fi
+exit 0
+}}}
+จากตัวอย่างการใช้ elif ข้างต้นจะเห็นได้ว่ามีเงื่อนไขที่มากกว่าตัวอย่างที่ผ่านมาซึ่งผู้เขียนโปรแกรมต้องการให้มีสามเงื่อนไข คำสั่ง exit 1 ให้ค่ากลับไปที่ shell เพื่อบอกให้รู้ว่ามีข้อผิดพลาดเกิดขึ้นในการใส่อินพุท
+
 ===for loop===
 ===while loop===
 ===until loop===
