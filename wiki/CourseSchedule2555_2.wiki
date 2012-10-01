@@ -77,7 +77,7 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 || ๖ || อ. ๒ ต.ค. ๕๕ || [shellScriptProg3 การเขียนโปรแกรมเชลล์สคริปต์ 3] {while loop, until loop, if, else, elif, case, โอเปอเรเตอร์ทางตรรก AND, OR} || [assignment03 งานมอบ ๓] || ||
 || ๗ || พฤ. ๔ ต.ค. ๕๕ || [functionInShell ฟังก์ชันในเชลล์สคริปต์]	  || || ||
 || ๘ || อ. ๙ ต.ค. ๕๕ || ทูลในการพัฒนาโปรแกรม || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> ||  <font color='red'>สอบโดย อจ. ครั้งที่ ๒</font> ||
-|| ๙ || พฤ. ๑๑ ต.ค. ๕๕ || โครงสร้างของ Makefile   || || ||		
+|| ๙ || พฤ. ๑๑ ต.ค. ๕๕ || โครงสร้างของ Makefile   || ส่งงานมอบ ๓|| ||		
 || ๑๐ || อ. ๑๖ ต.ค. ๕๕ || การควบคุมซอร์สโค้ด || [assignment04 งานมอบ ๔] ||||
 || ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || สภาพแวดล้อมบนยูนิกซ์  || || ||
 ||  || *๒๒-๒๖ ต.ค. ๕๕* || <font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font>	|| || ||
