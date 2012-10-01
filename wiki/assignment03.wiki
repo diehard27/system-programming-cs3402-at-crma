@@ -3,7 +3,7 @@
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]
 ----
-<font color=red>Due date: อังคาร 16 ต.ค.55 </font>
+<font color=red>Due date: พฤหัสฯ 11 ต.ค.55 </font>
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45
   # เปลี่ยนไดเร็กทอรี่ไปที่ /var/www/cXXYYYYYY (<font color=red>แทน cXXYYYYYY ด้วยชื่อล็อกอิน</font>) ด้วยคำสั่ง cd  /var/www/cXXYYYYYY
   # สร้างไดเร็กทอรี่ asm03 ด้วยคำสั่ง mkdir  asm03
