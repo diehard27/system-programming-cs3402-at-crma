@@ -1,10 +1,10 @@
 #summary การเขียนโปรแกรมด้วยเชลล์สคริปต์ (ต่อ)
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]
-
+----
 <table width=500>
 <td>
 <wiki:toc max_depth="3" />
-
+----
 ==การเปรียบเทียบสตริง==
 การเปรียบเทียบสตริง เป็นไปตามการกำหนดเงื่อนไขต่อไปนี้
 
