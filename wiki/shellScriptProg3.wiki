@@ -14,6 +14,8 @@
 ||-n str1||เป็นจริงถ้า str1 ไม่เป็น null||
 ||-z str1||เป็นจริงถ้า str1 เป็น null||
 
+<font color=red>หมายเหตุ: </font> ต้องเว้น 1 space หลัง "if [ " และ 1 space ก่อนปิดวงเล็บ " ]"
+
 ตัวอย่าง
 {{{
 $ string1="Yahoo"
@@ -74,7 +76,7 @@ fi
 #!/bin/bash
 echo "Is it morning? Please answer yes or no"
 read answ
-if [$answ = "yes" ]; then
+if [ $answ = "yes" ]; then
 	echo "Good morning na ja"
 else
 	echo "Good afternoon na ka"
@@ -89,7 +91,7 @@ elif ย่อมาจาก else-if ใช้กรณีที่มีเง
 #!/bin/bash
 echo "Is it morning? Please answer yes or no"
 read answ
-if [$answ = "yes" ]; then
+if [ $answ = "yes" ]; then
 	echo "Good morning na ja"
 elif [$answ = "no" ]; then
 	echo "Good afternoon na ka"
@@ -213,7 +215,7 @@ elif [ -f file_C ]; then
 else
 	answ="False"
 fi
-if [ "$answ" = "True" ]; then
+if [  "$answ" = "True" ]; then
 	echo "At least one of the file exists"
 else
 	echo "No specified files found"
