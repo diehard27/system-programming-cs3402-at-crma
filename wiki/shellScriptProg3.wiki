@@ -10,4 +10,13 @@
 ==การเปรียบเทียบค่าทางคณิตศาสตร์==
 
 ==โครงสร้างการควบคุม==
-===การใช้ if ===
+===if===
+===elif===
+===for loop===
+===while loop===
+===until loop===
+===case===
+==โอเปอเรเตอร์ทางตรรก AND และ OR==
+
+
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[functionInShell ฟังก์ชัน]
