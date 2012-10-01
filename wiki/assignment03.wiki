@@ -9,6 +9,6 @@
   # สร้างไดเร็กทอรี่ asm03 ด้วยคำสั่ง mkdir  asm03
   # ใช้เอดิเตอร์ nano หรือ vi สร้างไฟล์ชื่อ [daysTxt days.txt] โดยให้แต่ละบรรทัดมีชื่อวัน Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
   # เขียนเชลล์สคริปต์ชื่อ for.sh ด้วยคำสั่ง <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/shellScriptProg3#for_loop">for</a> ให้แสดงชื่อวันทั้งเจ็ด
-  # เขียนเชลล์สคริปต์ชื่อ while.sh ด้วยคำสั่ง while ให้แสดงชื่อวันทั้งเจ็ด
-  # เขียนเชลล์สคริปต์ชื่อ until.sh ด้วยคำสั่ง until ให้แสดงชื่อวันทั้งเจ็ด
+  # เขียนเชลล์สคริปต์ชื่อ while.sh ด้วยคำสั่ง <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/shellScriptProg3#while_loop">while</a> ให้แสดงชื่อวันทั้งเจ็ด
+  # เขียนเชลล์สคริปต์ชื่อ until.sh ด้วยคำสั่ง <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/shellScriptProg3#until_loop">until</a> ให้แสดงชื่อวันทั้งเจ็ด
   # เขียนเชลล์สคริปต์ชื่อ count.sh ด้วยคำสั่ง for หรือ while ให้แสดงชื่อวันทั้งเจ็ด และให้ตั้งตัวแปรชื่อ count ภายในลูปให้เป็นตัวนับ และเมื่อออกจากลูปให้แสดงค่าของ count 
