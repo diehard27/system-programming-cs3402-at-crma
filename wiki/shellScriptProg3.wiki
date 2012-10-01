@@ -14,7 +14,7 @@
 ||-n str1||เป็นจริงถ้า str1 ไม่เป็น null||
 ||-z str1||เป็นจริงถ้า str1 เป็น null||
 
-<font color=red>หมายเหตุ: </font> ต้องเว้น 1 space หลัง "if [ " และ 1 space ก่อนปิดวงเล็บ " ]"
+<font color=red>หมายเหตุ: </font> ต้องเว้น 1 space หลัง "if [" และ 1 space ก่อนปิดวงเล็บ " ]"
 
 ตัวอย่าง
 {{{
