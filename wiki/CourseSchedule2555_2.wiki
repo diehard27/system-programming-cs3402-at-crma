@@ -71,7 +71,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๔ || อ. ๒๕ ก.ย. ๕๕ || การทำ port forward,  การเขียนโปรแกรมบนเชลล์ 2 {{{{arguments $#, $*, $0, for loop, let, expression evaluation}}}} || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๑</font> ||
 || ๕ || พฤ. ๒๗ ก.ย. ๕๕ ||[intermediateLinux การใช้งานลิหนิกซ์ขั้นกลาง] (ร.ต.ณรงค์) || || ||
 
-http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg
+http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๖ || อ. ๒ ต.ค. ๕๕ || การเขียนโปรแกรมเชลล์สคริปต์ 3 {while loop, until loop, if, else, elif, case, โอเปอเรเตอร์ทางตรรก AND, OR} || [assignment03 งานมอบ ๓] || ||
