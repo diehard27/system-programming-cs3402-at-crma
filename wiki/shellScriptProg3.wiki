@@ -3,7 +3,7 @@
 
 <table width=500>
 <td>
-<wiki:toc max_depth="2" />
+<wiki:toc max_depth="3" />
 
 ==การเปรียบเทียบสตริง==
 
