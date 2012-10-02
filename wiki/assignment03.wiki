@@ -13,4 +13,4 @@
   # เขียนเชลล์สคริปต์ชื่อ until.sh ด้วยคำสั่ง <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/shellScriptProg3#until_loop">until</a> ให้แสดงชื่อวันทั้งเจ็ด
   # เขียนเชลล์สคริปต์ชื่อ count.sh ด้วยคำสั่ง for หรือ while ให้แสดงชื่อวันทั้งเจ็ด และให้ตั้งตัวแปรชื่อ count ภายในลูปให้เป็นตัวนับ และเมื่อออกจากลูปให้แสดงค่าของ count 
 
-<wiki:gadget url="http://www.google.com/ig/directory?type=gadgets&url=www.google.com/ig/modules/calendar3.xml" />
+<wiki:gadget url="http://www.google.com/ig/directory?type=gadgets&url=www.google.com/ig/modules/calendar3.xml" >
