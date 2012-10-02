@@ -93,7 +93,7 @@ echo "Is it morning? Please answer yes or no"
 read answ
 if [ $answ = "yes" ]; then
 	echo "Good morning na ja"
-elif [$answ = "no" ]; then
+elif [ $answ = "no" ]; then
 	echo "Good afternoon na ka"
 else
 	echo "Please enter only yes or no"
