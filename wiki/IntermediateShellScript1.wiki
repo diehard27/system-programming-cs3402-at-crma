@@ -74,4 +74,4 @@ echo "</html>"
 {{{
 $ ./users2.sh  > users2.html
 }}}
-จะได้ผลลัพธ์ดังแสดงในลิงค์ [http://10.134.64.45/prachya/shell/intermediate/users1.html users2.html]
+จะได้ผลลัพธ์ดังแสดงในลิงค์ [http://10.134.64.45/prachya/shell/intermediate/users2.html users2.html]
