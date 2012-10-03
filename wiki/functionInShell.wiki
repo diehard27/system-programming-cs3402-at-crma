@@ -1,5 +1,5 @@
 #summary ฟังก์ชั่นในเชลล์สคริปต์
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [IntermediateShellScript1 การโปรแกรมเชลล์ขั้นกลาง]
 
 <table width=500>
 <td>
@@ -143,3 +143,5 @@ ____.____Started subfunc()
 ==แบบฝึกหัด==
 
 ==อ้างอิง==
+
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [IntermediateShellScript1 การโปรแกรมเชลล์ขั้นกลาง]
