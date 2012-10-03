@@ -38,5 +38,20 @@ Sine(90 degrees)=.99999999999999999838
 ===สร้างหน้าเว็บอัตโนมัติด้วยเชลล์สคริปต์===
 ตัวอย่างต่อไปนี้เป็นการสร้างหน้าเว็บ แบบอัตโนมัติ โดยจะทำการอ่านไฟล์รายชื่อผู้ใช้จาก /etc/passwd จากนั้นนำมาแปลงให้อยู่ในฟอร์แม็ตของ HTML Tags
 {{{
-
+#!/bin/bash
+#LOGIN:PWD:UID:GID:COMMENT:HOME:SHELL
+#c30chaiya:x:5530:5500::/home/c30chaiya:/bin/bash
+j=1
+echo "<html>"
+echo "NO:LOGIN:PWD:UID:GID:COMMENT:HOME:SHELL<br>"
+for i in $(cat /etc/passwd); do
+  echo "$j: $i <br>"
+  let j++
+done
+echo "</html>"
 }}}
+การนำไปใช้งานสามารถทำได้ด้วยการ redirect เอาท์พุทไปที่ไฟล์ users.html
+{{{
+$ ./users.sh  > users1.html
+}}}
+หากไฟล์นี้อยู่ที่เว็บเซอร์ฟเวอร์ก็จะสามารถเปิดดูได้ [http://10.134.64.45/prachya/shell/intermediate/users1.html ต.ย.]
