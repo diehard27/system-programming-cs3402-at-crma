@@ -12,7 +12,7 @@
 
 เป็นอาจารย์ส่วนการศึกษา โรงเรียนนายร้อยพระจุลจอมเกล้า และเป็นที่ปรึกษาด้านไอที (IT advisor) ให้บริษัทหาดทิพย์ จำกัด มหาชน ซึ่งเป็นผู้ผลิต Coca-Cola ในภาคใต้ของประเทศไทย เคยเป็นอาจารย์พิเศษในค่ายคอมพิวเตอร์โอลิมปิค มหาวิทยาลัยธรรมศาสตร์ มหาวิทยาลัยอัสสัมชัญ มหาวิทยาลัยอีสเทอร์นเอเซีย
 
-ปัจจุบันเป็นรองผู้อำนวยการกองวิชาเคมี ส่วนการศึกษา รร.จปร. และเป็นที่ปรึกษาด้านเทคนิคให้กับ กองเทคโนโลยีสารสนเทศ รร.จปร.  ติดต่อ prachya@crma.ac.th 
+ปัจจุบันเป็นรองผู้อำนวยการกองคณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา รร.จปร. และเป็นที่ปรึกษาด้านเทคนิคให้กับ กองเทคโนโลยีสารสนเทศ รร.จปร.  ติดต่อ prachya@crma.ac.th 
 
 =Selected Publications=
   * Chalermwat, Prachya; El-Ghazawi, Tarek; Le Moigne, Jacqueline, "_Image registration by parts_" [http://ntrs.nasa.gov/search.jsp?R=19980236602 NASA Technical Report] <img src='http://spacegrant.oregonstate.edu/sites/default/files/images/nasa_logo.gif' width=20>
