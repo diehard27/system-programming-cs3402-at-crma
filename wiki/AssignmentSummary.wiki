@@ -9,8 +9,8 @@
  * <font color=orange> L </font> = <font color=orange> Late </font>
  * <font color=red> - </font> = <font color=red> None </font>
 
-||User Name||Assignment 1||Assignment 2||
-||c01aekbur||<font color=green> C </font>||<font color=green> C </font>||
+||User Name||Assignment 1||Assignment 2||Assignment 3||
+||c01aekbur||<font color=green> C </font>||<font color=green> C </font>||<font color=darkyellow> I</font>||
 ||c02sanwut||<font color=green> C </font>||<font color=green> C </font>||
 ||c03tassap||<font color=green> C </font>||<font color=darkyellow> I </font>||
 ||c04piyana||<font color=green> C </font>||<font color=green> C </font>||
