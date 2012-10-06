@@ -108,3 +108,45 @@ dog        |  dog rat bat
 rat        |  rat bat
 bat        |  bat
 }}}
+
+===สร้างฟังก์ชันช่วย===
+(แหล่งที่มา http://www.shelldorado.com/shelltips/intermediate.html)
+สร้างไฟล์ func1.sh ให้มีคำสั่งต่อไปนี้
+{{{
+# Append to .bashrc or call it from there.
+# Save some typing at the command line :)
+# src: http://www.shelldorado.com/shelltips/intermediate.html
+# longlist a directory, by page
+# lo [directoryname]
+lo () {
+      if [ -d "$1" ] ; then
+         ls -al "$1" | less
+      else
+         ls -al $(pwd) | less
+      fi
+}
+
+# Same as above but recursive
+lro () {
+      if [ -d "$1" ] ; then
+         ls -alR "$1" | less
+      else
+         ls -alR $(pwd) | less
+      fi
+}
+export -f lo lro
+}}}
+
+รันคำสั่ง source เพื่อให้อ่านสคริปต์และปรับ environment variables
+{{{
+source ./func1.sh
+}}}
+
+ทดสอบเรียกฟังก์ชันจากเชลล์
+{{{
+lo /etc
+}}}
+หรือ 
+{{{
+lro /var/www
+}}}
