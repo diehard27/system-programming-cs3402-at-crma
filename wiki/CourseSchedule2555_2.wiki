@@ -100,6 +100,6 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 ==Links==
   * "GCC and Make Compiling, Linking and Building C/C++ Applications", http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
   * [portForwardHowTo วิธีการใช้ port forward ] เพื่อเปิดเว็บ/ssh เข้ามายังเครื่อง intranet 10.134.64.45 จากภายนอก CRMA
-
+  * PearlTrees - Shell Scripting - Bash, http://www.pearltrees.com/#/N-u=1_5896&N-fa=59257&N-s=1_4437849&N-f=1_4437849&N-p=36583793
 </td>
 </table>
