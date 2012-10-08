@@ -30,7 +30,7 @@
 ||c18chinna||<font color=orange> L</font> ||<font color=green> C </font>||
 ||c19thanan||<font color=green> C </font>||<font color=green> C </font>||
 ||c20kulsir||<font color=orange> L</font>||<font color=red> - </font>||
-||c21nitinu||<font color=green> C </font>||<font color=darkyellow> I</font>||
+||c21nitinu||<font color=green> C </font>||<font color=darkyellow> I</font>||<font color=green> C </font>||
 ||c22wasawa||<font color=orange> L </font>||<font color=red> - </font>||
 ||c23thanaw||<font color=green> C </font>||<font color=green> C </font>||
 ||c24puchon||<font color=orange> L </font>||<font color=red> - </font>||
