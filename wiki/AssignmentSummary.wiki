@@ -11,7 +11,7 @@
 
 ||User Name||Assignment 1||Assignment 2||Assignment 3||
 ||c01aekbur||<font color=green> C </font>||<font color=green> C </font>||
-||c02sanwut||<font color=green> C </font>||<font color=green> C </font>||
+||c02sanwut||<font color=green> C </font>||<font color=green> C </font>||<font color=green> C </font>||
 ||c03tassap||<font color=green> C </font>||<font color=darkyellow> I </font>||
 ||c04piyana||<font color=green> C </font>||<font color=green> C </font>||
 ||c05pathom||<font color=green> C </font>||<font color=darkyellow> I </font>||
