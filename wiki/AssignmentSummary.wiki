@@ -18,7 +18,7 @@
 ||c06kitsan||<font color=green> C </font>||<font color=red> - </font>||
 ||c07baworn||<font color=green> C </font>||<font color=darkyellow> I </font>||
 ||c08teerap||<font color=red> - </font>||<font color=red> - </font>||
-||c09patais||<font color=green> C </font>||<font color=red> - </font>||
+||c09patais||<font color=green> C </font>||<font color=red> - </font>||<font color=green> C </font>||
 ||c10theera||<font color=green> C </font>||<font color=green> C </font>||
 ||c11patcha||<font color=green> C </font>||<font color=red> - </font>||
 ||c12mongko||<font color=green> C </font>||<font color=green> C </font>||
