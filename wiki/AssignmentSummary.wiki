@@ -23,7 +23,7 @@
 ||c11patcha||<font color=green> C </font>||<font color=red> - </font>||
 ||c12mongko||<font color=green> C </font>||<font color=green> C </font>||
 ||c13hasana||<font color=green> C </font>||<font color=red> - </font>||
-||c14jirawa||<font color=green> C </font>||<font color=green> C </font>||<font color=darkyellow> I</font>||
+||c14jirawa||<font color=green> C </font>||<font color=green> C </font>||<font color=green> C </font>||
 ||c15athiwa||<font color=green> C </font>||<font color=green> C  </font>||
 ||c16kittis||<font color=darkyellow> I </font>||<font color=green> C </font>||
 ||c17piyana||<font color=green> C </font>||<font color=green> C </font>||<font color=green> C </font>||
