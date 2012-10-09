@@ -4,5 +4,21 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 <wiki:toc max_depth="3" />
 
+==ปัญหา==
+  * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
+
+==แนวทาง==
+===การรันคำสั่งเชลล์ผ่าน PHP===
+PHP สามารถรันคำสั่งในเชลล์ได้ และยังสามารถแสดงผลลัพธ์ของการรัน จากตัวอย่างต่อไปนี้
+{{{
+<?php
+$output = shell_exec('last');
+echo "<pre>$output</pre>";
+?>
+}}}
+===การรับอินพุทจากผู้ใช้ผ่านบราวเซอร์===
+===การรันคำสั่งใน /usr/bin และ /bin===
+
+==เชลล์สคริปต์สร้างหน้าเว็บ==
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
