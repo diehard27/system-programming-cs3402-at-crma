@@ -119,13 +119,13 @@ $ ./paramsubst2.sh
 }}}
 
 ตารางแสดงการใช้ parameter expansion
-||Parameter|| Expansion Description||
-||${param:-default}|| If param is null, set it to the value of default.||
-||${#param}|| Gives the length of param.||
-||${param%word}|| From the beginning, removes the smallest part of param that matches word and re-turns the rest.||
-||${param%%word}|| From the beginning, removes the longest part of param that matches word and re-turns the rest.||
-||${param#word}|| From the end, removes the smallest part of param that matches word and returns the rest. ||
-||${param##word}|| From the end, removes the longest part of param that matches word and returns the rest.||
+||*พารามิเตอร์ expansion*|| *คำอธิบาย*||
+||${param:-default}|| ถ้าพารามิตเรอ์เป็น null ให้เซ็ทเป็นค่า default||
+||${#param}|| ให้ความยาวของพารามิเตอร์||
+||${param%word}|| จากจุดเริ่มต้น เอาส่วนที่เหมือน word สั้นที่สุดออกจากพารามิเตอร์เดิมแล้วส่งส่วนที่เหลือเป็นผลลัพธ์||
+||${param%%word}|| จากจุดเริ่มต้นเอาส่วนที่ยาวที่สุดที่เหมือน word ออกจากพารามิเตอร์ แล้วส่งส่วนที่เหลือเป็นผลลัพธ์||
+||${param#word}|| จากสุดท้ายของพารามิเตอร์เอาส่วนที่เล็กสุดที่เหมือน word ออก||
+||${param##word}|| จากสุดท้ายของพารามิเตอร์เอาส่วนที่ยาวสุดที่เหมือน word ออก||
 
 ตัวอย่างการใช้งาน parameter expansion ในสคริปต์ paramsubst3.sh
 {{{
