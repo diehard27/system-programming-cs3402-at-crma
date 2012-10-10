@@ -1,7 +1,7 @@
 <html>
 <body>
 <table width=500><td>
-<!-- written by pyavinci@gmail.com -->
+<!-- written by Prachya Chalermwat, Ph.D.; pyavinci@gmail.com -->
 <font color=grey>
 CS3402: System Programming, pyavinci@gmail.com<br>
 <?php 
