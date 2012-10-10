@@ -38,6 +38,55 @@ $ printf "%s %d\t%s" "Hi there" 15 people
 Hi there 15 people
 }}}
 
+=คำสั่ง set และ unset =
+คำสั่ง set ตั้งค่าของพารามิเตอร์ของเชลล์ สำหรับพารามิเตอร์ที่คั่นด้วย space
+ตัวอย่างเช่น
+{{{
+set x y z
+}}} 
+จะกำหนดค่า ของ x ไปที่ $1, y ไปที่ $2 และ z ไปที่ $3
+ผลของการรันคำสั่งต่อไป
+{{{
+set x y z
+echo $2
+}}}
+จะได้ผลลัพธ์เท่ากับ
+{{{
+y
+}}}
+
+ถ้ารัน set โดยไม่มีพารามิเตอร์ จะพิมพ์ค่าของตัวแปรทั้งหมดเรียงตามลำดับอักษร เช่น
+{{{
+set |head
+}}}
+จะได้ผลลัพธ์คือ
+{{{
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:expand_aliases:extglob:extquote:force_fignore:histappend:interactive_comments:login_shell:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_COMPLETION=/etc/bash_completion
+BASH_COMPLETION_COMPAT_DIR=/etc/bash_completion.d
+BASH_COMPLETION_DIR=/etc/bash_completion.d
+BASH_LINENO=()
+}}}
+ตัวอย่างการใช้งาน
+{{{
+#! /bin/bash
+echo the date is $(date)
+set $(date)
+echo The month is $2
+exit 0
+}}}
+จะได้ผลลัพธ์เป็น
+{{{
+the date is Thu Nov 13 23:16:33 SAT 1997
+The month is Nov
+}}}
+เนื่องจากคำสั่ง date ให้ผลลัพธ์เป็น {{{Thu Nov 13 23:16:33 SAT 1997}}} ซึ่งเมื่อรันคำสั่ง {{{set $(date)}}} จะทำให้ $1=Thu, $2=Nov, ตามลำดับ ดังนั้นจึงได้ผลลัพธ์ดังตัวอย่างข้างต้น
+
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
 
