@@ -83,7 +83,7 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 
 || *๒๒-๒๖ ต.ค. ๕๕* || <font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font>	||
 
-|| ๑๒ || อ. ๖ พ.ย. ๕๕ || Subversion กับ Google Code, การโปรแกรมในภาษา Perl	|| || ||		
+|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [gcodeAndSVN Subversion กับ Google Code], การโปรแกรมในภาษา Perl	|| || ||		
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || การโปรแกรมในภาษา Perl	|| || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || การโปรแกรมในภาษา Perl	|| || ||
 || ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || Perl กับ System Programming	|| [assignment05 งานมอบ ๕]  || ||
