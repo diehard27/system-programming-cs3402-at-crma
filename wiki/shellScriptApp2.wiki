@@ -101,7 +101,7 @@ echo "<pre>$output</pre>";
 ?>
 }}}
 ===การรับอินพุทจากผู้ใช้ผ่านบราวเซอร์===
-ในส่วนนี้เราต้องการให้ผู้ใช้สามารถป้อนคำสั่งที่จะรันผ่านฟอร์มของที่หน้าบราวเซอร์ ส่วนี้สามารถใช้สคริปต์ [http://www.w3schools.com/php/php_forms.asp PHP] ที่สนับสนุนการทำงานผ่านฟอร์ม และสามารถส่งคำสั่งจากผู้ใช้ไปยังเชลล์ได้ตามโปรแกรม [http://10.134.64.45/prachya/shell/intermediate/shexec.php shexec.php]
+ในส่วนนี้เราต้องการให้ผู้ใช้สามารถป้อนคำสั่งที่จะรันผ่านฟอร์มของที่หน้าบราวเซอร์ ส่วนี้สามารถใช้สคริปต์ [http://www.w3schools.com/php/php_forms.asp PHP] ที่สนับสนุนการทำงานผ่านฟอร์ม และสามารถส่งคำสั่งจากผู้ใช้ไปยังเชลล์ได้ตามโปรแกรม 
 {{{
 <html>
 <body>
@@ -127,9 +127,44 @@ echo "<pre>$output</pre>";
 </body>
 </html>
 }}}
-===การรันคำสั่งใน /usr/bin และ /bin===
+===ปรับแต่งโปรแกรม===
+{{{
+<html>
+<body>
+<table width=500><td>
+<!-- written by pyavinci@gmail.com -->
 
-===เชลล์สคริปต์สร้างหน้าเว็บ===
+<table width=500 bgcolor=#33CC33><td>
+<form action="shexec.php" method="post">
+Command: <input type="text" name="cmd" />
+Params: <input type="text" name="params" />
+<input type="submit" />
+</form>
+</td></table>
+<hr>
+<table width=500><tr>
+<td width=200> Shell command executed :</td>
+<td bgcolor=#FF9900 widht=20></td>
+<td bgcolor=#FFCC00>
+<?php echo "  "; ?>
+<?php echo $_POST["cmd"]; ?>
+<?php echo $_POST["params"]; ?>
+</td>
+</tr></table>
+<hr>
+<table width=500 bgcolor=#CCFFCC><td>
+<?php
+$lcmd =  $_POST["cmd"]." ".$_POST["params"];
+$output = shell_exec($lcmd);
+echo "<pre>$output</pre>";
+?>
+</td></table>
+</td></table>
+</body>
+</html>
+}}}
+เพิ่มการควบคุมสีของการแสดง สามารถตรวจสอบได้จากการรัน
+[http://10.134.64.45/prachya/shell/intermediate/shexec.php shexec.php]
 
 =ปัญหา ๒=
 
