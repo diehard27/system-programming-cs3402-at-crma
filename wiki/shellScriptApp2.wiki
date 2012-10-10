@@ -3,6 +3,22 @@
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 <wiki:toc max_depth="3" />
+=คำสั่ง printf=
+คำสั่ง printf ทำงานใกล้เคียงกับคำสั่ง printf() ในภาษา C ที่เราคุ้นเคย รูปแบบคำสั่งในเชลล์เป็นดังนี้
+{{{
+printf "format string" parameter1 parameter2 ...
+}}}
+
+||Escape Sequence ||หมายเหตุ||
+||\\ ||Backslash character.||
+||\a ||Alert (rings the bell or beep).||
+||\b ||Backspace character.||
+||\f ||Form feed character.||
+||\n ||Newline character.||
+||\r ||Carriage return.||
+||\t ||Tab character.||
+||\v ||Vertical tab character.||
+||\ooo ||The single character with actual octal value ooo||
 
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
