@@ -87,7 +87,7 @@ The month is Nov
 }}}
 เนื่องจากคำสั่ง date ให้ผลลัพธ์เป็น {{{Thu Nov 13 23:16:33 SAT 1997}}} ซึ่งเมื่อรันคำสั่ง {{{set $(date)}}} จะทำให้ $1=Thu, $2=Nov, ตามลำดับ ดังนั้นจึงได้ผลลัพธ์ดังตัวอย่างข้างต้น
 
-=การจัดการพารามิเตอร์=
+=การจัดการพารามิเตอร์ expansion=
 จากตัวอย่างเชลล์สคริปต์ paramsubst.sh
 {{{
 #!/bin/bash
@@ -118,6 +118,14 @@ $ ./paramsubst2.sh
 3
 }}}
 
+ตารางแสดงการใช้ parameter expansion
+||Parameter|| Expansion Description||
+||${param:-default}|| If param is null, set it to the value of default.||
+||${#param}|| Gives the length of param.||
+||${param%word}|| From the beginning, removes the smallest part of param that matches word and re-turns the rest.||
+||${param%%word}|| From the beginning, removes the longest part of param that matches word and re-turns the rest.||
+||${param#word}|| From the end, removes the smallest part of param that matches word and returns the rest. ||
+||${param##word}|| From the end, removes the longest part of param that matches word and returns the rest.||
 
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
