@@ -127,6 +127,35 @@ $ ./paramsubst2.sh
 ||${param#word}|| From the end, removes the smallest part of param that matches word and returns the rest. ||
 ||${param##word}|| From the end, removes the longest part of param that matches word and returns the rest.||
 
+ตัวอย่างการใช้งาน parameter expansion ในสคริปต์ paramsubst3.sh
+{{{
+#!/bin/bash
+unset foo
+echo ${foo:-bar}
+
+foo=fud
+echo ${foo:-bar}
+
+foo=/usr/bin/X11R6/startx
+echo ${foo#*/}
+echo ${foo##*/}
+
+bar=/usr/local/etc/local/networks
+echo ${bar%local*}
+echo ${bar%%local*}
+exit 0
+}}}
+ซึ่งจะให้ผลการรันดังนี้
+{{{
+$  ./paramsubst3.sh
+bar
+fud
+usr/bin/X11R6/startx
+startx
+/usr/local/etc/
+/usr/
+}}}
+
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
 
