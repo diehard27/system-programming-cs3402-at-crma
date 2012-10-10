@@ -87,6 +87,38 @@ The month is Nov
 }}}
 เนื่องจากคำสั่ง date ให้ผลลัพธ์เป็น {{{Thu Nov 13 23:16:33 SAT 1997}}} ซึ่งเมื่อรันคำสั่ง {{{set $(date)}}} จะทำให้ $1=Thu, $2=Nov, ตามลำดับ ดังนั้นจึงได้ผลลัพธ์ดังตัวอย่างข้างต้น
 
+=การจัดการพารามิเตอร์=
+จากตัวอย่างเชลล์สคริปต์ paramsubst.sh
+{{{
+#!/bin/bash
+echo 1 > 1_temp
+echo 2 > 2_temp
+echo 3 > 3_temp
+for i in 1 2 3
+do
+  cat $i_temp
+done
+}}}
+จะเกิดปัญหารการรันค้างเนื่องจากเชลล์นึกว่าให้ส่งพารามิเตอร์ชื่อว่า {{{i_temp}}} แทนที่จะใช้ตัวแปร i ไปให้โปรแกรม cat และจะไม่แสดงผลลัพธ์ใด ๆ วิธีแก้ไขคือการใช้วงเล็บปีกกาใหญ่ช่วยทำให้การระบุการใช้ตัวแปรให้ชัดเจนดังตัวอย่างโปรแกรม paramsubst2.sh
+{{{
+#!/bin/bash
+echo 1 > 1_temp
+echo 2 > 2_temp
+echo 3 > 3_temp
+for i in 1 2 3
+do
+  cat ${i}_temp
+done
+}}}
+ซึ่งจะให้ผลลัพธ์ตามต้องการดังนี้
+{{{
+$ ./paramsubst2.sh
+1
+2
+3
+}}}
+
+
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
 
@@ -167,7 +199,5 @@ echo "<pre>$output</pre>";
 [http://10.134.64.45/prachya/shell/intermediate/shexec.php shexec.php]
 
 https://dl.dropbox.com/u/37142998/2012%20System%20Programming/Figures/shexec-screen.png
-
-=ปัญหา ๒=
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
