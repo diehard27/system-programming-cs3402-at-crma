@@ -27,6 +27,7 @@ printf "format string" parameter1 parameter2 ...
 ||c|| ตัวอักษร||
 ||s|| สตริง||
 ||%|| เครื่องหมาย % ||
+
 {{{
 $ printf "%s\n" hello
 hello
