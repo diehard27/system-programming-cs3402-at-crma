@@ -20,6 +20,23 @@ printf "format string" parameter1 parameter2 ...
 ||\v ||Vertical tab character.||
 ||\ooo ||The single character with actual octal value ooo||
 
+ตัวอย่างของตัวกำหนดค่าที่ใช้บ่อย
+
+||กำหนดค่าตัวแปร|| หมายเหตุ||
+||d|| เลขจำนวนเต็ม||
+||c|| ตัวอักษร||
+||s|| สตริง||
+||%|| เครื่องหมาย % ||
+{{{
+$ printf "%s\n" hello
+hello
+}}}
+อีกตัวอย่างของการใช้ printf
+{{{
+$ printf "%s %d\t%s" "Hi there" 15 people
+Hi there 15 people
+}}}
+
 =ปัญหา ๑=
   * ต้องการสร้างหน้าเว็บที่รับอินพุทจากผู้ใช้ เพื่อรันคำสั่งในเชลล์
 
