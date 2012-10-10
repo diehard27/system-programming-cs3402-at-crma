@@ -49,7 +49,4 @@
 
 
 [--------Test Spreadsheet embed version-----------]
-<iframe width='500' height='300' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0AmhtUDfqi6-wdFFja2w2TlhydnJOTGtGZkpBLXNDRmc&output=html&widget=true'></iframe>
-
-
-
+<wiki:gadget url="https://docs.google.com/spreadsheet/pub?key=0AmhtUDfqi6-wdFFja2w2TlhydnJOTGtGZkpBLXNDRmc&output=html&widget=true" width="500" height="300" />
