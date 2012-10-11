@@ -81,7 +81,7 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 || ๑๐ || อ. ๑๖ ต.ค. ๕๕ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
 || ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || แนะนำ Perl, ทบทวนก่อนสอบระหว่างภาค  || || ||
 
-<table><tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td><td><font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font></td></tr></table>
+<table border=1><tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td><td><font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font></td></tr></table>
 
 || ๑๒ || อ. ๖ พ.ย. ๕๕ || [gcodeAndSVN Subversion กับ Google Code], การโปรแกรมในภาษา Perl	|| || ||		
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || การโปรแกรมในภาษา Perl	|| || ||
