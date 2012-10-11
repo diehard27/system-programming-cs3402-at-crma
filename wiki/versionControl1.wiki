@@ -6,6 +6,6 @@
 ----
 
 ==References==
-  * คู่มือ http://www.coe.phuket.psu.ac.th/guide/svn_guide_student_coe/
+  * คู่มือการใช้งาน SVN Client, PSU, http://www.coe.phuket.psu.ac.th/guide/svn_guide_student_coe/
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
