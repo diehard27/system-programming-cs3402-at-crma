@@ -14,7 +14,7 @@
     * Tortoise, http://tortoisehg.bitbucket.org/ ผู้ใช้บนวินโดวส์นิยมใช้กันมาก
 
 =การใช้ Subversion=
-<img src=http://subversion.apache.org/images/svn-square.jpg width=100>
+<a href= http://subversion.apache.org/><img src=http://subversion.apache.org/images/svn-square.jpg width=100></a>
 
 ==Project members==
 สมาชิกของโปรเจ็ค สามารถ checkout ซอร์สโค้ดไปจากที่เก็บไฟล์ของโปรเจ็คบน Google Code ได้ด้วยโปรแกรม Subversion โดยเรียกคำสั่ง svn checkout .... 
@@ -31,13 +31,13 @@ svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ 
 }}}
 
 =Git=
-http://git-scm.com/images/logo.png
+<a href= http://git-scm.com/><img src=http://git-scm.com/images/logo.png></a>
 
 =Mercurial=
-<img src=http://www.selenic.com/hg-logo/logo-droplets-200.png width=100>
+<a href=http://mercurial.selenic.com/><img src=http://www.selenic.com/hg-logo/logo-droplets-200.png width=100></a>
 
 =Tortoise=
-<img src=http://tortoisehg.bitbucket.org/css/img/logo.png width=200>
+<a href=http://tortoisehg.bitbucket.org/><img src=http://tortoisehg.bitbucket.org/css/img/logo.png width=200></a>
 
 =References=
   * คู่มือการใช้งาน SVN Client, PSU, http://www.coe.phuket.psu.ac.th/guide/svn_guide_student_coe/
