@@ -29,6 +29,7 @@ svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ 
 }}}
 
 =Git=
+http://git-scm.com/images/logo.png
 
 =Mercurial=
 
