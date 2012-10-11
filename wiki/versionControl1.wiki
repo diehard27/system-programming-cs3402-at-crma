@@ -32,7 +32,8 @@ svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ 
 }}}
 
 =Git=
-<a href= 'http://git-scm.com/'><img src='http://git-scm.com/images/logo.png'>
+<a href= 'http://git-scm.com/'>
+<img src='http://git-scm.com/images/logo.png'>
 </a>
 
 =Mercurial=
