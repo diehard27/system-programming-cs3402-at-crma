@@ -14,8 +14,8 @@
     * Tortoise, http://tortoisehg.bitbucket.org/ ผู้ใช้บนวินโดวส์นิยมใช้กันมาก
 
 =การใช้ Subversion=
-<a href= http://subversion.apache.org/>
-<img src=http://subversion.apache.org/images/svn-square.jpg width=100></a>
+<a href= http://subversion.apache.org/>Subversion</a>
+<img src=http://subversion.apache.org/images/svn-square.jpg width=100>
 
 ==Project members==
 สมาชิกของโปรเจ็ค สามารถ checkout ซอร์สโค้ดไปจากที่เก็บไฟล์ของโปรเจ็คบน Google Code ได้ด้วยโปรแกรม Subversion โดยเรียกคำสั่ง svn checkout .... 
