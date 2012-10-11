@@ -37,7 +37,7 @@ http://git-scm.com/images/logo.png
 <img src=http://www.selenic.com/hg-logo/logo-droplets-200.png width=100>
 
 =Tortoise=
-<img src=http://tortoisehg.bitbucket.org/css/img/logo.png width=100>
+<img src=http://tortoisehg.bitbucket.org/css/img/logo.png width=200>
 
 =References=
   * คู่มือการใช้งาน SVN Client, PSU, http://www.coe.phuket.psu.ac.th/guide/svn_guide_student_coe/
