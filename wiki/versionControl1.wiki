@@ -7,6 +7,7 @@
 ==ข้อมูลพื้นฐาน==
   * เครื่องแม่ข่ายที่ใช้ทดสอบโปรแกรมอยู่ที่่ 10.134.64.45
   * ใช้ Google Code เป็นที่เก็บไฟล์ของโปรเจ็ค โดยจะถูกเก็บไว้ในฐานข้อมูล และเรียกดูได้จากแท็บ [https://code.google.com/p/system-programming-cs3402-at-crma/source/checkout Source] ของ Google Code
+
 ==Project members==
 สมาชิกของโปรเจ็ค สามารถ checkout ซอร์สโค้ดไปจากที่เก็บไฟล์ของโปรเจ็คบน Google Code ได้ด้วยโปรแกรม Subversion โดยเรียกคำสั่ง svn checkout .... 
 {{{
