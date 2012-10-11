@@ -20,7 +20,8 @@
 ==Project members==
 สมาชิกของโปรเจ็ค สามารถ checkout ซอร์สโค้ดไปจากที่เก็บไฟล์ของโปรเจ็คบน Google Code ได้ด้วยโปรแกรม Subversion โดยเรียกคำสั่ง svn checkout .... 
 {{{
-svn checkout https://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ system-programming-cs3402-at-crma --username pyavinci@gmail.com
+svn checkout https://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ \ 
+system-programming-cs3402-at-crma --username pyavinci@gmail.com
 }}}
 
 ใช้รหัสผ่านจาก generated googlecode.com password ใน Profile->Settings ไม่ใช่รหัสผ่านของ Gmail
@@ -28,7 +29,8 @@ svn checkout https://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/
 ==Non-members==
 ผู้ที่ไม่ใช่สมาชิกสามารถ checkout โปรเจ็คไปได้แต่สามารถอ่านได้อย่างเดียว read only ไม่สามารถ commit ไฟล์ซอร์สโค้ดกลับมาที่ Google Code ได้
 {{{
-svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ system-programming-cs3402-at-crma-read-only
+svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ \
+system-programming-cs3402-at-crma-read-only
 }}}
 
 =Git=
