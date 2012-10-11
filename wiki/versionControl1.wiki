@@ -4,10 +4,16 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 <wiki:toc max_depth="3" />
 ----
-==ข้อมูลพื้นฐาน==
+=ข้อมูลพื้นฐาน=
   * เครื่องแม่ข่ายที่ใช้ทดสอบโปรแกรมอยู่ที่่ 10.134.64.45
   * ใช้ Google Code เป็นที่เก็บไฟล์ของโปรเจ็ค โดยจะถูกเก็บไว้ในฐานข้อมูล และเรียกดูได้จากแท็บ [https://code.google.com/p/system-programming-cs3402-at-crma/source/checkout Source] ของ Google Code
+  * ทางเลือกสามารถใช้ 
+    * Subversion, http://subversion.apache.org/ เป็นที่ยอมรับในการใช้งานสร้างโปรเจ็คซอฟท์แวร์
+    * Git Client, http://git-scm.com/about ได้, มี GUI ให้ใช้งานได้สะดวก
+    * Mercurial, http://mercurial.selenic.com/ 
+    * Tortoise, http://tortoisehg.bitbucket.org/ ผู้ใช้บนวินโดวส์นิยมใช้กันมาก
 
+=การใช้ Subversion=
 ==Project members==
 สมาชิกของโปรเจ็ค สามารถ checkout ซอร์สโค้ดไปจากที่เก็บไฟล์ของโปรเจ็คบน Google Code ได้ด้วยโปรแกรม Subversion โดยเรียกคำสั่ง svn checkout .... 
 {{{
@@ -21,6 +27,12 @@ svn checkout https://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/
 {{{
 svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ system-programming-cs3402-at-crma-read-only
 }}}
+
+=Git=
+
+=Mercurial=
+
+=Tortoise=
 
 ==References==
   * คู่มือการใช้งาน SVN Client, PSU, http://www.coe.phuket.psu.ac.th/guide/svn_guide_student_coe/
