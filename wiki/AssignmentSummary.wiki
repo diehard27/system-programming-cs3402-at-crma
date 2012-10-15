@@ -40,3 +40,8 @@
 ||c28nophan||<font color=orange> L </font>||<font color=green> C  </font>||<font color=green> C  </font>||
 ||c29wuttic||<font color=orange> L </font>||<font color=red> - </font>||
 ||c30chaiya||<font color=orange> L </font>||<font color=green> C </font>||
+
+
+TEST Embed Spreadsheet
+
+<wiki:gadget url="http://mathml-gadget.googlecode.com/svn/trunk/mathml-gadget.xml" border="0" up_content="root3x + x^phi + x_1" height="15"/>
