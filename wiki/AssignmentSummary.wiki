@@ -2,6 +2,8 @@
 
 = Assignment Summary =
 
+<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/twitter2.xml" />
+
 
 <h4> Legend </h4>
  * <font color=green> C </font> = <font color=green> Complete </font>
@@ -43,5 +45,3 @@
 
 
 TEST Embed Spreadsheet
-
-<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/twitter2.xml" />
