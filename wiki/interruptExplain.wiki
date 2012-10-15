@@ -7,4 +7,5 @@
 Interrupt อยู่ใน machine cycle ของซีพียู โดยที่หากมีการเซ็ทแฟลกของ interrupt แล้วซีพียูจะกระโดดไปทำงานที่ interrupt service routine ก่อน ซึ่งการ interrupt นั้นมีทั้งฮาร์ดแวร์และซอฟท์แวร์
 
 http://www.r9paul.org/wp-content/uploads/2008/05/pic_fe_cycle.png
+
 (รูปจาก : http://www.r9paul.org)
