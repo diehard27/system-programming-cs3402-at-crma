@@ -115,3 +115,99 @@ File exists
     43  cat urls
     44  echo "
 }}}
+
+=shar.sh=
+
+ไฟล์ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/shar.sh  shar.sh]
+{{{
+#!/bin/sh
+tar xvfz << "EOF"
+}}}
+
+{{{
+> tar cfz newar.tar.gz some_directory
+> cat shar.sh newar.tgz > newar.shar
+> echo "EOF" >> newar.shar
+> chmod +x newar.shar
+}}}
+
+ไฟล์ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/shar2.sh shar2.sh]
+{{{
+     1  #!/bin/sh
+     2  #Assume $1=n processes $2=host $3=user $4=password $5=filename
+     3  # From WH Steeb, Linux, Shell Programming and Perl, p.178
+     4  n="$1"
+     5  host="$2"
+     6  ftpuser="$3"
+     7  ftppass="$4"
+     8  filename="$5"
+     9  file=$(basename "$filename")
+    10  #obtain the filesize
+    11  name=$(\
+    12  {
+    13    echo user "$ftpuser" \'"$ftppass"\'
+    14    echo bin
+    15    echo size "$filename"
+    16    echo quit
+    17    } | ftp -n "\$host" | \
+    18    {
+    19    while [ "$name" != "$filename" ]
+    20    do
+    21      read name filesize
+    22      echo -n $name $filesize
+    23    done
+    24  })
+    25
+    26  set --set $name
+    27  filesize=$2
+    28  chunksize=$(($n-1))
+    29  chunksize=$(($filesize/$chunksize))
+    30  if [ "$chunksize" -eq 0 ]
+    31  then
+    32  chunksize=$filesize
+    33  n=1
+    34  fi
+    35  i=0
+    36  set --#start the ftp processes
+    37  while [ $i -lt $n ]
+    38  do
+    39    if [ ! -e \$\{file\}.\$i ]
+    40    then
+    41    dd if=/dev/zero of=${file}.$i bs=$chunksize count=$i \
+    42    > /dev/null 2> /dev/null
+    43    fi
+    44    rm -f $file 2> /dev/null
+    45    {
+    46      echo user "$ftpuser" \'"$ftppass"\'
+    47      echo bin
+    48      echo reget $filename ${file}.$i
+    49      echo quit
+    50    } | ftp -nv \$host > /dev/null &
+    51    # a list of process ids for the ftp processes
+    52    set $* $!
+    53    i=$(($i+1))
+    54  done
+    55
+    56  i=0
+    57  for j in $*
+    58  do
+    59    csize=0
+    60    k=$(($i+1))
+    61    k=$(($k*$chunksize))
+    62    while [ "$csize" -le "$k" ] \&\& [ "$csize" -lt $filesize ]
+    63    do
+    64      set -- $(ls -l ${file}.$i)
+    65      csize=$5
+    66      printf "$csize / $filesize of $file \r"
+    67      sleep 1
+    68    done
+    69    kill $j > /dev/null 2> /dev/null
+    70    dd if=${file}.$i bs=$chunksize skip=$i count=1 >> $file 2> /dev/null
+    71    rmfiles="$rmfiles ${file}.$i"
+    72    i=$(($i+1))
+    73  done
+    74  echo
+    75  #only do this at the end so that an interrupted
+    76  # download can continue
+    77  rm $rmfiles
+}}}
