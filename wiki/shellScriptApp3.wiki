@@ -3,6 +3,19 @@
 <table width=500>
 <td>
 <wiki:toc max_depth="3" />
+=Base Numbers=
+ตัวอย่างต่อไปนี้ไฟล์ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/basenum.sh basenum.sh] แสดงให้เห็นการประยุกต์ใช้คำสั่ง printf ซึ่งสามารถควบคุมรูปแบบของผลลัพธ์ที่เกี่ยวข้องกับเลขฐานสิบหก สิบ และแปดได้ ส่วนเลขฐานสองนั้นเราประยุกต์ใช้การติดต่อกับโปรแกรม bc แทน
+{{{
+     1  #!/bin/bash
+     2  #written by pyavinci@gmail.com (P. Chalermwat)
+     3  let i=1
+     4    printf "DEC\t OCT\t HEX\t BIN\n"
+     5  while [ $i -le "20" ]; do
+     6    b=$(echo "ibase=10; obase=2; $i" | bc)
+     7    printf "%d\t %o\t %X\t %s\n" $i $i $i $b
+     8    let i++
+     9  done
+}}}
 
 =Trap Command=
 คำสั่ง trap ใช้สำหรับกำหนดการกระทำคำสั่งใด ๆ เมื่อได้รับสัญญาณ (signal) การใช้งานทั่วไปจะใช้ในการให้สคริปต์ทำงานเมื่อได้รับการ interrupt จากสัญญาณใด รูปแบบของคำสั่ง trap คือ
