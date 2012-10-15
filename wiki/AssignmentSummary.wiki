@@ -2,7 +2,7 @@
 
 = Assignment Summary =
 
-<wiki:gadget url="http://macs.crma.ac.th/~phnarong/twitter.xml" height="200" border="0" /> 
+<wiki:gadget url="http://macs.crma.ac.th/~phnarong/gadget.xml" height="200" border="0" /> 
 
 
 <h4> Legend </h4>
