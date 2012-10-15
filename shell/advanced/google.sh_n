@@ -1,0 +1,45 @@
+     1	#!/bin/bash
+     2	# http://stackoverflow.com/questions/5506561/getting-the-urls-for-the-first-google-search-results-in-a-shell-script
+     3	clear
+     4	echo ""
+     5	echo ".=========================================================."
+     6	echo "|                                                         |"
+     7	echo "|  COMMAND LINE GOOGLE SEARCH                             |"
+     8	echo "|  ---------------------------------------------------    |"
+     9	echo "|                                                         |"
+    10	echo "|  Version: 1.0                                           |"
+    11	echo "|  Developed by: Rishi Narang                             |"
+    12	echo "|  Blog: www.wtfuzz.com                                   |"
+    13	echo "|                                                         |"
+    14	echo "|  Usage: ./gocmd.sh <search strings>                     |"
+    15	echo "|  Example: ./gocmd.sh example and test                   |"
+    16	echo "|                                                         |"
+    17	echo ".=========================================================."
+    18	echo ""
+    19	
+    20	if [ -z $1 ]
+    21	then
+    22	 echo "ERROR: No search string supplied."
+    23	 echo "USAGE: ./gocmd.sh <search srting>"
+    24	 echo ""
+    25	 echo -n "Anyways for now, supply the search string here: "
+    26	 read SEARCH
+    27	else
+    28	 SEARCH=$@
+    29	fi
+    30	
+    31	URL="http://google.com/search?hl=en&safe=off&q="
+    32	STRING=`echo $SEARCH | sed 's/ /%20/g'`
+    33	URI="$URL%22$STRING%22"
+    34	
+    35	lynx -dump $URI > gone.tmp
+    36	sed 's/http/\^http/g' gone.tmp | tr -s "^" "\n" | grep http| sed 's/\ .*//g' > gtwo.tmp
+    37	rm gone.tmp
+    38	sed '/google.com/d' gtwo.tmp > urls
+    39	rm gtwo.tmp
+    40	
+    41	echo "SUCCESS: Extracted `wc -l urls` and listed them in '`pwd`/urls' file for reference."
+    42	echo ""
+    43	cat urls
+    44	echo "
+    45	
