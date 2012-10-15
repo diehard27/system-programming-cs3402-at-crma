@@ -11,7 +11,7 @@
      3  let i=1
      4    printf "DEC\t OCT\t HEX\t BIN\n"
      5  while [ $i -le "20" ]; do
-     6    b=$(echo "ibase=10; obase=2; $i" | bc)
+     6    b=$(echo "obase=2; ibase=10; $i" | bc)
      7    printf "%d\t %o\t %X\t %s\n" $i $i $i $b
      8    let i++
      9  done
