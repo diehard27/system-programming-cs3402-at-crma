@@ -44,6 +44,28 @@ trap command signal
     21  exit 0
 }}}
 
+รันเชลล์นี้ด้วยคำสั่ง
+{{{
+prachya@pcubusrv104> ./trap.sh
+}}}
+จะได้ผลลัพธ์ดังนี้ ให้กด Ctrl-C เพื่อส่งสัญญาณ INT (2) ไปยังเชลล์เมื่อเชลล์ได้รับสัญญาณ ก็จะทำคำสั่งที่กำหนดไว้ใน trap ในบรรทัดที่ 3 คือ {{{rm -f /tmp/my_tmp_file_$$}}}
+{{{
+creating file /tmp/my_tmp_file_16658
+press interrupt (CRTL-C) to interrupt ...
+File exists
+File exists
+File exists
+^CThe file no longer exists
+creating file /tmp/my_tmp_file_16658
+press interrupt (CRTL-C) to interrupt ...
+File exists
+File exists
+File exists
+File exists
+File exists
+^C
+}}}
+
 =Google Search=
 
 ไฟล์ต้นฉบับสามารถดูได้ที่ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/google.sh google.sh]
