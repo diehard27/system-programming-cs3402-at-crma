@@ -305,5 +305,38 @@ tar xvfz << "EOF"
     77  rm $rmfiles
 }}}
 
+=GCD: Greatest Common Divisor=
+การหาตัวหารร่วมมาก (ห.ร.ม.) หรือ GCD สามารถคำนวณได้ด้วยการใช้เชลล์สคริปต์ตามตัวอย่างในไฟล์ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/gcd.sh gcd.sh] ด้านล่าง
+{{{
+#!/bin/bash
+# gcd.sh: greatest common divisor
+#         Uses Euclid's algorithm
+
+#  The "greatest common divisor" (gcd) of two integers
+#+ is the largest integer that will divide both, leaving no remainder.
+
+#  Euclid's algorithm uses successive division.
+#    In each pass,
+#+      dividend <---  divisor
+#+      divisor  <---  remainder
+#+   until remainder = 0.
+#    The gcd = dividend, on the final pass.
+#
+#  For an excellent discussion of Euclid's algorithm, see
+#+ Jim Loy's site, http://www.jimloy.com/number/euclids.htm.
+
+
+# ------------------------------------------------------
+# Argument check
+ARGS=2
+E_BADARGS=85
+
+if [ $# -ne "$ARGS" ]
+then
+  echo "Usage: `basename $0` first-number second-number"
+  exit $E_BADARGS
+fi
+# ------------------------------------------------------
+}}}
 =References=
   * Mendel Cooper, _Advanced Bash-Scripting Guide: An in-depth exploration of the art of shell scripting_, http://tldp.org/LDP/abs/html/
