@@ -1,0 +1,4 @@
+#summary อธิบายการ Interrupt
+
+Interrupt เป็น
+http://www.r9paul.org/wp-content/uploads/2008/05/pic_fe_cycle.png
