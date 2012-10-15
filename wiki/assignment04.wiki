@@ -1,0 +1,12 @@
+#summary Asssignment 4
+<table width=500>
+<td>
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptProg3 การเขียนเชลล์สคริปต์ ๓]
+----
+<font color=red>Due date: พฤหัสฯ 18 ต.ค.55 </font>
+  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45
+  # เปลี่ยนไดเร็กทอรี่ไปที่ /var/www/cXXYYYYYY (<font color=red>แทน cXXYYYYYY ด้วยชื่อล็อกอิน</font>) ด้วยคำสั่ง cd  /var/www/cXXYYYYYY
+  # สร้างไดเร็กทอรี่ asm04 ด้วยคำสั่ง mkdir  asm04  แล้วเปลี่ยนไดเร็กทอรี่ไปยัง asm04 ด้วยคำสั่ง cd asm04
+
+----
+สามารถดูผลการส่งงานได้ที่ [AssignmentSummary]
