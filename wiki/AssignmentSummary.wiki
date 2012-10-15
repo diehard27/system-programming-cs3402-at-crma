@@ -2,7 +2,7 @@
 
 = Assignment Summary =
 
-<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/twitter2.xml" />
+<wiki:video url="http://www.youtube.com/watch?v=3LkNlTNHZzE"/>
 
 
 <h4> Legend </h4>
