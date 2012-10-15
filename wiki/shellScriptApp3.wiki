@@ -211,3 +211,6 @@ tar xvfz << "EOF"
     76  # download can continue
     77  rm $rmfiles
 }}}
+
+=References=
+  * Mendel Cooper, _Advanced Bash-Scripting Guide: An in-depth exploration of the art of shell scripting_, http://tldp.org/LDP/abs/html/
