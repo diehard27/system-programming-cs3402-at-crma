@@ -1,7 +1,7 @@
 #summary Asssignment 4
 <table width=500>
 <td>
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptProg3 การเขียนเชลล์สคริปต์ ๓]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 ----
 <font color=red>Due date: พฤหัสฯ 18 ต.ค.55 </font>
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45
