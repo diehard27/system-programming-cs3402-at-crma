@@ -340,3 +340,4 @@ fi
 }}}
 =References=
   * Mendel Cooper, _Advanced Bash-Scripting Guide: An in-depth exploration of the art of shell scripting_, http://tldp.org/LDP/abs/html/
+  * Machtelt Garrels, _Bash Guide for Beginners_ , http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html
