@@ -44,6 +44,59 @@ DEC      OCT     HEX     BIN
 19       23      13      10011
 20       24      14      10100
 }}}
+
+
+อย่างไรก็ตามคำสั่ง printf ไม่สามารถแปลงเลข hex ให้กลับมาเป็นเลขฐาน 10 หรือฐาน 2 ได้ เราต้องการใช้ฟอร์แม็ตแบบพิเศษคือ {{{$((16#$i))}}} ในบรรทัดที่ 14 เพื่อแปลงเลขฐาน 16 ให้กลับมาเป็นฐาน 10 ดังแสดงตัวอย่างในไฟล์ 
+[https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/basenum2.sh basenum2.sh] ต่อไปนี้
+
+{{{
+     1  #!/bin/bash
+     2  #written by pyavinci@gmail.com (P. Chalermwat)
+     3  let i=1
+     4  #create input hex sequence
+     5  h=$(while [ $i -le "20" ]; do
+     6    printf "%X " $i
+     7    let i++
+     8    done)
+     9  echo INPUT=$h
+    10  echo "Converting to decimal..."
+    11  printf "HEX\t DEC\t BIN\n"
+    12  for i in $h; do
+    13    b=$(echo "obase=2; ibase=16; $i" | bc)
+    14    printf "%s\t %s\t %s\n" $i $((16#$i)) $b
+    15  done
+}}}
+
+เมื่อรันคำสั่งต่อไปนี้
+{{{
+prachya@pcubusrv104> ./basenum2.sh
+}}}
+จะได้ผลลัพธ์ตามนี้
+{{{
+INPUT=1 2 3 4 5 6 7 8 9 A B C D E F 10 11 12 13 14
+Converting to decimal...
+HEX      DEC     BIN
+1        1       1
+2        2       10
+3        3       11
+4        4       100
+5        5       101
+6        6       110
+7        7       111
+8        8       1000
+9        9       1001
+A        10      1010
+B        11      1011
+C        12      1100
+D        13      1101
+E        14      1110
+F        15      1111
+10       16      10000
+11       17      10001
+12       18      10010
+13       19      10011
+14       20      10100
+}}}
 =Trap Command=
 คำสั่ง trap ใช้สำหรับกำหนดการกระทำคำสั่งใด ๆ เมื่อได้รับสัญญาณ (signal) การใช้งานทั่วไปจะใช้ในการให้สคริปต์ทำงานเมื่อได้รับการ interrupt จากสัญญาณใด รูปแบบของคำสั่ง trap คือ
 {{{
