@@ -2,7 +2,7 @@
 
 = Assignment Summary =
 
-<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/gadget.xml" width="200" height="100" border="1" />
+<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/gadget.xml" border="1" />
 
 
 <h4> Legend </h4>
