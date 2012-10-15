@@ -4,54 +4,21 @@
 <td>
 <wiki:toc max_depth="3" />
 
+=Trap Command=
+คำสั่ง trap ใช้สำหรับกำหนดการกระทำคำสั่งใด ๆ เมื่อได้รับสัญญาณ (signal) การใช้งานทั่วไปจะใช้ในการให้สคริปต์ทำงานเมื่อได้รับการ interrupt จากสัญญาณใด รูปแบบของคำสั่ง trap คือ
 {{{
-#!/bin/bash
-# http://stackoverflow.com/questions/5506561/getting-the-urls-for-the-first-google-search-results-in-a-shell-script
-clear
-echo ""
-echo ".=========================================================."
-echo "|                                                         |"
-echo "|  COMMAND LINE GOOGLE SEARCH                             |"
-echo "|  ---------------------------------------------------    |"
-echo "|                                                         |"
-echo "|  Version: 1.0                                           |"
-echo "|  Developed by: Rishi Narang                             |"
-echo "|  Blog: www.wtfuzz.com                                   |"
-echo "|                                                         |"
-echo "|  Usage: ./gocmd.sh <search strings>                     |"
-echo "|  Example: ./gocmd.sh example and test                   |"
-echo "|                                                         |"
-echo ".=========================================================."
-echo ""
-
-if [ -z $1 ]
-then
- echo "ERROR: No search string supplied."
- echo "USAGE: ./gocmd.sh <search srting>"
- echo ""
- echo -n "Anyways for now, supply the search string here: "
- read SEARCH
-else
- SEARCH=$@
-fi
-
-URL="http://google.com/search?hl=en&safe=off&q="
-STRING=`echo $SEARCH | sed 's/ /%20/g'`
-URI="$URL%22$STRING%22"
-
-lynx -dump $URI > gone.tmp
-sed 's/http/\^http/g' gone.tmp | tr -s "^" "\n" | grep http| sed 's/\ .*//g' > gtwo.tmp
-rm gone.tmp
-sed '/google.com/d' gtwo.tmp > urls
-rm gtwo.tmp
-
-echo "SUCCESS: Extracted `wc -l urls` and listed them in '`pwd`/urls' file for reference."
-echo ""
-cat urls
-echo "
-
+trap command signal
 }}}
+สัญญาณ (signal) ที่เป็นที่ทราบ/ใช้กันมาก
+||Signal(หมายเลข )|| คำอธิบาย||
+||HUP (1) ||Hang up; ใช้ส่งไปให้ terminal นั้นเป็น offline หรือผู้ใช้ล็อกเอาท์ออกจากระบบ||
+||INT (2) ||Interrupt; ส่งด้วยการกดคีย์ <Ctrl-C>||
+||QUIT(3) ||Quit; ส่งสัญญาณด้วยการกดคีย์ <Ctrl-\>||
+||ABRT(6) ||Abort; ส่งเมื่อการปัญหาในการรันโปรแกรม||
+||ALRM(14)|| Alarm; ส่งเพื่อสื่อสารเกี่ยวกับการแจ้งเตือนการหมดเวลา (time-outs)||
+||TERM(15)|| Terminate; ส่งเมื่อระบบจะหยุดการทำงาน (shutting down)||
 
+=Google Search=
 {{{
      1  #!/bin/bash
      2  # http://stackoverflow.com/questions/5506561/getting-the-urls-for-the-first-google-search-results-in-a-shell-script
