@@ -1,4 +1,9 @@
 #summary อธิบายการ Interrupt
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
+<table width=500>
+<td>
+<wiki:toc max_depth="3" />
 
-Interrupt เป็น
+Interrupt อยู่ใน machine cycle ของซีพียู โดยที่หากมีการเซ็ทแฟลกของ interrupt แล้วซีพียูจะกระโดดไปทำงานที่ interrupt service routine ก่อน ซึ่งการ interrupt นั้นมีทั้งฮาร์ดแวร์และซอฟท์แวร์
+
 http://www.r9paul.org/wp-content/uploads/2008/05/pic_fe_cycle.png
