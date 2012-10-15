@@ -98,7 +98,7 @@ F        15      1111
 14       20      10100
 }}}
 =Trap Command=
-คำสั่ง trap ใช้สำหรับกำหนดการกระทำคำสั่งใด ๆ เมื่อได้รับสัญญาณ (signal) การใช้งานทั่วไปจะใช้ในการให้สคริปต์ทำงานเมื่อได้รับการ [interruptExplain interrupt] จากสัญญาณใด รูปแบบของคำสั่ง trap คือ
+คำสั่ง trap ใช้สำหรับกำหนดการกระทำคำสั่งใด ๆ เมื่อได้รับสัญญาณ ([http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_01.html signal]) การใช้งานทั่วไปจะใช้ในการให้สคริปต์ทำงานเมื่อได้รับการ [interruptExplain interrupt] จากสัญญาณใด รูปแบบของคำสั่ง trap คือ
 {{{
 trap command signal
 }}}
