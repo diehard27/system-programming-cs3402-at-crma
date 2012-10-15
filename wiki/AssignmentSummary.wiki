@@ -44,4 +44,4 @@
 
 TEST Embed Spreadsheet
 
-<wiki:gadget url='https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/twitter2.xml' />
+<wiki:gadget url="https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/gadgets/twitter2.xml" />
