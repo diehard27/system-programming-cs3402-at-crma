@@ -18,7 +18,36 @@ trap command signal
 ||ALRM(14)|| Alarm; ส่งเพื่อสื่อสารเกี่ยวกับการแจ้งเตือนการหมดเวลา (time-outs)||
 ||TERM(15)|| Terminate; ส่งเมื่อระบบจะหยุดการทำงาน (shutting down)||
 
+==ตัวอย่าง==
+ไฟล์ซอร์สโค้ดสามารถดูได้ที่ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/trap.sh trap.sh]
+{{{
+     1  #! /bin/bash
+     2  # from Steeb WH, Linux, Shell Programming and Perl
+     3  trap 'rm -f /tmp/my_tmp_file_$$' INT
+     4  echo creating file /tmp/my_tmp_file_$$
+     5  date > /tmp/my_tmp_file_$$
+     6  echo "press interrupt (CRTL-C) to interrupt ... "
+     7  while [ -f /tmp/my_tmp_file_$$ ]; do
+     8  echo File exists
+     9  sleep 1
+    10  done
+    11  echo The file no longer exists
+    12  trap - INT
+    13  echo creating file /tmp/my_tmp_file_$$
+    14  date > /tmp/my_tmp_file_$$
+    15  echo "press interrupt (CRTL-C) to interrupt ... "
+    16  while [ -f /tmp/my_tmp_file_$$ ]; do
+    17  172 CHAPTER 5. SHELL PROGRAMMING
+    18  echo File exists
+    19  sleep 1
+    20  done
+    21  echo We never get here
+    22  exit 0
+}}}
+
 =Google Search=
+
+ไฟล์ต้นฉบับสามารถดูได้ที่ [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/google.sh google.sh]
 {{{
      1  #!/bin/bash
      2  # http://stackoverflow.com/questions/5506561/getting-the-urls-for-the-first-google-search-results-in-a-shell-script
