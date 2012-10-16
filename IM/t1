@@ -1,0 +1,5 @@
+A=1010
+B=1011
+echo $B > out.log
+echo $A  >> out.log 
+cat out.log | wc  -l
