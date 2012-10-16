@@ -1,3 +1,4 @@
+#!/bin/bash
 A=1010
 B=1011
 echo $B > out.log
