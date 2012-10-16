@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+
+{{{
+     1  #!/bin/bash
+     2  #written by pyavinci@gmail.com
+     3  a=(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+     4  echo ${a[*]}
+     5  echo ${a[0]} ... ${a[15]}
+     6  i=0
+     7  until [ $i -gt 15 ]; do
+     8    echo $i - ${a[$i]}
+     9    let i++
+    10  done
+    11  a[16]=X
+    12  echo ${a[*]}
+}}}
