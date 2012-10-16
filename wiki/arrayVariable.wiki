@@ -4,6 +4,12 @@
 <td>
 <wiki:toc max_depth="3" />
 
+ตัวแปรแบบอาเรย์เป็นตัวแปรแบบพิเศษ ที่มีค่าได้หลายค่า เช่นเดียวกับอาเรย์ในภาษาอื่น ๆ 
+  * รูปแบบคือ <varname>=(listing ..... )
+  * ดัชนี (index) เริ่มที่ 0
+  * การอ้างถึงใช้วงเล็บปีกกาใหญ่ครอบ และวงเล็บสี่เหลี่ยมกำหนดดัชนี เช่น อ้างถึงตัวแปรอาเรย์ a ดัชนี 1 ให้ใช้ ${a[1]} เป็นต้น
+
+ตัวอย่าง [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/shell/advanced/array.sh array.sh]
 {{{
      1  #!/bin/bash
      2  #written by pyavinci@gmail.com
