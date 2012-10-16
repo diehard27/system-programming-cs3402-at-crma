@@ -3,12 +3,18 @@
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 ----
-<font color=red>Due date: พฤหัสฯ 18 ต.ค.55 </font>
+<font color=red>Due date: ศุกร์ 26 ต.ค.55 </font>
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45
   # เปลี่ยนไดเร็กทอรี่ไปที่ /var/www/cXXYYYYYY (<font color=red>แทน cXXYYYYYY ด้วยชื่อล็อกอิน</font>) ด้วยคำสั่ง cd  /var/www/cXXYYYYYY
   # สร้างไดเร็กทอรี่ asm04 ด้วยคำสั่ง mkdir  asm04  แล้วเปลี่ยนไดเร็กทอรี่ไปยัง asm04 ด้วยคำสั่ง cd asm04
   # เขียนเชลล์สคริปต์ชื่อ hex2dec.sh ให้รับอินพุทเข้ามาเป็นเลขฐาน 16 (hexadecimal) แล้วส่ง output ออกมาเป็นเลขฐานสิบ (decimal) เช่น hex2dec.sh  FF ควรให้คำตอบเป็น 255 เป็นต้น
   # เขียนเชลล์สคริปต์ชื่อ hex2bin.sh ให้รับอินพุทเข้ามาเป็นเลขฐาน 16 (hexadecimal) แล้วส่ง output ออกมาเป็นเลขฐานสอง เช่น hex2bin.sh  F9 จะให้ผลลัพธ์ออกมาเป็น 1111 1001 เป็นต้น
-  # 
+  # ทดสอบการใช้งาน Subversion ด้วยคำสั่ง svn โดยให้นักเรียน checkout ซอร์สโค้ดของวิชาจาก Google Code แบบ read-only ด้วยการทำตามตัวอย่างใน [versionControl1 การควบคุมเวอร์ชั่น ๑] โดยให้สร้างไดเร็กทอรี่ชื่อ svn ไว้ใน home ไดเร็กทอรี่ของตัวเองก่อนจากนั้นรันคำสั่ง 
+{{{
+svn checkout http://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ \
+system-programming-cs3402-at-crma-read-only
+}}} 
+
+  # ตรวจสอบดูว่ามีไฟล์เพิ่มเติมที่ได้จากการดาวน์โหลดซอร์สโค้ดมาหรือไม่? (หมายเหตุ: เนื่องจากเป็นการ checkout แบบ Non-member นักเรียนจะไม่สามารถ add, commit การเปลี่ยนแปลงของไฟล์/โปรแกรมกับไปยัง Google Code ได้)
 ----
 สามารถดูผลการส่งงานได้ที่ [AssignmentSummary]
