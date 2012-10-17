@@ -23,6 +23,6 @@
 || {{{ | | }}}  -o	||OR||	logical, compound comparison||
 ||?:	||trinary operator||	C-style||
 ||=	||assignment	||(do not confuse with equality test)||
-||*= /= %= += -= <<= >>= &=||	combination assignment||	times-equal, divide-equal, mod-equal, etc.||
+||{{{*}}} = /= %= += -= <<= >>= &=||	combination assignment||	times-equal, divide-equal, mod-equal, etc.||
 ||,	||comma	||links a sequence of operations||
 || ||	||LOWEST PRECEDENCE||
