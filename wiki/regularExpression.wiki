@@ -27,5 +27,11 @@ The fundamental building blocks are the regular expressions that match a single 
 ||\<||	Match the empty string at the beginning of word.||
 ||\>||	Match the empty string at the end of word.||
 
+Two regular expressions may be concatenated; the resulting regular expression matches any string formed by concatenating two substrings that respectively match the concatenated subexpressions.
+
+Two regular expressions may be joined by the infix operator "|"; the resulting regular expression matches any string matching either subexpression.
+
+Repetition takes precedence over concatenation, which in turn takes precedence over alternation. A whole subexpression may be enclosed in parentheses to override these precedence rules
+
 =References=
   * http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html#sect_04_01_01
