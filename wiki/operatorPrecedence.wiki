@@ -20,7 +20,7 @@
 ||^	||XOR	||exclusive OR, bitwise||
 || |	||OR	||bitwise||
 ||&& -a	||AND	||logical, compound comparison||
-|| {{{ \|\| }}}  -o	||OR||	logical, compound comparison||
+|| {{{ "||" }}}  -o	||OR||	logical, compound comparison||
 ||?:	||trinary operator||	C-style||
 ||=	||assignment	||(do not confuse with equality test)||
 ||*= /= %= += -= <<= >>= &=||	combination assignment||	times-equal, divide-equal, mod-equal, etc.||
