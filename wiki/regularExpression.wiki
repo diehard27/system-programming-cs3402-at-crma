@@ -52,14 +52,15 @@ prachya ~> grep root /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 operator:x:11:0:operator:/root:/sbin/nologin
 }}}
+With the first command, user prachya displays the lines from /etc/passwd containing the string root.
 
+Then she displays the line numbers containing this search string.
 {{{
 prachya ~> grep -n root /etc/passwd
 1:root:x:0:0:root:/root:/bin/bash
 12:operator:x:11:0:operator:/root:/sbin/nologin
-
 }}}
-
+Using -v option for inverting the sense of matching, to select non-matching lines.
 {{{
 prachya ~> grep -v bash /etc/passwd | grep -v nologin
 sync:x:5:0:sync:/sbin:/bin/sync
@@ -74,32 +75,20 @@ named:x:25:25:Named:/var/named:/bin/false
 squid:x:23:23::/var/spool/squid:/dev/null
 ldap:x:55:55:LDAP User:/var/lib/ldap:/bin/false
 apache:x:48:48:Apache:/var/www:/bin/false
-
 }}}
-
+With the third command she checks which users are not using bash, but accounts with the nologin shell are not displayed.
+Then she counts the number of accounts that have /bin/false as the shell.
+Option -c counts the matched lines.
 {{{
 prachya ~> grep -c false /etc/passwd
-7
-
+3
 }}}
-
+Option -i ignores case sensitivity search.
 {{{
 prachya ~> grep -i ps ~/.bash* | grep -v history
 /home/prachya/.bashrc:PS1="\[\033[1;44m\]$USER is in \w\[\033[0m\] "
-
 }}}
-
-With the first command, user prachya displays the lines from /etc/passwd containing the string root.
-
-Then she displays the line numbers containing this search string.
-
-With the third command she checks which users are not using bash, but accounts with the nologin shell are not displayed.
-
-Then she counts the number of accounts that have /bin/false as the shell.
-
 The last command displays the lines from all the files in her home directory starting with ~/.bash, excluding matches containing the string history, so as to exclude matches from ~/.bash_history which might contain the same string, in upper or lower cases. Note that the search is for the string "ps", and not for the command ps.
-
-Now let's see what else we can do with grep, using regular expressions.
 
 ==Grep and regular expressions==
 
