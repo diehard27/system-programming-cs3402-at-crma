@@ -8,7 +8,7 @@
  	 	 
 ||! ~	||negation	||logical / bitwise, inverts sense of following operator|| 	 
 ||{{{**}}}	||exponentiation||	arithmetic operation||
-||* / %	||multiplication, division, modulo||	arithmetic operation||
+||{{{* / %}}}	||multiplication, division, modulo||	arithmetic operation||
 ||+ -	||addition, subtraction	||arithmetic operation||
 ||<< >>||	left, right shift	||bitwise||
 ||-z -n	||unary comparison	||string is/is-not null||
