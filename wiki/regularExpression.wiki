@@ -40,4 +40,4 @@ In basic regular expressions the metacharacters "?", "+", "{", "|", "(", and ")"
 =References=
   * http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html#sect_04_01_01
 
-[https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/regularExpression]
+[https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/regularExpression แก้ไข]
