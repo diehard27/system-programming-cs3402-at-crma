@@ -7,7 +7,7 @@
 ||++var --var||	pre-increment, pre-decrement	|| || 
  	 	 
 ||! ~	||negation	||logical / bitwise, inverts sense of following operator|| 	 
-||**	||exponentiation||	arithmetic operation||
+||{{{**}}}	||exponentiation||	arithmetic operation||
 ||* / %	||multiplication, division, modulo||	arithmetic operation||
 ||+ -	||addition, subtraction	||arithmetic operation||
 ||<< >>||	left, right shift	||bitwise||
