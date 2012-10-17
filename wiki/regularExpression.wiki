@@ -14,7 +14,7 @@ The fundamental building blocks are the regular expressions that match a single 
 Operator	Effect
 .	Matches any single character.
 ?	The preceding item is optional and will be matched, at most, once.
-*	The preceding item will be matched zero or more times.
+{{{*}}}	The preceding item will be matched zero or more times.
 +	The preceding item will be matched one or more times.
 {N}	The preceding item is matched exactly N times.
 {N,}	The preceding item is matched N or more times.
