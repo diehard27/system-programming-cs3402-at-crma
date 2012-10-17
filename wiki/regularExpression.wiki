@@ -37,9 +37,9 @@ Repetition takes precedence over concatenation, which in turn takes precedence o
 
 In basic regular expressions the metacharacters "?", "+", "{", "|", "(", and ")" lose their special meaning; instead use the backslashed versions "\?", "\+", "\{", "\|", "\(", and "\)".
 
-4.2. Examples using grep
+=Examples using grep=
 
-4.2.1. What is grep?
+==What is grep?==
 
 grep searches the input files for lines containing a match to a given pattern list. When it finds a match in a line, it copies the line to standard output (by default), or whatever other sort of output you have requested with options.
 
@@ -47,15 +47,20 @@ Though grep expects to do the matching on text, it has no limits on input line l
 
 Some examples:
 
-
+{{{
 cathy ~> grep root /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 operator:x:11:0:operator:/root:/sbin/nologin
+}}}
 
+{{{
 cathy ~> grep -n root /etc/passwd
 1:root:x:0:0:root:/root:/bin/bash
 12:operator:x:11:0:operator:/root:/sbin/nologin
 
+}}}
+
+{{{
 cathy ~> grep -v bash /etc/passwd | grep -v nologin
 sync:x:5:0:sync:/sbin:/bin/sync
 shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
@@ -70,11 +75,19 @@ squid:x:23:23::/var/spool/squid:/dev/null
 ldap:x:55:55:LDAP User:/var/lib/ldap:/bin/false
 apache:x:48:48:Apache:/var/www:/bin/false
 
+}}}
+
+{{{
 cathy ~> grep -c false /etc/passwd
 7
 
+}}}
+
+{{{
 cathy ~> grep -i ps ~/.bash* | grep -v history
 /home/cathy/.bashrc:PS1="\[\033[1;44m\]$USER is in \w\[\033[0m\] "
+
+}}}
 
 With the first command, user cathy displays the lines from /etc/passwd containing the string root.
 
@@ -88,39 +101,46 @@ The last command displays the lines from all the files in her home directory sta
 
 Now let's see what else we can do with grep, using regular expressions.
 
-4.2.2. Grep and regular expressions
+==Grep and regular expressions==
 
 	If you are not on Linux
  	
 We use GNU grep in these examples, which supports extended regular expressions. GNU grep is the default on Linux systems. If you are working on proprietary systems, check with the -V option which version you are using. GNU grep can be downloaded from http://gnu.org/directory/.
 
-4.2.2.1. Line and word anchors
+===Line and word anchors===
 
 From the previous example, we now exclusively want to display lines starting with the string "root":
-
-
+{{{
 cathy ~> grep ^root /etc/passwd
 root:x:0:0:root:/root:/bin/bash
+}}}
+
 If we want to see which accounts have no shell assigned whatsoever, we search for lines ending in ":":
 
-
+{{{
 cathy ~> grep :$ /etc/passwd
 news:x:9:13:news:/var/spool/news:
+}}}
+
 To check that PATH is exported in ~/.bashrc, first select "export" lines and then search for lines starting with the string "PATH", so as not to display MANPATH and other possible paths:
 
-
+{{{
 cathy ~> grep export ~/.bashrc | grep '\<PATH'
   export PATH="/bin:/usr/lib/mh:/lib:/usr/bin:/usr/local/bin:/usr/ucb:/usr/dbin:$PATH"
+}}}
+
 Similarly, \> matches the end of a word.
 
 If you want to find a string that is a separate word (enclosed by spaces), it is better use the -w, as in this example where we are displaying information for the root partition:
 
-
+{{{
 cathy ~> grep -w / /etc/fstab
 LABEL=/                 /                       ext3    defaults        1 1
+}}}
+
 If this option is not used, all the lines from the file system table will be displayed.
 
-4.2.2.2. Character classes
+===Character classes===
 
 A bracket expression is a list of characters enclosed by "[" and "]". It matches any single character in that list; if the first character of the list is the caret, "^", then it matches any character NOT in the list. For example, the regular expression "[0123456789]" matches any single digit.
 
@@ -128,7 +148,7 @@ Within a bracket expression, a range expression consists of two characters separ
 
 Finally, certain named classes of characters are predefined within bracket expressions. See the grep man or info pages for more information about these predefined expressions.
 
-
+{{{
 cathy ~> grep [yf] /etc/group
 sys:x:3:root,bin,adm
 tty:x:5:
@@ -139,13 +159,15 @@ floppy:x:19:
 xfs:x:43:
 nfsnobody:x:65534:
 postfix:x:89:
+}}}
+
 In the example, all the lines containing either a "y" or "f" character are displayed.
 
-4.2.2.3. Wildcards
+===Wildcards===
 
 Use the "." for a single character match. If you want to get a list of all five-character English dictionary words starting with "c" and ending in "h" (handy for solving crosswords):
 
-
+{{{
 cathy ~> grep '\<c...h\>' /usr/share/dict/words
 catch
 clash
@@ -155,11 +177,13 @@ couch
 cough
 crash
 crush
+}}}
+
 If you want to display lines containing the literal dot character, use the -F option to grep.
 
 For matching multiple characters, use the asterisk. This example selects all words starting with "c" and ending in "h" from the system's dictionary:
 
-
+{{{
 cathy ~> grep '\<c.*h\>' /usr/share/dict/words
 caliph
 cash
@@ -167,13 +191,18 @@ catch
 cheesecloth
 cheetah
 --output omitted--
+}}}
+
 If you want to find the literal asterisk character in a file or output, use single quotes. Cathy in the example below first tries finding the asterisk character in /etc/profile without using quotes, which does not return any lines. Using quotes, output is generated:
 
-
+{{{
 cathy ~> grep * /etc/profile
+}}}
 
+{{{
 cathy ~> grep '*' /etc/profile
 for i in /etc/profile.d/*.sh ; do
+}}}
 
 =References=
   * http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_01.html#sect_04_01_01
