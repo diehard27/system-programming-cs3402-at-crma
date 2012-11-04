@@ -6,4 +6,12 @@
 
 เพิร์ล (Perl) ย่อมาจาก Practical Extraction and Report Language เป็นภาษาโปรแกรมแบบสคริปต์ที่นิยมอย่างแพร่หลายใน  Unix, Linux, MVS, VMS, MS/DOS, Macintosh, OS/2, Amiga, รวมถึงระบบปฏิบัติการอื่น ๆ เพิร์ล มีฟังก์ชันต่างๆ ที่มีประสิทธิภาพในการจัดการสตริง และในช่วงวิวัฒนาการของเทคโนโลยีเว็บนั้นเป็นสิ่งที่ได้รับความนิยมแพร่หลายในการสร้าง web interface gateway ที่รู้จักดีในนาม CGI (Common Gateway Interface) ซึ่งการรันฟังก์ชันต่าง ๆ ของเซอร์ฟเวอร์จะต้องทำผ่าน CGI เท่านั้นไม่สามารถจะใช้งานได้โดยตรงด้วยเหตุผลทางด้านความปลอดภัย โดยผู้ใช้งานเว็บจะมองไม่เห็นส่วนที่เป็นสคริปต์ของเพิร์ล แต่จะสามารถเรียกใช้งานผ่านการเรียกของ HTML เท่านั้น
 
+ตัวอย่างการทำงานของเพิร์ลที่มีประสิทธิภาพมาก เมื่อเทียบกับการต้องใช้โปรแกรมอื่นที่สลับซับซ้อนกว่า เช่น find, awk, หรือ sed เช่น หากต้องการเปลี่ยนข้อความที่เหมือนกันในไฟล์หลายๆไฟล์ แทนที่จะไปค้นหาไฟล์ทีละไฟล์ทำการแก้ไขและบันทึก เราสามารถใช้คำสั่งของเพิร์ลได้ง่าย เช่น 
+
+{{{
+perl -e ’s/gopher/World Wide Web/gi’ -p -i.bak *.html
+}}}
+
+This command, issued at the Linux prompt, executes the short Perl program speci- fied in single quotes. This program consists of one perl operation; it substitutes for the original word gopher the string World Wide Web. This is done globally and ig- noring case, indicated by /gi. The remainder of the Linux command indicates that the perl program should run for each file ending in .html in the current directory. If any file, for example myfile.html needs changing, a backup of the original is made as file myfile.html.bak.
+
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
