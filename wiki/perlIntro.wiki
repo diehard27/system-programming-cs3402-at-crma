@@ -30,6 +30,23 @@ perl -e
 ผู้ใช้รันคำสั่งนี้ที่พร็อมพ์ของลิหนิกซ์ เพื่อรันคำสั่งสั้นๆของเพิร์ล ในการค้นหา (ด้วยตัวเลือก s/) คำว่า "gopher" ถ้าหากพบให้แทนที่คำด้วยคำ "World Wide Web" โดยที่ตัวเลือกสุดท้าย (/gi) นั้นให้แทนทุกคำที่พบแบบไม่เป็น case sensitive โดยไฟล์ที่เป็นเป้าหมายคือไฟล์ที่ขึ้นต้นชื่อด้วย {{{i.bak*.html}}} ทั้งหมดที่อยู่ในไดเร็กทอรี่ปัจจุบัน เช่น ไฟล์ i.bak02.html หรือไฟล์ i.bakanyfile.html เป็นต้น
 
 =โปรแกรมแรกในเพิร์ล=
+ประโยคคำสั่งในภาษาเพิร์ลจะจบท้ายด้วยเซมิโคล่อน (;) เช่น
+{{{
+> perl <Enter> 
+$a = 5; 
+$b = 4; 
+$c = $a + $b; 
+print($c);
+}}}
 
+Under Linux we press Ctrl-d to run the program. Under Windows we press Ctrl-z to run the program.
+We can also write a program, for example myfirst.pl.
+{{{
+# myfirst.pl $a = 5; $b = 4; $c = $a + $b; print($c);
+}}}
+To run the file myfirst.pl we enter at the command line
+{{{
+perl myfirst.pl
+}}}
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
