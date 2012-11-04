@@ -12,17 +12,20 @@
 perl -e ’s/gopher/World Wide Web/gi’ -p -i.bak *.html
 }}}
 
-คำสั่งนี้แบ่งเป็น 3 ส่วนคือ
+อธิบายคำสั่งนี้เป็น 3 ส่วนคือ
+ตัวโปรแกรมเพิร์ล
 {{{
 perl -e
 }}}
+ตัวเลือกซึ่งในที่นี้เป็นคำสั่งในภาษาเพิร์ลให้ค้นหาคำและแทนคำ
 {{{
 ’s/gopher/World Wide Web/gi’
 }}}
+ตัวเลือกที่เกี่ยวข้องกับไฟล์ที่นำมาปฏิบัติ
 {{{
  -p -i.bak *.html
 }}}
 
-This command, issued at the Linux prompt, executes the short Perl program speci- fied in single quotes. This program consists of one perl operation; it substitutes for the original word gopher the string World Wide Web. This is done globally and ig- noring case, indicated by /gi. The remainder of the Linux command indicates that the perl program should run for each file ending in .html in the current directory. If any file, for example myfile.html needs changing, a backup of the original is made as file myfile.html.bak.
+ผู้ใช้รันคำสั่งนี้ที่พร็อมพ์ของลิหนิกซ์ เพื่อรันคำสั่งสั้นๆของเพิร์ล ในการค้นหา (ด้วยตัวเลือก s/) คำว่า "gopher" ถ้าหากพบให้แทนที่คำด้วยคำ "World Wide Web" โดยที่ตัวเลือกสุดท้าย (/gi) นั้นให้แทนทุกคำที่พบแบบไม่เป็น case sensitive โดยไฟล์ที่เป็นเป้าหมายคือไฟล์ที่ขึ้นต้นชื่อด้วย i.bak*.html ทั้งหมดที่อยู่ในไดเร็กทอรี่ปัจจุบัน เช่น ไฟล์ i.bak02.html หรือไฟล์ i.bakanyfile.html เป็นต้น
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
