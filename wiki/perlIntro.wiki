@@ -4,5 +4,6 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
 <wiki:toc max_depth="3" />
 
+เพิร์ล (Perl) ย่อมาจาก Practical Extraction and Report Language เป็นภาษาโปรแกรมแบบสคริปต์ที่นิยมอย่างแพร่หลายใน  Unix, Linux, MVS, VMS, MS/DOS, Macintosh, OS/2, Amiga, รวมถึงระบบปฏิบัติการอื่น ๆ เพิร์ล มีฟังก์ชันต่างๆ ที่มีประสิทธิภาพในการจัดการสตริง และในช่วงวิวัฒนาการของเทคโนโลยีเว็บนั้นเป็นสิ่งที่ได้รับความนิยมแพร่หลายในการสร้าง web interface gateway ที่รู้จักดีในนาม CGI (Common Gateway Interface) ซึ่งการรันฟังก์ชันต่าง ๆ ของเซอร์ฟเวอร์จะต้องทำผ่าน CGI เท่านั้นไม่สามารถจะใช้งานได้โดยตรงด้วยเหตุผลทางด้านความปลอดภัย โดยผู้ใช้งานเว็บจะมองไม่เห็นส่วนที่เป็นสคริปต์ของเพิร์ล แต่จะสามารถเรียกใช้งานผ่านการเรียกของ HTML เท่านั้น
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
