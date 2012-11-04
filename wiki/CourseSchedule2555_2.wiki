@@ -78,14 +78,15 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๑๐ || อ. ๑๖ ต.ค. ๕๕ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
 || ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || [operatorPrecedence], [arrayVariable ตัวแปรแบบอาเรย์], [regularExpression Regular Expression],  (ต่อ)การประยุกต์ใช้สคริปต์กับ Google Search, [perlIntro แนะนำ Perl], ทบทวนก่อนสอบระหว่างภาค  || || ||
 
-http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
-|| *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-
 <table width=500 border=1>
 <tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td>
 <td><font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font></td></tr>
 </table>
 
+http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
+
+
+|| *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑๒ || อ. ๖ พ.ย. ๕๕ || [gcodeAndSVN Subversion กับ Google Code], การโปรแกรมในภาษา Perl	|| || ||		
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || การโปรแกรมในภาษา Perl	|| || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || การโปรแกรมในภาษา Perl	|| || ||
