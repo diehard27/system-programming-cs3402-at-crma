@@ -30,7 +30,7 @@ perl -e
 ผู้ใช้รันคำสั่งนี้ที่พร็อมพ์ของลิหนิกซ์ เพื่อรันคำสั่งสั้นๆของเพิร์ล ในการค้นหา (ด้วยตัวเลือก s/) คำว่า "gopher" ถ้าหากพบให้แทนที่คำด้วยคำ "World Wide Web" โดยที่ตัวเลือกสุดท้าย (/gi) นั้นให้แทนทุกคำที่พบแบบไม่เป็น case sensitive โดยไฟล์ที่เป็นเป้าหมายคือไฟล์ที่ขึ้นต้นชื่อด้วย {{{i.bak*.html}}} ทั้งหมดที่อยู่ในไดเร็กทอรี่ปัจจุบัน เช่น ไฟล์ i.bak02.html หรือไฟล์ i.bakanyfile.html เป็นต้น
 
 =โปรแกรมแรกในเพิร์ล=
-ประโยคคำสั่งในภาษาเพิร์ลจะจบท้ายด้วยเซมิโคล่อน (;) เช่น
+ประโยคคำสั่งในภาษาเพิร์ลจะจบท้ายด้วยเซมิโคล่อน (;) ทดลองรันคำสั่งของเพิร์ลแบบ interactive ด้วยกันรันเพิร์ลแล้วกด <Enter> จากนั้นป้อนคำสั่งต่อไปนี้ลงท้ายด้วยเซมิโคล่อน
 {{{
 > perl <Enter> 
 $a = 5; 
@@ -38,15 +38,20 @@ $b = 4;
 $c = $a + $b; 
 print($c);
 }}}
+คำสั่งตามลำดับจะแสดงผลลัพธ์ของ c ซึ่งเท่ากับ a+b  จากนั้นให้กด Ctrl-d เพื่อรันโปรแกรม (ในลิหนิกซ์) ส่วนในวินโดวส์ให้กด Ctrl-z แทน
 
-Under Linux we press Ctrl-d to run the program. Under Windows we press Ctrl-z to run the program.
-We can also write a program, for example myfirst.pl.
+เราสามารถใช้เอดิเตอร์เขียนโปรแกรม myfirst.pl ได้เช่นเดียวกับการเขียนโปรแกรมในภาษาอื่น เครื่องหมาย {{{#}}} เป็นการแสดงว่าบรรทัดนั้นเป็น comment ไม่มีการปฏิบัติคำสั่งใดๆ
 {{{
-# myfirst.pl $a = 5; $b = 4; $c = $a + $b; print($c);
+# myfirst.pl 
+$a = 5; 
+$b = 4; 
+$c = $a + $b; 
+print($c);
 }}}
-To run the file myfirst.pl we enter at the command line
+
+หลังจากบันทึกไฟล์ myfirst.pl แล้วให้รันคำสั่งต่อไปนี้เพื่อให้สคริปต์ทำงานตามต้องการ
 {{{
-perl myfirst.pl
+perl  myfirst.pl
 }}}
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
