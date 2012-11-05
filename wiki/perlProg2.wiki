@@ -172,6 +172,16 @@ $kilometers = $dist * 1.609;
 print($dist, " miles = ", $kilometers, " kilometers\n");
 }}}
 
+==ฟังก์ชัน chop()==
+คำสั่ง chop ตัดอักษรสุดท้ายของตัวแปรออกไป (โดยทั่วไปแล้วใช้ในการกำจัดค่าแอสกี้ของ return/newline) ตัวอย่างต่อไปนี้ แสดงการทำงานของ chop()
+
+{{{
+$v = 'Flowers';
+$r = chop($v);
+print "$v (without $r)\n";
+# displays Flower (without s)
+}}}
+
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
 
 [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProg2 Edit]
