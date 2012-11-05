@@ -114,6 +114,16 @@ prachya@pcubusrv104> perl global2.pl
 }}}
 
 =Arithmetic Operators=
+โอเปอเรเตอร์ทางคณิตศาสตร์ของเพิร์ลมีเช่นเดียวกับภาษาโปรแกรมระดับคือ
+|| Operator || Comment||
+|| {{{+, -, *, /}}} || บวก, ลบ, คูณ, หาร||
+|| % || ม็อดดูโล - หาเศษที่เหลือ ||
+|| ++ || เพิ่มค่าขึ้นหนึ่ง ใช้ได้ทั้งแบบ pre-increment หรือ post-increment ||
+|| -- || ลดค่าลงหนึ่ง ใช้ได้ทั้งแบบ pre-decrements หรือ post-decrements ||
+|| ** || ยกกำลัง ||
+
+
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
+
 [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProg2 Edit]
