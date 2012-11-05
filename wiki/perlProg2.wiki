@@ -78,7 +78,7 @@ print($id_num{"Surat"});  # return 37
 print("\n");
 }}}
 
-==$_ ตัวแปร global scalar==
+=={{{$_}}} ตัวแปร global scalar==
 ตัวแปรแบบ global scalar ที่ใช้มากในการเขียนเพิร์ลสคริปต์คือ {{{$_}}} สังเกตุการใช้งานจากตัวอย่างต่อไปนี้
 {{{
 # global.pl
