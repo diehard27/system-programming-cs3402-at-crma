@@ -157,6 +157,21 @@ print("Done --- arithmetic.pl\n");
 ={{{<STDIN>}}} Standard Input=
 เพิร์ลสามารถอ้างถึงอินพุทจากเชลล์ผ่าน standard input โดยจะกำหนดชื่อตัวแปรเฉพาะว่า STDIN ใช้ร่วมกับเครื่องหมายน้อยกว่ามากว่า คือ {{{<STDIN>}}}
 
+{{{
+# stdin.pl
+print("Enter the distance in kilometers: "); 
+$dist = <STDIN>; 
+chop($dist); 
+$miles = $dist * 0.6214; 
+print($dist, " kilometers = ", $miles, " miles\n");
+
+print("Enter the distance in miles: "); 
+$dist = <STDIN>; 
+chop($dist); 
+$kilometers = $dist * 1.609; 
+print($dist, " miles = ", $kilometers, " kilometers\n");
+}}}
+
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
 
 [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProg2 Edit]
