@@ -209,7 +209,8 @@ print "\n";
 $c = "alpha-"; 
 $d = "3"; 
 $e = $c . $d; 
-print $e; # returns alpha-3 print "\n";
+print $e; # returns alpha-3 
+print "\n";
 }}}
 
 ==Interpolation==
@@ -217,7 +218,8 @@ print $e; # returns alpha-3 print "\n";
 # interpolation 
 $str1 = "apples"; 
 $str2 = "pears"; 
-print "$str1 and $str2"; # returns apples and pears print "\n";
+print "$str1 and $str2"; # returns apples and pears 
+print "\n";
 }}}
 
 ==cmp - Comparison==
