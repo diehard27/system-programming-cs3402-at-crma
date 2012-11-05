@@ -4,6 +4,36 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
 <wiki:toc max_depth="3" />
 
+การตั้งนามสกุลของเพิร์ลสคริปต์โดยทั่วไปจะตั้งเป็น .pl เช่น hello.pl เพื่อให้ป้องกันการสับสน (สามารถตั้งเป็นอย่างอื่นได้  
+{{{
+# hello.pl
+print("Hello there\n");
+}}}
+
+การรันสคริปต์สามารถทำได้โดยเรียกใช้คำสั่ง perl จากพร็อมพ์ของเชลล์ เช่น
+{{{
+perl  hello.c
+}}}
+หากต้องการรันสคริปต์จากเชลล์ตรง ๆ ให้ใส่ในบรรทัดแรกของไฟล์สคริปต์ตำแหน่งที่จะใช้โปรแกรม perl สามารถค้นหาได้ด้วยคำสั่ง which
+{{{
+prachya@pcubusrv104> which perl
+/usr/bin/perl
+}}}
+กำหนดว่าให้ใช้เพิร์ลไหน (บางครั้งในระบบมี perl หลายเวอร์ชั่น)
+{{{
+#!/usr/bin/perl
+# hello.pl
+print("Hello there\n");
+}}}
+จากนั้นตั้งให้สคริปต์มี permission แบบ executable ด้วยคำสั่ง chmod
+{{{
+chmod  +x  hello.pl
+}}}
+รันคำสั่งได้โดยตรงจากพร็อมท์
+{{{
+./hello.pl
+}}}
+
 =แบบของตัวแปร=
 เพิร์ลมีตัวแปรข้อมูล 3 แบบคือ scalars, arrays (lists), และ associative arrays (hashes)  
 ==$x ตัวแปร scalar==
@@ -31,7 +61,7 @@ print($e."\n");
 {{{
 #indexed arrays
 @a1 = ( 3, 4, 5, 2, -1, 'a', 1.23, "ergonomic");
-print(@a1);
+print(@a1);  # 3452-1a1.23ergonomic
 print("\n");
 print($a1[2]);  # element indexed 2 value => 5
 print("\n");
@@ -39,7 +69,28 @@ print("\n");
 
 ==%x ตัวแปร associative array หรือ hashes==
 
-==$_ ตัวแปร global==
+{{{
+# associative arrays
+%id_num = ("Prachya", 23, "Narong", 21, "Surat", 37);
+print($id_num{"Prachya"});  # return 23
+print("\n");
+print($id_num{"Surat"});  # return 37
+print("\n");
+}}}
+
+==$_ ตัวแปร global scalar==
+ตัวแปรแบบ global scalar ที่ใช้มากในการเขียนเพิร์ลสคริปต์คือ {{{$_}}} สังเกตุการใช้งานจากตัวอย่างต่อไปนี้
+{{{
+# global.pl
+$_ = 4; 
+$a = 7; 
+$b = $_ + $a; 
+print("b = " + $b); # => 11 
+print("\n");
+
+$_ = "Chalermwat"; 
+print($_); # => Chalermwat
+}}}
 
 =Arithmetic Operators=
 
