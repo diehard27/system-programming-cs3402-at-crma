@@ -120,7 +120,7 @@ prachya@pcubusrv104> perl global2.pl
 || % || ม็อดดูโล - หาเศษที่เหลือ ||
 || ++ || เพิ่มค่าขึ้นหนึ่ง ใช้ได้ทั้งแบบ pre-increment หรือ post-increment ||
 || -- || ลดค่าลงหนึ่ง ใช้ได้ทั้งแบบ pre-decrements หรือ post-decrements ||
-|| ** || ยกกำลัง ||
+|| {{{**}}} || ยกกำลัง ||
 
 
 
