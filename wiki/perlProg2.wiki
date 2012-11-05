@@ -92,6 +92,27 @@ $_ = "Chalermwat";
 print($_); # => Chalermwat
 }}}
 
+ตัวอย่างต่อไปเป็นการใช้คำสั่งค้นหา s/search_string/target_string/options ในประโยคำสั่งของเพิร์ลกับตัวแปรแบบ global
+
+{{{
+#!/usr/bin/perl
+# global2.pl
+# in the following code block
+# we replace the substring the by the string xxx
+
+$_ = " the cat is in the house";
+print($_."\n");
+$str1 = "the";
+s/$str1/xxx/g; # acts on $_
+print("$_\n"); # => xxx cat is in xxx house
+}}}
+เมื่อรันสคริปต็ด้วยคำสั่ง {{{perl global2.pl}}} จะได้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> perl global2.pl
+ the cat is in the house
+ xxx cat is in xxx house
+}}}
+
 =Arithmetic Operators=
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
