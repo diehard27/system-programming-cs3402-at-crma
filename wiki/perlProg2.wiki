@@ -172,6 +172,15 @@ $kilometers = $dist * 1.609;
 print($dist, " miles = ", $kilometers, " kilometers\n");
 }}}
 
+เมื่อรันสคริปต์นี้จะได้ผลลัพธ์ดังต่อไปนี้
+{{{
+prachya@pcubusrv104> perl stdin.pl
+Enter the distance in kilometers: 1.6
+1.6 kilometers = 0.99424 miles
+Enter the distance in miles: 1
+1 miles = 1.609 kilometers
+}}}
+
 ==ฟังก์ชัน chop()==
 คำสั่ง chop ตัดอักษรสุดท้ายของตัวแปรออกไป (โดยทั่วไปแล้วใช้ในการกำจัดค่าแอสกี้ของ return/newline) ตัวอย่างต่อไปนี้ แสดงการทำงานของ chop()
 
