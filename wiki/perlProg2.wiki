@@ -5,8 +5,31 @@
 <wiki:toc max_depth="3" />
 
 =แบบของตัวแปร=
+เพิร์ลมีตัวแปรข้อมูล 3 แบบคือ scalars, arrays (lists), และ associative arrays (hashes)  
 ==$x ตัวแปร scalar==
-==@x ตัวแปร array==
+ตัวแปรแบบ scalar เป็นได้ทั้งตัวเลข อักษร หรือสตริง มีเครื่องหมาย $ นำหน้าตัวแปร (คล้าย ๆ ใน shell หรือ PHP)
+ตัวอย่าโปรแกรมเพิร์ลที่ใช้ตัวแปร scalars
+{{{
+#scalars
+$a = 7;
+$b = 1.23;
+$c = 'A';
+$d = "willi";
+$e = false;
+
+print($a);
+print("\n");    # newline
+print($b."\n");
+print("$b\n");
+print("$c\n");
+print($d."\n");
+print($e."\n");
+}}}
+
+==@x ตัวแปร array หรือ lists==
+==%x ตัวแปร associative array หรือ hashes==
 ==$_ ตัวแปร global==
+
+=Arithmetic Operators=
 
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg3 การโปรแกรม Perl 3]
