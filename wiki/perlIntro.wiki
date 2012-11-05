@@ -54,4 +54,35 @@ print($c);
 perl  myfirst.pl
 }}}
 
+=แบบฝึกหัด=
+1) สร้างไฟล์ชื่อ f1.txt ให้มีข้อมูลดังนี้
+{{{
+a
+b
+c
+}}}
+2) รันคำสั่งเพื่อสำเนาไฟล์ ไปไว้ที่ f2.txt
+{{{
+cp  f1.txt  f2.txt
+}}}
+3) รันคำสั่งต่อไปนี้ เพื่อเปลี่ยน 'b' ในไฟล์ f1.txtg ให้เป็น 'Black'
+{{{
+perl -e 's/b/Black/gi' -p -i f1.txt 
+}}}
+4) ตรวจสอบผลการทำงานของเพิร์ลด้วยคำสั่ง diff
+{{{
+prachya@pcubusrv104> diff -y f1.txt  f2.txt
+}}}
+ซึ่งจะให้ผลลัพธ์ที่หน้าจอดังนี้
+{{{
+a                                                               a
+Black                                                         | b
+c                                                               c
+}}}
+ในกรณีที่ต้องการทำกับหลายไฟล์สามารถใช้ wildcard ได้เช่น 
+{{{
+perl -e 's/b/Black/gi' -p -i f*.txt 
+}}}
+ซึ่งเพิร์ลจะทำการเปลี่ยนข้อความที่มี 'b' ให้เป็น 'Black' ในทุกไฟล์ที่ขึ้นต้นด้วย f และลงท้ายด้วย .txt
+
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg2 การโปรแกรม Perl 2]
