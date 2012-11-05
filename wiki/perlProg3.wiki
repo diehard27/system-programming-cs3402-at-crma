@@ -4,6 +4,29 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg4 การโปรแกรม Perl 4]
 <wiki:toc max_depth="3" />
 
+=Conditions=
+
+=Logical Operators=
+
+=Loops=
+
+==for loop==
+
+==while loop==
+
+==until loop==
+
+==foreach loop==
+
+=goto Statement=
+
+=Mathematical Functions=
+
+=Bitwise Operations=
+
+
+
+
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
