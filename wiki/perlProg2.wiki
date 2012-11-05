@@ -8,7 +8,7 @@
 เพิร์ลมีตัวแปรข้อมูล 3 แบบคือ scalars, arrays (lists), และ associative arrays (hashes)  
 ==$x ตัวแปร scalar==
 ตัวแปรแบบ scalar เป็นได้ทั้งตัวเลข อักษร หรือสตริง มีเครื่องหมาย $ นำหน้าตัวแปร (คล้าย ๆ ใน shell หรือ PHP)
-ตัวอย่าโปรแกรมเพิร์ลที่ใช้ตัวแปร scalars
+ตัวอย่างโปรแกรมเพิร์ลที่ใช้ตัวแปร scalars
 {{{
 #scalars
 $a = 7;
@@ -19,7 +19,7 @@ $e = false;
 
 print($a);
 print("\n");    # newline
-print($b."\n");
+print($b."\n"); # using dot to concat
 print("$b\n");
 print("$c\n");
 print($d."\n");
@@ -27,7 +27,18 @@ print($e."\n");
 }}}
 
 ==@x ตัวแปร array หรือ lists==
+ตัวแปรอาเรย์แบบมีดัชนี (indexed arrays) นั้นต้องนำหน้าชื่อตัวแปรด้วยเครื่องหมาย @ ดัชนีเริ่มต้นที่ศูนย์โดยที่การกำหนดค่าของสมาชิกจะใช้วงเล็บ โดยที่ค่าต่างๆ สามารถผสมกันได้ว่าจะเป็น scalar แบบใด ดังตัวอย่างด้านล่าง  การเรียกใช้ตัวแปรของอาเรย์จะใช้เครื่องหมาย $ นำหน้าพร้อมทั้งกำหนดค่าดัชนีให้ตรงกับค่าที่ต้องการ
+{{{
+#indexed arrays
+@a1 = ( 3, 4, 5, 2, -1, 'a', 1.23, "ergonomic");
+print(@a1);
+print("\n");
+print($a1[2]);  # element indexed 2 value => 5
+print("\n");
+}}}
+
 ==%x ตัวแปร associative array หรือ hashes==
+
 ==$_ ตัวแปร global==
 
 =Arithmetic Operators=
