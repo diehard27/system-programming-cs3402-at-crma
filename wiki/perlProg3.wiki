@@ -25,6 +25,77 @@ else {
 ||ไม่เท่ากับ||!=|| ne||
 ||เปรียบเทียบ ||<=> ||cmp||
 
+{{{
+# cond1.pl
+$a = 1;
+$b = 7;
+print "a=$a, b=$b\n";
+if($a == $b)
+{
+print "numbers are equal\n";
+}
+else
+{
+print "numbers are not equal\n";
+}
+#
+$c = 7.3;
+$d = 7.3;
+print "c=$c, d=$d\n";
+if($c == $d)
+{
+print "numbers are equal\n";
+}
+else
+{
+print "numbers are not equal\n";
+}
+}}}
+รันสคริปต์ cond1.pl จะได้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> perl cond1.pl
+a=1, b=7
+numbers are not equal
+c=7.3, d=7.3
+numbers are equal
+}}}
+
+{{{
+# cond2.pl
+$char1 = 'a';
+$char2 = 'A';
+print "char1=$char1, char2=$char2\n";
+if($char1 eq $char2)
+{
+print "characters are equal"
+}
+else
+{
+print "characters are not equal";
+}
+print "\n";
+#
+$string1 = "willi";
+$string2 = "willI";
+print "string1=$string1, string2=$string2\n";
+if($string1 ne $string2)
+{
+print "string1 is not the same as string2\n";
+}
+else
+{
+print "strings 1 and string2 are the same\n";
+}
+}}}
+เมื่อรันสคริปต์จะได้ผลลัพธ์
+{{{
+prachya@pcubusrv104> perl cond2.pl
+char1=a, char2=A
+characters are not equal
+string1=willi, string2=willI
+string1 is not the same as string2
+}}}
+
 =Arguments=
 Perl สามารถรับค่า arguments มาจากการรันผ่านเชลล์ได้ เช่น hello.pl 12 34 56 คล้ายกับการผ่านค่าตัวแปรเข้าสู่โปรแกรมในเชลล์สคริปต์
 ==ตัวแปร $ARGV==
