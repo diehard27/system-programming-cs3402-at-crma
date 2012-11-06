@@ -1,7 +1,7 @@
 #summary การเขียนโปรแกรมด้วย Perl 3
 <table width=500>
 <td>
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg4 การโปรแกรม Perl 4]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg4 การโปรแกรม Perl 4]<br>
 [perlProg2 Previous]
 <wiki:toc max_depth="3" />
 
