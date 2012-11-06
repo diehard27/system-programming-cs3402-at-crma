@@ -487,6 +487,7 @@ end of session
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
+  # Devid Medinets, Perl 5 by Examples, http://affy.blogspot.com/p5be
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg4 การโปรแกรม Perl 4]
 
