@@ -1,7 +1,7 @@
 #summary กำหนดการสอน
 <table width=500>
 <td>
-[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]
+[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
 กองวิชา คณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา
 รร.จปร.
 
@@ -86,7 +86,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 
-
+==Today==
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)], [gcodeAndSVN Subversion กับ Google Code]	||[assignment05 งานมอบ ๕] || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	|| || ||
