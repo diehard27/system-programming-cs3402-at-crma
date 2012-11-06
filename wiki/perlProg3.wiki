@@ -241,7 +241,7 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 ||STDIN||	This file handle is used to read input from the standard input file. Normally, this is connected to the keyboard, but it can be changed.||
 ||STDOUT||	This file handle is used to send output to the standard output file. Normally, this is the display, but it can be changed.||
 
-Source: Devid Metdinets, Perl 5 by Examples, http://affy.blogspot.com/p5be/ch12.htm
+Source: Devid Medinets, Perl 5 by Examples, http://affy.blogspot.com/p5be/ch12.htm
 
 =Logical Operators=
 
