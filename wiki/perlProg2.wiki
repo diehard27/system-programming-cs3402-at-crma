@@ -251,20 +251,20 @@ print($w."\n");
 }}}
 
 =String Functions=
-||chomp||removes trailing newlines and returns the number of characters removed||
-||chop||removes and returns the last character from a string||
-||chr||converts ASCII or Unicode values into their corresponding characters||
-||crypt||allows you to store passwords or other sensitive data using ASCII characters as encrypted strings||
-||hex||converts a hex string into the numerical corresponding value||
-||index||returns the position of the first occurrence of a substring in a string||
-||lc||converts all the characters of a string in lowercase and returns the new string||
-||lcfirst||converts the first character of a string in lowercase and returns the new string||
-||length||returns the number of bytes/characters in a string||
-||oct||converts an octal string into the numerical corresponding value||
-||ord||converts a character into its ASCII/Unicode corresponding value||
-||pack||converts a list into a string, according to a user-defined template (ex. a binary representation of a list)||
-||q/STRING/||singly quote a string||
-||qq/STRING/||doubly quote a string||
+||chomp||ลบ newlines และคืนค่าจำนวนอักษรที่ลบออกไป||
+||chop||ลบอักษรสุดท้ายจากสตริง และคืนค่าของตัวอักษรที่ลบไป||
+||chr||แปลงค่า ASCII หรือ Unicode ให้เป็นตัวอักษร||
+||crypt||แปลงสตริงของรหัสผ่านให้อยู่ในรูป ASCII||
+||hex||แปลงเลขฐานสิบหกให้เป็นค่าตัวเลข||
+||index||คืนค่าตำแหน่งของ substring ที่พบในสตริงที่กำหนด||
+||lc||แปลงทุกอักษรในสตริงให้เป็นภาษาอังกฤษตัวเล็กและคืนค่าสตริงที่แปลง||
+||lcfirst||แปลงอักษรแรกของสตริงให้เป็นตัวเล็กแล้วคืนค่าสตริงที่แปลง||
+||length||คืนจำนวนตัวอักษร หรือไบท์ของสตริง||
+||oct||แปลงสตริงของเลขฐานแปดให้เป็นเลขฐานสิบ||
+||ord||แปลงอักษรให้เป็น ASCII/Unicode ที่กำหนด||
+||pack||แปลง list ให้เป็นสตริง, ตาม template ที่กำหนด||
+||q/STRING/||ใส่ single quote ให้สตริง||
+||qq/STRING/||ใส่ double quote ให้สตริง||
 ||reverse||in scalar context, concatenates the elements of a list and returns a string value with all characters in the opposite order||
 ||rindex||is similar to index, but returns the position of the last occurrence of a substring in a string||
 ||sprintf||emulates the C sprintf function||
