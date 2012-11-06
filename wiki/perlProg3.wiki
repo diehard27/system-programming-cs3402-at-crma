@@ -236,8 +236,8 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 ||%ENV||	This hash variable contains entries for your current environment variables. Changing or adding an entry affects only the current process or a child process, never the parent process. See the section "Example: Using the %ENV Variable" later in this chapter.||
 ||%SIG||	This hash variable contains entries for signal handlers. For more information about signal handlers, see Chapter 13, "Handling Exceptions and Signals."||
 ||_||	This file handle (the underscore) can be used when testing files. If used, the information about the last file tested will be used to evaluate the new test.||
-||DATA||	This file handle refers to any data following __END__.
-STDERR	This file handle is used to send output to the standard error file. Normally, this is connected to the display, but it can be redirected if needed.||
+||DATA||	This file handle refers to any data following __END__.||
+||STDERR||	This file handle is used to send output to the standard error file. Normally, this is connected to the display, but it can be redirected if needed.||
 ||STDIN||	This file handle is used to read input from the standard input file. Normally, this is connected to the keyboard, but it can be changed.||
 ||STDOUT||	This file handle is used to send output to the standard output file. Normally, this is the display, but it can be changed.||
 
