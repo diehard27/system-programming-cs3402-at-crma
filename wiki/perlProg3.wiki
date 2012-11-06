@@ -204,11 +204,12 @@ prachya@pcubusrv104> perl time.pl
 
 =Logical Operators=
 ตัวกระทำทางตรรก (logical operators) ในภาษา Perl มีเช่นเดียวกับภาษาชั้นสูงอื่นๆ ตามตาราง
-||&&|| logical AND||
-|| {{{| |}}} || logical OR||
-|| xor|| logical XOR||
-|| !|| logical NOT||
-
+<table>
+<tr><tc>&&</tc><tc>logical AND</tc><\tr>
+<tr><tc>{{{||}}}</tc><tc>logical OR<tc/><\tr>
+<tr><tc>xor</tc><tc>logical XOR<tc/><\tr>
+<tr>!</tc><tc>logical NOT<tc/><\tr>
+</table>
 
 =Loops=
 
