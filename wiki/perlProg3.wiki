@@ -381,7 +381,7 @@ You did it
 }}}
 
 ==until loop==
-ตรงกันข้ามกับ while until loop จะทำงานเมื่อ <condition> เป็น false ไปจนกว่าจะเป็น true จึงจะออกจาก loop โดยมีรูแปบบดังนี้
+ตรงกันข้ามกับ while until loop จะทำงานเมื่อ {{{<condition>}}} เป็น false ไปจนกว่าจะเป็น true จึงจะออกจาก loop โดยมีรูแปบบดังนี้
 {{{
 until (<condition>) {
    ...do something...
