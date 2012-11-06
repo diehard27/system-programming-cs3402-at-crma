@@ -386,6 +386,8 @@ You did it
 until (<condition>) {
    ...do something...
 }
+}}}
+
 ตัวอย่างสตริปต์ until.pl ต่อไปนี้แสดงการใช้งาน until loop
 {{{
 
