@@ -1,4 +1,4 @@
-#summary การเขียนโปรแกรมด้วย Perl 3
+#summary การเขียนโปรแกรมด้วย Perl 4
 <table width=500>
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]
