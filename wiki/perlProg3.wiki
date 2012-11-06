@@ -519,7 +519,12 @@ s = 3.5
 }}}
 
 =Bitwise Operations=
+Perl สนับสนุนการใช้ bitwise operation เช่น AND &, OR |, XOR ^ (exclusive OR) และ NOT ~
+{{{
+}}}
 
+{{{
+}}}
 
 
 
