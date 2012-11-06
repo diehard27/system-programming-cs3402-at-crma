@@ -91,8 +91,8 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)], [gcodeAndSVN Subversion กับ Google Code]	|| || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	|| || ||
 || ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	|| [assignment05 งานมอบ ๕]  || ||
-|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || ทบทวนภาษา C	|| || ||
-|| ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || C กับ System Programming	|| || ||		
+|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C]	|| || ||
+|| ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cSysProg C กับ System Programming]	|| || ||		
 || ๑๘ || อ. ๒๗ พ.ย. ๕๕ || การติดต่อกับ shell || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
 || ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C	|| || ||
 || ๒๐ || อ. ๔ ธ.ค. ๕๕ || การประยุกต์ใช้ C		|| || ||
