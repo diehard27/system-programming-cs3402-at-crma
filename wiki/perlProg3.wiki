@@ -346,8 +346,50 @@ dfa
 }}}
 
 ==while loop==
+เช่นเดียวกับภาษาระดับสูงทั่วไป while loop สามารถกำหนดได้ตามรูปแบบ
+{{{
+while (<condition>) 
+{
+  do something..
+}
+}}}
+ตัวอย่างสคริปต์ while.pl ต่อไปนี้แสดงการใช้งาน while loop ในการรับอินพุทจาก STDIN
+{{{
+# while.pl
+#
+# $x ne $y Is $x string unequal to $y ?
+#
+print "Please enter password (e.g. why me?)\n";
+print "Password? ";
+$a = <STDIN>;
+chop $a; # remove the newline at end
+
+while($a ne "why me?") {
+  print "sorry. try again\n";
+  print "Password? ";
+  $a = <STDIN>;
+  chop $a;
+}
+print "You did it\n";
+}}}
+ผลการรันสคริปต์เป็นดังนี้
+{{{
+prachya@pcubusrv104> perl while.pl
+Please enter password (e.g. why me?)
+Password? why me?
+You did it
+}}}
 
 ==until loop==
+ตรงกันข้ามกับ while until loop จะทำงานเมื่อ <condition> เป็น false ไปจนกว่าจะเป็น true จึงจะออกจาก loop โดยมีรูแปบบดังนี้
+{{{
+until (<condition>) {
+   ...do something...
+}
+ตัวอย่างสตริปต์ until.pl ต่อไปนี้แสดงการใช้งาน until loop
+{{{
+
+}}}
 
 ==foreach loop==
 
