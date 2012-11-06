@@ -2,6 +2,7 @@
 <table width=500>
 <td>
 [[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
+
 กองวิชา คณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา
 รร.จปร.
 
