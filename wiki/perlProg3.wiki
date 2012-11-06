@@ -324,6 +324,26 @@ prachya@pcubusrv104> perl forloop2.pl
 39916800
 }}}
 
+ตัวอย่างใน forloop3.pl แสดงการประยุกต์ใช้ STDIN ในลูป
+{{{
+# forloop3.pl
+#
+for($line = <STDIN>, $count = 1; $count <= 3; $line = <STDIN>, $count++)
+{
+  print($line);
+}
+}}}
+ผลของการรันโปรแกรม forloop3.pl
+{{{
+prachya@pcubusrv104> perl forloop3.pl
+4
+4
+g
+g
+s
+s
+dfa
+}}}
 
 ==while loop==
 
