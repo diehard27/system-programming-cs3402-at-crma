@@ -189,6 +189,18 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 
 =Perl Special Variable=
 ดูรายละเอียดของตัวแปรพิเศษใน [perlSpecialVars ลิงค์นี้]
+ตัวอย่างการใช้งาน
+{{{
+# time.pl
+print "$^T\n";
+}}}
+เมื่อรันสคริปต์จะได้ค่าของเวลา (เป็นวินาที) ขณะที่รัน
+{{{
+prachya@pcubusrv104> perl time.pl
+1352186777
+prachya@pcubusrv104> perl time.pl
+1352186778
+}}}
 
 =Logical Operators=
 
