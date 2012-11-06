@@ -390,12 +390,92 @@ until (<condition>) {
 
 ตัวอย่างสตริปต์ until.pl ต่อไปนี้แสดงการใช้งาน until loop
 {{{
+# until.pl
+print("What is 27 plus 26?\n");
+$correct_answer = 53;
+$input_answer = <STDIN>;
+chop($input_answer);
 
+until($input_answer == $correct_answer) {
+   print("wrong! keep trying!\n");
+   $input_answer = <STDIN>;
+   chop($input_answer);
+}
+print("You got it!\n");
+}}}
+ผลการรันสตริปต์เป็นดังนี้
+{{{
+prachya@pcubusrv104> perl until.pl
+What is 27 plus 26?
+53
+You got it!
 }}}
 
 ==foreach loop==
+ใน foreach loop จะทำงานกับ list ขออาเรย์ไปตามลำดับ ตามตัวอย่าง foreach.pl ต่อไปนี้
+{{{
+# foreach.pl
+#
+@wordlist = ("Good", "Morning", "Egoli");
+
+foreach $word (@wordlist) {
+   print("$word\n");
+}
+
+@numbers = ("3", "7", "3", "12", "15", "3", "3");
+$count = 0;
+foreach $x (@numbers) {
+   if($x == "3") {
+      ++$count;
+   }
+}
+print $count; # => 4
+print "\n";
+}}}
+ซึ่งจะได้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> perl foreach.pl
+Good
+Morning
+Egoli
+4
+}}}
 
 =goto Statement=
+เช่นเดียวกับภาษา C/C++ Perl มีคำสั่ง goto เพื่อให้สามารถกระโดดไปยังตำแหน่งที่กำหนดไว้ (ด้วย Label: ) ได้ตามตัวอย่างต่อไปนี้
+{{{
+# goto.pl
+
+print("What is 20 + 36?\n");
+$correct_answer = 56;
+$input_answer = <STDIN>;
+chop($input_answer);
+$count = 0;
+until($input_answer == $correct_answer) {
+   print("wrong! keep trying!\n");
+   $input_answer = <STDIN>;
+   chop($input_answer);
+   if($count == 5) {
+      goto L1;
+   }
+   $count++;
+}
+print("You got it!\n");
+goto L2;
+
+L1: print("LetÂ’s give up\n");
+
+L2:
+print("end of session\n");
+}}}
+ผลของการรับสตริปต์เป็นดังนี้
+{{{
+prachya@pcubusrv104> perl goto.pl
+What is 20 + 36?
+56
+You got it!
+end of session
+}}}
 
 =Mathematical Functions=
 
