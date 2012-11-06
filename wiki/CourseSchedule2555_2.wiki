@@ -77,6 +77,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๙ || พฤ. ๑๑ ต.ค. ๕๕ || แสดงสถานะคะแนนเก็บ, เฉลยสอบโดยอาจารย์ ๑,๒ [shellScriptApp2 การประยุกต์ใช้เชลล์สคริปต์ ๒], [versionControl1 การควบคุมเวอร์ชั่น 1] || ส่งงานมอบ ๓|| ||		
 || ๑๐ || อ. ๑๖ ต.ค. ๕๕ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
 || ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || [operatorPrecedence], [arrayVariable ตัวแปรแบบอาเรย์], [regularExpression Regular Expression],  (ต่อ)การประยุกต์ใช้สคริปต์กับ Google Search, [perlIntro แนะนำ Perl], ทบทวนก่อนสอบระหว่างภาค  || || ||
+|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
 
 <table width=500 border=1>
 <tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td>
@@ -87,16 +88,15 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 
 
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
-|| ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)], [gcodeAndSVN Subversion กับ Google Code]	|| || ||
+|| ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)], [gcodeAndSVN Subversion กับ Google Code]	||[assignment05 งานมอบ ๕] || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	|| || ||
-|| ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	|| [assignment05 งานมอบ ๕]  || ||
+|| ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	|| [assignment06 งานมอบ ๖]  || ||
 || ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C]	|| || ||
 || ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cSysProg C กับ System Programming]	|| || ||		
 || ๑๘ || อ. ๒๗ พ.ย. ๕๕ || การติดต่อกับ shell || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
-|| ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C	|| || ||
+|| ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C	||[assignment07 งานมอบ ๗] || ||
 || ๒๐ || อ. ๔ ธ.ค. ๕๕ || การประยุกต์ใช้ C		|| || ||
-|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || โครงสร้างของโปรเซส การควบคุมโปรเซส	||[assignment06 งานมอบ ๖]  || ||		
+|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || โครงสร้างของโปรเซส การควบคุมโปรเซส	||[assignment08 งานมอบ ๘]  || ||		
 || ๒๒ || อ. ๑๑ ธ.ค. ๕๕ || การบูรณาการใช้ C, Perl, Shell scripts || || ||
 || ๒๓ || พฤ. ๑๓ ธ.ค. ๕๕ || ทบทวนก่อนสอบประจำภาค, System Programming ขั้นก้าวหน้า	|| || ||
 || ** || ๑๗-๒๑ ธ.ค. ๕๕ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
