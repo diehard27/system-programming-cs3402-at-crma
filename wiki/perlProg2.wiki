@@ -274,6 +274,8 @@ print($w."\n");
 ||uc||แปลงทุกอักษรในสตริงให้เป็นตัวใหญ่ แล้วคืนค่าที่แปลง<br><font color=green> ต.ย.{{{ $string = uc($string);}}} </font>||
 ||ucfirst||แปลงเฉพาะอักษรแรกของสตริงให้เป็นตัวใหญ่ แล้วคืนค่าที่แปลง<br><font color=green> ต.ย.{{{ my $newStr = ucfirst $str;}}}</font> ||
 
+<font color=red>หมายเหตุ: my ใช้กำหนด scope ของตัวแปร คล้ายกับการตั้งค่า local variable</font>
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # http://www.misc-perl-info.com/perl-string-functions.html
