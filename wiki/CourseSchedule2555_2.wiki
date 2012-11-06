@@ -78,12 +78,12 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๙ || พฤ. ๑๑ ต.ค. ๕๕ || แสดงสถานะคะแนนเก็บ, เฉลยสอบโดยอาจารย์ ๑,๒ [shellScriptApp2 การประยุกต์ใช้เชลล์สคริปต์ ๒], [versionControl1 การควบคุมเวอร์ชั่น 1] || ส่งงานมอบ ๓|| ||		
 || ๑๐ || อ. ๑๖ ต.ค. ๕๕ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
 || ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || [operatorPrecedence], [arrayVariable ตัวแปรแบบอาเรย์], [regularExpression Regular Expression],  (ต่อ)การประยุกต์ใช้สคริปต์กับ Google Search, [perlIntro แนะนำ Perl], ทบทวนก่อนสอบระหว่างภาค  || || ||
-|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
 
 <table width=500 border=1>
 <tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td>
 <td><font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font></td></tr>
 </table>
+|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
 
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 
