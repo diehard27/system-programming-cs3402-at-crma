@@ -519,11 +519,52 @@ s = 3.5
 }}}
 
 =Bitwise Operations=
-Perl สนับสนุนการใช้ bitwise operation เช่น AND &, OR |, XOR ^ (exclusive OR) และ NOT ~
+Perl สนับสนุนการใช้ bitwise operation ดังนี้
 {{{
+AND   & 
+OR    |
+XOR  ^ (exclusive OR)
+NOT  ~ (หรือ one's complement)  
 }}}
-
+ซึ่งเป็น operation ที่กระทำระดับบิทของตัวเลขไบนารี่ ตัวอย่างเลขไบนารี่ของ 1001 คือ
 {{{
+00000000 00000000 00000000 00001001
+}}}
+ซึ่งหากทำ one's complement (NOT) แล้วจะได้ค่าดังนี้
+{{{
+11111111 11111111 11111111 11110110
+}}}
+สคริปต์ bitwise.pl ต่อไปนี้แสดงตัวอย่างการใช้งาน bitwise operation ของ Perl
+{{{
+# bitwise.pl
+$a = 9; # 1001
+$b = 7; # 0111
+$c = $a & $b;
+print(" $c\n"); # => 1 (0001)
+
+$d = $a | $b;
+print(" $d\n"); # => 15 (1111)
+
+$e = $a ^ $b;
+print(" $e\n"); # => 14 (1110)
+
+$f = ~$a;
+print(" $f\n"); # => 4294967286
+
+# two complement
+$z = -45;
+$z = ~$z;
+$z++;
+print(" $z\n");
+}}}
+ผลลัพธ์ของการรันสคริต์เป็นดังนี้
+{{{
+prachya@pcubusrv104> perl bitwise.pl
+ 1
+ 15
+ 14
+ 4294967286
+ 45
 }}}
 
 
