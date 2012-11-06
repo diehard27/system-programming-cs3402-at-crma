@@ -15,6 +15,20 @@ else {
   ..do other thing
 }
 }}}
+หรือในรูปแบบ elseif
+{{{
+if(<condition>) {
+  ..do something
+}
+elseif {
+  ..do other thing
+}
+elseif {
+  ..do more thing
+}
+}}}
+
+
 โดยที่ condition ใน Perl จะเป็นไปตามตารางต่อไปนี้
 ||Operation ||Numeric Version ||String Version||
 ||น้อยกว่า ||< ||lt||
