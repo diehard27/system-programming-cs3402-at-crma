@@ -230,7 +230,7 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 ||$^X||	Holds the full path name of the Perl interpreter being used to run the current script.||
 ||$ARGV||	Holds the name of the current file being read when using the diamond operator ({{{<>}}}).||
 ||@ARGV||	This array variable holds a list of the command line arguments. You can use $#ARGV to determine the number of arguments minus one.||
-||@F||	This array variable holds the list returned from autosplit mode. Autosplit mode is associated with the -a command line option.
+||@F||	This array variable holds the list returned from autosplit mode. Autosplit mode is associated with the -a command line option.||
 ||@INC||	This array variable holds a list of directories where Perl can look for scripts to execute. The list is mainly used by the require statement. You can find more information about require statements in Chapter 15, "Perl Modules."||
 ||%INC||	This hash variable has entries for each filename included by do or require statements. The key of the hash entries are the filenames, and the values are the paths where the files were found.||
 ||%ENV||	This hash variable contains entries for your current environment variables. Changing or adding an entry affects only the current process or a child process, never the parent process. See the section "Example: Using the %ENV Variable" later in this chapter.||
