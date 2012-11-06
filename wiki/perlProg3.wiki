@@ -6,6 +6,24 @@
 <wiki:toc max_depth="3" />
 
 =Conditions=
+เงื่อนไขใน perl สามารถกำหนดได้ด้วยประโยคคำสั่ง if/else ตามรูปแบบต่อไปนี้
+{{{
+if(<condition>) {
+  ..do something
+}
+else {
+  ..do other thing
+}
+}}}
+โดยที่ condition ใน Perl จะเป็นไปตามตารางต่อไปนี้
+||Operation ||Numeric Version ||String Version||
+||น้อยกว่า ||< ||lt||
+||น้อยกว่าหรือเท่ากับ ||<=|| le||
+||มากกว่า|| >|| gt||
+||มากกว่าหรือเท่ากับ|| >=|| ge||
+||เท่ากับ|| == ||eq||
+||ไม่เท่ากับ||!=|| ne||
+||เปรียบเทียบ ||<=> ||cmp||
 
 =Logical Operators=
 
