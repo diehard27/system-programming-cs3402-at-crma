@@ -209,7 +209,7 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 ||$+||	Holds the string matched by the last bracket in the last successful pattern match. For example, the statement /Fieldname: (.*)|Fldname: (.*)/ && ($fName = $+); will find the name of a field even if you don't know which of the two possible spellings will be used.||
 ||$*||	Changes the interpretation of the ^ and $ pattern anchors. Setting $* to 1 is the same as using the /m option with the regular expression matching and substitution operators. Normally, $* is equal to 0.||
 ||$0||	Holds the name of the file containing the Perl script being executed.||
-||$<number>||	This group of variables ($1, $2, $3, and so on) holds the regular expression pattern memory. Each set of parentheses in a pattern stores the string that match the components surrounded by the parentheses into one of the $<number> variables.||
+||{{{$<number>}}}||	This group of variables ($1, $2, $3, and so on) holds the regular expression pattern memory. Each set of parentheses in a pattern stores the string that match the components surrounded by the parentheses into one of the {{{$<number>}}} variables.||
 ||$[||	Holds the base array index. Normally, it's set to 0. Most Perl authors recommend against changing it without a very good reason.||
 ||$]||	Holds a string that identifies which version of Perl you are using. When used in a numeric context, it will be equal to the version number plus the patch level divided by 1000.||
 ||$"||	This is the separator used between list elements when an array variable is interpolated into a double-quoted string. Normally, its value is a space character.||
@@ -228,7 +228,7 @@ prachya@pcubusrv104> ./mycal.pl 34 / 3
 ||$^T||	Holds the time, in seconds, at which the script begins running.||
 ||$^W||	Holds the current value of the -w command line option.||
 ||$^X||	Holds the full path name of the Perl interpreter being used to run the current script.||
-||$ARGV||	Holds the name of the current file being read when using the diamond operator (<>).||
+||$ARGV||	Holds the name of the current file being read when using the diamond operator ({{{<>}}}).||
 ||@ARGV||	This array variable holds a list of the command line arguments. You can use $#ARGV to determine the number of arguments minus one.||
 ||@F||	This array variable holds the list returned from autosplit mode. Autosplit mode is associated with the -a command line option.
 ||@INC||	This array variable holds a list of directories where Perl can look for scripts to execute. The list is mainly used by the require statement. You can find more information about require statements in Chapter 15, "Perl Modules."||
@@ -241,9 +241,7 @@ STDERR	This file handle is used to send output to the standard error file. Norma
 ||STDIN||	This file handle is used to read input from the standard input file. Normally, this is connected to the keyboard, but it can be changed.||
 ||STDOUT||	This file handle is used to send output to the standard output file. Normally, this is the display, but it can be changed.||
 
-
-==References==
-  # Devid Metdinets, Perl 5 by Examples, http://affy.blogspot.com/p5be/ch12.htm
+Source: Devid Metdinets, Perl 5 by Examples, http://affy.blogspot.com/p5be/ch12.htm
 
 =Logical Operators=
 
