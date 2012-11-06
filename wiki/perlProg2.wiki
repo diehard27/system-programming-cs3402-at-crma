@@ -256,10 +256,10 @@ print($w."\n");
 ||chop||ลบอักษรสุดท้ายจากสตริง และคืนค่าของตัวอักษรที่ลบไป<br><font color=green> ต.ย. {{{$r = chop($v);}}}</font>||
 ||chr||แปลงค่า ASCII หรือ Unicode ให้เป็นตัวอักษร<br><font color=green> ต.ย. {{{print chr(0x41), "\n";}}}</font>||
 ||crypt||แปลงสตริงของรหัสผ่านให้อยู่ในรูป ASCII<br><font color=green> ต.ย.{{{ $encryptedString = crypt $string, $salt}}} .[http://www.misc-perl-info.com/perl-crypt.html ..more]</font>||
-||hex||แปลงเลขฐานสิบหกให้เป็นค่าตัวเลข<br><font color=green> ต.ย.{{{ }}}</font> ||
-||index||คืนค่าตำแหน่งของ substring ที่พบครั้งแรกในสตริงที่กำหนด<br><font color=green> ต.ย.{{{ }}} </font>||
-||lc||แปลงทุกอักษรในสตริงให้เป็นภาษาอังกฤษตัวเล็กและคืนค่าสตริงที่แปลง<br><font color=green> ต.ย.{{{ }}} </font>||
-||lcfirst||แปลงอักษรแรกของสตริงให้เป็นตัวเล็กแล้วคืนค่าสตริงที่แปลง<br><font color=green> ต.ย.{{{ }}} </font>||
+||hex||แปลงเลขฐานสิบหกให้เป็นค่าตัวเลข<br><font color=green> ต.ย.{{{ print hex "0x4E8", "\n";}}}</font> ||
+||index||คืนค่าตำแหน่งของ substring ที่พบครั้งแรกในสตริงที่กำหนด<br><font color=green> ต.ย.{{{ my $found = index $someText, "Perl";}}} </font>||
+||lc||แปลงทุกอักษรในสตริงให้เป็นภาษาอังกฤษตัวเล็กและคืนค่าสตริงที่แปลง<br><font color=green> ต.ย.{{{ lc($str);}}} </font>||
+||lcfirst||แปลงอักษรแรกของสตริงให้เป็นตัวเล็กแล้วคืนค่าสตริงที่แปลง<br><font color=green> ต.ย.{{{ my $newStr = lcfirst $str;}}} </font>||
 ||length||คืนจำนวนตัวอักษร หรือไบท์ของสตริง<br><font color=green> ต.ย.{{{ }}}</font> ||
 ||oct||แปลงสตริงของเลขฐานแปดให้เป็นเลขฐานสิบ<br><font color=green> ต.ย.{{{ }}} </font>||
 ||ord||แปลงอักษรให้เป็น ASCII/Unicode ที่กำหนด<br><font color=green> ต.ย.{{{ }}} </font>||
