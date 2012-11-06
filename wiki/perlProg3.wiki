@@ -5,6 +5,26 @@
 [perlProg2 Previous]<==
 <wiki:toc max_depth="3" />
 
+=Conditions=
+เงื่อนไขใน perl สามารถกำหนดได้ด้วยประโยคคำสั่ง if/else ตามรูปแบบต่อไปนี้
+{{{
+if(<condition>) {
+  ..do something
+}
+else {
+  ..do other thing
+}
+}}}
+โดยที่ condition ใน Perl จะเป็นไปตามตารางต่อไปนี้
+||Operation ||Numeric Version ||String Version||
+||น้อยกว่า ||< ||lt||
+||น้อยกว่าหรือเท่ากับ ||<=|| le||
+||มากกว่า|| >|| gt||
+||มากกว่าหรือเท่ากับ|| >=|| ge||
+||เท่ากับ|| == ||eq||
+||ไม่เท่ากับ||!=|| ne||
+||เปรียบเทียบ ||<=> ||cmp||
+
 =Arguments=
 Perl สามารถรับค่า arguments มาจากการรันผ่านเชลล์ได้ เช่น hello.pl 12 34 56 คล้ายกับการผ่านค่าตัวแปรเข้าสู่โปรแกรมในเชลล์สคริปต์
 ==ตัวแปร $ARGV==
@@ -41,25 +61,46 @@ arg count=-1
 2=
 }}}
 
-=Conditions=
-เงื่อนไขใน perl สามารถกำหนดได้ด้วยประโยคคำสั่ง if/else ตามรูปแบบต่อไปนี้
+ตัวอย่างต่อไปนี้เป็นสคริปต์ mycal.pl ที่ใช้ตัวแปร ARGV ในการคำนวณแบบเครื่องคิดเลข
 {{{
-if(<condition>) {
-  ..do something
+#!/usr/bin/perl -w
+#SRC: http://www.cyberciti.biz/faq/howto-pass-perl-command-line-arguments/
+if ($#ARGV != 2 ) {
+        print "usage: mycal number1 op number2\neg: mycal 5 + 3 OR mycal 5 - 2\n";
+        exit;
+}
+$n1=$ARGV[0];
+$op=$ARGV[1];
+$n2=$ARGV[2];
+$ans=0;
+if ( $op eq "+" ) {
+        $ans = $n1 + $n2;
+}
+elsif ( $op eq "-"){
+        $ans = $n1 - $n2;
+}
+elsif ( $op eq "/"){
+        $ans = $n1 / $n2;
+}
+elsif ( $op eq "*"){
+        $ans = $n1 * $n2;
 }
 else {
-  ..do other thing
+        print "Error: op must be +, -, *, / only\n";
+        exit;
 }
+print "$ans\n";
 }}}
-โดยที่ condition ใน Perl จะเป็นไปตามตารางต่อไปนี้
-||Operation ||Numeric Version ||String Version||
-||น้อยกว่า ||< ||lt||
-||น้อยกว่าหรือเท่ากับ ||<=|| le||
-||มากกว่า|| >|| gt||
-||มากกว่าหรือเท่ากับ|| >=|| ge||
-||เท่ากับ|| == ||eq||
-||ไม่เท่ากับ||!=|| ne||
-||เปรียบเทียบ ||<=> ||cmp||
+ผลลัพธ์ของการรันสคริปต์ mycal.pl
+{{{
+prachya@pcubusrv104> ./mycal.pl
+usage: mycal number1 op number2
+eg: mycal 5 + 3 OR mycal 5 - 2
+prachya@pcubusrv104> ./mycal.pl 5 + 3
+8
+prachya@pcubusrv104> ./mycal.pl 34 / 3
+11.3333333333333
+}}}
 
 =Logical Operators=
 
