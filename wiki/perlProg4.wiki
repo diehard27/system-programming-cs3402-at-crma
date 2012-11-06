@@ -1,7 +1,8 @@
 #summary การเขียนโปรแกรมด้วย Perl 4
 <table width=500>
 <td>
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]<br>
+[perlProg3 Previous]<==
 <wiki:toc max_depth="3" />
 
 =printf และ sprintf=
@@ -13,6 +14,7 @@
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
 ----
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]<br>
+[perlProg3 Previous]<==
 
 [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProg4 Edit]
