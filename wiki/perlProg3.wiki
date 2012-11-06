@@ -207,16 +207,16 @@ prachya@pcubusrv104> perl time.pl
 <table>
 <tr>
 <td>&&</td><td>logical AND</td>
-<\tr>
+</tr>
 <tr>
 <td>{{{||}}}</td><td>logical OR<td/>
-<\tr>
+</tr>
 <tr>
 <td>xor</td><td>logical XOR<td/>
-<\tr>
+</tr>
 <tr>
 <td>!</td><td>logical NOT<td/>
-<\tr>
+</tr>
 </table>
 
 =Loops=
