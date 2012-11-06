@@ -478,6 +478,45 @@ end of session
 }}}
 
 =Mathematical Functions=
+Perl มี built-in ฟังก์ชันมากมาย ผู้อ่านที่สนใจรายละเอียดเพิ่มเติมสามารถดูได้จาก [http://www.xav.com/perl/lib/Pod/perlfunc.html ลิงค์นี้] ฟังก์ชันทางคณิตศาสตร์ของ Perl ได้แก่ abs, atan2, cos, exp, hex, int, log, oct, rand, sin, sqrt, srand ในส่วนนี้จะกล่าวถึงตัวอย่างการใช้ฟังก์ชันทางคณิตศาสตร์เบื้องต้นจากสคริปต์ math.pl ต่อไปนี้
+{{{
+# math.pl
+
+$x = 3.14159;
+$y = sin($x);
+print("y = $y\n");
+
+$z = cos($y);
+print("z = $z\n");
+# atan2 function calculates and returns
+# the argument of one value divided by another,
+# in the range -pi to pi
+$u = atan2(1.0,4.0);
+print("u = $u\n");
+
+$v = sqrt(6.5);
+print("v = $v\n");
+
+$w = exp($v);
+print("w = $w\n");
+
+$r = log(4.0); # log base e
+print("r = $r\n");
+
+$s = abs(-3.5);
+print("s = $s\n");
+}}}
+
+ผลของการรันสคริปต์
+{{{
+y = 2.65358979335273e-06
+z = 0.999999999996479
+u = 0.244978663126864
+v = 2.54950975679639
+w = 12.8008267258436
+r = 1.38629436111989
+s = 3.5
+}}}
 
 =Bitwise Operations=
 
@@ -487,7 +526,8 @@ end of session
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
-  # Devid Medinets, Perl 5 by Examples, http://affy.blogspot.com/p5be
+  # Devid Medinets, Perl 5 by Examples, http://affy.blogspot.com/p5be/ch12.htm
+  # Perl Built-in Functions, http://www.xav.com/perl/lib/Pod/perlfunc.html
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProg4 การโปรแกรม Perl 4]
 
