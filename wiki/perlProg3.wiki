@@ -278,8 +278,52 @@ baab
 }}}
 
 =Loops=
-
+ใน Perl โปรแกรมเมอร์สามารถใช้ for loop, while loop, until loop, และ foreach loop ได้ตามรายละเอียดต่อไปนี้
 ==for loop==
+รูปแบบ
+{{{
+for($i=0; <condition>; $i++)
+{
+    ..do something
+}
+}}}
+
+ตัวอย่าง forloop1.pl เพื่อคำนวณค่าผลรวมของเลข
+{{{
+# forloop1.pl
+# forloop.pl
+#
+$sum = 0;
+for($i=0; $i<10; ++$i)
+{
+  $sum = $sum + $i;
+}
+print "1+2+...+10=$sum";
+print "\n";
+}}}
+ผลการรันสคริปต์จะได้ดังนี้
+{{{
+prachya@pcubusrv104> perl forloop1.pl
+1+2+...+10=45
+}}}
+
+อีกตัวอย่างของการใช้ for loop ในสคริปต์ forloop2.pl เพื่อคำนวณผลคูณรวม
+{{{
+# forloop2.pl
+$product = 1;
+for($i=1; $i<12; ++$i)
+{
+  $product *= $i;
+}
+print "$product";
+print "\n";
+}}}
+ซึ่งจะให้ผลลัพธ์เท่ากับ
+{{{
+prachya@pcubusrv104> perl forloop2.pl
+39916800
+}}}
+
 
 ==while loop==
 
