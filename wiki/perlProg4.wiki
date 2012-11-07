@@ -6,8 +6,30 @@
 <wiki:toc max_depth="3" />
 
 =printf และ sprintf=
-
-
+รูปแบบการใช้งาน printf และ sprintf
+{{{
+sprintf FORMAT, LIST
+}}}
+เพิร์ลเลียนแบบการทำงานของ printf และ sprintf ในภาษา C ทำให้ผู้ที่คุ้นเคยกับการโปรแกรมภาษา C สามารถใช้ฟังก์ชันนี้ได้โดยง่าย ยกตัวอย่างเช่น ต้องการฟอร์แม็ตตัวแปร result และ rounded ให้มีผลลัพธ์ที่ต้องกาสามารถใช้ sprintf ได้ดังนี้
+{{{
+        # Format number with up to 8 leading zeroes
+        $result = sprintf("%08d", $number);
+        # Round number to 3 digits after decimal point
+        $rounded = sprintf("%.3f", $number);
+}}}
+รูปแบบทั่วไปที่เหมือน C
+{{{
+   %%	a percent sign
+   %c	        a character with the given number
+   %s	        a string
+   %d	a signed integer, in decimal
+   %u	an unsigned integer, in decimal
+   %o	an unsigned integer, in octal
+   %x   	an unsigned integer, in hexadecimal
+   %e  	a floating-point number, in scientific notation
+   %f	        a floating-point number, in fixed decimal notation
+   %g	a floating-point number, in %e or %f notation
+}}}
 
 
 =References=
