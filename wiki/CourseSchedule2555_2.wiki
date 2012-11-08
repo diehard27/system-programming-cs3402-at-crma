@@ -89,10 +89,10 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 
 ==Today==
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)], [gcodeAndSVN Subversion กับ Google Code]	||[assignment05 งานมอบ ๕] || ||
+|| ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)]	||[assignment05 งานมอบ ๕] || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	|| || ||
 || ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	|| [assignment06 งานมอบ ๖]  || ||
-|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C]	|| || ||
+|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C], [gcodeAndSVN Subversion กับ Google Code]	|| || ||
 || ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cSysProg C กับ System Programming]	|| || ||		
 || ๑๘ || อ. ๒๗ พ.ย. ๕๕ || การติดต่อกับ shell || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
 || ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C	||[assignment07 งานมอบ ๗] || ||
