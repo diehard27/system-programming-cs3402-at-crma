@@ -31,10 +31,12 @@ sprintf FORMAT, LIST
    %g	a floating-point number, in %e or %f notation
 }}}
 
+=System Calls=
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
+  # System Calls, http://perlmeme.org/faqs/system/system.html
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp การประยุกต์ใช้ Perl]<br>
 [perlProg3 Previous]<==
