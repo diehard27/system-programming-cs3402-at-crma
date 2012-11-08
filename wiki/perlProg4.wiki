@@ -32,7 +32,19 @@ sprintf FORMAT, LIST
 }}}
 
 =System Calls=
+{{{
+#!/usr/bin/perl
+# sys1.pl
 
+@files = qx(ls /proc);
+#print @files;
+my $i=0;
+foreach my $f (@files) {
+  print "$i : $f";
+  $i++;
+}
+
+}}}
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
