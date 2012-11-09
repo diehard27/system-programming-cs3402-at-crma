@@ -46,6 +46,14 @@ foreach my $f (@files) {
   $i++;
 }
 
+{{{
+ #!/usr/bin/perl
+    use strict;
+    use warnings;
+    my $info = qx(uptime);
+    print "Uptime is: $info\n";
+}}}
+
 }}}
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
