@@ -65,6 +65,173 @@ foreach my $f (@files) {
     }
 }}}
 
+=List Operation=
+list จะถูกเก็บไว้ในอาร์เรย์ ซึ่งสามารถถ้างถึงตัวแปรแต่ละตัวด้วยดัชนี (index) ตามตัวอย่างต่อไปนี้
+{{{
+@myarray = (7, "Egoli", 1.23, "\"Having fun?\"", 9.23e-10);
+}}}
+ดังนั้น ตัวแปรตัวแรก และตัวแปรถัดไปคือ
+{{{
+myarray[0] = 7; myarray[1] = "Egoli";
+}}}
+ตัวอย่างต่อไปแสดงการนับตัวแปรใน list 
+{{{
+# mylist.pl #
+@myarray = (7, "Egoli", 1.23, "\"Having fun?\"", 9.23e-10);
+$count = 0;
+while($count <= 5)
+{
+   print("element $count is $myarray[$count]\n");
+$count++; }
+}}}
+โปรแกรมต่อไปนี้แสดงตัวอย่างการใช้ list operators แบบต่าง ๆ รวมถึงการตั้งค่าตัวแปรโดยตรงจากอาเรย์ (x,y,z)
+{{{
+# array operations
+# array.pl
+#
+@fruit = ("apples ", "pears ", "banana ");
+@cities = ("Egoli ", "Cape Town ", "Durban ", "Pretoria ");
+@numbers = ("4", "7", "9", "12", "15");
+print @fruit;
+print "\n";
+print $cities[2]; # => Durban
+print "\n";
+if($numbers[2] != $numbers[4])
+{
+$sum = $numbers[2] + $numbers[4];  # => 24
+print($sum);
+print("\n");
+}
+else
+{
+$difference = $numbers[2] - $numbers[4];
+print $difference;
+print "\n";
+}
+($x, $y, $z) = @cities;
+print $x;
+print "\n";
+print $z;
+print "\n";
+# => Egoli
+# => Durban
+}}}
+
+=push และ pop=
+ตัวอย่างสคริปต์ต่อไปนี้แสดงการใช้งานคำสั่ง push และ pop เพื่อเก็บค่าเข้าไปในอาร์เรย์ หรือดึงค่าออกมาจากอาร์เรย์
+{{{
+@fruit = ("apples ", "pears ", "banana ");
+@cities = ("Egoli ", "Cape Town ", "Durban ", "Pretoria ");
+@morecities = ("George", "Bloemfontain");
+push(@cities, "Grahamstown");
+print @cities;
+print "\n";
+push(@fruit, "strawberries ", "peach ", "plums ");
+print @fruit;
+print "\n";
+push(@cities, @morecities);
+$mycity = pop(@cities);
+print $mycity;
+print "\n";
+}}}
+ตัวอย่างการใช้งานคำสั่ง pop
+{{{
+@s = ("AAAA","BBB");
+$tmp = pop(@s);
+print $tmp;
+}}}
+
+=split และ  join=
+split ใช้ในการแยกคำหรือส่วนของคำออกจากกันให้อยู่ในรูปของอาร์ย์ โดยผู้ใช้กำหนดตัวแยก เช่น คอมม่า หรือ เซมิโคลอน ส่วน join ใช้ในการเชื่อมค่าของตัวแปรในอาร์เรย์เข้าด้วยกัน ดังแสดงในตัวอย่างต่อไปนี้  ตัวแปร sting  เป็นตัวแปรแบบสตริง ในที่นี้เราจะกำหนดให้ คอมม่าเป็นตัวแบ่งคำ แล้วเก็บไว้ในอาร์เรย์ myarray ส่วนคำสั่ง join ใช้ต่อคำในอาร์เรย์ names ให้เป็นสตริงตัวเดียวชื่อ concatstring
+{{{
+# mysplit.pl
+# splitting a string into a list
+#
+$string = "otto, carl, ludwig, berlin:postdam";
+@myarray = split(/,/, $string);
+print "@myarray\n"; # => otto carl ludwig berlin:postdam
+print("\n");
+print $myarray[2];   # => ludwig
+print("\n");
+@names = ("Egoli-", "Gauteng ", "Johannesburg");
+$concatstring = join("", @names);
+print("$concatstring");
+}}}
+
+=Associative Array Operations=
+
+{{{
+# assoc.pl
+%ages = ( "Ludwig Otto", 40,  "Franz Karl", 32,
+          "Jane Coppersmith", 21, "Dan Smithlone", 67);
+print $ages{"Ludwig Otto"};  # => 40
+print("\n");
+print $ages{"Jane Coppersmith"}; # => 21
+print("\n");
+# adding an element
+$ages{"Henry VIII"} = 1654;  # !! curly brackets
+print %ages;
+print("\n");
+# deleting an element
+delete($ages{"Franz Karl"});
+print %ages;
+print("\n");
+@myarray = keys(%ages);
+print @myarray;          # => only the names
+print("\n");
+@valuearray = values(%ages);
+print("@valuearray");       # => only the values
+print("\n\n");
+while(($name, $value) = each(%ages))
+{
+   print($name);
+   print(" ");
+   print($value);
+   print("\n");
+}
+}}}
+
+=Pattern Matching=
+perl ใช้ regular expression  โอเปอเรเตอร์
+{{{
+=~
+}}}
+ในการค้นหา matching  และแทนส่วนที่ต้องการ จากตัวอย่างข้างล่าง สคริปต์จะทำการค้นหาคำว่า please ในคำตอบที่ผู้ใช้ป้อนเข้ามาในตัวแปร question และจะทำการพิมพ์เมื่อคำที่ป้อนเข้ามามีคำว่า please จากนั้นพิมพ์คำว่า Thank you for being polite
+{{{
+# matching.pl
+print("Ask me a question politely:\n");
+$question = <STDIN>;
+if($question =~ /please/)
+{
+   print("Thank you for being polite!");
+}
+else {
+   print("That was not very polite!\n");
+}
+}}}
+
+=Regular Expression=
+Regular expression เป็นแพ็ทเทิร์นที่ใช้ในการเปรียบเทียบสตริง หรือ combination ของสตริง
+{{{
+s/pattern/replacement/
+options for the substitution operator
+g change all occurence of the pattern
+i ignore case in pattern
+e evaluate replacement string as expression
+m treat string to be matched as multiple lines
+o evaluate only once
+s treat string to be matched as single line
+x ignore white space in pattern
+}}}
+
+ตัวอย่างแรกเป็นการแสดงการแทนที่คำว่า 123 ในสตริง string ด้วย 4567 โดยใช้ pattern matching โอเปอเรเตอร์ =~ 
+{{{
+# replace1.pl
+$string = "abc123def";
+$string =~ s/123/4567/;
+print("$string\n"); # => abc4567def
+}}}
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
