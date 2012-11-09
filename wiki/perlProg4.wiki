@@ -54,6 +54,16 @@ foreach my $f (@files) {
     my $info = qx(uptime);
     print "Uptime is: $info\n";
 }}}
+สามารถใช้ back tick (')  แทนการเรียกฟังก์ชัน qx() ได้
+{{{
+    #!/usr/bin/perl
+    use strict;
+    use warnings;
+    my @info = `who`;
+    foreach my $i (@info) {
+        print "$i is online\n";
+    }
+}}}
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
