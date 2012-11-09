@@ -232,6 +232,45 @@ $string =~ s/123/4567/;
 print("$string\n"); # => abc4567def
 }}}
 
+ตัวอย่างต่อไปแสดงการใช้ตัวแปร global variable {{{$_}}} กับคำสั่ง  pattern matching {{{s/<word>/<substitution>/<options>}}} หาอักษรอังกฤษตัวใหญ่ใด ๆ [A-Z] แล้วแทนด้วย +[A-Z]+ โดยใช้ regular expression {{{/+\1+/}}} pattern matching ส่วนที่สอง ทำคล้ายกันแต่กับอักษรตัวเล็กทั้งหมดโดยแทนด้วย [a-z]+ ไม่มีเครื่องหมายบวกด้านหน้า
+{{{
+# regexp1.pl
+$_ = "Egoli Gauteng";
+s/([A-Z])/+\1+/g;     # acts on global scalar variable $_
+print("$_");          # => +E+goli +G+auteng
+print("\n");
+s/([a-z])/\1+/g;
+print("$_");          # => +E+g+o+l+i+ +G+a+u+t+e+n+g+
+print("\n");
+}}}
+
+{{{
+# replace2.pl
+@input = <STDIN>;
+$count = 0;
+while($input[$count] ne "")
+{
+  $input[$count] =~ s/^[ \t]+//;
+  $input[$count] =~ s/[ \t]+\n$/\n/;
+  $input[$count] =~ s/[ \t]+/ /g;
+  $count++;
+}
+print("Formatted text:\n");
+print(@input);
+}}}
+บรรทัดนี้ตรวจสอบ ในกรณีที่มี space หรือ tab ที่จุดเริ่มต้นของบรรทัด ถ้ามีให้เอาส่วนนั้นออกจากสตริงเป้าหมาย
+{{{
+$input[$count] =~ s/^[ \t]+//;
+}}}
+บรรทัดต่อไปนี้ ตรวจสอบว่ามี space หรือ tab ที่ท้ายบรรทัดหรือไม่ ถ้ามีให้นำออกจากสตริงเป้าหมาย
+{{{
+$input[$count] =~ s/[ \t]+\n$/\n/;
+}}}
+บรรทัดต่อไปนี้ ใช้ตัวเลือก g หรือ global เพื่อกำจัด space และ tab ระหว่างคำทั้งหมด
+{{{
+$input[$count] =~ s/[ \t]+/ /g 
+}}}
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
