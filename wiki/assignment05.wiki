@@ -1,3 +1,3 @@
 #summary One-sentence summary of this page.
 
-  *[https://code.google.com/p/system-programming-cs3402-at-crma/wiki/perlProg4#printf_และ_sprintf printf_และ_sprintf]
+  *[perlProg4#printf_และ_sprintf printf_และ_sprintf]
