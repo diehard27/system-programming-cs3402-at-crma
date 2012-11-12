@@ -13,4 +13,4 @@
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 
-[https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProg2 Edit]
+[https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/cReview Edit]
