@@ -64,7 +64,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
   * ระบบปฏิบัติการ Operating System
   * การเขียนโปรแกรมภาษา C
   * สถาปัตยกรรมคอมพิวเตอร์
-==ตารางเรียน ๒๕๕๕/๒==
+==ตารางเรียน ๒๕๕๕/๒==[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑ || อ. ๑๑ ก.ย.๕๕ || [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/introduction_to_cs3402 แนะนำวิชา],  [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ], [introLinuxEnv การใข้งานลีนุกซ์เบื้องต้น] || [assignment01  งานมอบ ๑] || [PreTest ทดสอบความรู้เบื้องต้น]  ||
 || ๒ || พฤ. ๑๓ ก.ย. ๕๕ || [ProgrammingInLinux ลินุกซ์และการเขียนโปรแกรมบนลีนุกซ์] ด้วยโปรแกรมภาษาต่าง ๆ, [twoStepAssembly Assembly], [compilingCprogram C], [usingPerl Perl], [programmingShell Shell] || ||<font color=grey>นนร. ควรมีความเข้าใช้การใช้งานลิหนิกซ์เบื้องต้น, ล็อกอินไปที่เครื่องแม่ข่าย, ใช้งานคำสั่งต่าง ๆ , รู้จักวิธีคอมไพล์โปรแกรม, เขียนโปรแกรมด้วยเอดิเตอร์, คุ้นเคยกับระบบปฏิบัติการ</font> ||
