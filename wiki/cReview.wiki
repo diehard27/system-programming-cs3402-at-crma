@@ -5,7 +5,7 @@
 <wiki:toc max_depth="3" />
 
 ==ทบทวนภาษา C ==
- ภาษาซีเป็นภาษาที่พัฒนาโดย [http://en.wikipedia.org/wiki/Dennis_Ritchie Dennis Ritchie] แห่ง Bell Labs ในปี ค.ศ. 1972
+ ภาษาซี เป็นภาษาที่พัฒนาขึ้นในปี ค.ศ. 1972 โดย [http://en.wikipedia.org/wiki/Dennis_Ritchie Dennis Ritchie] แห่ง Bell Labs เป็นภาษาที่พัฒนามาจากภาษา B และจากภาษา BCPL ช่วงแรกภาษาซีถูกออกแบบให้เป็นภาษาที่ใช้เขียนโปรแกรมในระบบปฏิบัติการ UNIX และต่อมาในปี ค.ศ. 1978 Ritchie ได้ร่วมกับ Brain Kernighan แต่งหนังสือชื่อว่า "The C Programming Language" ทำให้ภาษาซีเป็นที่นิยมแพร่หลายเป็นอย่างมาก จนกระทั่งในปี ค.ศ. 1988 Ritchie และ Kernighan ได้ร่วมกับ ANSI (American National Standards Institute) กำหนดมาตรฐานของภาษาซีขึ้นมา โดยใช้ชื่อว่า "ANSI C"
 
 
 
