@@ -32,6 +32,14 @@ sprintf FORMAT, LIST
 }}}
 
 =Say=
+ในเพิร์ลเราสามารถใช้คำสั่ง say ได้คล้ายกับการทำงานของ print ดังตัวอย่างต่อไปนี้
+{{{
+use v5.10.1;
+@array = (1, 2, 3, undef, 4, 5);
+print @array;
+print "\n";
+say "some elements undefined" if undef ~~ @array;
+}}}
 
 =System Calls=
 {{{
