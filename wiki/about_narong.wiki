@@ -8,7 +8,7 @@ http://iwing.cpe.ku.ac.th/sites/default/files/pictures/picture-76.jpg
 
 หลังจากนั้นได้ลาออกจากงานเพื่อเข้าศึกษาระดับปริญญาโท ที่มหาวิทยาลัยเกษตรศาสตร์ บางเขน วิศวกรรมศาสตรมหาบัณฑิต (วิศวกรรมคอมพิวเตอร์) ได้ทำวิจัยเกี่ยวกับการตรวจจับการส่งผ่านข้อมูลของโพรโทคอลแบบเพียร์ทูเพียร์บนเครือข่ายไร้สายแบบ IEEE802.11b โดยในระหว่างศึกษาปริญญาโท ได้ทำงานพิเศษ เป็นเจ้าหน้าที่ดูแลศูนย์ข้อมูล (NOC Officer) ศูนย์ไทยกริดแห่งชาติ ซึ่งตั้งอยู่ใน ม.เกษตรศาสตร์ บางเขน มีหน้าที่รับผิดชอบในการจัดการผู้ใช้งานโดยใช้คำสั่ง Linux พื้นฐาน และตรวจตรา/ซ่อมบำรุงเบื้องต้นแก่อุปกรณ์คอมพิวเตอร์ในห้องแม่ข่าย ตลอดจนตอบคำถามและให้ความช่วยเหลือเบื้องต้นแก่ผู้ใช้งานระบบคอมพิวเตอร์แบบกริด
 
-ปัจจุบันเป็นอาจารย์ประจำกองวิชาคณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา รร.จปร. ติดต่อ phnarong(at)hotmail.com
+ปัจจุบันเป็นอาจารย์ประจำกองวิชาคณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา รร.จปร. ติดต่อ phnarong(at)ฮ้อทเมล์.คอม
 
 ==Publication==
     *  Narong Phoomsuk and Anan Phonphoem, "A Light-weight [http://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B8%95%E0%B8%97%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%95%E0%B9%8C BitTorrent] Detection Mechanism for Wireless LAN Environment" , To be appeared in 7th International Joint Conference on Computer Science and Software Engineering , JCSSE 2010 , Ramkhamhaeng University, Bangkok,Thailand , May 2010 [http://iwing.cpe.ku.ac.th/viewpublication/76 Link]
