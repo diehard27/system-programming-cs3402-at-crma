@@ -271,6 +271,84 @@ $input[$count] =~ s/[ \t]+\n$/\n/;
 $input[$count] =~ s/[ \t]+/ /g 
 }}}
 
+=แบบฝึกหัด=
+==ออกเลขรางวัล==
+ตัวอย่างต่อไปนี้แสดงการใช้งาน random function ของ perl และการใช้งาน sprint เพื่อออกเลขรางวัล 6 หลัก พร้อมให้แสดงเลขท้ายสามตัว และเลขท้ายสองตัว
+{{{
+# rand.pl
+my $random = rand(1000000);
+my $first = sprintf("%06d", $random);
+my $last3 = sprintf("%03d", rand(1000));
+my $last2 = sprintf("%02d", rand(100));
+print "First Prize = $first", "\n";
+print "Last 3 Prize = $last3", "\n";
+print "Last 2 Prize = $last2", "\n";
+}}}
+ผลการรันโปรแกรม rand.pl
+{{{
+prachya@pcubusrv104> perl rand.pl
+First Prize = 103298
+Last 3 Prize = 776
+Last 2 Prize = 84
+}}}
+
+เพิ่มส่วนการป้อนตัวเลขให้ผู้ใช้งานทาย
+{{{
+print "Please enter 6-digit number: ";
+$yournum = <STDIN>;
+my $random = rand(1000000);
+my $first = sprintf("%06d", $random);
+my $last3 = sprintf("%03d", rand(1000));
+my $last2 = sprintf("%02d", rand(100));
+print "First Prize = $first", "\n";
+print "Last 3 Prize = $last3", "\n";
+print "Last 2 Prize = $last2", "\n";
+if ($yournum==$first) {
+  print "!!!You have won the first prize\n";
+} elsif ($yournum==$last3) {
+  print "!!!You have won the last-3 prize\n";
+} elsif ($yournum==$last2) {
+  print "!!!You have won the last-2 prize\n";
+} else {
+  print "You didn\'t win.\n";
+}
+}}}
+
+ผลการรันสคริปต์ rand2.pl
+{{{
+prachya@pcubusrv104> perl rand2.pl
+Please enter 6-digit number: 258963
+First Prize = 331268
+Last 3 Prize = 784
+Last 2 Prize = 96
+You didn't win.
+}}}
+
+เพิ่ม until loop เพื่อให้ผู้ใช้ทายไปเรื่อย ๆ และออกจากโปรแกรมด้วยการป้อนศูนย์
+{{{
+$yournum=123456;
+until ($yournum=="000000") {
+print "Please enter 6-digit number (000000 to quit): ";
+$yournum = <STDIN>;
+my $random = rand(1000000);
+my $first = sprintf("%06d", $random);
+my $last3 = sprintf("%03d", rand(1000));
+my $last2 = sprintf("%02d", rand(100));
+print "First Prize = $first", "\n";
+print "Last 3 Prize = $last3", "\n";
+print "Last 2 Prize = $last2", "\n";
+if ($yournum==$first) {
+  print "!!!You have won the first prize\n";
+} elsif ($yournum==$last3) {
+  print "!!!You have won the last-3 prize\n";
+} elsif ($yournum==$last2) {
+  print "!!!You have won the last-2 prize\n";
+} else {
+  print "You didn\'t win.\n";
+}
+}
+}}}
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # perldoc.perl.org, http://perldoc.perl.org/5.8.8/functions/sprintf.html
