@@ -10,7 +10,7 @@
 
 
 =References=
-  # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
+  # Robert Love, _LINUX System Programming_ [http://mirror.paramadina.ac.id/pub/linux/doc/book/Linux.System.Programming.pdf  PDF]
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 
