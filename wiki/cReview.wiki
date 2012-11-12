@@ -5,7 +5,7 @@
 <wiki:toc max_depth="3" />
 
 ==ทบทวนภาษา C ==
- ภาษาซีเป็นภาษาที่พัฒนาโดย [Dennis Ritchie] แห่ง Bell Labs
+ ภาษาซีเป็นภาษาที่พัฒนาโดย [http://en.wikipedia.org/wiki/Dennis_Ritchie Dennis Ritchie] แห่ง Bell Labs ในปี ค.ศ. 1972
 
 
 
