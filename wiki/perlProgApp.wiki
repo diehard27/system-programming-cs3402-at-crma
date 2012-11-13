@@ -4,8 +4,98 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp2 การประยุกต์ใช้ Perl 2]
 <wiki:toc max_depth="3" />
 
+=Render SAR to HTML=
+==SAR คืออะไร?==
+SAR ย่อมาจาก System Activity Report ใช้สำหรับแสดงข้อมูลทางสถิติที่เกี่ยวกับระบบการทำงานของเครื่องแม่ข่ายหรือคอมพิวเตอร์ทั่วไป เช่น การใช้งานซีพียู เน็ตเวอร์ค หน่วยความจำ หรือดิสก์ โดย sar ที่รันในห้วงเวลาที่ต้องการ การติดตั้งบน Ubuntu เพียงแค่รันคำสั่ง sudo aptitude install atsar โดยที่ ผู้ใช้สามารถเรียกใช้งานด้วยคำสั่ง sar หรือ atsar ได้เนื่องจากเป็น symbolic ไปที่โปรแกรมเดียวกัน
 
+การใช้งานครั้งแรกกำหนดห้วงการเก็บข้อมูลในแต่ละแบบ โดยที่เก็บข้อมูลจาก kernel เป็น n ช่วงใน  t วินาที ค่า default ของ n เท่ากับ 1 และ t มีค่า >= 1
+{{{
+sar [ -flags ] t [ n ]
+}}}
 
+การเรียกใช้งาน sar
+{{{
+usage: atsar [-flags] t [n]              or
+       atsar [-flags] [-s hh:mm] [-e hh:mm] [-i sec] [-n day# | -f file]
+flags:
+        -A      all flags
+        -S      time-stamp for every output-line
+        -u      cpu (default flag)
+        -P      process load
+        -d      disk
+        -D      disk-partition
+        -r      memory & swap
+        -p      paging & swapping
+        -I      interrupts
+        -v      kernel-resources
+        -y      tty activity
+        -l      net-interf (general)
+        -L      net-interf (errors)
+        -w      ip   v4    (general)
+        -W      ip   v4    (errors)
+        -t      tcp  v4    (general)
+        -T      tcp  v4    (errors)
+        -U      udp  v4
+        -m      icmp v4    (general)
+        -M      icmp v4    (per type)
+        -g      ip   v6    (general)
+        -G      ip   v6    (errors)
+        -j      tcp  v6    (general)
+        -h      udp  v6
+        -k      icmp v6    (general)
+        -K      icmp v6    (per type)
+        -N      nfs        (general)
+        -E      nfs        (errors)
+        -V      nfs        (server)
+        -R      nfs-rpc    (%calls)
+}}}
+
+==Output ของ SAR==
+ตัวอย่างการใช้งาน sar เพื่อเรียกดูสถิติการใช้งานของดิสก์ด้วยตัวเลือก -D
+{{{
+prachya@pcubusrv104> sar -D
+
+Linux  pcubusrv104  2.6.32-33-generic-pae  #70-Ubuntu SMP Thu Jul 7 22:51:12 UTC 2011  i686  11/14/2012
+
+00:00:01  partition   busy  read/s Kbyt/r   write/s Kbyt/w  avque avserv _part_
+00:10:01  sda (8-0)     0%    0.00    0.0      0.06    6.2   1.02   6.05 ms
+          sda3                0.00    0.0      0.06    6.2
+00:20:01  sda (8-0)     0%    0.00    0.0      0.06    5.3   1.02   6.27 ms
+          sda3                0.00    0.0      0.06    5.3
+00:30:01  sda (8-0)     0%    0.00    0.0      0.05    5.6   1.02   6.27 ms
+          sda3                0.00    0.0      0.05    5.6
+00:40:01  sda (8-0)     0%    0.00    0.0      0.06    5.7   1.03   6.97 ms
+          sda3                0.00    0.0      0.06    5.7
+00:50:01  sda (8-0)     0%    0.00    0.0      0.05    5.6   1.02   6.00 ms
+          sda3                0.00    0.0      0.05    5.6
+01:00:01  sda (8-0)     0%    0.00    0.0      0.05    5.7   1.02   6.19 ms
+          sda3                0.00    0.0      0.05    5.7
+01:10:01  sda (8-0)     0%    0.00    0.0      0.07    6.2   1.38   7.60 ms
+          sda3                0.00    0.0      0.06    6.3
+          sda5                0.00    0.0      0.01    5.0
+01:20:01  sda (8-0)     0%    0.00    0.0      0.06    5.7   1.03   6.74 ms
+          sda3                0.00    0.0      0.06    5.7
+01:30:02  sda (8-0)     0%    0.00    0.0      0.05    5.7   1.00   5.73 ms
+          sda3                0.00    0.0      0.05    5.7
+01:40:01  sda (8-0)     0%    0.00    0.0      0.07    5.9   1.01   6.18 ms
+          sda3                0.00    0.0      0.07    5.9
+01:50:01  sda (8-0)     0%    0.00    0.0      0.05    6.1   1.04   6.58 ms
+          sda3                0.00    0.0      0.05    6.1
+02:00:01  sda (8-0)     0%    0.00    0.0      0.05    6.1   1.00   5.10 ms
+          sda3                0.00    0.0      0.05    6.1
+02:10:01  sda (8-0)     0%    0.00    0.0      0.06    6.1   1.00   5.03 ms
+          sda3                0.00    0.0      0.06    6.1
+02:20:01  sda (8-0)     0%    0.00    0.0      0.05    6.1   1.04   6.06 ms
+          sda3                0.00    0.0      0.05    6.1
+02:30:01  sda (8-0)     0%    0.00    0.0      0.05    6.1   1.00   5.24 ms
+          sda3                0.00    0.0      0.05    6.1
+02:40:01  sda (8-0)     0%    0.00    0.0      0.06    5.9   1.00   5.37 ms
+          sda3                0.00    0.0      0.06    5.9
+02:50:01  sda (8-0)     0%    0.00    0.0      0.05    5.9   1.00   5.47 ms
+}}}
+
+==References==
+  * sar man page, http://zux221-127-001.adsl.green.ch/cgi-bin/man/man2html?atsar+1
 
 
 =References=
