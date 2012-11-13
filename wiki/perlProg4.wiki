@@ -306,6 +306,28 @@ sub firstSub {
     print("The number of parameters is $numParameters\n");
 }
 }}}
+==passing by reference==
+ตัวอย่างต่อไปเป็นการส่งพารามิเตอร์แบบอ้างถึง ซึ่งจะทำฟังก์ชันสามารถเข้าไปแก้ไขค่าของตัวแปรที่ส่งมาแบบ passing by reference ได้
+{{{
+# sub3.pl
+# passing parameters by reference
+@array = (0..5);
+print("Before function call, array = @array\n");
+firstSub(@array);
+print("After function call, array =  @array\n");
+
+sub firstSub{
+    $_[0] = "A";
+    $_[1] = "B";
+}
+}}}
+
+เมื่อรันสคริปต์จะให้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> perl sub3.pl
+Before function call, array = 0 1 2 3 4 5
+After function call, array =  A B 2 3 4 5
+}}}
 
 =แบบฝึกหัด=
 ==ออกเลขรางวัล==
