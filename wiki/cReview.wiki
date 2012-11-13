@@ -31,9 +31,9 @@
 
 ==ฟังก์ชัน==
 
-==Pass by Value==
+===Pass by Value===
 
-==Pass by Reference==
+===Pass by Reference===
 
 ==ตัวแปรแบบโครงสร้าง==
 
