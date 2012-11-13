@@ -1,0 +1,7 @@
+#summary งานมอบ 6
+<table width=500>
+<td>
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]<br>
+<font color=red>กำหนดส่ง พฤหัสฯ 22 พ.ย.2555</font>
+
+1) จงเขียนโปรแกรม stack.pl เพื่อเลียนแบบการทำงานของสแต็ค โดยตั้งตัวแปร stack ให้เป็นแบบอาร์เรย์ และสามารถใช้คำสั่ง push และ pop
