@@ -20,15 +20,28 @@ sprintf FORMAT, LIST
 รูปแบบทั่วไปที่เหมือน C
 {{{
    %%	a percent sign
-   %c	        a character with the given number
-   %s	        a string
+   %c	a character with the given number
+   %s	a string
    %d	a signed integer, in decimal
    %u	an unsigned integer, in decimal
    %o	an unsigned integer, in octal
-   %x   	an unsigned integer, in hexadecimal
+   %x   an unsigned integer, in hexadecimal
    %e  	a floating-point number, in scientific notation
-   %f	        a floating-point number, in fixed decimal notation
+   %f	a floating-point number, in fixed decimal notation
    %g	a floating-point number, in %e or %f notation
+}}}
+
+ฟอร์แม็ตเพิ่มเติมสำหรับ conversion
+
+{{{
+  %X    like %x, but using upper-case letters
+  %E    like %e, but using an upper-case "E"
+  %G    like %g, but with an upper-case "E" (if applicable)
+  %b    an unsigned integer, in binary
+  %B    like %b, but using an upper-case "B" with the # flag
+  %p    a pointer (outputs the Perl value's address in hexadecimal)
+  %n    special: *stores* the number of characters output so far
+         into the next argument in the parameter list
 }}}
 
 =Say=
