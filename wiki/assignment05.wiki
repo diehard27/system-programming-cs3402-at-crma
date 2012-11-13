@@ -1,3 +1,5 @@
-#summary One-sentence summary of this page.
+#summary งานมอบ 5
 
-  *[perlProg4#printf_และ_sprintf printf_และ_sprintf]
+  * จงเขียน perl สคริปต์เพื่อให้ทำงานตามอัลกอริธึ่มต่อไปนี้
+
+  * 
