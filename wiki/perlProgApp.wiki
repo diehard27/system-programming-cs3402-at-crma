@@ -4,7 +4,7 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp2 การประยุกต์ใช้ Perl 2]
 <wiki:toc max_depth="3" />
 
-=Render SAR to HTML=
+=Render SAR to HTML for Google Chart=
 ==SAR คืออะไร?==
 SAR ย่อมาจาก System Activity Report ใช้สำหรับแสดงข้อมูลทางสถิติที่เกี่ยวกับระบบการทำงานของเครื่องแม่ข่ายหรือคอมพิวเตอร์ทั่วไป เช่น การใช้งานซีพียู เน็ตเวอร์ค หน่วยความจำ หรือดิสก์ โดย sar ที่รันในห้วงเวลาที่ต้องการ การติดตั้งบน Ubuntu เพียงแค่รันคำสั่ง sudo aptitude install atsar โดยที่ ผู้ใช้สามารถเรียกใช้งานด้วยคำสั่ง sar หรือ atsar ได้เนื่องจากเป็น symbolic ไปที่โปรแกรมเดียวกัน เมื่อติดตั้ง sar จะทำการเก็บข้อมูลเป็นระยะตามที่ตั้งเวลาไว้ใน cron ดูได้จาก /etc/cron.d/atsar ซึ่งค่าปริยายคือทุก ๆ 10 นาที
 
