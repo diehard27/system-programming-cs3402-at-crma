@@ -34,10 +34,13 @@
 
 
 ==ชนิดข้อมูลแบบ Enumeration==
- Enumeration หรือ enum เป็นชนิดข้อมูลที่มีสมาชิกเป็น "เซต" ซึ่งมีลักษณะคล้ายกับการประกาศค่าคงที่ที่เป็นตัวเลข โดยค่าที่คืนออกมาจะเป็นตัวเลขเท่านั้น เราสามารถสร้างสมาชิกเองได้ ตัวอย่างของการใช้ enum แสดงได้ดังโค้ดด้านล่าง
+ Enumeration หรือ enum เป็นชนิดข้อมูลที่มีสมาชิกเป็น "เซต" ซึ่งมีลักษณะคล้ายกับการประกาศค่าคงที่ที่เป็นตัวเลข โดยค่าที่คืนออกมาจะเป็นตัวเลขเท่านั้น เราสามารถสร้างสมาชิกและกำหนดค่าของสมาชิกแต่ละตัวได้
+* ในกรณีที่ไม่ได้มีการกำหนดค่า 
+** ค่าสมาชิกตัวแรกจะมีค่าเป็น 0
+** ค่าของสมาชิกตัวถัดไปค่อ ค่าของสมาชิกตัวก่อนหน้า+1
+
+ ตัวอย่างของการใช้ enum แสดงได้ดังโค้ดด้านล่าง
 {{{
-//enum.c
-//by narong phoomsuk
   1 //enum.c
   2 //by narong phoomsuk
   3 #include <stdio.h>
@@ -46,9 +49,9 @@
   6         enum student cadet2 = Chaiyapat;
   7         enum student cadet3 = Kulsiri;
   8         cadet1 = Wuttichai;
-  9         printf("cadet1 is %d\n",cadet1);
- 10         printf("cadet2 is %d\n",cadet2);
- 11         printf("cadet3 is %d\n",cadet3);
+  9         printf("cadet1 is %d\n",cadet1); => cadet1 is 0
+ 10         printf("cadet2 is %d\n",cadet2); => cadet2 is 1
+ 11         printf("cadet3 is %d\n",cadet3); => cadet3 is 6
  12         return 0;
  13 }
 }}}
