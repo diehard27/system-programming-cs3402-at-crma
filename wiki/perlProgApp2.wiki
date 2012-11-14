@@ -1,7 +1,8 @@
 #summary การประยุกต์ใช้ Perl 2
 <table width=500>
 <td>
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cReview ทบทวนภาษา C]
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cReview ทบทวนภาษา C]<br>
+[https://code.google.com/p/system-programming-cs3402-at-crma/wiki/perlProgApp Previous]<==
 <wiki:toc max_depth="3" />
 
 =สร้างกราฟการใช้ memory จาก sar=
@@ -121,6 +122,6 @@ foreach $buf (<FILE>) {
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
 ----
-[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cReview ทบทวนภาษา C]
-
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cReview ทบทวนภาษา C]<br>
+[https://code.google.com/p/system-programming-cs3402-at-crma/wiki/perlProgApp Previous]<==
 [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/perlProgApp2 Edit]
