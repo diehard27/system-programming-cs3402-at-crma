@@ -13,8 +13,7 @@ prachya@pcubusrv104> cat /etc/cron.d/atsar
 @reboot root test -x /usr/lib/atsar/atsadc && (LOGDIR=/var/log/atsar; CURDAY=`date +\%d`; find $LOGDIR/atsa$CURDAY -mtime +2 -type f -exec rm {} \; 2> /dev/null; /usr/lib/atsar/atsadc $LOGDIR/atsa$CURDAY)
 */10 * * * * root test -x /usr/lib/atsar/atsa1 && /usr/lib/atsar/atsa1
 }}}
-
-การใช้งานแบบแรกกำหนดห้วงการเก็บข้อมูลในแต่ละแบบ โดยที่เก็บข้อมูลจาก kernel เป็น n ช่วงใน  t วินาที ค่า default ของ n เท่ากับ 1 และ t มีค่า >= 1
+การใช้งานแบบแรกกำหนดห้วงการเก็บข้อมูลในแต่ละแบบ โดยที่เก็บข้อมูลจาก kernel เป็น n ช่วงใน  t วินาที ค่า default ของ n เท่ากับ 1 และ t มีค่า >= 1  รายละเอียดการใช้งาน sar เพิ่มเติมสามารถศึกษาได้ [http://sebastien.godard.pagesperso-orange.fr/tutorial.html ที่นี่]
 {{{
 sar [ -flags ] t [ n ]
 }}}
@@ -475,6 +474,7 @@ print "</html>\n";                                              print "</html>\n
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
+  # systat Tutorial, http://sebastien.godard.pagesperso-orange.fr/tutorial.html
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [perlProgApp2 การประยุกต์ใช้ Perl 2]
 
