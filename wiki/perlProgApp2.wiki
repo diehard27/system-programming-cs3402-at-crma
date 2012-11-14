@@ -19,7 +19,7 @@ Linux  pcubusrv104  2.6.32-33-generic-pae  #70-Ubuntu SMP Thu Jul 7 22:51:12 UTC
 }}}
 จะเห็นได้ว่าเครื่องมีหน่วยความจำ 488M และ หน่วยความจำเหลือ memfree=68M (เปลี่ยนไปตามเวลา) มีส่วนที่เป็น buffers และ ส่วนที่เป็น virtual memory หรือ swap ในที่นี้เราจะ plot การใช้งานหน่วยความจำที่ใช้, หน่วยความจำที่เหลือ, และ buffers
 
-เราจะใช้โค้ดเดียวกันกับ gchart-disk.pl โดยแก้ไขบางส่วนที่เกี่ยวข้องกับการใช้หน่วยความจำ และเราเลือกใช้ AreaChart ตามตัวอย่างใน [http://code.google.com/apis/ajax/playground/?type=visualization#area_chart Google Chart]
+เราจะใช้โค้ด [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/perl/gchart-mem.pl gchart-mem.pl] ซึ่งมีลักษณะเดียวกันกับ gchart-disk.pl โดยแก้ไขบางส่วนที่เกี่ยวข้องกับการใช้หน่วยความจำ และเราเลือกใช้ AreaChart ตามตัวอย่างใน [http://code.google.com/apis/ajax/playground/?type=visualization#area_chart Google Chart]
 
 {{{
 # gchart-mem.pl
