@@ -111,6 +111,8 @@ foreach $buf (<FILE>) {
 }}}
 <img width=400 src="https://dl.dropbox.com/u/37142998/2012%20System%20Programming/Figures/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E4.png">
 
+ข้อมูลสถิติของ sar ประเภทอื่นๆ ก็สามารถนำมาประยุกต์ใช้ได้เช่นเดียวกัน ทำให้สามารถสร้างข้อมูลสถิติของระบบคอมพิวเตอร์ได้โดยง่าย
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
 ----
