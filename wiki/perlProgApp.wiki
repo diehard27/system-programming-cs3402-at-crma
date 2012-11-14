@@ -6,7 +6,13 @@
 
 =Render SAR to HTML=
 ==SAR คืออะไร?==
-SAR ย่อมาจาก System Activity Report ใช้สำหรับแสดงข้อมูลทางสถิติที่เกี่ยวกับระบบการทำงานของเครื่องแม่ข่ายหรือคอมพิวเตอร์ทั่วไป เช่น การใช้งานซีพียู เน็ตเวอร์ค หน่วยความจำ หรือดิสก์ โดย sar ที่รันในห้วงเวลาที่ต้องการ การติดตั้งบน Ubuntu เพียงแค่รันคำสั่ง sudo aptitude install atsar โดยที่ ผู้ใช้สามารถเรียกใช้งานด้วยคำสั่ง sar หรือ atsar ได้เนื่องจากเป็น symbolic ไปที่โปรแกรมเดียวกัน
+SAR ย่อมาจาก System Activity Report ใช้สำหรับแสดงข้อมูลทางสถิติที่เกี่ยวกับระบบการทำงานของเครื่องแม่ข่ายหรือคอมพิวเตอร์ทั่วไป เช่น การใช้งานซีพียู เน็ตเวอร์ค หน่วยความจำ หรือดิสก์ โดย sar ที่รันในห้วงเวลาที่ต้องการ การติดตั้งบน Ubuntu เพียงแค่รันคำสั่ง sudo aptitude install atsar โดยที่ ผู้ใช้สามารถเรียกใช้งานด้วยคำสั่ง sar หรือ atsar ได้เนื่องจากเป็น symbolic ไปที่โปรแกรมเดียวกัน เมื่อติดตั้ง sar จะทำการเก็บข้อมูลเป็นระยะตามที่ตั้งเวลาไว้ใน cron ดูได้จาก /etc/cron.d/atsar ซึ่งค่าปริยายคือทุก ๆ 10 นาที
+
+{{{
+prachya@pcubusrv104> cat /etc/cron.d/atsar
+@reboot root test -x /usr/lib/atsar/atsadc && (LOGDIR=/var/log/atsar; CURDAY=`date +\%d`; find $LOGDIR/atsa$CURDAY -mtime +2 -type f -exec rm {} \; 2> /dev/null; /usr/lib/atsar/atsadc $LOGDIR/atsa$CURDAY)
+*/10 * * * * root test -x /usr/lib/atsar/atsa1 && /usr/lib/atsar/atsa1
+}}}
 
 การใช้งานแบบแรกกำหนดห้วงการเก็บข้อมูลในแต่ละแบบ โดยที่เก็บข้อมูลจาก kernel เป็น n ช่วงใน  t วินาที ค่า default ของ n เท่ากับ 1 และ t มีค่า >= 1
 {{{
