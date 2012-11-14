@@ -249,7 +249,65 @@ Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
 
 จากตัวอย่าง HTML โค้ดข้างต้นเราจะใช้ perl ในการดึงข้อมูลสถิติของดิสก์ที่ได้ นำมาเขียนเป็นสคริปต์ที่เรียก API ของ Google Chart เพื่อสร้างกราฟที่ต้องการ
 
+==สร้าง gchar-disk.pl==
+นำหน้า html ข้างต้นมาเขียนเป็นสคริปต์เพื่อให้ perl สามารถสร้างหน้าเว็บได้เช่นเดียวกัน
+{{{
+# gchart-disk.pl
+#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+print "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";
+print "  <head>\n";
+print "    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>\n";
+print "    <title>\n";
+print "      Google Visualization API Sample\n";
+print "    </title>\n";
+print "    <script type=\"text/javascript\" src=\"http://www.google.com/jsapi\"></script>\n";
+print "    <script type=\"text/javascript\">\n";
+print "      google.load('visualization', '1', {packages: ['corechart']});\n";
+print "    </script>\n";
+print "    <script type=\"text/javascript\">\n";
+print "      function drawVisualization() {\n";
+print "        // Create and populate the data table.\n";
+print "        var data = google.visualization.arrayToDataTable([\n";
+print "          ['x', 'Cats', 'Blanket 1', 'Blanket 2'],\n";
+print "          ['A',   1,       1,           0.5],\n";
+print "          ['B',   2,       0.5,         1],\n";
+print "          ['C',   4,       1,           0.5],\n";
+print "          ['D',   8,       0.5,         1],\n";
+print "          ['E',   7,       1,           0.5],\n";
+print "          ['F',   7,       0.5,         1],\n";
+print "          ['G',   8,       1,           0.5],\n";
+print "          ['H',   4,       0.5,         1],\n";
+print "          ['I',   2,       1,           0.5],\n";
+print "          ['J',   3.5,     0.5,         1],\n";
+print "          ['K',   3,       1,           0.5],\n";
+print "          ['L',   3.5,     0.5,         1],\n";
+print "          ['M',   1,       1,           0.5],\n";
+print "          ['N',   1,       0.5,         1]\n";
+print "        ]);\n";
+print "      \n";
+print "        // Create and draw the visualization.\n";
+print "        new google.visualization.LineChart(document.getElementById('visualization')).\n";
+print "            draw(data, {curveType: \"function\",\n";
+print "                        width: 500, height: 400,\n";
+print "                        vAxis: {maxValue: 10}}\n";
+print "                );\n";
+print "      }\n";
+print "      \n";
+print "\n";
+print "      google.setOnLoadCallback(drawVisualization);\n";
+print "    </script>\n";
+print "  </head>\n";
+print "  <body style=\"font-family: Arial;border: 0 none;\">\n";
+print "    <div id=\"visualization\" style=\"width: 500px; height: 400px;\"></div>\n";
+print "  </body>\n";
+print "</html>\n";
+}}}
 
+ทดสอบด้วยการรัน
+{{{
+perl gchart-disk.pl > tg1.html
+}}}
+ลองเปิดลิงค์ของ [http://10.134.64.45/prachya/perl/tg1.html t1.html]
 
 
 ==References==
