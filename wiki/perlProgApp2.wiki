@@ -4,8 +4,21 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cReview ทบทวนภาษา C]
 <wiki:toc max_depth="3" />
 
+=สร้างกราฟการใช้ memory จาก sar=
+จากตัวอย่างที่ผ่านมาเราสามารถนำมาประยุกต์ใช้สร้างกราฟสถิติจาก sar ได้อีกเช่นในกรณีนี้หากเรารันคำสั่ง sar -r จะได้ผลการรันดังนี้ 
+{{{
+prachya@pcubusrv104> sar -r
 
+Linux  pcubusrv104  2.6.32-33-generic-pae  #70-Ubuntu SMP Thu Jul 7 22:51:12 UTC 2011  i686  11/14/2012
 
+00:00:01  memtot memfree buffers   cached  slabmem      swptot swpfree  _mem_
+00:10:01    488M     68M    184M     165M      32M        976M    976M
+00:20:01    488M     68M    184M     165M      32M        976M    976M
+00:30:01    488M     68M    184M     165M      32M        976M    976M
+}}}
+จะเห็นได้ว่าเครื่องมีหน่วยความจำ 488M และ หน่วยความจำเหลือ memfree=68M (เปลี่ยนไปตามเวลา) มีส่วนที่เป็น buffers และ ส่วนที่เป็น virtual memory หรือ swap ในที่นี้เราจะ plot การใช้งานหน่วยความจำที่ใช้, หน่วยความจำที่เหลือ, และ buffers
+
+เราจะใช้โค้ดเดียวกันกับ gchart-disk.pl โดยแก้ไขบางส่วนที่เกี่ยวข้องกับการใช้หน่วยความจำ และเราเลือกใช้ AreaChart ตามตัวอย่างใน [http://code.google.com/apis/ajax/playground/?type=visualization#area_chart Google Chart]
 
 
 =References=
