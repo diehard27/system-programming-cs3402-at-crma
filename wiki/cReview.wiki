@@ -56,6 +56,27 @@
  13 }
 }}}
 
+===แบบฝึกหัก=== 
+ผลของการรันโปรแกรมนี้คืออะไร
+{{{
+  1 //enum.c
+  2 //by narong phoomsuk
+  3 #include <stdio.h>
+  4 int main(void){
+  5         enum student{Wuttichai,Chaiyapat,Kulsiri=6,Athiwat,Eakburut=1,Sanwut} cadet1,cadet2;
+  6         enum student cadet3 = Athiwat;
+  7         cadet1 = Eakburut;
+  8         printf("cadet3 is %d\n",cadet3);
+  9         cadet2 = Sanwut;
+ 10         printf("cadet1 is %d\n",cadet1);
+ 11         printf("cadet2 is %d\n",cadet2);
+ 12         cadet1 = Wuttichai;
+ 13         printf("cadet2 is %d\n",cadet1);
+ 14
+ 15         return 0;
+ 16 }
+}}}
+
 ==ฟังก์ชัน==
 
 ===Pass by Value===
