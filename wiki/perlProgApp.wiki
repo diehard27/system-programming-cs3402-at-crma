@@ -411,6 +411,8 @@ perl gchart-disk.pl > tg.html
 ทดลองเปิดดูกราฟที่สร้างขึ้นใน [http://10.134.64.45/prachya/perl/tg.html  tg.html]
 และหากต้องการให้อัพเดทตามห้วงเวลาก็สามารถนำสคริปต์นี้ตามห้วงเวลาที่กำหนด เช่นทุก 5 นาที โดยใช้ crontab
 
+<img width=400 src="https://dl.dropbox.com/u/37142998/2012%20System%20Programming/Figures/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E3.png">
+
 ==เปรียบเทียบการแก้ไขโค้ด==
 {{{
 # gchart-disk.pl                                                # gchart-disk.pl
