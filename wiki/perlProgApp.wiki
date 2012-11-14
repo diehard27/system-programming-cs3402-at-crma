@@ -307,8 +307,101 @@ print "</html>\n";
 {{{
 perl gchart-disk.pl > tg1.html
 }}}
-ลองเปิดลิงค์ของ [http://10.134.64.45/prachya/perl/tg1.html t1.html]
+ลองเปิดลิงค์ของ [http://10.134.64.45/prachya/perl/tg1.html tg1.html]
 
+จากนั้นเราจะแก้ไข gchart-disk.pl เพื่อให้แสดงข้อมูลที่อัพเดทเมื่อรันได้ต่อไปนี้
+{{{
+# gchart-disk.pl
+#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+print "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";
+print "  <head>\n";
+print "    <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>\n";
+print "    <title>\n";
+print "      SAR Disk Stats\n";
+print "    </title>\n";
+print "    <script type=\"text/javascript\" src=\"http://www.google.com/jsapi\"></script>\n";
+print "    <script type=\"text/javascript\">\n";
+print "      google.load('visualization', '1', {packages: ['corechart']});\n";
+print "    </script>\n";
+print "    <script type=\"text/javascript\">\n";
+print "      function drawVisualization() {\n";
+print "        // Create and populate the data table.\n";
+print "        var data = google.visualization.arrayToDataTable([\n";
+print "          ['x', 'wr/s', 'wrKB/s'],\n";
+# now getting numerical data using sar and store in disk.dat
+system("sar -d |grep 'disk008'> tmp.dat");
+open FILE, "<", "tmp.dat" or die $!;
+foreach $buf (<FILE>) {
+#print $lines[0],"\n";
+  $buf =~ s/[ \t]+/;/g ;
+#  print $buf,"\n";
+  $x=@col=split(/;/,$buf);
+#print $x,"\n";
+  print "          ['$col[0]',   $col[4],       $col[5]],\n";
+}
+print "        ]);\n";
+print "      \n";
+print "        // Create and draw the visualization.\n";
+print "        new google.visualization.LineChart(document.getElementById('visualization')).\n";
+print "            draw(data, {curveType: \"function\",\n";
+print "                        width: 500, height: 400,\n";
+print "                        vAxis: {maxValue: 10}}\n";
+print "                );\n";
+print "      }\n";
+print "      \n";
+print "\n";
+print "      google.setOnLoadCallback(drawVisualization);\n";
+print "    </script>\n";
+print "  </head>\n";
+print "  <body style=\"font-family: Arial;border: 0 none;\">\n";
+print "    <div id=\"visualization\" style=\"width: 500px; height: 400px;\"></div>\n";
+print "  </body>\n";
+print "</html>\n";
+}}}
+ส่วนสำคัญที่เราเปลี่ยนโค้ดในที่นี้คือ 
+{{{
+# now getting numerical data using sar and store in disk.dat
+system("sar -d |grep 'disk008'> tmp.dat");
+open FILE, "<", "tmp.dat" or die $!;
+foreach $buf (<FILE>) {
+  $buf =~ s/[ \t]+/;/g ;
+  $x=@col=split(/;/,$buf);
+  print "          ['$col[0]',   $col[4],       $col[5]],\n";
+}
+}}}
+ซึ่งจะอธิบายการทำงานของ perl ดังต่อไปนี้
+{{{
+system("sar -d |grep 'disk008'> tmp.dat");
+}}}
+เรียก system call ด้วยคำสั่ง sar -d แล้ว grep เอาเฉพาะบรรทัดที่มี disk008 แล้วนำไปเก็บไว้ในไฟล์ tmp.dat
+จากนั้นเปิดไฟล์เพื่ออ่าน ({{{"<"}}}) โดยมีตัวแปร FILE เป็น file handler
+{{{
+open FILE, "<", "tmp.dat" or die $!;
+}}}
+จากนั้นอ่านแต่ละบรรทัดของไฟล์ไปเรื่อย ๆ
+{{{
+foreach $buf (<FILE>) {
+}}}
+แล้วกำจัด space และ tab แทนที่ด้วยเซมิโคล่อน (;) โดยใช้ regular expression
+{{{
+  $buf =~ s/[ \t]+/;/g ;
+}}}
+จากนั้นแตกสตริง buf ให้เป็น array เพื่อเตรียมเลือกข้อมูลที่ต้องการในคอลัมน์ 1, 4, และ 5 เก็บไว้ในตัวแปร @col ในที่นี้ $x จะนับจำนวนสมาชิก
+{{{
+  $x=@col=split(/;/,$buf);
+}}}
+พิมพ์ HTML โค้ดสำหรับ Google Chart
+{{{
+  print "          ['$col[0]',   $col[4],       $col[5]],\n";
+}}}
+
+== รันสคริปต์ gchart-disk.pl==
+รันสคริปต์ gchart-disk.pl ที่สร้างขึ้นแล้ส่งผลลัพธ์ไปที่ tg.html ด้วยคำสั่ง
+{{{
+perl gchart-disk.pl > tg.html
+}}}
+ทดลองเปิดดูกราฟที่สร้างขึ้นใน [http://10.134.64.45/prachya/perl/tg.html  tg.html]
+และหากต้องการให้อัพเดทตามห้วงเวลาก็สามารถนำสคริปต์นี้ตามห้วงเวลาที่กำหนด เช่นทุก 5 นาที โดยใช้ crontab
 
 ==References==
   * sar man page, http://zux221-127-001.adsl.green.ch/cgi-bin/man/man2html?atsar+1
