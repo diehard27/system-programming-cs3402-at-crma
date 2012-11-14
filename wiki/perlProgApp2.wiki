@@ -45,8 +45,8 @@ $i=0;
 foreach $buf (<FILE>) {
   $buf =~s/[ \t\n]+/;/g ; # get rid of white spaces/tab and put ; instead
   if ($i>5) {
-    $tstamp=$col[0];  $tstamp=~s/[ \t]+//g;
     $x=@col=split(/;/,$buf);
+    $tstamp=$col[0];  $tstamp=~s/[ \t]+//g;
     $total=$col[1];  $total=~s/M//g;
     $free=$col[2];  $free=~s/M//g;
     $buffer=$col[3]; $buffer=~s/M//g;
@@ -85,6 +85,30 @@ print "</html>\n";
 perl gchart-mem.pl > t6.html
 }}}
 
+==อธิบายการแก้ไขโค้ด==
+โค้ดในส่วนนี้ได้รับการแก้ไขให้อ่านข้อมูล จากการรัน sar -r แล้วเก็บไว้ในไฟล์ tmp.dat จากนั้นก็เปิดไฟล์เพื่ออ่านด้วยคำสั่ง open โดยใช้ตัวแปร FILE เป็น file handler ตั้งค่าบรรทัด i=0 ก่อนเข้าลูปของการอ่านแต่ละบรรทัด ด้วยคำสั่ง {{{foreach $buf (<FILE>)}}}  เมื่ออ่านเข้ามาแล้วก็กำจัดช่องว่างและแทนที่ด้วยตัวคั่นในที่นี้ใช้เซมิโคล่อน (;) โดยกระทำทั้งหมดในคำสั่ง {{{$buf =~s/[ \t\n]+/;/g ;}}} 
+
+เงื่อนไข {{{ if ($i>5) {}}} จะทำการข้ามหัวของรายงานไปประมาณ 4 บรรทัด จากนั้นแปลง buf ให้เป็นอาเรย์โดยใช้คำสั่ง split ในบรรทัด {{{ $x=@col=split(/;/,$buf);}}} แล้วทำการแยกตัวแปรที่ต้องการ ในที่นี้มี tstamp, total, free, และ buffer เสร็จแล้วคำนวณ used จากค่าของ total-free แล้วพิมพ์ออกมาให้อยู่ในรูปแบบข้อมูลของ Google Code
+{{{
+system("sar -r > tmp.dat");
+open FILE, "<", "tmp.dat" or die $!;
+$i=0;
+foreach $buf (<FILE>) {
+  $buf =~s/[ \t\n]+/;/g ; # get rid of white spaces/tab and put ; instead
+  if ($i>5) {
+    $x=@col=split(/;/,$buf);
+    $tstamp=$col[0];  $tstamp=~s/[ \t]+//g;
+    $total=$col[1];  $total=~s/M//g;
+    $free=$col[2];  $free=~s/M//g;
+    $buffer=$col[3]; $buffer=~s/M//g;
+    my $used=$total-$free;
+    if ($total!=0) { # get rid of error lines
+    print "          [\'$tstamp\', $used,   $free,       $buffer],\n";
+    }
+  }
+  $i++;
+}
+}}}
 <img width=400 src="https://dl.dropbox.com/u/37142998/2012%20System%20Programming/Figures/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E4.png">
 
 =References=
