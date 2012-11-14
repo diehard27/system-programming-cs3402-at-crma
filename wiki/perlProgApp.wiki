@@ -316,7 +316,7 @@ perl gchart-disk.pl > tg1.html
 }}}
 ลองเปิดลิงค์ของ [http://10.134.64.45/prachya/perl/tg1.html tg1.html]
 
-จากนั้นเราจะแก้ไข gchart-disk.pl เพื่อให้แสดงข้อมูลที่อัพเดทเมื่อรันได้ต่อไปนี้
+จากนั้นเราจะแก้ไข [https://code.google.com/p/system-programming-cs3402-at-crma/source/browse/trunk/perl/gchart-mem.pl gchart-disk.pl] เพื่อให้แสดงข้อมูลที่อัพเดทเมื่อรันได้ต่อไปนี้
 {{{
 # gchart-disk.pl
 #<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
