@@ -81,7 +81,9 @@ print "</html>\n";
 }}}
 
 เมื่อรันด้วยคำสั่งต่อไปนี้จะได้หน้า [http://10.134.64.45/prachya/perl/t6.html  t6.html] ซึ่งแสดงกราฟแบบพื้นที่ ข้อมูลการใช้งานหน่วยความจำของเครื่องเซอร์ฟเวอร์
-
+{{{
+perl gchart-mem.pl > t6.html
+}}}
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
