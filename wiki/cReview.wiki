@@ -38,9 +38,19 @@
 {{{
 //enum.c
 //by narong phoomsuk
-enum student{Wuttichai,Chaiyapat=5,Kulsiri,Athiwat};
-student cadet = student(2);
-printf("cadet is %d",cadet);
+  1 //enum.c
+  2 //by narong phoomsuk
+  3 #include <stdio.h>
+  4 int main(void){
+  5         enum student{Wuttichai,Chaiyapat,Kulsiri=6,Athiwat} cadet1;
+  6         enum student cadet2 = Chaiyapat;
+  7         enum student cadet3 = Kulsiri;
+  8         cadet1 = Wuttichai;
+  9         printf("cadet1 is %d\n",cadet1);
+ 10         printf("cadet2 is %d\n",cadet2);
+ 11         printf("cadet3 is %d\n",cadet3);
+ 12         return 0;
+ 13 }
 }}}
 
 ==ฟังก์ชัน==
