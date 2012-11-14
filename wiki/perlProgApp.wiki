@@ -403,6 +403,62 @@ perl gchart-disk.pl > tg.html
 ทดลองเปิดดูกราฟที่สร้างขึ้นใน [http://10.134.64.45/prachya/perl/tg.html  tg.html]
 และหากต้องการให้อัพเดทตามห้วงเวลาก็สามารถนำสคริปต์นี้ตามห้วงเวลาที่กำหนด เช่นทุก 5 นาที โดยใช้ crontab
 
+==เปรียบเทียบการแก้ไขโค้ด==
+{{{
+# gchart-disk.pl                                                # gchart-disk.pl
+#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "ht   #<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "ht
+print "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";        print "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n";
+print "  <head>\n";                                             print "  <head>\n";
+print "    <meta http-equiv=\"content-type\" content=\"text/h   print "    <meta http-equiv=\"content-type\" content=\"text/h
+print "    <title>\n";                                          print "    <title>\n";
+print "      SAR Disk Stats\n";                               | print "      Google Visualization API Sample\n";
+print "    </title>\n";                                         print "    </title>\n";
+print "    <script type=\"text/javascript\" src=\"http://www.   print "    <script type=\"text/javascript\" src=\"http://www.
+print "    <script type=\"text/javascript\">\n";                print "    <script type=\"text/javascript\">\n";
+print "      google.load('visualization', '1', {packages: ['c   print "      google.load('visualization', '1', {packages: ['c
+print "    </script>\n";                                        print "    </script>\n";
+print "    <script type=\"text/javascript\">\n";                print "    <script type=\"text/javascript\">\n";
+print "      function drawVisualization() {\n";                 print "      function drawVisualization() {\n";
+print "        // Create and populate the data table.\n";       print "        // Create and populate the data table.\n";
+print "        var data = google.visualization.arrayToDataTab   print "        var data = google.visualization.arrayToDataTab
+print "          ['x', 'wr/s', 'wrKB/s'],\n";                 <
+# now getting numerical data using sar and store in disk.dat    # now getting numerical data using sar and store in disk.dat
+system("sar -d |grep 'disk008'> tmp.dat");                    | exec("sar -d |grep disk008 |awk '{print $1 i\"  \" $5 \"  \"
+open FILE, "<", "tmp.dat" or die $!;                          | print "          ['x', 'Cats', 'Blanket 1', 'Blanket 2'],\n";
+foreach $buf (<FILE>) {                                       | print "          ['A',   1,       1,           0.5],\n";
+#print $lines[0],"\n";                                        | print "          ['B',   2,       0.5,         1],\n";
+  $buf =~ s/[ \t]+/;/g ;                                      | print "          ['C',   4,       1,           0.5],\n";
+#  print $buf,"\n";                                           | print "          ['D',   8,       0.5,         1],\n";
+  $x=@col=split(/;/,$buf);                                    | print "          ['E',   7,       1,           0.5],\n";
+#print $x,"\n";                                               | print "          ['F',   7,       0.5,         1],\n";
+  print "          ['$col[0]',   $col[4],       $col[5]],\n"; | print "          ['G',   8,       1,           0.5],\n";
+}                                                             | print "          ['H',   4,       0.5,         1],\n";
+                                                              > print "          ['I',   2,       1,           0.5],\n";
+                                                              > print "          ['J',   3.5,     0.5,         1],\n";
+                                                              > print "          ['K',   3,       1,           0.5],\n";
+                                                              > print "          ['L',   3.5,     0.5,         1],\n";
+                                                              > print "          ['M',   1,       1,           0.5],\n";
+                                                              > print "          ['N',   1,       0.5,         1]\n";
+print "        ]);\n";                                          print "        ]);\n";
+print "      \n";                                               print "      \n";
+print "        // Create and draw the visualization.\n";        print "        // Create and draw the visualization.\n";
+print "        new google.visualization.LineChart(document.ge   print "        new google.visualization.LineChart(document.ge
+print "            draw(data, {curveType: \"function\",\n";     print "            draw(data, {curveType: \"function\",\n";
+print "                        width: 500, height: 400,\n";     print "                        width: 500, height: 400,\n";
+print "                        vAxis: {maxValue: 10}}\n";       print "                        vAxis: {maxValue: 10}}\n";
+print "                );\n";                                   print "                );\n";
+print "      }\n";                                              print "      }\n";
+print "      \n";                                               print "      \n";
+print "\n";                                                     print "\n";
+print "      google.setOnLoadCallback(drawVisualization);\n";   print "      google.setOnLoadCallback(drawVisualization);\n";
+print "    </script>\n";                                        print "    </script>\n";
+print "  </head>\n";                                            print "  </head>\n";
+print "  <body style=\"font-family: Arial;border: 0 none;\">\   print "  <body style=\"font-family: Arial;border: 0 none;\">\
+print "    <div id=\"visualization\" style=\"width: 500px; he   print "    <div id=\"visualization\" style=\"width: 500px; he
+print "  </body>\n";                                            print "  </body>\n";
+print "</html>\n";                                              print "</html>\n";
+}}}
+
 ==References==
   * sar man page, http://zux221-127-001.adsl.green.ch/cgi-bin/man/man2html?atsar+1
   * http://theengguy.blogspot.com/2012/08/updated-sar2cvs-with-google-charts.html
