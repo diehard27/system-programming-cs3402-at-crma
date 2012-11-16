@@ -81,11 +81,11 @@
 มีคำกล่าวไว้ว่า ภาษาซีเป็นภาษาฟังก์ชัน ซึ่งจะเห็นได้ว่าในการเขียนภาษาซีจะต้องประกาศฟังก์ชันอย่างน้อย 1 ฟังก์ชัน คือ main(){} และภาษาซีไม่มีโพรซีเจอร์ การเขียน sub routine จึงจำเป็นจะต้องใช้แต่ฟังก์ชันเท่านั้น ในกรณีที่ไม่ต้องการให้ sub routine ส่งค่า ต้องใช้ฟังก์ชันที่มีการส่งค่าเป็น void แทน
 ==ส่วนประกอบของฟังก์ชัน==
 {{{
-returnType functionName (argument1,argument2,...){   <--- Function Header
-    
+returnType functionName (argument1,argument2,...)   <--- Function Header
+{
       statement;
       statement;
-      statement;                                     <--- Function Body
+      statement;                                    <--- Function Body
       statement;
       ...
       statement;
@@ -107,7 +107,7 @@ _returnType_ *_functionName_* (_argument_);
 ส่วนตัวฟังก์ชัน เป็นส่วนหลักในการทำงานของฟังก์ชัน จะประกอบด้วยชุดคำสั่ง (statement) หรือนิพจน์ (expression) ต่าง ๆ ซึ่งจะอยู่ใน block ของเครื่องหมายวงเล็บปีกกา {}
 
 ==ต้นแบบฟังก์ชัน==
- ต้นแบบฟังก์ชัน (Function Prototype) จะเป็นการกำหนด Function Header อีกแบบหนึ่ง 
+ ต้นแบบฟังก์ชัน (Function Prototype) จะเป็นการกำหนด Function Header อีกแบบหนึ่ง เพื่อให้เรามีความสะดวกในการประกาศ function 
 
 ===Pass by Value===
 
