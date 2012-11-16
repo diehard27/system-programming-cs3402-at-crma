@@ -85,7 +85,7 @@ returnType functionName (argument1,argument2,...){   <--- Function Header
     
       statement;
       statement;
-      statement;                              <--- Function Body
+      statement;                                     <--- Function Body
       statement;
       ...
       statement;
@@ -105,6 +105,9 @@ _returnType_ *_functionName_* (_argument_);
 
 ===ส่วนตัวฟังก์ชัน (Function Body)===
 ส่วนตัวฟังก์ชัน เป็นส่วนหลักในการทำงานของฟังก์ชัน จะประกอบด้วยชุดคำสั่ง (statement) หรือนิพจน์ (expression) ต่าง ๆ ซึ่งจะอยู่ใน block ของเครื่องหมายวงเล็บปีกกา {}
+
+==ต้นแบบฟังก์ชัน==
+ ต้นแบบฟังก์ชัน (Function Prototype) จะเป็นการกำหนด Function Header อีกแบบหนึ่ง 
 
 ===Pass by Value===
 
