@@ -204,7 +204,9 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 
 ==ชนิดข้อมูลแบบ struct==
 
+==การส่งค่า Argument ให้โปรแกรม==
 
+==STDOUT, STDErr==
 
 
 
