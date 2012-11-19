@@ -154,7 +154,8 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 
 การแก้ไขข้อความเตือนของฟังก์ชัน sayGoodbye ทำได้โดยการประกาศตัวแบบฟังก์ชัน sayGoodbye  หรือเขียนตัวฟังก์ชัน sayGoodbye ไว้ก่อนที่จะมีการประกาศใช้
 
-
+==การส่งผ่านค่าให้กับฟังก์ชัน==
+การส่งผ่านค่าให้ฟังก์ชันในภาษาซีมี 2 แบบได้แก่ การส่งค่าแบบ pass by value และ
 ===Pass by Value===
 
 ===Pass by Reference===
