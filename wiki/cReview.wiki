@@ -206,7 +206,7 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 
 ==การส่งค่า Argument ให้โปรแกรม==
 
-==STDOUT, STDErr==
+==stdin, stdout, stderr==
 
 
 
