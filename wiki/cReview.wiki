@@ -257,8 +257,8 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 int main (int argc, char *argv[])
 }}}
 จากโค้ดจะพบว่ามี argument 2 ตัว ตัวแรกเป็นชนิด integer ส่วนอีกตัวเป็น array ของ pointer ชนิด character
-* argc     argument count เป็นตัวแปรที่เก็บจำนวนของ argument ที่รับเข้ามาในโปรแกรม ซึ่งรวมไปถึงชื่อของโปรแกรมด้วย
-* argv     argument vector เป็น list ของ argument ที่รับมา โดยที่ argv[0] จะเป็นชื่อของโปรแกรม
+ * argc     argument count เป็นตัวแปรที่เก็บจำนวนของ argument ที่รับเข้ามาในโปรแกรม ซึ่งรวมไปถึงชื่อของโปรแกรมด้วย
+ * argv     argument vector เป็น list ของ argument ที่รับมา โดยที่ `argv[0]` จะเป็นชื่อของโปรแกรม
 
 
 
