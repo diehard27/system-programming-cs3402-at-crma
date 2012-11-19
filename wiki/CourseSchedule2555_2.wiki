@@ -87,11 +87,12 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)]	|| || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
 || ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	||  || ||
-http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
-
-==Today==
-|| *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C]	|| [assignment06 งานมอบ ๖]||  ||
+
+http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
+==Today==
+
+|| *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cSysProg C กับ System Programming]	|| || ||		
 || ๑๘ || อ. ๒๗ พ.ย. ๕๕ || การติดต่อกับ shell || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
 || ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C	||[assignment07 งานมอบ ๗] || ||
