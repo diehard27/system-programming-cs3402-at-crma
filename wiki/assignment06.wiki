@@ -4,4 +4,23 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]<br>
 <font color=red>กำหนดส่ง พฤหัสฯ 22 พ.ย.2555</font>
 
-1) จงเขียนโปรแกรม stack.pl เพื่อเลียนแบบการทำงานของสแต็ค โดยตั้งตัวแปร stack ให้เป็นแบบอาร์เรย์ และสามารถใช้คำสั่ง push และ pop
+1) จงเขียนโปรแกรม stack.pl เพื่อเลียนแบบการทำงานของสแต็ค โดยตั้งตัวแปร stack ให้เป็นแบบอาร์เรย์ และสามารถใช้คำสั่ง push และ pop พร้อมทั้งยกตัวอย่างการใช้งานโปรแกรม
+
+ตัวอย่างการทำงานของโปรแกรม
+{{{
+$ perl stack.pl push 23     
+in stack [23] 
+$ perl stack.pl push 55
+in stack [23,55]
+$ perl stack.pl push 30
+in stack [23,55,30]
+$ perl stack.pl pop
+pop = 30
+in stack [23,55]
+$ perl stack.pl pop
+pop = 55
+in stack [23]
+$ perl stack pop
+pop = 23
+in stack []
+}}}
