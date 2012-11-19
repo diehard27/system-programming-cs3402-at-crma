@@ -73,6 +73,8 @@
  16 }
 }}}
 
+==ตัวแปรแบบตัวชี้==
+
 ==ฟังก์ชัน==
 มีคำกล่าวไว้ว่า ภาษาซีเป็นภาษาฟังก์ชัน ซึ่งจะเห็นได้ว่าในการเขียนภาษาซีจะต้องประกาศฟังก์ชันอย่างน้อย 1 ฟังก์ชัน คือ main(){} และภาษาซีไม่มีโพรซีเจอร์ การเขียน sub routine จึงจำเป็นจะต้องใช้แต่ฟังก์ชันเท่านั้น ในกรณีที่ไม่ต้องการให้ sub routine ส่งค่า ต้องใช้ฟังก์ชันที่มีการส่งค่าเป็น void แทน
 ==ส่วนประกอบของฟังก์ชัน==
@@ -165,7 +167,7 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 
 
 
-==ตัวแปรแบบตัวชี้==
+
 
 =References=
   # Robert Love, _LINUX System Programming_ , O'Rielly, 2007.[http://mirror.paramadina.ac.id/pub/linux/doc/book/Linux.System.Programming.pdf  PDF]
