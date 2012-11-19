@@ -252,6 +252,15 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
 ==ชนิดข้อมูลแบบ struct==
 
 ==การส่งค่า Argument ให้โปรแกรม==
+นอกจากที่เราจะสามารถส่งค่า argument ให้ฟังก์ชันได้แล้ว เรายังสามารถส่งค่า argument ให้กับตัวโปรแกรมภาษาซีได้อีกด้วย โดยการกำหนด argument มาตรฐานให้กับฟังก์ชัน main ของโปรแกรมดังนี้
+{{{
+int main (int argc, char *argv[])
+}}}
+จากโค้ดจะพบว่ามี argument 2 ตัว ตัวแรกเป็นชนิด integer ส่วนอีกตัวเป็น array ของ pointer ชนิด character
+* argc     argument count เป็นตัวแปรที่เก็บจำนวนของ argument ที่รับเข้ามาในโปรแกรม ซึ่งรวมไปถึงชื่อของโปรแกรมด้วย
+* argv     argument vector เป็น list ของ argument ที่รับมา โดยที่ argv[0] จะเป็นชื่อของโปรแกรม
+
+
 
 ==stdin, stdout, stderr==
 
