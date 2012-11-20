@@ -291,9 +291,6 @@ int main (int argc, char *argv[])
 }}}
 จากตัวอย่างด้านบนจะเป็นการสร้างโปรแกรม octhex ซึ่งใช้แปลงค่าเลขฐานสิบ เป็นฐานแปดหรือฐานสิบหก โดยบรรทัดที่ 8 โปรแกรมจะตรวจสอบว่า จำนวน argument ที่ร้บมา เท่ากับ 3 หรือไม่ (ชื่อโปรแกรม + argument ที่เป็น input) ถ้าไม่ใช่ก็จะแสดงวิธีใช้และออกจากโปรแกรม ด้วยคำสั่ง return ในบรรทัดที่ 11 ถ้ามี จากนั้นในบรรทัดที่ 13 จะประกาศตัวแปร choice ซึ่งเป็นชนิด character รับค่าที่อยู่ใน address ที่ argv`[1]` ชี้อยู่ บรรทัดที่ 14 จะใช้ฟังก์ชัน atoi ซึ่งเป็นฟังก์ชันมาตรฐานที่้ใช้ในการแปลง string หรือ character ให้เป็นตัวเลข จะสังเกตได้ว่า ที่บรรทัดนี้ `argv[2]` จะไม่มีเครื่องหมาย `*` นำหน้า เนื่องจากฟังก์ชัน atoi รับ argument เป็น string ได้ และ `argv[2]` เป็น array of character ซึ่งก็คือ string เช่นกัน จึงไม่ต้องมีเครื่องหมาย `*` นำหน้า (ถ้าใส่จะคอมไพล์ผ่าน แต่ตอนรันจะเกิด [http://en.wikipedia.org/wiki/Segmentation_fault Segmentation Fault]) บรรทัดที่ 15-20 เป็นการเปรียบเทียบค่า choice ด้วย switch บรรทัดที่ 16 ในกรณีที่ choice เป็น 'o' จะทำการแปลงเลขฐานสิบให้เป็นเลขฐานแปดด้วย format "%o" ของฟังก์ชัน printf ส่วนบรรทัดที่ 18 ในกรณ๊ที่ choice เป็น 'h' จะทำการแปลงเลขฐานสิบให้เป็นเลขฐานสิบหกด้วย format "%X" ของฟังก์ชัน printf
 
-==stdin, stdout, stderr==
-
-
 
 =References=
   # Robert Love, _LINUX System Programming_ , O'Rielly, 2007.[http://mirror.paramadina.ac.id/pub/linux/doc/book/Linux.System.Programming.pdf  PDF]
