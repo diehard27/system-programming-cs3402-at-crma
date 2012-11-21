@@ -87,8 +87,8 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)]	|| || ||
 || ๑๔ || อ. ๑๓ พ.ย. ๕๕ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
 || ๑๕	|| พฤ. ๑๕ พ.ย. ๕๕ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	||  || ||
-|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C] { Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี }	|| [assignment06 งานมอบ ๖]||  ||
-|| ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cReview2 ทบทวนภาษา C(ต่อ)] {{{{stdin,stdout,stderr,FILE,fopen,fread,fwrite,fclose}}}} [cSysProg C กับ System Programming] {{{{ FILE I/O, Block, inode, Process, Error Handling }}}}	|| || ||		
+|| ๑๖ || อ. ๒๐ พ.ย. ๕๕ || [cReview ทบทวนภาษา C] {{{{Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี}}}}	|| [assignment06 งานมอบ ๖]||  ||
+|| ๑๗ || พฤ. ๒๒ พ.ย. ๕๕ || [cReview2 ทบทวนภาษา C(ต่อ)] {{{{stdin,stdout,stderr,FILE,fopen,fread,fwrite,fclose}}}} [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode, Process, Error Handling}}}}	|| || ||		
 
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 ==Today==
