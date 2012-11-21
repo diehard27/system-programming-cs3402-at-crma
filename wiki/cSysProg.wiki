@@ -39,12 +39,12 @@ FILE *fp;
 
 fopen 
 เป็นฟังก์ชันที่ใช้ในการเปิดไฟล์ ซึ่งมีรูปแบบการเปิด 3 รูปแบบดังนี้
-r  - open for reading
-w  - open for writing (file need not exist)
-a  - open for appending (file need not exist)
-r+ - open for reading and writing, start at beginning
-w+ - open for reading and writing (overwrite file)
-a+ - open for reading and writing (append if file exists)
+||r||open for reading||
+||w||  open for writing (file need not exist)||
+||a || open for appending (file need not exist)||
+||r+|| open for reading and writing, start at beginning||
+||w+|| open for reading and writing (overwrite file)||
+||a+|| open for reading and writing (append if file exists)||
 
 
 =References=
