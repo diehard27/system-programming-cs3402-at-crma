@@ -4,6 +4,27 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 <wiki:toc max_depth="3" />
 
+==stdin,stdout,stderr==
+ทั้ง stdin,stdout, และ stderr เป็น global variable ที่เป็นไฟล์หรือ stream ในภาษาซี โดยปกติเราจะทำการรับข้อมูลจาก stdin ก็คือคีย์บอร์ด และแสดงผลไปยัง stdout ซึ่งก็คือจอภาพ และเรายังสามารถเขียนโปรแกรมเก็บข้อผิดพลาดไปไว้ที่ stderr ได้อีกด้วย โดยใช้ฟังก์ชัน fprintf
+fprintf เป็นฟังก์ชัน ที่ใช้แสดงผลคล้าย printf แต่แทนที่จะแสดงผลออกหน้าจอ จะไปเก็บผลไว้ที่ไฟล์แทน ตัวอย่างโค้ดด้านล่างเป็นการแสดงการใช้ fprintf ในการ redirect ข้อผิดพลาดไว้ใน stderr
+{{{
+  1 //stderr.c
+  2 // by narong phoomsuk
+  3 // usage : stderr.c string
+  4 #include <stdio.h>
+  5 int main(int argc,char* argv[]){
+  6         if(argc != 2){
+  7                 printf("usage %s string\n",argv[0]);
+  8                 fprintf(stderr,"Invalid argument\n");
+  9                 exit(1);
+ 10
+ 11         printf("string is %s",argv[1]);
+ 12         return 0;
+ 13 }
+}}}
+
+
+
 ==FILE==
 ไฟล์คือที่เก็บข้อมูลต่าง ๆ ของคอมพิวเตอร์ ในระบบปฏิบัติการลินุกซ์และภาษาซี อาจรวมไปถึงอุปกรณ์และทรัพยากรต่าง ๆ ที่ต่ออยู่กับเครื่องคอมพิวเตอร์ เช่น คีย์บอร์ด จอภาพ
 การติดต่อไฟล์จะต้องทำผ่าน stream โดยไฟล์แบ่งออกได้เป็นแบบต่าง ๆ ดังนี้
