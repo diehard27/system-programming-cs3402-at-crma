@@ -46,13 +46,6 @@ r+ - open for reading and writing, start at beginning
 w+ - open for reading and writing (overwrite file)
 a+ - open for reading and writing (append if file exists)
 
-==stdin,stdout,stderr==
-ทั้ง stdin,stdout, และ stderr เป็น global variable ที่เป็นไฟล์หรือ stream ในภาษาซี โดยปกติเราจะทำการรับข้อมูลจาก stdin ก็คือคีย์บอร์ด และแสดงผลไปยัง stdout ซึ่งก็คือจอภาพ และเรายังสามารถเขียนโปรแกรมเก็บข้อผิดพลาดไปไว้ที่ stderr ได้อีกด้วย โดยใช้ฟังก์ชัน fprintf
-fprintf เป็นฟังก์ชัน ที่ใช้แสดงผลคล้าย printf แต่แทนที่จะแสดงผลออกหน้าจอ จะไปเก็บผลไว้ที่ไฟล์แทน ตัวอย่างโค้ดด้านล่างเป็นการแสดงการใช้ fprintf ในการ redirect ข้อผิดพลาดไว้ใน stderr
-{{{
-
-}}}
-
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
