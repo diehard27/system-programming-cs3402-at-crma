@@ -38,13 +38,14 @@ FILE *fp;
 }}}
 
 fopen 
+
 เป็นฟังก์ชันที่ใช้ในการเปิดไฟล์ ซึ่งมีรูปแบบการเปิด 3 รูปแบบดังนี้
-||r||open for reading||
-||w||  open for writing (file need not exist)||
-||a || open for appending (file need not exist)||
-||r+|| open for reading and writing, start at beginning||
-||w+|| open for reading and writing (overwrite file)||
-||a+|| open for reading and writing (append if file exists)||
+||r||เปิดไฟล์เพื่ออ่าน||
+||w||เปิดไฟล์เพื่อเขียน (จำเป็นต้องมีไฟล์อยู่ก่อน)||
+||a ||เปิดไฟล์เพื่อเขียนต่อท้าย (จำเป็นต้องมีไฟล์อยู่ก่อน)||
+||r+||เปิดไฟล์เพื่ออ่านและเขียนได้ โดยจะเริ่มเคอร์เซอร์ที่ต้นไฟล์||
+||w+||เปิดไฟล์เพื่ออ่านและเขียน โดยจะเขียนทับไฟล์เดิม||
+||a+||เปิดไฟล์เพื่ออ่านและเขียน โดยจะเขียนต่อท้ายไฟล์ถ้ามีไฟล์อยู่||
 
 
 =References=
