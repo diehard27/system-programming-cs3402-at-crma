@@ -94,7 +94,7 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 ==Today==
 
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑๘ || อ. ๒๗ พ.ย. ๕๕ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode, Process, Error Handling}}}}	     การติดต่อกับ shell, Running a Process, Terminating a Process,Zombie, User and Group, Daemon|| <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
+|| ๑๘ || อ. ๒๗ พ.ย. ๕๕ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode, Process, Error Handling}}}}, การติดต่อกับ shell, Running a Process, Terminating a Process,Zombie, User and Group, Daemon|| <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
 || ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ || การประยุกต์ใช้ C, The Stat Family, Permission, Reading the directory's Content	||[assignment07 งานมอบ ๗] || ||
 || ๒๐ || อ. ๔ ธ.ค. ๕๕ || การประยุกต์ใช้ C,	Memory Management	|| || ||
 || ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || โครงสร้างของโปรเซส การควบคุมโปรเซส,Signal, Time	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม ||		
