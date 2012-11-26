@@ -345,13 +345,13 @@ extern int errno;
   1 // checkfile.c
   2 // by narong phoomsuk
   3 // usage : ./checkfile filename
-  4 #include <stdio.h>
-  5 #include <sys/types.h>  // for open()
+  4 #include <stdio.h>        // for printf()
+  5 #include <sys/types.h> // for open()
   6 #include <sys/stat.h>   // for open()
   7 #include <fcntl.h>        // for open()
-  8 #include <errno.h>
-  9 #include <stdlib.h>   // for exit()
- 10 #include <unistd.h> // for close()
+  8 #include <errno.h>      // for errno
+  9 #include <stdlib.h>      // for exit()
+ 10 #include <unistd.h>    // for close()
  11
  12 int main(int argc,char* argv[]){
  13         int fd;
