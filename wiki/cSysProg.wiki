@@ -296,7 +296,7 @@ extern int errno;
 
 ค่าของตัวแปร errno ได้ถูก map กับคำอธิบายข้อผิดพลาดต่าง ๆ และ Preprocessor `#define` ก็ได้ทำการ map ค่า errno ที่เป็นตัวเลข ให้เป็นค่าคงที่ เช่น ถ้า preprocessor ระบุค่า EACCESS ให้เท่ากับ 1 นั่นหมายความว่า เกิดข้อผิดพลาด `Permission denied` ตารางด้านล่างจะแสดงรายละเอียด ของ คำอธิบายข้อผิดพลาดต่าง ๆ ที่ระบุไว้ใน Preprocesser
 
-||*Preprocessor define* ||  *Description* ||
+||*`Preprocessor define`* ||  *Description* ||
 ||E2BIG || Argument list too long ||
 ||EACCESS |||| Permission denied ||
 ||EAGAIN || Try again ||
