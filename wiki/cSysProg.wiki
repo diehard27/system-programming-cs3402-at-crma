@@ -53,7 +53,7 @@ int fstat(int fildes, struct stat *buf);
 
 ||Field||Description||
 ||int fildes||	The file descriptor of the file that is being inquired.||
-||struct stat *buf ||	A structure where data about the file will be stored. A detailed look at all of the fields in this structure can be found in the struct stat page. ||
+||{{{struct stat *buf}}} ||	A structure where data about the file will be stored. A detailed look at all of the fields in this structure can be found in the struct stat page. ||
 ||return value||	Returns a negative value on failure.||
 
 {{{
@@ -99,6 +99,7 @@ int main(int argc, char **argv)
  
     return 0;
 }
+// source: http://codewiki.wikidot.com/c:system-calls:fstat
 }}}
 
 
