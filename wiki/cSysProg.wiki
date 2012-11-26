@@ -171,7 +171,7 @@ if (fd == -1)
 ==Flag ของ open() System Call ที่น่าสนใจ==
  * O_APPEND
 The file will be opened in append mode. That is, before each write, the file 
-position will be updated to point to the end of thefile. This occurs even if another 
+position will be updated to point to the end of the file. This occurs even if another 
 process has written to the file after the issuing process' last write, thereby 
 changing the file position. (See "Section 2.3.2" later in this chapter). 
  * O_ASYNC
@@ -179,8 +179,8 @@ A signal (SIGIOby default) will be generated when the specified file becomes
 readable or writable. This flag is available only for terminals and sockets, not for 
 regular files. 
  * O_CREAT
-If the file denoted by namedoes not exist, the kernel will create it. If the file 
-already exists, this flag has no effect unless O_EXCLis also given. 
+If the file denoted by name does not exist, the kernel will create it. If the file 
+already exists, this flag has no effect unless O_EXCL is also given. 
 Linux System Programming 
 38 of 396 
  * O_DIRECT
@@ -189,24 +189,24 @@ The file will be opened for direct I/O (see "Section 2.5" later in this chapter)
 If nameis not a directory, the call to open( )will fail. This flag is used internally 
 by the opendir( )library call. 
  * O_EXCL
-When given with O_CREAT, this flag will cause the call to open( )to fail if the file 
-given by namealready exists. This is used to prevent race conditions on file 
+When given with O_CREAT, this flag will cause the call to open( ) to fail if the file 
+given by name already exists. This is used to prevent race conditions on file 
 creation. 
  * O_LARGEFILE
 The given file will be opened using 64-bit offsets,allowing files larger than two 
 gigabytes to be opened. This is implied on 64-bit architectures. 
  * O_NOCTTY
-If the given namerefers to a terminal device (say, /dev/tty), it will not become 
+If the given name refers to a terminal device (say, /dev/tty), it will not become 
 the process' controlling terminal, even if the process does not currently have a 
 controlling terminal. This flag is not frequently used. 
  * O_NOFOLLOW
-If nameis a symbolic link, the call to open( )will fail. Normally, the link is 
+If name is a symbolic link, the call to open( ) will fail. Normally, the link is 
 resolved, and the target file is opened. If other components in the given path are 
-links, the call will still succeed. For example, if nameis /etc/ship/plank.txt, the 
-call will fail if plank.txtis a symbolic link. It will succeed, however, if etcor ship
-is a symbolic link, so long as plank.txtis not. 
+links, the call will still succeed. For example, if name is /etc/ship/plank.txt, the 
+call will fail if plank.txt is a symbolic link. It will succeed, however, if etcor ship
+is a symbolic link, so long as plank.txt is not. 
  * O_NONBLOCK 
-If possible, the file will be opened in nonblockingmode. Neither the open( )call, 
+If possible, the file will be opened in non blocking mode. Neither the open( ) call, 
 nor any other operation will cause the process to block (sleep) on the I/O. This 
 behavior may be defined only for FIFOs. 
  * O_SYNC
@@ -218,10 +218,9 @@ O_DSYNC and O_RSYNC; on Linux, these flags are synonymous with O_SYNC.
  * O_TRUNC
 If the file exists, it is a regular file, and the given flags allow for writing, the file 
 will be truncated to zero length. Use of O_TRUNCon a FIFO or terminal device is 
-ignored. Use on other file types is undefined. Specifying O_TRUNCwith O_RDONLY
-is 
-also undefined, as you need write access to the file in order to truncate it. 
-For example, the following code opens for writing thefile /home/teach/pearl. If the file 
+ignored. Use on other file types is undefined. Specifying O_TRUNC with O_RDONLY
+is also undefined, as you need write access to the file in order to truncate it. 
+For example, the following code opens for writing the file /home/teach/pearl. If the file 
 already exists, it will be truncated to a length of zero. Because the O_CREAT flag is not 
 specified, if the file does not exist, the call will fail: 
 {{{
