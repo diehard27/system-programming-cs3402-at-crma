@@ -5,7 +5,7 @@
 <wiki:toc max_depth="3" />
 
 ==inode==
-inode, index node (ดัชนีโหนด)เป็นแนวคิดพื้นฐานใน Linux และ UNIX วัตถุในระบบแฟ้มแต่ละครั้งจะถูกแทนด้วย inode  ให้เราพยายามที่จะเข้าใจมันในคำง่ายๆ และแต่ละไฟล์ภายใต้ Linux (และ UNIX) มีคุณลักษณะดังต่อไปนี้ :
+inode, index node (ดัชนีโหนด)เป็นเลขรหัสของไฟล์ที่มีในระบบไฟล์ของระบบปฏิบัติการ Unix หรือ Linux
 
  * ชนิดไฟล์ (ปฏิบัติการป้องกัน ฯลฯ พิเศษ)
 
@@ -121,10 +121,11 @@ O_DSYNC and O_RSYNC; on Linux, these flags are synonymous with O_SYNC.
  * O_TRUNC
 If the file exists, it is a regular file, and the given flags allow for writing, the file 
 will be truncated to zero length. Use of O_TRUNCon a FIFO or terminal device is 
-ignored. Use on other file types is undefined. Specifying O_TRUNCwith O_RDONLYis 
+ignored. Use on other file types is undefined. Specifying O_TRUNCwith O_RDONLY
+is 
 also undefined, as you need write access to the file in order to truncate it. 
 For example, the following code opens for writing thefile /home/teach/pearl. If the file 
-already exists, it will be truncated to a length of zero. Because the O_CREATflag is not 
+already exists, it will be truncated to a length of zero. Because the O_CREAT flag is not 
 specified, if the file does not exist, the call will fail: 
 {{{
 int fd; 
