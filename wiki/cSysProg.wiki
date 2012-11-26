@@ -21,9 +21,26 @@ $ ls - i / etc / passwd
 
 {{{
 $ cd /tmp
-$ touch \”la*
 $ ls -l
-1 file, 1 folder = 1 inode
+}}}
+จะได้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> ls -l
+total 8
+-rw-r--r-- 1 prachya prachya 2082 2012-11-14 16:51 gchart-disk.pl
+-rw-r--r-- 1 prachya prachya    6 2012-11-05 13:34 junk
+}}}
+
+ในกรณีที่เราต้องการดูรายละเอียดของ index ของ inode สามารถใช้ตัวเลือก -i เพื่อให้แสดงข้อมูลของ inode ได้
+{{{
+$ ls -il /tmp
+}}}
+จะได้ผลลัพธ์ดังนี้
+{{{
+prachya@pcubusrv104> ls -il /tmp
+total 8
+2496286 -rw-r--r-- 1 prachya prachya 2082 2012-11-14 16:51 gchart-disk.pl
+2101314 -rw-r--r-- 1 prachya prachya    6 2012-11-05 13:34 junk
 }}}
 
 ==FILE I/O==
