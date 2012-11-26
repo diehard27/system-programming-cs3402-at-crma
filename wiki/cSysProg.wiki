@@ -286,9 +286,17 @@ main(int argc, char *argv[])
 
 // modified from source: http://www.java-samples.com/showtutorial.php?tutorialid=570
 }}}
+==Error Handling==
+การเกิดข้อผิดพลาด (Error) เป็นสิ่งที่อยู่คู่กับการเขียนโปรแกรม ภาษาซีได้เตรียม `errno` สำหรับการรับมือกับข้อผิดพลาด ทั้งในส่วนการใช้ library และ system call ซึ่งโดยปกติแล้ว หากฟังก์ชันมีการทำงานผิดพลาดจะส่งคืนค่า -1 กลับมาเป็นค่าปริยาย (ค่าที่ return มาจริงขึ้นอยู่กับแต่ละฟังก์ชันว่าจะกำหนดให้เป็นอย่างอื่นหรือเปล่า) ด้วยค่าที่ส่งกลับนี้จะบ่งบอกเพียงว่า มีข้อผิดพลาดในการทำงานเกิดขึ้น แต่ไม่ได้บอกว่า เกิดข้อผิดพลาดจากสาเหตุใด ตัวแปร `errno` จึงเป็นเครื่องมือสำคัญที่ใช้ในการสาเหตุของข้อผิดที่เกิดขึ้น
 
+ตัวแปร errno ถูกประกาศไว้ใน library <errno.h> ดังนี้
+{{{
+extern int errno;
+}}}
+
+ค่าของตัวแปร errno ได้ถูก map กับคำอธิบายข้อผิดพลาดต่าง ๆ และ Preprocessor `#define` ก็ได้ทำการ map ค่า errno ที่เป็นตัวเลข ให้เป็นค่าคงที่ เช่น ถ้า preprocessor ระบุค่า EACCESS ให้เท่ากับ 1 นั่นหมายความว่า เกิดข้อผิดพลาด `Permission denied` ตารางด้านล่างจะแสดงรายละเอียด ของ คำอธิบายข้อผิดพลาดต่าง ๆ ที่ระบุไว้ใน Preprocesser
 =References=
-  # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ (Chapter 2 File I/O) [http://issc.uj.ac.za/downloads/linux.pdf  [PDF]]
+  # Robert Love, Linux System Programming, O'Rielly, 2007. [http://seesee.pbworks.com/f/linux.pdf  [PDF]]
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [CShell C กับ การติดต่อกับ Shell]
 
