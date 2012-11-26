@@ -150,7 +150,8 @@ The file is not a symbolic link
 สามารถดูรายละเอียดของการใช้งานด้วยคำสั่ง {{{man fopen}}} ซึ่งเป็นมาตรฐานของภาษา C ดังนั้นหากต้องการให้โปรแกรม portable โปรแกรมเมอร์ควรพิจารณาใช้งาน fopen() มากกว่า )
 
 ==open( ) System Call ==
-เป็น system call ที่ใช้สำหรับเปิดไฟล์
+เป็น system call ที่ใช้สำหรับเปิดไฟล์ (ดูรายละเอียดใน man page ด้วยคำสั่ง {{{man -s 2 open}}}
+
 {{{
 #include <sys/types.h> 
 #include <sys/stat.h> 
