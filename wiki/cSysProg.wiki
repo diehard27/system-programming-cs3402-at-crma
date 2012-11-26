@@ -42,6 +42,65 @@ total 8
 2496286 -rw-r--r-- 1 prachya prachya 2082 2012-11-14 16:51 gchart-disk.pl
 2101314 -rw-r--r-- 1 prachya prachya    6 2012-11-05 13:34 junk
 }}}
+===C โปรแกรมที่เข้าถึง inode===
+
+ตัวอย่างโปรแกรมภาษา C ต่อไปนี้ใช้ไลบรารี่ fstat() เพื่อเรียกดูข้อมูลของไฟล์/ไดเร็กทอรี่
+รูปแบบของ fstat()
+{{{
+int fstat(int fildes, struct stat *buf);
+}}}
+โดยที่
+
+||Field||Description||
+||int fildes||	The file descriptor of the file that is being inquired.||
+||struct stat *buf ||	A structure where data about the file will be stored. A detailed look at all of the fields in this structure can be found in the struct stat page. ||
+||return value||	Returns a negative value on failure.||
+
+{{{
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+ 
+int main(int argc, char **argv)
+{
+    if(argc != 2)    
+        return 1;
+ 
+    int file=0;
+        if((file=open(argv[1],O_RDONLY)) < -1)
+            return 1;
+ 
+    struct stat fileStat;
+    if(fstat(file,&fileStat) < 0)    
+        return 1;
+ 
+    printf("Information for %s\n",argv[1]);
+    printf("---------------------------\n");
+    printf("File Size: \t\t%d bytes\n",fileStat.st_size);
+    printf("Number of Links: \t%d\n",fileStat.st_nlink);
+    printf("File inode: \t\t%d\n",fileStat.st_ino);
+ 
+    printf("File Permissions: \t");
+    printf( (S_ISDIR(fileStat.st_mode)) ? "d" : "-");
+    printf( (fileStat.st_mode & S_IRUSR) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWUSR) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXUSR) ? "x" : "-");
+    printf( (fileStat.st_mode & S_IRGRP) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWGRP) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXGRP) ? "x" : "-");
+    printf( (fileStat.st_mode & S_IROTH) ? "r" : "-");
+    printf( (fileStat.st_mode & S_IWOTH) ? "w" : "-");
+    printf( (fileStat.st_mode & S_IXOTH) ? "x" : "-");
+    printf("\n\n");
+ 
+    printf("The file %s a symbolic link\n\n", (S_ISLNK(fileStat.st_mode)) ? "is" : "is not");
+ 
+    return 0;
+}
+}}}
+
 
 ==FILE I/O==
 การเขียนโปรแกรมติดต่อไฟล์บนระบบปฏิบัติการ Linux นั้นจำเป็นจะต้องมีการเปิดไฟล์ก่อน ซึ่งตัว kernel ได้สร้าง List ของไฟล์ที่เปิดอยู่ไว้ให เรียกว่า File Table ซึ่งใน File Table จะมีเลขดัชนีที่ไม่มีค่าติดลบ เรียกว่า File Descriptor (fds) ซึ่งจะมีรายละเอียดต่าง ๆ เกี่ยวกับการเปิดไฟล์ รวมถึงรายละเอียดเกี่ยวกับหน่วยความจำที่ใช้ในการเปิดไฟล์ด้วย
