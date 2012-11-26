@@ -71,6 +71,11 @@ int fstat(int fildes, struct stat *buf);
 ||{{{struct stat *buf}}} ||	A structure where data about the file will be stored. A detailed look at all of the fields in this structure can be found in the struct stat page. ||
 ||return value||	Returns a negative value on failure.||
 
+ดูรายละเอียดของ sys/stat.h ได้ด้วยคำสั่ง
+{{{
+man -s 2 stat
+}}}
+
 {{{
 // test-fstat.c
 #include <unistd.h>
