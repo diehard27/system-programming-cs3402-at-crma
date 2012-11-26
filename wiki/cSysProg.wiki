@@ -296,7 +296,7 @@ extern int errno;
 
 ค่าของตัวแปร errno ได้ถูก map กับคำอธิบายข้อผิดพลาดต่าง ๆ และ Preprocessor `#define` ก็ได้ทำการ map ค่า errno ที่เป็นตัวเลข ให้เป็นค่าคงที่ เช่น ถ้า preprocessor ระบุค่า EACCESS ให้เท่ากับ 1 นั่นหมายความว่า เกิดข้อผิดพลาด `Permission denied` ตารางด้านล่างจะแสดงรายละเอียด ของ คำอธิบายข้อผิดพลาดต่าง ๆ ที่ระบุไว้ใน Preprocesser
 
-||*`Preprocessor define`* ||  *Description* ||
+||*Preprocessor define* ||  *Description* ||
 ||E2BIG || Argument list too long ||
 ||EACCESS |||| Permission denied ||
 ||EAGAIN || Try again ||
@@ -330,6 +330,51 @@ extern int errno;
 ||ESRCH || No such process ||
 ||ETXTBSY || Text file busy ||
 ||EXDEV || Improper link ||
+
+===ฟังก์ชันสำหรับรายงานข้อผิดพลาด===
+ภาษาซี ได้จัดเตรียมฟังก์ชันสำหรับแปลค่า errno ให้อยู่ในรูปแบบของข้อความแจ้งข้อผิดพลาด ฟังก์ชันที่ใช้ในการรายงานข้อผิดพลาดมีดังนี้
+
+=== perror()===
+ฟังก์ชันนี้จะทำการ พิมพ์ข้อความแจ้งข้อผิดพลาดไปยัง stderr รูปแบบการประกาศฟังก์ชัน ดังโค้ดด้านล่าง
+{{{
+#include <stdio.h> 
+ void perror (const char *str);
+}}}
+===ตัวอย่างการใช้งาน perror===
+{{{
+  1 // checkfile.c
+  2 // by narong phoomsuk
+  3 // usage : ./checkfile filename
+  4 #include <stdio.h>
+  5 #include <sys/types.h>  // for open()
+  6 #include <sys/stat.h>   // for open()
+  7 #include <fcntl.h>        // for open()
+  8 #include <errno.h>
+  9 #include <stdlib.h>   // for exit()
+ 10 #include <unistd.h> // for close()
+ 11
+ 12 int main(int argc,char* argv[]){
+ 13         int fd;
+ 14         if(argc!=2){
+ 15                 printf("usage : %s filename\n",argv[0]);
+ 16                 perror("Invalid argument\n");
+ 17                 exit(-1);
+ 18         }
+ 19         fd = open (argv[1],O_RDONLY);
+ 20         if (fd==-1){
+ 21                 perror("open file failed\n");
+ 22                 printf("Cannot open %s\n",argv[1]);
+ 23                 exit(-1);
+ 24         }
+ 25         if (close(fd)==-1){
+ 26                 perror("close file failed\n");
+ 27                 printf("Cannot open %s\n",argv[1]);
+ 28                 exit(-1);
+ 29         }
+ 30         return 0;
+ 31 }
+}}}
+จากโค้ดด้านบน บรรทัดที่ 16, 21, และ 26 หากเกิดข้อผิดพลาดฟังก์ชัน perror จะแสดงข้อความในวงเล็บ แต่ต่อท้ายด้วย เครื่องหมาย ":" และสาเหตุที่เกิดข้อผิดพลาด
 
 =References=
   # Robert Love, Linux System Programming, O'Rielly, 2007. [http://seesee.pbworks.com/f/linux.pdf  [PDF]]
