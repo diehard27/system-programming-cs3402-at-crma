@@ -376,6 +376,15 @@ extern int errno;
 }}}
 จากโค้ดด้านบน บรรทัดที่ 16, 21, และ 26 หากเกิดข้อผิดพลาดฟังก์ชัน perror จะแสดงข้อความในวงเล็บ แต่ต่อท้ายด้วย เครื่องหมาย ":" และสาเหตุที่เกิดข้อผิดพลาด
 
+===ตัวอย่างการรันโปรแกรม checkfile===
+{{{
+ $ ./checkfile file1.txt
+open file failed
+: No such file or directory
+Cannot open file1.txt
+ $  ./checkfile file1.txt 2>err2.txt
+Cannot open file1.txt
+}}}
 =References=
   # Robert Love, Linux System Programming, O'Rielly, 2007. [http://seesee.pbworks.com/f/linux.pdf  [PDF]]
 ----
