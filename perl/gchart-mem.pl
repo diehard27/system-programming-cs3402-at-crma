@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 # gchart-mem.pl
 # written by Prachya Chalermwat, Ph.D. Mail: pyavinci@gmail.com
 # Nov 14, 2012
