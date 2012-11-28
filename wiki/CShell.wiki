@@ -50,7 +50,25 @@ $ ps
 ||CMD|| คำสั่งของผู้ใช้ ที่เป็นตัวเริ่ม Process||
 
 ==Process Hierachy==
-ในแต่ละ Process จะมี Parent Process (process แม่) ซึ่งก็คือ Process ที่ได้สร้าง Process ใหม่ขึ้นมารัน ส่วน Process ที่ถูก Parent สร้างขึ้นมา จะเรียกว่า Child Process (process ลูก) 
+ในแต่ละ Process จะมี Parent Process (process แม่) ซึ่งก็คือ Process ที่ได้สร้าง Process ใหม่ขึ้นมารัน ส่วน Process ที่ถูก Parent สร้างขึ้นมา จะเรียกว่า Child Process (process ลูก) ค่าที่ใช้บ่งบอกความสัมพันธ์ระหว่าง parent กับ child ได้แก่  ppid (Parent Process ID) ซึ่งจะเก็บค่า pid ของ process ที่เป็น parent ของ process นั้น ฟังก์ชันที่ใช้สำหรับแสดง ppid ได้แก่ getppid()
+
+==ฟังก์ชัน getppid()==
+เป็นฟังก์ชันที่อยู่ใน library <unistd.h> ใช้ในแสดงเลข processID ของโปรแกรมที่กำลังทำงานอยู่
+
+ตัวอย่างการทำงานของ getppid() แสดงดังโค้ดด้านล่าง
+
+{{{
+  1 //getppid.c
+  2 #include <stdio.h>
+  3 #include <unistd.h>
+  4 int main(void){
+  5         printf("Hello, this is process ID %d\n",getpid());
+  6         printf("Hello, this is my parent ID %d\n",getppid());
+  7         return 0;
+  8 }
+
+}}}
+
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
