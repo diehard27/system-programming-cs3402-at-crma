@@ -4,4 +4,13 @@
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]<br>
 <font color=red>กำหนดส่ง พฤหัสฯ 6 ธ.ค.2555</font>
 
-1) 
+1) จงเขียนโปรแกรม forkcalc.c รับค่า ตัวเลข 2 ตัว *ผ่าน argument* โดยมีเงื่อนไขดังนี้
+ - ถ้าอยู่ใน parent process ให้ทำการแสดงผลรวมของตัวเลขทั้ง  2 ตัวออกหน้าจอ
+ - ถ้าอยู่ใน child process ให้ทำการแสดงผลคูณของตัวเลขทั้ง 2 ตัวออกหน้าจอ
+
+ตัวอย่างการทำงานโปรแกรม
+{{{
+$ ./forkcalc 55 44
+This is parent process, The value of 55+44 is 99
+This is child process, The value of 55*44 is 2420
+}}}
