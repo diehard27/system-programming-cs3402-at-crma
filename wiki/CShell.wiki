@@ -27,6 +27,8 @@
   7 }
 
 }}}
+โดยปกติแล้ว ProcessID จะถูกตั้งค่าสูงสุดไว้ที่ 32768 เพื่อรองรับกับระบบปฏิบัติการ UNIX แบบเก่าที่ใช้สถาปัตยกรรม 16 บิต อย่างไรก็ตาม เราสามารถเข้าไปแก้ไขค่า Maximum processID ได้ ที่  /proc/sys/kernel/pid_max
+
 
 ในเครื่องที่มีตัวประมวลผลเดี่ยว แต่ละ Process จะถูกเรียกเข้ามาประมวลผล ในช่วงเวลาอันสั้น เราสามารถใช้คำสั่ง ps สำหรับแสดง processID ทั้งหมดที่กำลังทำงานอยู่ได้ โดยคำสั่ง ps จะแสดง ProcessID, ชื่อของ terminal(TTY), เวลาที่ Process ใช้ในการประมวลผล (TIME), และคำสั่งที่กำลังประมวลผลอยู่ (CMD)
 
@@ -47,7 +49,8 @@ $ ps
 ||TT|| ชื่อ control terminal ของ Process||
 ||CMD|| คำสั่งของผู้ใช้ ที่เป็นตัวเริ่ม Process||
 
-ในแต่ละ Process จะมี Parent Process (process แม่) โดยสามารถ
+==Process Hierachy==
+ในแต่ละ Process จะมี Parent Process (process แม่) ซึ่งก็คือ Process ที่ได้สร้าง Process ใหม่ขึ้นมารัน ส่วน Process ที่ถูก Parent สร้างขึ้นมา จะเรียกว่า Child Process (process ลูก) 
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
