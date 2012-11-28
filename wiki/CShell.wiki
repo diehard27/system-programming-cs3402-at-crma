@@ -73,13 +73,77 @@ pid_t เป็น type ของ processID ซึ่งถูกประกา
 }}}
 
 ==Background Process==
+Backgroud Process จะทำงานอยู่เบื้องหลังไปเรื่อย ๆ แม้กระทั่ง ที่มีการ logout ออกจากระบบ การรันโปรแกรมให้มีลักษณะเป็น Background process ทำได้โดยใช้เครื่องหมาย & ตามหลังโปรแกรมที่รันดังนี้
+{{{
+./perl stack.pl &
+}}}
+วิธีการตรวจสอบว่า โปรแกรมยังรันอยู่หลังจาก logout หรือไม่ ให้ logout ออกจากระบบ แล้ว login เข้าไปใหม่ แล้วทดลองใช้คำสั่ง ps ดูว่ายังมีโปรแกรม รันอยู่หรือเปล่า
+
+
 ==Running a New Process==
 ในระบบปฏิบัติการ Unix จะแยกการ execute program ออกจากการสร้าง(create) process ใหม่ การ execute program คือ การที่ system call หนึ่งทำการโหลดโปรแกรมที่เป็น binary ลงในหน่วยความจำ แล้วแทนที่เนื้อหาต่าง ๆ ในหน่วยความจำ และเริ่มให้ program ทำงานใหม่ โดยสามารถเรียกใช้ function ในกลุ่ม exec สำหรับการ execute โปรแกรมใหม่ได้
+
 ในขณะที่การสร้าง process ใหม่ เริ่มต้นจะมีการสร้าง process ลูกขึ้นมาใหม่ โดยคุณสมบัติของ process ลูกจะลอกเลียนมาจากคุณสมบัติของ process แม่ทุกประการ แต่มี pid, พื้นที่หน่วยความจำ,เวลาในการใช้ CPU, และ state เป็นของตัวเอง จากนั้นก็จะทำการ execute program ใหม่ เรียกพฤติกรรมแบบนี้ว่า "fork" ซึ่งจะทำให้โปรแกรมสามารถทำงานได้มากกว่าหนึ่ง process ในเวลาเดียวกันได้
 
-==ฟังก์ชันกลุ่ม exec==
+==ฟังก์ชัน fork==
+fork ใช้สำหรับสร้าง process ใหม่ มีรูปแบบการใช้งานดังนี้
+{{{
+#include<sys/types.h>
+#include<unistd.h>
 
+pid_t fork(void)
+}}}
 
+ฟังก์ชัน fork จะส่งค่ากลับเป็นค่าของ pid ของ process ลูกที่สร้างขึ้นใหม่ ถ้าส่งค่า 0 หมายถึง process ลูกเรียกคำสั่ง fork แต่ถ้า fork สร้าง process ใหม่ไม่ได้ จะส่งกลับค่า -1 ตัวอย่างการใช้ฟังก์ชัน fork มีดังนี้
+{{{
+  1 //fork.c
+  2 // by narong
+  3 #include <unistd.h>
+  4 #include <stdio.h>
+  5
+  6 int main(void){
+  7         int pid;
+  8         pid =fork();
+  9         if (pid==0){
+ 10                 printf("I am a child process\n");
+ 11                 printf("my getpid() is %d\n",getpid());
+ 12         }else if(pid<0){
+ 13                 perror("Cannot create process");
+ 14         } else{
+ 15                 printf("My Process ID is %d\n",pid);
+ 16                 printf("my getpid() is %d\n",getpid());
+ 17         }
+ 18         return 0;
+ 19 }
+}}}
+จากโค้ดด้านบน บรรทัดที่ 8 เป็นการเรียกใช้ fork แล้ว pid จะได้รับค่า pid ใหม่ของ process ลูก เมื่อ pid มีค่ามากกว่า 0 จึงไปทำงานที่บรรทัดที่ 14 หลังจาก child process ทำงานเสร็จ ก็จะตรวจสอบว่า pid เท่ากับ 0 หรือไม่ ถ้าเท่ากับ 0 ก็จะไปทำงานที่บรรทัดที่ 10-11
+
+ตัวอย่างการทำงานกับ ด้วยฟังก์ชัน fork แสดงได้ดังโค้ดด้านล่าง
+{{{
+  1 //fork2.c
+  2 // code by http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf
+  3 #include <sys/types.h>
+  4 #include <unistd.h>
+  5 #include <stdio.h>
+  6
+  7 int main(void){
+  8         int A[]={1,2,3,4,5,6};
+  9         int sum=0, pdt=1, PID, i;
+ 10         if ((PID=fork())==0){
+ 11                 for (i=0;i<6;i++) sum += A[i];
+ 12                 printf("This is child process computed sum %d \n", sum);
+ 13         }
+ 14         if (PID <0) {
+ 15                 perror("problem creating a process \n");
+ 16         }
+ 17         if (PID >0) {
+ 18                 for (i=0;i<6;i++) pdt *= A[i];
+ 19                 printf("The parent process completed the product %d \n", pdt);
+ 20         }
+ 21         return 0;
+ 22 }
+
+}}}
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
