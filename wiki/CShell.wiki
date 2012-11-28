@@ -52,6 +52,9 @@ $ ps
 ==Process Hierachy==
 ในแต่ละ Process จะมี Parent Process (process แม่) ซึ่งก็คือ Process ที่ได้สร้าง Process ใหม่ขึ้นมารัน ส่วน Process ที่ถูก Parent สร้างขึ้นมา จะเรียกว่า Child Process (process ลูก) ค่าที่ใช้บ่งบอกความสัมพันธ์ระหว่าง parent กับ child ได้แก่  ppid (Parent Process ID) ซึ่งจะเก็บค่า pid ของ process ที่เป็น parent ของ process นั้น ฟังก์ชันที่ใช้สำหรับแสดง ppid ได้แก่ getppid()
 
+===pid_t===
+pid_t เป็น type ของ processID ซึ่งถูกประกาศไว้ใน library <sys/types.h> ซึ่งโดยทั่วไปแล้ว ชนิดของ pid_t จะเป็น Integer
+
 ==ฟังก์ชัน getppid()==
 เป็นฟังก์ชันที่อยู่ใน library <unistd.h> ใช้ในแสดงเลข processID ของโปรแกรมที่กำลังทำงานอยู่
 
@@ -69,12 +72,21 @@ $ ps
 
 }}}
 
+==Background Process==
+==Running a New Process==
+ในระบบปฏิบัติการ Unix จะแยกการ execute program ออกจากการสร้าง(create) process ใหม่ การ execute program คือ การที่ system call หนึ่งทำการโหลดโปรแกรมที่เป็น binary ลงในหน่วยความจำ แล้วแทนที่เนื้อหาต่าง ๆ ในหน่วยความจำ และเริ่มให้ program ทำงานใหม่ โดยสามารถเรียกใช้ function ในกลุ่ม exec สำหรับการ execute โปรแกรมใหม่ได้
+ในขณะที่การสร้าง process ใหม่ เริ่มต้นจะมีการสร้าง process ลูกขึ้นมาใหม่ โดยคุณสมบัติของ process ลูกจะลอกเลียนมาจากคุณสมบัติของ process แม่ทุกประการ แต่มี pid, พื้นที่หน่วยความจำ,เวลาในการใช้ CPU, และ state เป็นของตัวเอง จากนั้นก็จะทำการ execute program ใหม่ เรียกพฤติกรรมแบบนี้ว่า "fork" ซึ่งจะทำให้โปรแกรมสามารถทำงานได้มากกว่าหนึ่ง process ในเวลาเดียวกันได้
+
+==ฟังก์ชันกลุ่ม exec==
+
+
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
   # March H. Scholl, _Process Control Subsystem_ [http://www.inf.uni-konstanz.de/dbis/teaching/ss09/os/L2.pdf PDF]
-
+ # www.no-poor.com,_Process and Threads_ [http://www.no-poor.com/dssandos/os_ch03_process.htm HTML]
+ # lecture.cs.buu.ac.th _s49232 Lab06 fork_ [https://docs.google.com/viewer?url=http%3A%2F%2Flecture.cs.buu.ac.th%2F~s49232%2FLab06%2Ffork.doc DOC]
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 
