@@ -169,8 +169,8 @@ pid_t fork(void)
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
   # March H. Scholl, _Process Control Subsystem_ [http://www.inf.uni-konstanz.de/dbis/teaching/ss09/os/L2.pdf PDF]
- # www.no-poor.com,_Process and Threads_ [http://www.no-poor.com/dssandos/os_ch03_process.htm HTML]
- # lecture.cs.buu.ac.th _s49232 Lab06 fork_ [https://docs.google.com/viewer?url=http%3A%2F%2Flecture.cs.buu.ac.th%2F~s49232%2FLab06%2Ffork.doc DOC]
+ # www.no-poor.com, _Process and Threads_ [http://www.no-poor.com/dssandos/os_ch03_process.htm HTML]
+ # lecture.cs.buu.ac.th, _s49232 Lab06 fork_ [https://docs.google.com/viewer?url=http%3A%2F%2Flecture.cs.buu.ac.th%2F~s49232%2FLab06%2Ffork.doc DOC]
 ----
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 
