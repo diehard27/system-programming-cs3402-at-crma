@@ -72,6 +72,19 @@ pid_t เป็น type ของ processID ซึ่งถูกประกา
 
 }}}
 
+===Process Tree===
+{{{
+prachya@pcubusrv104> ps --forest -aux |grep prachya
+Warning: bad ps syntax, perhaps a bogus '-'? See http://procps.sf.net/faq.html
+root      8330  0.0  0.2  12852  4380 ?        Ss   11:03   0:00  \_ sshd: prachya [priv]
+prachya   8401  0.0  0.0  12852  1856 ?        S    11:03   0:00      \_ sshd: prachya@pts/1
+prachya   8402  0.0  0.1   5824  3200 pts/1    Ss   11:03   0:00          \_ -bash
+prachya   8532  0.0  0.0   2708  1052 pts/1    R+   11:11   0:00              \_ ps --forest -aux
+prachya   8533  0.0  0.0   3320   800 pts/1    S+   11:11   0:00              \_ grep --color=auto prachya
+prachya   1164  0.0  0.1   5880  3240 tty2     S    Nov30   0:00  \_ -bash
+prachya    919  0.0  0.1   5880  3240 tty1     S    Nov30   0:00  \_ -bash
+}}}
+
 ==Background Process==
 Backgroud Process จะทำงานอยู่เบื้องหลังไปเรื่อย ๆ แม้กระทั่ง ที่มีการ logout ออกจากระบบ การรันโปรแกรมให้มีลักษณะเป็น Background process ทำได้โดยใช้เครื่องหมาย & ตามหลังโปรแกรมที่รันดังนี้
 {{{
