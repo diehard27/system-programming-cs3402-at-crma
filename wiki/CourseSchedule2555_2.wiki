@@ -97,7 +97,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 ==Today==
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || โครงสร้างของโปรเซส การควบคุมโปรเซส,Signal, Time	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม การประยุกต์ใช้ C,The Stat Family, Permission, Reading the directory's Content,Memory Management ||		
+|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ ||  การประยุกต์ใช้ C, Permission, Reading the directory's Content,Memory Managementโครงสร้างของโปรเซส 	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม การควบคุมโปรเซส,Signal, Time ||		
 || ๒๒ || อ. ๑๑ ธ.ค. ๕๕ || การบูรณาการใช้ C, Perl, Shell scripts || || ||
 || ๒๓ || พฤ. ๑๓ ธ.ค. ๕๕ || ทบทวนก่อนสอบประจำภาค, System Programming ขั้นก้าวหน้า	|| || ||
 || ** || ๑๗-๒๑ ธ.ค. ๕๕ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
