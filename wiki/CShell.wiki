@@ -224,6 +224,51 @@ void my_function (void);
 }}}
 จากตัวอย่างโค้ดด้านบน ฟังก์ชัน out จะถูกประกาศไว้ตามรูปแบบต้นแบบฟังก์ชันที่จะใช้ใน atexit() ในกรณีที่โปรแกรมถูก Terminate ปกติ ฟังก์ชัน atexit() จะเรียกฟังก์ชัน out() ให้ทำงานและจะแสดงข้อความ "atexit() succeeded!" ออกหน้าจอ
 
+==Waiting for Terminated Child Processes==
+หลายครั้งที่ parent ต้องการได้รับข้อมูลอื่น ๆ จาก child ที่ถูก Terminate เช่น ค่า ที่ child return ผู้ออกแบบ UNIX จึงได้ออกแบบให้ส่ง Child ที่ถูก Terminate ก่อน parent ของมันไปอยู่ใน State พิเศษ โดยกำหนดให้ process ที่อยู่ใน state นี่ชื่อว่า "Zombie" ซึ่ง Process นี้จะยังคงเก็บจะเก็บข้อมูลโครงสร้างพื้นฐานบางอย่างของ kernel ที่มีประโยชน์ไว้อยู่ เพื่อรอให้ parent สอบถามข้อมูลเกี่ยวกับสถานะของตัวมัน หลังจากที่ parent ได้ข้อมูลจาก child ที่เป็น Zombie เรียบร้อยแล้ว zombie ก็จะถูกกำจัดทิ้ง
+
+==ฟังก์ชัน wait()==
+ระบบปฏิบัติการ Linux ได้จัดเตรียมฟังก์ชันหลายตัวสำหรับการรับข้อมูลจาก Child Process ที่ถูก Terminate ฟังก์ชันที่ใช้งานง่าย คือ wait() โดยมีรูปแบบการใช้งานดังนี้
+{{{
+#include <sys/types.h> 
+#include <sys/wait.h> 
+ 
+pid_t wait (int *status); 
+ 
+}}}
+ฟังก์ชัน wait จะ return ค่า PID ของ child ที่ถูก Terminate แต่หากเกิด error จะ return ค่า -1 ถ้าไม่มี child ถูก terminate เลย ฟังก์ชันจะทำการรอไปเรื่อย ๆ จนกว่าจะมี child ถูก terminate ถ้าพบว่ามี child ถูก terminate แล้ว ฟังก์ชันจะทำการ return ค่า PID ของ child นั้นทันที ค่า error ที่อาจเกิดขึ้นได้มี 2 ค่าได้แก่
+||ECHILD || The calling process does not have any children. ||
+||EINTR || A signal was received while waiting, and the call returned early.  ||
+
+ถ้าค่าที่ return ไม่ใช่ null ข้อมูลเพิ่มเติมอื่น ๆ ของ child จะสามารถหาได้จากตัวแปร pointer status ที่ทำงานในมาโครฟังก์ชันของภาษา C เตรียมไว้สำหรับแปลข้อมูลต่าง ๆ ของ child โดยมีรูปแบบการใช้งาน ดังนี้
+{{{
+#include <sys/wait.h> 
+ 
+int WIFEXITED (status); 
+int WIFSIGNALED (status); 
+int WIFSTOPPED (status); 
+int WIFCONTINUED (status); 
+ 
+int WEXITSTATUS (status); 
+int WTERMSIG (status); 
+int WSTOPSIG (status); 
+int WCOREDUMP (status); 
+ 
+}}}
+รายละเอียดความหมายต่าง ๆ ของ macro function แสดงได้ดังนี้
+||WIFEXITED|| จะ return true ถ้า child process ได้ถูก terminated แบบปกติ||
+||WEXITSTATUS|| จะเตรียมข้อมูล 8 bit ที่ผ่านจากฟังก์ชัน _exit() สำหรับกรณี ที่ WIFEXITED return ค่า true||
+||WIFSIGNALED|| จะ return ค่า true ถ้า child process ถูก terminate เพราะ Signal ||
+||WTERMSIG|| จะ return ค่าของ Signal ที่เป็นสาเหตุที่ทำให้ child ถูก terminate สำหรับกรณีที่ WIFSIGNALED return ค่า true||
+||WCOREDUMP|| จะ return ค่า true หาก child process ถูก terminate และมีการผลิต core dump||
+||WIFSTOPPED|| จะ return ค่า true หาก child process ถูกหยุดการทำงาน||
+||WSTOPSIG|| จะ return ค่าของ Signal ที่เป็นสาเหตุที่ทำให้ child หยุดการทำงาน สำหรับกรณีที่ WIFSTOPPED return ค่า true||
+
+
+==User and Group==
+
+==Daemons==
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
