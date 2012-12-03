@@ -257,7 +257,7 @@ int WCOREDUMP (status);
 }}}
 รายละเอียดความหมายต่าง ๆ ของ macro function แสดงได้ดังนี้
 ||WIFEXITED|| จะ return true ถ้า child process ได้ถูก terminated แบบปกติ||
-||WEXITSTATUS|| จะเตรียมข้อมูล 8 bit ที่ผ่านจากฟังก์ชัน _exit() สำหรับกรณี ที่ WIFEXITED return ค่า true||
+||WEXITSTATUS|| จะเตรียมข้อมูล 8 bit ที่ผ่านจากฟังก์ชัน {{{_exit()}}} สำหรับกรณี ที่ WIFEXITED return ค่า true||
 ||WIFSIGNALED|| จะ return ค่า true ถ้า child process ถูก terminate เพราะ Signal ||
 ||WTERMSIG|| จะ return ค่าของ Signal ที่เป็นสาเหตุที่ทำให้ child ถูก terminate สำหรับกรณีที่ WIFSIGNALED return ค่า true||
 ||WCOREDUMP|| จะ return ค่า true หาก child process ถูก terminate และมีการผลิต core dump||
