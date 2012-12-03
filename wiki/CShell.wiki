@@ -183,6 +183,47 @@ pid_t fork(void)
 
 }}}
 
+==Terminating a Process==
+ฟังก์ชันที่ใช้ในการหยุดการทำงาน (Terminate) process ที่กำลังทำงานอยู่ได้แก่ ฟังก์ชัน exit() โดยจะทำการ return ผลของการ terminate process ได้ 2 แบบคือ exit(EXIT_SUCCESS) ซึ่งบ่งบอกว่าออกโดยทำงานสำเร็จ หรือ exit (EXIT_FAILURE) ซึ่งบอกว่าออกโดยทำงานล้มเหลว รูปแบบการใช้งาน ฟังก์ชัน exit() มีดังนี้
+{{{
+#include <stdlib.h>
+void exit (int status);
+}}}
+
+นอกจากนี้ process สามารถถูก Terminate ด้วย Signal ที่ใช้ในการ Terminate เช่น SIGTERM และ SIGKILL ได้อีกด้วย
+==ฟังก์ชัน atexit()==
+ฟังก์ชัน atexit() ใช้สำหรับเรียกฟังก์ชันที่ register ไว้ เมื่อ process ถูก Terminate ผ่านฟังก์ชัน exit() หรือ ผ่านการ return จากฟังก์ชัน main  แต่ถ้า Process ถูก Terminate ด้วย Signal ฟังก์ชันที่ register ไว้จะไม่ถูกเรียก โดยฟังก์ชัน atexit() จะ return ค่า 0 เมื่อทำงานสำเร็จ ถ้าหากล้มเหลว จะ return ค่า -1 รูปแบบของฟังก์ชัน atexit() มีดังนี้
+{{{
+#include <stdlib.h>
+int atexit (void (*function) (void));
+}}}
+โดยฟังก์ชันที่่จะใช้ register ต้องไม่มีการรับค่า parameter และไม่มีการ return ค่า รูปแบบของฟังก์ชันต้นแบบจะเป็นดังนี้
+{{{
+void my_function (void);
+}}}
+ตัวอย่างการใช้งาน ฟังก์ชัน atexit() แสดงได้ดังโค้ดด้านล่าง
+{{{
+  1 //atexit.c
+  2 // by narong ,base on Robert  Love
+  3 #include <stdio.h>
+  4 #include <stdlib.h>
+  5
+  6 void out (void)
+  7 {
+  8         printf ("atexit(  ) succeeded!\n");
+  9 }
+ 10  int main (void)
+ 11 {
+ 12         printf("Now for test exiting\n");
+ 13         if (atexit (out)){
+ 14                 fprintf(stderr, "atexit(  ) failed!\n");
+ 15         }
+ 16         return 0;
+ 17 }
+
+}}}
+จากตัวอย่างโค้ดด้านบน ฟังก์ชัน out จะถูกประกาศไว้ตามรูปแบบต้นแบบฟังก์ชันที่จะใช้ใน atexit() ในกรณีที่โปรแกรมถูก Terminate ปกติ ฟังก์ชัน atexit() จะเรียกฟังก์ชัน out() ให้ทำงานและจะแสดงข้อความ "atexit() succeeded!" ออกหน้าจอ
+
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
