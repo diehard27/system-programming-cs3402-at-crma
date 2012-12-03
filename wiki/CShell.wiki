@@ -369,9 +369,7 @@ int WCOREDUMP (status);
  56   }
 
 }}}
-==User and Group==
 
-==Daemons==
 
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
