@@ -189,6 +189,8 @@ pid_t fork(void)
 #include <stdlib.h>
 void exit (int status);
 }}}
+||EXIT_SUCCESS || จะมีค่าเท่ากับ 0 ||
+||EXIT_FAILURE || จะมีค่าเท่ากับ -1 ||
 
 นอกจากนี้ process สามารถถูก Terminate ด้วย Signal ที่ใช้ในการ Terminate เช่น SIGTERM และ SIGKILL ได้อีกด้วย
 ==ฟังก์ชัน atexit()==
@@ -267,7 +269,7 @@ int WCOREDUMP (status);
 ตัวอย่างการทำงานของฟังก์ชัน wait แสดงได้ดัง Code ข้างล่าง
 {{{
   1 // wait.c
-  2 // baseon Robert Love
+  2 // base on Robert Love
   3 #include <unistd.h>
   4 #include <stdio.h>
   5 #include <sys/types.h>
@@ -308,8 +310,22 @@ int WCOREDUMP (status);
  40
  41        return 0;
  42 }
-
 }}}
+จากโค้ดด้านบนจะเป็นการเรียกใช้ฟังก์ชัน wait() บรรทัดที่ 12 จะประกาศตัวแปร pid สำหรับรับค่า ที่ return จากฟังก์ชัน wait() และประกาศตัวแปร pid_fork สำหรับรับค่า pid ที่ return จากฟังก์ชัน fork() ในบรรทัดที่ 14 จะมีการเรียกใช้ฟังก์ชัน fork ถ้าค่าที่ return  เป็น 0 ก็จะ ออกจากโปรแกรมด้วยคำสั่ง return 1 ในบรรทัดที่ 19 จะมีการเรียกใช้ฟังก์ชัน wait โดยค่าที่ return จะไปเก็บไว้ใน pid ในกรณีที่ค่า pid > 0 โปรแกรมจะทำการตรวจสอบ status ด้วย มาโครฟังก์ชันต่าง ๆ หากตรงกับเงื่อนไขของมาโครฟังก์ชันใด ก็จะทำงานใน block เงื่อนไขของมาโครฟังก์ชันนั้น 
+
+ผลลัพธ์จากการรันโปรแกรมแสดงได้ดังนี้
+{{{
+pid=11204
+Normal termination with exit status=1
+}}}
+
+*ข้อสังเกต*
+ในบรรทัดที่ 16 มีการ remark ฟังก์ชัน abort ไว้ ถ้าปลด remark บรรทัดที่ 16 ออกจะทำให้ผลลัพธ์ของการทำงานเปลี่ยนไป ดังนี้
+{{{
+pid=11059
+Killed by signal=6
+}}}
+
 {{{
   1 //wait2.c
   2 // code by http://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/wait.htm
