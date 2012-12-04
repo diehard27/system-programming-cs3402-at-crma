@@ -329,7 +329,7 @@ Killed by signal=6
 {{{
   1 //wait2.c
   2 // code by http://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/wait.htm
-  3  #include <sys/types.h>
+  3   #include <sys/types.h>
   4   #include <sys/wait.h>
   5   #include <unistd.h>
   6   #include <stdio.h>
@@ -383,10 +383,10 @@ Killed by signal=6
  54         exit(EXIT_SUCCESS);
  55      }
  56   }
-
 }}}
-
-
+จากโค้ดด้านบนบรรทัดที่ 15 มีการเรียกใช้ฟังก์ชัน fork() แล้วนำค่าที่ return ไปเก็บไว้ที่ตัวแปร pid
+บรรทัดที่ 20 ถ้าค่า pid เป็น 0 ซึ่งหมายถึงเป็น child process บรรทัดที่ จะกำหนดให้รับค่าทางคีย์บอร์ดด้วยฟังก์ชัน gets() แล้วนำมาเก็บข้อมูลไว้ที่ตัวแปร buffer จากนั้นบรรทัดที่ 24 จะนำค่า buffer ซึ่งเป็น string มาแปลงเป็นตัวเลขด้วยฟังก์ชัน atoi() แล้วไปเก็บในตัวแปร seed บรรทัดที่ 25 จะใช้ฟังก์ชัน srand() เป็นตัวกำหนดช่วงความกว้างในการสุ่มตัวเลข โดยช่วงความกว้างในการสุ่มจะใช้ค่าจากตัวแปร seed บรรทัดที่ 27 จะใช้ฟังก์ชัน rand() เพื่อสุ่มค่าตัวเลขแล้วนำไปเก็บไว้ในตัวแปร randomNumber บรรทัดที่ 28 จะเปรียบเทียบเงื่อนไขของตัวแปร randomNumber % 2 ถ้ามีค่าเท่ากับ 0 จะเข้าไปทำเงื่อนไขบรรทัดที่ 29-31 โดยใช้ฟังก์ชัน abort() เพื่อ Terminate Child Process แต่ถ้าค่า randomNumber %2 ไม่เท่ากับ 0 จะไปทำเงื่อนไขในบรรทัดที่ 34-35 โดยให้ child process terminate ปกติ
+ในกรณีที่ ค่า pid มากกว่า 0 นั่นคือ parent process บรรทัดที่ 40 จะตรวจสอบค่าที่ return จากฟังก์ชัน wait() ว่าเป็น -1 หรือไม่ ถ้าใช่ จะให้แสดง error แต่ถ้าไม่ จะตรวจสอบ สถานะของ child process ด้วยมาโครฟังก์ชันต่าง ๆ ตั้งแต่บรรทัดที่ 44-54
 =References=
   # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
   # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
