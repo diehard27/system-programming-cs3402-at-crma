@@ -318,7 +318,7 @@ int main (int argc, char *argv[])
   3 // usage : octhex.c o 10
   4 //         octhex.c h 99
   5 #include <stdio.h>
-  6
+  6 #include <stdlib.h>
   7 int main(int argc, char* argv[]){
   8         if(argc != 3){ //argc should be 3 for correct execution
   9                 printf("usage : %s o 10\n",argv[0]);
