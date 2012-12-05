@@ -1,13 +1,17 @@
-#summary One-sentence summary of this page.
+#summary C กับการติดต่อกับ Shell 2
+<table width=500>
+<td>
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
+<wiki:toc max_depth="3" />
 
-= Introduction =
 
-Add your content here.
+=References=
+  # Wiil-Hans Steeb, et al, _Linux, Shell Programming and Perl_ [http://issc.uj.ac.za/downloads/linux.pdf  PDF]
+  # Ananda Gunawardena, _Process Control_ [http://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture25.pdf PDF]
+  # March H. Scholl, _Process Control Subsystem_ [http://www.inf.uni-konstanz.de/dbis/teaching/ss09/os/L2.pdf PDF]
+ 
+ 
+----
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->Next: [cSysProg C กับ System Programming]
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+[https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CShell Edit]
