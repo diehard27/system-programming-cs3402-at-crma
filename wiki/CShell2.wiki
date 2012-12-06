@@ -194,7 +194,46 @@ void free (void *ptr);
  24         return 0;
  25 }
 }}}
+== struct mallinfo()==
+ใช้สำหรับดูสถิติการใช้ memory ซึ่ง struct mallinfo จะประกาศอยู่ใน library "malloc.h" ซึ่งรายละเอียดของ struct mallinfo() สามารถแสดงได้ดังโค้ดด้านล่าง
+{{{
+/* all sizes in bytes */ 
+struct mallinfo { 
+int arena; /* size of data segment used by malloc */ 
+int ordblks; /* number of free chunks */ 
+int smblks; /* number of fast bins */ 
+int hblks; /* number of anonymous mappings */ 
+int hblkhd; /* size of anonymous mappings*/ 
+int usmblks; /* maximum total allocated size */ 
+int fsmblks; /* size of available fast bins */ 
+int uordblks; /* size of total allocated space */ 
+int fordblks; /* size of available chunks */ 
+int keepcost; /* size of trimmable space */
+};
+}}}
+===ฟังก์ชัน malloc_stats()=== 
+อยู่ใน library malloc.h เช่นกัน ใช้แสดงรายละเอียดที่เกี่ยวเนื่องกับการใช้ memory รูปแบบการใช้งานมีดังนี้
+{{{
+#include <malloc.h> 
+void malloc_stats (void);
+}}}
 
+ตัวอย่างการใช้งาน mallinfo และ malloc_stats()  สามารถแสดงได้ดังโค้ดด้านล่าง
+{{{
+  1 #include <stdio.h>
+  2 #include <stdlib.h>
+  3 #include <malloc.h>
+  4
+  5 int main (void){
+  6
+  7         struct mallinfo m;
+  8         m = mallinfo ( );
+  9          printf ("free chunks: %d\n", m.ordblks);
+ 10         malloc_stats();
+ 11         return 0;
+ 12 }
+
+}}}
 == Signal ==
 
 == Time ==
