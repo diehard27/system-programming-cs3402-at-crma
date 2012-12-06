@@ -94,7 +94,7 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || ๑๙ || พฤ. ๒๙ พ.ย. ๕๕ ||[CShell Process]{{{{ Running a Process}}}}  	||[assignment07 งานมอบ ๗] || ||
 || ๒๐ || อ. ๔ ธ.ค. ๕๕ ||<font color='green'>---*งดการศึกษา*---</font>	|| ||นนร.ติดภารกิจเร่งด่วน ที่สนามหลวง ||
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || [CShell Process(ต่อ)]{{{{ Terminating a Process, Waiting for Terminated Child Process, Zombie  }}}} Permission, Reading the directory's Content, Memory Management	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม Signal, Time, การประยุกต์ใช้ C,  ||		
+|| ๒๑ || พฤ. ๖ ธ.ค. ๕๕ || [CShell Process(ต่อ)]{{{{ Terminating a Process, Waiting for Terminated Child Process, Zombie  }}}} Permission, [CShell2 Reading the directory's Content, Memory Management]	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม Signal, Time, การประยุกต์ใช้ C,  ||		
 
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 ==Today==
