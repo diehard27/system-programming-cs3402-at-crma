@@ -53,9 +53,67 @@ ret = fchmod (fd, S_IRUSR | S_IWUSR);
 if (ret) 
 perror ("fchmod"); 
 }}}
+ถ้า chmod() และ fchmod() ทำงานสำเร็จจะ return 0 แต่ถ้าไม่สำเร็จ จะ return -1 รายละเอียดของ error สามารถดูได้จากค่าของตัวแปร errno
+
 
 == Reading the directory's content ==
+ภาษาซี จะมอง content ของ directory เป็น stream ก่อนจะเริ่มอ่าน content จาก directory จะต้องทำการสร้าง directory stream เสียก่อน ซึ่งแทนด้วยการประการ Object ชื่อ *DIR* 
+ภาษาซี ใช้ ตัวแปรโครงสร้าง (struct) dirent ซึ่งอยู่ใน library <dirent.h> ในการเก็บข้อมูลต่าง ๆ ของ content ใน directory โดยรายละเอียดของ struct dirent แสดงได้ตามโค้ดด้านล่าง
+{{{
+struct dirent { 
+ino_t d_ino; /* inode number */ 
+off_t d_off; /* offset to the next dirent */ 
+unsigned short d_reclen; /* length of this record */ 
+unsigned char d_type; /* type of file */ 
+char d_name[256]; /* filename */ 
+};
+}}}
+ในการอ่าน content ใน directory ด้วยภาษาซี จะใช้ฟังกชันหลัก ๆ 3 function ได้แก่ opendir(), readdir(), และ closedir() โดยรูปแบบการใช้งานของแต่ละฟังก์ชันแสดงได้ตามโค้ดด้านล่าง
+รูปแบบการใช้งาน ฟังก์ชัน opendir()
+{{{
+#include <sys/types.h> 
+#include <dirent.h> 
+DIR * opendir (const char *name);
+}}}
 
+รูปแบบการใช้งานฟังก์ชัน readdir()
+{{{
+#include <sys/types.h> 
+#include <dirent.h> 
+struct dirent * readdir (DIR *dir);
+}}}
+
+รูปแบบการใช้งานฟังก์ชัน closedir()
+{{{
+#include <sys/types.h> 
+#include <dirent.h> 
+int closedir (DIR *dir);
+}}}
+ตัวอย่างนการเรียกใช้งานฟังก์ชันในการอ่าน content ใน directory แสดงได้ดังโค้ดด้านล่าง
+{{{
+ //Source code produced by Adri Jovin.J.J
+  9 #include<stdio.h>
+ 10 #include<dirent.h>
+ 11 #include<stdlib.h>
+ 12 struct dirent *dptr;
+ 13 int main(int argc, char *argv[])
+ 14 {
+ 15         char buff[256];
+ 16         DIR *dirp;
+ 17         printf("\n\n Enter directory Name");
+ 18         scanf("%s",buff);
+ 19         if((dirp=opendir(buff))==NULL)
+ 20         {
+ 21                 printf("Error");
+ 22                 exit(1);
+ 23         }
+ 24         while(dptr=readdir(dirp))
+ 25         {
+ 26                 printf("%s\n",dptr->d_name);
+ 27         }
+ 28         closedir(dirp);
+ 29 }
+}}}
 == Memory Management ==
 
 == Signal ==
