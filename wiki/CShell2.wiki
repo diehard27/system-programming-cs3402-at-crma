@@ -275,6 +275,41 @@ int (*signal (int sig, void (*func)(int) ) ) (int);
 ||SIGCHLD||ส่งไปยังโปรเซสต้นฉบับเมื่อโปรเซสลูกหยุดทำงานหรือเมื่อพบคำสั่ง exit||
 ||SIGSTOP||สั่งให้โปรเซสหยุดรันโดยโปรเซสที่ได้รับสัญญาณนี้จะสามารถรันต่อไปได้ด้วยสัญญาณ SIGCONT||
 
+ฟังก์ชันที่ใช้สำหรับจัดการกับ signal มีดังนี้
+||signal()||จะติดตั้งตัวควบคุมสัญญาณขึ้นมาใหม่สำหรับสัญญาณโดยตัวควบคุมสัญญาณที่ติดตั้งจะอยู่ในรูปของตัวเลขสัญญาณตัวควบคุมสัญญาณจะติดตั้งเพื่อ sighandler ซึ่งฟังก์ชันนี้อาจจะสร้างขึ้นโดยผู้ใช้หรือสัญญาณอื่นๆ||
+||pause()||ทำให้โปรแกรมหยุดทำงานจนกระทั่งเกิดสัญญาณบางอย่างจึงจะรันต่อ||
+||sigfillset()||เริ่มต้นใช้งานตัวแปรต่อชุดสัญญาณที่กำหนด||
+||sigprocmask()||กำหนดหรือตรวจสอบสัญญาณที่ถูกบล็อกสำหรับโปรเซสที่กำลังรันเพื่อป้องกันไม่ให้โปรเซสรับสัญญาณ||
+||kill()||ใช้ฆ่าโปรเซสโดยการส่งสัญญาณถึงโปรเซส||
+||alarm()||กำหนดช่วงเวลาที่เคอร์เนลจะส่งสัญญาณ SIGALRM ไปยังโปรเซส||
+ตัวอย่างการใช้งานฟังก์ชัน signal แสดงได้ดังโค้ดด้านล่าง
+{{{
+// code by http://lecture.cs.buu.ac.th/~s47232/special_report/new/signal.doc
+  1 #include <stdio.h>      /* standard I/O functions */
+  2 #include <unistd.h>    /* standard unix functions, like getpid() */
+  3 #include <signal.h>    /* signal name macros, and the signal() prototype */
+  4
+  5 /* first, here is the signal handler */
+  6 void catch_int(int sig_num)
+  7 {
+  8     /* re-set the signal handler again to catch_int, for next time */
+  9     signal(SIGINT, catch_int);
+ 10     printf("Don't do that\n");
+ 11     fflush(stdout);
+ 12 }
+ 13
+ 14
+ 15 int main(int argc, char* argv[])
+ 16 {
+ 17     /* set the INT (Ctrl-C) signal handler to 'catch_int' */
+ 18     signal(SIGINT, catch_int);
+ 19
+ 20     /* now, lets get into an infinite loop of doing nothing. */
+ 21     for ( ;; )
+ 22         pause();
+ 23 }
+
+}}}
 == Time ==
   
 == การประยุกต์ใช้ C ==
