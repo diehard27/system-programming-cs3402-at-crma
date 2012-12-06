@@ -121,6 +121,79 @@ int closedir (DIR *dir);
  29 }
 }}}
 == Memory Management ==
+===Allocate Dynamic Memory===
+โดยทั่วไปการใช้งาน memory จะเป็นแบบคงที่ แต่มีบ่อยครั้งในการเขียนโปรแกรมที่เรายังไม่ทราบจะต้องใช้ memory เท่าไร หรือต้องการใช้ memory เพิ่มในระหว่างรันโปรแกรม เนื่องจาก memory ที่ให้มาไม่เพียงพอ ภาษาซีได้จัดเตรียมฟังก์ชันสำหรับจอง memory ในระหว่างรันโปรแกรมไว้ให้ ทำให้เรามีความยืดหยุ่น (dynamic) ในการใช้งาน memory ได้มากยิ่งขึ้น ฟังก์ชันที่น่าสนใจสำหรับจัดการหน่วยความจำได้แก่ malloc(),realloc(), และ free()
+malloc เป็นฟังก์ชันที่ใช้จองหน่วยความจำ โดยจะ return pointer ที่ชี้ไปยังหน่วยความจำใหม่ที่จองไว้ให้ตามที่ขนาดที่ระบุไว้ในฟังก์ชัน  ซึ่งมีรูปแบบการใช้งานดังนี้
+{{{
+#include <stdlib.h> 
+void * malloc (size_t size);
+}}}
+
+realloc() เป็นฟังก์ชันที่ใช้ในการปรับเปลี่ยนหน่วยความจำที่ขอไว้ รูปแบบการใช้งานมีดังนี้
+{{{
+#include <stdlib.h> 
+void * realloc (void *ptr, size_t size); 
+}}}
+
+free() เป็นฟังก์ชันที่ใช้ในคืนหน่วยความเมื่อเลิกใช้งานแล้ว รูปแบบการใช้งานมีดังนี้
+{{{
+#include <stdlib.h> 
+void free (void *ptr);
+}}}
+ตัวอย่างการใช้งาน malloc แสดงได้ดังโค้ดด้านล่าง
+{{{
+// code by http://www.codingunit.com/c-tutorial-the-functions-malloc-and-free
+  1 #include<stdio.h>
+  2 #include<stdlib.h>
+  3         int main()
+  4         {
+  5                 int *ptr_one;
+  6
+  7                 ptr_one = (int *)malloc(sizeof(int));
+  8
+  9                 if (ptr_one == 0)
+ 10                 {
+ 11                         printf("ERROR: Out of memory\n");
+ 12                         return 1;
+ 13                 }
+ 14
+ 15                 *ptr_one = 25;
+ 16                 printf("%d\n", *ptr_one);
+ 17
+ 18                 free(ptr_one);
+ 19
+ 20                 return 0;
+ 21         }
+}}}
+ตัวอย่างการใช้งาน realloc() แสดงได้ดังโค้ดด้านล่าง
+{{{
+  // code by http://www.codingunit.com/c-reference-stdlib-h-function-realloc
+  1 #include<stdio.h>
+  2 #include<stdlib.h>
+  3 int main ()
+  4 {
+  5         int * buffer;
+  6         /*get a initial memory block*/
+  7         buffer = (int*) malloc (10*sizeof(int));
+  8         if (buffer==NULL)
+  9         {
+ 10                 printf("Error allocating memory!");
+ 11                 exit (1);
+ 12         }
+ 13         /*get more memory with realloc*/
+ 14         buffer = (int*) realloc (buffer, 20*sizeof(int));
+ 15         if (buffer==NULL)
+ 16         {
+ 17                 printf("Error reallocating memory!");
+ 18                 //Free the initial memory block.
+ 19                 free (buffer);
+ 20                 exit (1);
+ 21         }
+ 22         free (buffer);
+ 23         printf ("realloc complete\n");
+ 24         return 0;
+ 25 }
+}}}
 
 == Signal ==
 
