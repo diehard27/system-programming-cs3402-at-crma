@@ -1,13 +1,15 @@
-#summary One-sentence summary of this page.
+#summary งานมอบ 8
+<table width=500>
+<td>
+[CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]<br>
+<font color=red>กำหนดส่ง พฤหัสฯ 13 ธ.ค.2555</font>
 
-= Introduction =
+1) จงเขียนโปรแกรม wait.c รับค่า argument เป็นเลขสองตัว ถ้า argument ทั้งสองตัวคูณกันแล้วได้เลขคู่ child process จะเรียกใช้ฟังก์ชัน abort แต่ถ้าเป็นเลขคี่ให้ child process ถูก terminate ปกติ ส่วน parent process จะใช้ฟังก์ชัน wait เพื่อตรวจสอบสถานะว่า child process ถูก terminate ด้วยสาเหตุใด พร้อมทั้งแสดงสาเหตุการ terminate ออกหน้าจอ
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ตัวอย่างการทำงานโปรแกรม
+{{{
+$ ./wait 2 2
+This chis process is terminated by abort() function.
+$ ./wait 3 1
+This chis process is terminated normally.
+}}}
