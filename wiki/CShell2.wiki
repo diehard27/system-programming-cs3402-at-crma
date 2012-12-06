@@ -44,6 +44,8 @@ perror ("chmod");
 
 ตังอย่างของการใช้งาน fchmod() แสดงได้ดังโค้ดด้านล่าง
 {{{
+int ret; 
+/* 
 * Set the file behind 'fd' to owner-readable 
 * and -writable. 
 */ 
