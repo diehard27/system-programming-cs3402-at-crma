@@ -31,15 +31,21 @@ flag สำหรับ chmod มีดังนี้
 
 ตัวอย่างของการใช้งาน chmod() แสดงได้ดังโค้ดด้านล่าง
 {{{
-int ret; 
-/* 
-* Set 'map.png' in the current directory to 
-* owner-readable and -writable. This is the 
-* same as 'chmod 600 ./map.png'. 
-*/ 
-ret = chmod ("./map.png", S_IRUSR | S_IWUSR); 
-if (ret) 
-perror ("chmod"); 
+  1 #include <sys/types.h>
+  2 #include <sys/stat.h>
+  3 #include <stdio.h>
+  4 #include <errno.h>
+  5 #include <errno.h>
+  6
+  7 int main(int argc,char* argv[]){
+  8
+  9           int rc;
+ 10
+ 11           rc = chmod(argv[1], 0444);
+ 12           if (rc == -1)
+ 13              fprintf(stderr, "chmod failed, errno = %d\n", errno);
+ 14         return 0;
+ 15 }
 }}}
 
 ตังอย่างของการใช้งาน fchmod() แสดงได้ดังโค้ดด้านล่าง
