@@ -5,6 +5,52 @@
 <wiki:toc max_depth="3" />
 
 == Permission ==
+ภาษาซีมีฟังก์ชัน chmod และ fchmod ที่ใช้ในการกำหนด permission ให้ไฟล์ โดยมีรูปแบบดังนี้
+{{{
+#include <sys/types.h> 
+#include <sys/stat.h> 
+int chmod (const char *path, mode_t mode); 
+int fchmod (int fd, mode_t mode);
+}}}
+ทั้ง chmod และ  fchmod สามารถใช้ set permission ได้เหมือนกัน ต่างกันตรงที่ chmod ใช้กับ absolute path name แต่ fchmod ใช้กับ file descriptor
+
+flag สำหรับ chmod มีดังนี้
+||Flag||Octal value||Purpose||
+||S_ISUID||04000||Set user ID on execution||
+||S_ISGID||02000||Set group ID on execution||
+||S_ISVTX||01000||Sticky bit||
+||S_IRUSR, S_IREAD||00400||Read by owner||
+||S_IWUSR, S_IWRITE||00200||Write by owner||
+||S_IXUSR, S_IEXEC||00100||Execute/search by owner||
+||S_IRGRP||00040||Read by group||
+||S_IWGRP||00020||Write by group||
+||S_IXGRP||00010||Execute/search by group||
+||S_IROTH||00004||Read by others||
+||S_IWOTH||00002||write by others||
+||S_IXOTH||00001||Execute/search by others||
+
+ตัวอย่างของการใช้งาน chmod() แสดงได้ดังโค้ดด้านล่าง
+{{{
+int ret; 
+/* 
+* Set 'map.png' in the current directory to 
+* owner-readable and -writable. This is the 
+* same as 'chmod 600 ./map.png'. 
+*/ 
+ret = chmod ("./map.png", S_IRUSR | S_IWUSR); 
+if (ret) 
+perror ("chmod"); 
+}}}
+
+ตังอย่างของการใช้งาน fchmod() แสดงได้ดังโค้ดด้านล่าง
+{{{
+* Set the file behind 'fd' to owner-readable 
+* and -writable. 
+*/ 
+ret = fchmod (fd, S_IRUSR | S_IWUSR); 
+if (ret) 
+perror ("fchmod"); 
+}}}
 
 == Reading the directory's content ==
 
