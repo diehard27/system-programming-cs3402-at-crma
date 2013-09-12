@@ -1,13 +1,13 @@
 #summary กำหนดการสอน
 <table width=500>
 <td>
-[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
+[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๖/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
 
 กองวิชา คณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา
 รร.จปร.
 
 ==กำหนดการสอน== 
-ภาคการศึกษาที่ ๒ ปีการศึกษา ๒๕๕๕
+ภาคการศึกษาที่ ๒ ปีการศึกษา ๒๕๕๖
 นักเรียนนายร้อยชั้นปีที่ ๓ สาขาวิทยาการคอมพิวเตอร์
 
 *ชื่อวิชา การเขียนโปรแกรมระบบ (System Programming)* <font color=grey>(ความหมายใน สารานุกรมออนไลน์  [[http://en.wikipedia.org/wiki/System_programming EN]][[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url TH]])</font>
