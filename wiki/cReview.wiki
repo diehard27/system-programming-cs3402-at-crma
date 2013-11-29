@@ -106,9 +106,9 @@ int *pa = &a;
   7         int a=5;
   8         int *pa=&a;
   9
- 10         printf("a=%d\n",a);   # a=5
+ 10         printf("a=%d\n",a);  // a=5
  11         *pa=15;
- 12         printf("a=%d\n",a);   # a=15
+ 12         printf("a=%d\n",a);   // a=15
  13         return 0;
  14 }
 
@@ -292,10 +292,10 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
  13
  14 int main(void){
  15         int a=1,b=4;
- 16         printf("a=%d,b=%d\n",a,b);  #a=1,b=4
+ 16         printf("a=%d,b=%d\n",a,b);  //a=1,b=4
  17         int sum = sumof(a,&b);
- 18         printf("sum=%d\n",sum);      # sum = 10
- 19         printf("a=%d,b=%d\n",a,b);  # a=1,b=5
+ 18         printf("sum=%d\n",sum);      // sum = 10
+ 19         printf("a=%d,b=%d\n",a,b);  // a=1,b=5
  20         return 0;
  21 }
 }}}
