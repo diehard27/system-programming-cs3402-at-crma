@@ -50,9 +50,9 @@ enum <ชื่อข้อมูลชนิด struct> {ชื่อค่า�
   6         enum student cadet2 = Chaiyapat;
   7         enum student cadet3 = Kulsiri;
   8         cadet1 = Wuttichai;
-  9         printf("cadet1 is %d\n",cadet1); # => cadet1 is 0
- 10         printf("cadet2 is %d\n",cadet2); # => cadet2 is 1
- 11         printf("cadet3 is %d\n",cadet3); # => cadet3 is 6
+  9         printf("cadet1 is %d\n",cadet1); // => cadet1 is 0
+ 10         printf("cadet2 is %d\n",cadet2); // => cadet2 is 1
+ 11         printf("cadet3 is %d\n",cadet3); // => cadet3 is 6
  12         return 0;
  13 }
 }}}
@@ -263,10 +263,10 @@ function.c:11: note: previous implicit declaration of â€˜sayGoodbyeâ€™ 
  13
  14 int main(void){
  15         int a=1,b=4;
- 16         printf("a=%d,b=%d\n",a,b);       # a=1,b=4
+ 16         printf("a=%d,b=%d\n",a,b);       // a=1,b=4
  17         int sum = sumof(a,b);
- 18         printf("sum=%d\n",sum);           # sum=10
- 19         printf("a=%d,b=%d\n",a,b);       # a=1,b=4
+ 18         printf("sum=%d\n",sum);           // sum=10
+ 19         printf("a=%d,b=%d\n",a,b);      // a=1,b=4
  20         return 0;
  21 }
 
