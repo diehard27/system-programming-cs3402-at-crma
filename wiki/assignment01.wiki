@@ -24,7 +24,7 @@ mkdir   asm01
 
 การส่งอีเมล์ให้ใช้ email ของ รร.จปร. (@crma.ac.th) โดย username และ password เป็นชื่อที่ให้ นนร.กรอกให้ห้องเรียนในชั้นเรียน
 ----
-<font color=red>Due date: 2014-09-08</font>
+<font color=red>กำหนดส่งในคาบเรียน จันทร์ที่ 8 ก.ย. 57</font>
 ----
 
 สามารถดูผลการส่งงานได้ที่ [AssignmentSummary]
