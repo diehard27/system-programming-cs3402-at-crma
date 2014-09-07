@@ -3,16 +3,16 @@
 <td>
 <a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>
 
-<font color=red>_*กำหนดส่ง พฤ 27 ก.ย.55*_</font>
+<font color=red>_*กำหนดส่ง พฤ 7 ก.ย.57*_</font>
 ===จุดประสงค์===
 <font color=grey>
-  * ให้นักเรียนรู้จักการใช้คำสั่ง [http://10.134.64.45/prachya/manln.php ln] เพื่อสร้าง symbolic link
+  * ให้นักเรียนรู้จักการใช้คำสั่ง [http://en.wikipedia.org/wiki/Ln_(Unix) ln] เพื่อสร้าง symbolic link
   * ให้นักเรียนสามารถ edit, compile, และ run โปรแกรมในภาษา แอสเซมบลี้, C, perl, และ shell script เบื้องต้นได้
 </font>
 
 ===หัวข้องานมอบ===
-  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45 จากนั้นสร้าง symbolic link ด้วยคำสั่ง *ln  -s  /var/www/cXXNNNNNN www* (ให้แทน XXNNNNNN ด้วยชื่อล็อกอินของตนเอง) ซึ่งจะทำให้เราได้ symbolic link ชื่อว่า www ลิงค์ไปที่เว็บไดเร็กทอรี่ของตนเอง
-  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45 รันคำสั่ง *cd www* แล้วรันคำสั่ง *mkdir asm02* และคำสั่ง *cd asm02* 
+  
+  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.0.85 รันคำสั่ง *cd www* แล้วรันคำสั่ง *mkdir asm02* และคำสั่ง *cd asm02* 
   # จากนั้นให้ดูจากโปรแกรมตัวอย่างในภาษา [twoStepAssembly assembly], [compilingCprogram C], [usingPerl perl], และ [programmingShell shell] ให้นักเรียน edit โปรแกรม, compile, และ run ตามขั้นตอนในตัวอย่าง ทีละภาษา
   # ตรวจสอบผ่านเว็บไดเร็กทอรี่ว่า มีไฟล์ต่าง ๆ เช่น hello.c, hello.s เป็นต้น ในไดเร็กทอรี่ asm02
 
