@@ -1,13 +1,13 @@
 #summary กำหนดการสอน
 <table width=500>
 <td>
-[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๗/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
+[[https://code.google.com/p/system-programming-cs3402-at-crma หน้าหลัก]][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๗๗/๒">ตารางเรียน</a>][<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
 
 กองวิชา คณิตศาสตร์และคอมพิวเตอร์ ส่วนการศึกษา
 รร.จปร.
 
 ==กำหนดการสอน== 
-ภาคการศึกษาที่ ๒ ปีการศึกษา ๒๕๕๗
+ภาคการศึกษาที่ ๒ ปีการศึกษา ๒๕๗๗
 นักเรียนนายร้อยชั้นปีที่ ๓ สาขาวิทยาการคอมพิวเตอร์
 
 *ชื่อวิชา การเขียนโปรแกรมระบบ (System Programming)* <font color=grey>(ความหมายใน สารานุกรมออนไลน์  [[http://en.wikipedia.org/wiki/System_programming EN]][[http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url TH]])</font>
@@ -25,7 +25,7 @@
 การนำฟังก์ชันในระบบปฏิบัติการมาประยุกต์ใช้
 รวมถึงการเขียนโปรแกรมเข้ากับระบบคอมพิวเตอร์อื่นๆ
 ==อาจารย์ผู้สอน==
-  * <font color='green'>พ.อ.ปรัชญา เฉลิมวัฒน์</font>, Ph.D. หน.วิชา B.S.(EE) CRMA, MS Comp Sci (GWU, Washington DC, USA), Ph.D. Comp Sci (GMU, Virginia, USA) และ 
+  * <font color='green'>พ.จ.ปรัชญา เฉลิมวัฒน์</font>, Ph.D. หน.วิชา B.S.(EE) CRMA, MS Comp Sci (GWU, Washington DC, USA), Ph.D. Comp Sci (GMU, Virginia, USA) และ 
   * <font color='green'>ร.ท.ณรงค์ ภูมิสุข</font>, BS Comp Sci (KU), MEng Comp Eng (KU)
 ==วิธีการศึกษา==
 สอนเชิงบรรยายและฝึกปฏิบัติ บนเครื่องเซอร์ฟเวอร์ http://10.134.64.45
@@ -64,43 +64,42 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
   * ระบบปฏิบัติการ Operating System
   * การเขียนโปรแกรมภาษา C
   * สถาปัตยกรรมคอมพิวเตอร์
-==ตารางเรียน ๒๕๕๕/๒==[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
+==ตารางเรียน ๒๕๗๕/๒==[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today">Today</a>]
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑ || จ. ๑ ก.ย.๕๗ || [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/introduction_to_cs3402 แนะนำวิชา],  [https://code.google.com/p/system-programming-cs3402-at-crma/wiki/Knowing_System_Programming การเขียนโปรแกรมระบบ], [introLinuxEnv การใข้งานลีนุกซ์เบื้องต้น] || [assignment01  งานมอบ ๑] || [PreTest ทดสอบความรู้เบื้องต้น]  ||
-|| ๒ || พ. ๓ ก.ย. ๕๗ || [ProgrammingInLinux ลินุกซ์และการเขียนโปรแกรมบนลีนุกซ์] ด้วยโปรแกรมภาษาต่าง ๆ, [twoStepAssembly Assembly], [compilingCprogram C], [usingPerl Perl], [programmingShell Shell] || ||<font color=grey>นนร. ควรมีความเข้าใช้การใช้งานลิหนิกซ์เบื้องต้น, ล็อกอินไปที่เครื่องแม่ข่าย, ใช้งานคำสั่งต่าง ๆ , รู้จักวิธีคอมไพล์โปรแกรม, เขียนโปรแกรมด้วยเอดิเตอร์, คุ้นเคยกับระบบปฏิบัติการ</font> ||
-|| _ || จ.๘ ก.ย.๕๗ || <font color='green'>---*งดการศึกษา*---</font> || เทอดเกียรตินายพล || ||
-|| ๓ || พ. ๑๐ ก.ย. ๕๗ || เสริมเทคนิคการอ่านเร็ว, ทบทวนการใช้งานลิหนิกซ์เบื้องต้น, reminder งานมอบ, email,  [IntroShell เชลล์คืออะไร?] [ShellProgramming1 การเขียนโปรแกรมบนเชลล์] || [assignment02 งานมอบ ๒] ||<font color=grey>นักเรียนเข้าใจ การเขียนโปรแกรมในเชลล์, อินพุท เอาท์พุท พารามิเตอร์ของเชลล์, การควบคุมหน้าจอแสดงผล, การ redirection, คำสั่ง echo </font> ||		
-|| ๔ || อ. ๒๕ ก.ย. ๕๕ || การทำ port forward,  การเขียนโปรแกรมบนเชลล์ 2 {{{{arguments $#, $*, $0, for loop, let, expression evaluation}}}} || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๑</font> ||
-|| ๕ || พฤ. ๒๗ ก.ย. ๕๕ ||[intermediateLinux การใช้งานลิหนิกซ์ขั้นกลาง] (ร.ต.ณรงค์) || || ||
-|| ๖ || อ. ๒ ต.ค. ๕๕ || [shellScriptProg3 การเขียนโปรแกรมเชลล์สคริปต์ 3] {while loop, until loop, if, else, elif, case, โอเปอเรเตอร์ทางตรรก AND, OR} || [assignment03 งานมอบ ๓] || ||
-|| ๗ || พฤ. ๔ ต.ค. ๕๕ || [functionInShell ฟังก์ชันในเชลล์สคริปต์], [IntermediateShellScript1 การโปรแกรมเชลล์ระดับกลาง]	 || ||<font color=grey>ติดตามผลความเข้าใจของ นนร. แบ่งกลุ่ม weak ออกจากกลุ่ม average-outstanding, อจ.แยกกันเน้นความเข้าใจให้กับกลุ่ม weak </font> ||
-|| ๘ || อ. ๙ ต.ค. ๕๕ || intermediate shell scripts (ต่อ), [shellScriptApp1 การประยุกต์ใช้เชลล์สคริปต์ ๑] || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> ||  11:00 ทบทวนก่อนสอบ, 11:30 <font color='red'>สอบโดย อจ. ครั้งที่ ๒</font> ||
-|| ๙ || พฤ. ๑๑ ต.ค. ๕๕ || แสดงสถานะคะแนนเก็บ, เฉลยสอบโดยอาจารย์ ๑,๒ [shellScriptApp2 การประยุกต์ใช้เชลล์สคริปต์ ๒], [versionControl1 การควบคุมเวอร์ชั่น 1] || ส่งงานมอบ ๓|| ||		
-|| ๑๐ || อ. ๑๖ ต.ค. ๕๕ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
-|| ๑๑ || พฤ. ๑๘ ต.ค. ๕๕ || [operatorPrecedence], [arrayVariable ตัวแปรแบบอาเรย์], [regularExpression Regular Expression],  (ต่อ)การประยุกต์ใช้สคริปต์กับ Google Search, [perlIntro แนะนำ Perl], ทบทวนก่อนสอบระหว่างภาค  || || ||
+|| ๒ || พ. ๓ ก.ย. ๕๗ || [ProgrammingInLinux ลินุกซ์และการเขียนโปรแกรมบนลีนุกซ์] ด้วยโปรแกรมภาษาต่าง ๆ, [twoStepAssembly Assembly], [compilingCprogram C], [usingPerl Perl], [programmingShell Shell] || ||<font color=grey>*สอนเสริม 0930-1000* <br>นนร. ควรมีความเข้าใช้การใช้งานลิหนิกซ์เบื้องต้น, ล็อกอินไปที่เครื่องแม่ข่าย, ใช้งานคำสั่งต่าง ๆ , รู้จักวิธีคอมไพล์โปรแกรม, เขียนโปรแกรมด้วยเอดิเตอร์, คุ้นเคยกับระบบปฏิบัติการ</font> ||
+|| ๓ || จ.๘ ก.ย.๕๗ || ทบทวนการใช้งานลิหนิกซ์เบื้องต้น, reminder งานมอบ, email,  [IntroShell เชลล์คืออะไร?] [ShellProgramming1 การเขียนโปรแกรมบนเชลล์] ||[assignment02 งานมอบ ๒] ||<font color=grey>นักเรียนเข้าใจ การเขียนโปรแกรมในเชลล์, อินพุท เอาท์พุท พารามิเตอร์ของเชลล์, การควบคุมหน้าจอแสดงผล, การ redirection, คำสั่ง echo </font> ||
+|| ๔ || พ. ๑๐ ก.ย. ๕๗ || การทำ port forward,  การเขียนโปรแกรมบนเชลล์ 2 {{{{arguments $#, $*, $0, for loop, let, expression evaluation}}}} || <font color='orange'>สอนเสริม ๐๙๓๐ – ๑๐๐๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๑</font> ||
+|| ๕ || จ. ๑๕ ก.ย. ๕๗ ||[intermediateLinux การใช้งานลิหนิกซ์ขั้นกลาง] (ร.ท.ณรงค์) || || ||
+|| ๖ || จ. ๒๒ ก.ย. ๕๗ || [shellScriptProg3 การเขียนโปรแกรมเชลล์สคริปต์ 3] {while loop, until loop, if, else, elif, case, โอเปอเรเตอร์ทางตรรก AND, OR} || [assignment03 งานมอบ ๓] || ||
+|| ๗ || พ. ๒๔ ก.ย. ๕๗ || [functionInShell ฟังก์ชันในเชลล์สคริปต์], [IntermediateShellScript1 การโปรแกรมเชลล์ระดับกลาง]	 || ||<font color=grey>ติดตามผลความเข้าใจของ นนร. แบ่งกลุ่ม weak ออกจากกลุ่ม average-outstanding, อจ.แยกกันเน้นความเข้าใจให้กับกลุ่ม weak </font> ||
+|| ๘ || จ. ๒๙ ก.ย. ๕๗ || intermediate shell scripts (ต่อ), [shellScriptApp1 การประยุกต์ใช้เชลล์สคริปต์ ๑] || <font color='orange'>สอนเสริม ๐๙๓๐ – ๑๐๐๐</font> ||  11:00 ทบทวนก่อนสอบ, 11:30 <font color='red'>สอบโดย อจ. ครั้งที่ ๒</font> ||
+|| ๙ | พ. ๑๑ ต.ค. ๕๗ || แสดงสถานะคะแนนเก็บ, เฉลยสอบโดยอาจารย์ ๑,๒ [shellScriptApp2 การประยุกต์ใช้เชลล์สคริปต์ ๒], [versionControl1 การควบคุมเวอร์ชั่น 1] || ส่งงานมอบ ๓|| ||		
+|| ๑๐ || จ. ๑๖ ต.ค. ๕๗ || [shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓] || [assignment04 งานมอบ ๔] ||||
+|| ๑๑ || พ. ๑๘ ต.ค. ๕๗ || [operatorPrecedence], [arrayVariable ตัวแปรแบบอาเรย์], [regularExpression Regular Expression],  (ต่อ)การประยุกต์ใช้สคริปต์กับ Google Search, [perlIntro แนะนำ Perl], ทบทวนก่อนสอบระหว่างภาค  || || ||
 
 <table width=500 border=1>
-<tr><td> *๒๒-๒๖ ต.ค. ๕๕*</td>
+<tr><td> *๒๒-๒๖ ต.ค. ๕๗*</td>
 <td><font color='green'>--- *[midterm_review สอบระหว่างภาค]* ---</font></td></tr>
 </table>
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
-|| ๑๒ || อ. ๖ พ.ย. ๕๕ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
-|| ๑๓	|| พฤ. ๘ พ.ย. ๕๕ || [perlProg3 การโปรแกรม Perl (ต่อ)]	|| || ||
-|| ๑๔ || อ. ๑๙ พ.ย. ๕๖ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
+|| ๑๒ || จ. ๖ พ.ย. ๕๗ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
+|| ๑๓	|| พ. ๘ พ.ย. ๕๗ || [perlProg3 การโปรแกรม Perl (ต่อ)]	|| || ||
+|| ๑๔ || จ. ๑๙ พ.ย. ๕๖ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
 || ๑๕	|| ศ. ๒๒ พ.ย. ๕๖ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	||  || ||
-|| ๑๖ || อ. ๒๖ พ.ย. ๕๖ || [cReview ทบทวนภาษา C] {{{{Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี}}}}	|| [assignment06 งานมอบ ๖]||  ||
+|| ๑๖ || จ. ๒๖ พ.ย. ๕๖ || [cReview ทบทวนภาษา C] {{{{Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี}}}}	|| [assignment06 งานมอบ ๖]||  ||
 || ๑๗ || ศ. ๒๙ พ.ย. ๕๖ || [cReview2 ทบทวนภาษา C(ต่อ)] {{{{stdin,stdout,stderr,FILE,fopen,fread,fwrite,fclose}}}} || || ||		
-|| ๑๘ || อ. ๓ ธ.ค. ๕๖ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode,  Error Handling}}}}, || <font color='orange'>สอนเสริม ๑๐๐๐ – ๑๐๓๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
+|| ๑๘ || จ. ๓ ธ.ค. ๕๖ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode,  Error Handling}}}}, || <font color='orange'>สอนเสริม ๐๙๓๐ – ๑๐๐๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
 || ๑๙ || ศ. ๖ ธ.ค. ๕๖ ||[CShell Process]{{{{ Running a Process}}}}  	||[assignment07 งานมอบ ๗] || ||
-|| ๒๐ || อ. ๑๐ ธ.ค. ๕๖ ||<font color='green'>---*งดการศึกษา*---</font>	|| ||นนร.ติดภารกิจเร่งด่วน ที่สนามหลวง ||
+|| ๒๐ || จ. ๑๐ ธ.ค. ๕๖ ||<font color='green'>---*งดการศึกษา*---</font>	|| ||นนร.ติดภารกิจเร่งด่วน ที่สนามหลวง ||
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๒๑ || ศ. ๑๓ ธ.ค. ๕๖ || [CShell Process(ต่อ)]{{{{ Terminating a Process, Waiting for Terminated Child Process, Zombie  }}}} Permission, [CShell2 Reading the directory's Content, Memory Management]	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม Signal, Time, การประยุกต์ใช้ C,  ||		
 
 http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [https://code.google.com/p/system-programming-cs3402-at-crma/w/edit/CourseSchedule2555_2 แก้ไข]
 ==Today==
-|| ๒๒ || อ. ๑๑ ธ.ค. ๕๕ || การบูรณาการใช้ C, Perl, Shell scripts || || ||
-|| ๒๓ || พฤ. ๑๓ ธ.ค. ๕๕ || ทบทวนก่อนสอบประจำภาค, System Programming ขั้นก้าวหน้า	|| || ||
-|| ** || ๑๗-๒๑ ธ.ค. ๕๕ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
+|| ๒๒ || จ. ๑๑ ธ.ค. ๕๗ || การบูรณาการใช้ C, Perl, Shell scripts || || ||
+|| ๒๓ || พ. ๑๓ ธ.ค. ๕๗ || ทบทวนก่อนสอบประจำภาค, System Programming ขั้นก้าวหน้า	|| || ||
+|| ** || ๑๗-๒๑ ธ.ค. ๕๗ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
 
 ==Links==
   * "GCC and Make Compiling, Linking and Building C/C++ Applications", http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
