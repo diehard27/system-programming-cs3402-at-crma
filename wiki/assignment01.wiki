@@ -1,5 +1,5 @@
 #summary Asssignment 1
-<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2557_2#ตารางเรียน_๒๕๕๗/๒">ตารางเรียน</a>
+<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๗/๒">ตารางเรียน</a>
 
 ==จุดประสงค์==
 <font color=grey>
