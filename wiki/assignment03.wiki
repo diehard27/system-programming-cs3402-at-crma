@@ -3,8 +3,8 @@
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptProg3 การเขียนเชลล์สคริปต์ ๓]
 ----
-<font color=red>Due date: พฤหัสฯ 11 ต.ค.55 </font>
-  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.64.45
+<font color=red>Due date: พุธ ที่ 24 ก.ย. 2557 </font>
+  # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.0.85
   # เปลี่ยนไดเร็กทอรี่ไปที่ /var/www/cXXYYYYYY (<font color=red>แทน cXXYYYYYY ด้วยชื่อล็อกอิน</font>) ด้วยคำสั่ง cd  /var/www/cXXYYYYYY
   # สร้างไดเร็กทอรี่ asm03 ด้วยคำสั่ง mkdir  asm03  แล้วเปลี่ยนไดเร็กทอรี่ไปยัง asm03 ด้วยคำสั่ง cd asm03
   # ใช้เอดิเตอร์ nano หรือ vi สร้างไฟล์ชื่อ [daysTxt days.txt] โดยให้แต่ละบรรทัดมีชื่อวัน Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
