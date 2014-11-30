@@ -86,13 +86,13 @@ http://chart.apis.google.com/chart?chs=500x225&cht=p3&chd=t:20,40,40&chds=a&chl=
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๑๒ || จ. ๖ พ.ย. ๕๗ || [perlProg2 การโปรแกรมในภาษา Perl], เฉลยข้อสอบระหว่างภาค, ประกาศคะแนน	|| || ||		
 || ๑๓	|| พ. ๘ พ.ย. ๕๗ || [perlProg3 การโปรแกรม Perl (ต่อ)]	|| || ||
-|| ๑๔ || จ. ๑๙ พ.ย. ๕๖ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
-|| ๑๕	|| ศ. ๒๒ พ.ย. ๕๖ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	||  || ||
-|| ๑๖ || จ. ๒๖ พ.ย. ๕๖ || [cReview ทบทวนภาษา C] {{{{Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี}}}}	|| [assignment06 งานมอบ ๖]||  ||
-|| ๑๗ || ศ. ๒๙ พ.ย. ๕๖ || [cReview2 ทบทวนภาษา C(ต่อ)] {{{{stdin,stdout,stderr,FILE,fopen,fread,fwrite,fclose}}}} || || ||		
-|| ๑๘ || จ. ๓ ธ.ค. ๕๖ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode,  Error Handling}}}}, || <font color='orange'>สอนเสริม ๐๙๓๐ – ๑๐๐๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
-|| ๑๙ || ศ. ๖ ธ.ค. ๕๖ ||[CShell Process]{{{{ Running a Process}}}}  	||[assignment07 งานมอบ ๗] || ||
-|| ๒๐ || จ. ๑๐ ธ.ค. ๕๖ ||<font color='green'>---*งดการศึกษา*---</font>	|| ||นนร.ติดภารกิจเร่งด่วน ที่สนามหลวง ||
+|| ๑๔ || จ. ๑๗ พ.ย. ๕๗ || [perlProg4 การโปรแกรม Perl (ต่อ)] 	||[assignment05 งานมอบ ๕] || ||
+|| ๑๕	|| พ. ๑๙ พ.ย. ๕๗ || [perlProgApp การประยุกต์ใช้ Perl 1], [perlProgApp2 2]	||  || ||
+|| ๑๖ || จ. ๒๔ พ.ย. ๕๗ || [cReview ทบทวนภาษา C] {{{{Enumeration, Pointer, struct, function, การส่งผ่านค่าในโปรแกรมภาษาซี}}}}	|| [assignment06 งานมอบ ๖]||  ||
+|| ๑๗ || พ. ๒๖ พ.ย. ๕๗ || [cReview2 ทบทวนภาษา C(ต่อ)] {{{{stdin,stdout,stderr,FILE,fopen,fread,fwrite,fclose}}}} || || ||		
+|| ๑๘ || จ. ๑ ธ.ค. ๕๗ || [cSysProg C กับ System Programming] {{{{FILE I/O, Block, inode,  Error Handling}}}}, || <font color='orange'>สอนเสริม ๐๙๓๐ – ๑๐๐๐</font> || <font color='red'>สอบโดย อจ. ครั้งที่ ๓</font> ||
+|| ๑๙ || พ. ๓ ธ.ค. ๕๗ ||[CShell Process]{{{{ Running a Process}}}}  	||[assignment07 งานมอบ ๗] || ||
+|| ๒๐ || จ. ๘ ธ.ค. ๕๗ ||<font color='green'>---*งดการศึกษา*---</font>	|| ||นนร.ติดภารกิจเร่งด่วน ที่สนามหลวง ||
 || *ครั้งที่* || *วันที่* || *เนื้อหา* || *งานมอบ* || *หมายเหตุ* ||
 || ๒๑ || ศ. ๑๓ ธ.ค. ๕๖ || [CShell Process(ต่อ)]{{{{ Terminating a Process, Waiting for Terminated Child Process, Zombie  }}}} Permission, [CShell2 Reading the directory's Content, Memory Management]	||[assignment08 งานมอบ ๘]  ||1900-2030 สอนเสริม Signal, Time, การประยุกต์ใช้ C,  ||		
 
@@ -100,7 +100,7 @@ http://www.teambuilder.co.uk/_assets/Image/Postcard/Past%20Future%20SignEd.jpg [
 ==Today==
 || ๒๒ || จ. ๑๑ ธ.ค. ๕๗ || การบูรณาการใช้ C, Perl, Shell scripts || || ||
 || ๒๓ || พ. ๑๓ ธ.ค. ๕๗ || ทบทวนก่อนสอบประจำภาค, System Programming ขั้นก้าวหน้า	|| || ||
-|| ** || ๑๗-๒๑ ธ.ค. ๕๗ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
+|| ** || ๑๕-๑๙ ธ.ค. ๕๗ || <font color='green'>-==- *[final_review สอบประจำภาค]* -==-</font> || || ||
 
 ==Links==
   * "GCC and Make Compiling, Linking and Building C/C++ Applications", http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
