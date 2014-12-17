@@ -3,7 +3,7 @@
 <td>
 [CourseSchedule2555_2 กลับไปหน้าหลัก]-->[<a href="https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒">ตารางเรียน</a>]-->[shellScriptApp3 การประยุกต์ใช้เชลล์สคริปต์ ๓]
 ----
-<font color=red>Due date: ศุกร์ 26 ต.ค.55 </font>
+<font color=red>Due date: ศุกร์ 24 ต.ค.57 </font>
   # ล็อกอินไปที่เครื่องแม่ข่าย 10.134.0.85
   # เปลี่ยนไดเร็กทอรี่ไปที่ /home/bXXYYY/public_html/ (<font color=red>แทน bXXYYY ด้วยชื่อล็อกอิน</font>) ด้วยคำสั่ง cd  /home/bXXYYY/public_html/
   # สร้างไดเร็กทอรี่ asm04 ด้วยคำสั่ง mkdir  asm04  แล้วเปลี่ยนไดเร็กทอรี่ไปยัง asm04 ด้วยคำสั่ง cd asm04
