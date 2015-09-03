@@ -1,0 +1,59 @@
+<a href='https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒'>ตารางเรียน</a>
+
+<table width='500'>
+<td>
+<h2>1.1 System อะไร?</h2>
+System ในที่นี้หมายถึง <a href='CompuSystem.md'>ระบบคอมพิวเตอร์</a> และ <a href='OperSystem.md'>ระบบปฏิบัติการ</a> (OS) ที่รันอยู่ในคอมพิวเตอร์ ในวิชานี้เราจะหมายถึงระบบปฏิบัติการ Linux ซึ่งเป็นหนึ่งในระบบปฏิบัติการแบบ Unix ที่ได้รับความนิยมแพร่หลายในการใช้เป็นเครื่องแม่ข่ายที่มีความเชื่อถึอได้สูง<br>
+<br>
+<table><thead><th><img src='http://exeqzalie.files.wordpress.com/2009/02/655px-unix_history-en-svg.png' /></th></thead><tbody>
+<tr><td>รูปที่ 1.1 ประวัติความเป็นมาของระบบปฏิบัติการยูหนิกซ์ และที่มาของลิหนิกซ์ [<a href='http://exeqzalie.files.wordpress.com/2009/02/655px-unix_history-en-svg.png'>src</a>]</td></tr></tbody></table>
+
+ระบบปฏิบัติการลิหนิกซ์ได้รับการพัฒนาอย่างต่อเนื่อง และมีการแตกแยกกิ่งก้านสาขาของการพัฒนาออกมากมายเกินที่จะบรรยายในบทนี้ได้ ผู้ที่ต้องการศึกษาความเป็นมาของระบบปฏิบัติการลิหนิกซ์ สามารถศึกษาเพิ่มเติมได้ที่ <a href='http://files.cyberciti.biz/uploads/tips/2007/06/44218-linuxdistrotimeline-7.2.png'>Linux Timeline</a> และหากต้องการทราบข้อมูลข่าวสารการพัฒนาของดิสโทรแบบต่าง ๆ ของลิหนิกซ์สามารถติดตามได้จากเว็บไซต์ <a href='http://www.distrowatch.com'>http://www.distrowatch.com</a>
+<table><thead><th><img src='http://d3pnguju6g7vh.cloudfront.net/blog/wp-content/uploads/2011/10/linux-distributions.jpg' /></th></thead><tbody>
+<tr><td>รูปที่ 1.1a ระบบปฏิบัติการ Linux ในรูปแบบดิสโทร (distribution) ต่าง ๆ ที่ได้รับความนิยม [<a href='http://d3pnguju6g7vh.cloudfront.net/blog/wp-content/uploads/2011/10/linux-distributions.jpg'>src</a>]</td></tr></tbody></table>
+
+ระบบปฏิบัติการจะถูกออกแบบให้สามารถควบคุมฮาร์ดแวร์ของคอมพิวเตอร์ เพื่อให้ผู้ใช้และโปรแกรมต่าง ๆ ใช้ทรัพยากรของระบบได้อย่างมีประสิทธิภาพ และเป็นไปตามการกำหนดสิทธิของผู้ใช้งาน  โดยฮาร์ดแวร์ของคอมพิวเตอร์จะถูกควบคุมโดยแก่น หรือ เคอร์เนิ่ล (kernel) ของระบบปฏิบัติการ ซึ่งเป็นโปรแกรมขนาดเล็กที่จะถูกโหลดเข้าไปในหน่วยความจำก่อนโปรแกรมอื่นใดของผู้ใช้ ทั้งนี้เพื่อเข้าจัดการและควบคุมทรัพยากรต่าง ๆ พร้อมทั้งจัดเตรียมการเชื่อมต่อให้พร้อมสำหรับการใช้งาน<br>
+<br>
+<table><thead><th> <img src='http://osr600doc.sco.com/en/USE_oview/graphics/kernel.gif' /> </th><th> <img src='http://getfile4.posterous.com/getfile/files.posterous.com/temp-2011-12-22/lltizmHgbsDetcxAuIJzEpGFAaHqlwvsJuxlaDDziiklrbwhcboxuuGoxFeI/unix_architecture.gif.scaled696.gif' /> </th></thead><tbody>
+<tr><td>รูปที่ 1.2 ก) โครงการสร้างของเคอร์เนิ่ล                                  </td><td> ข) การติดต่อกับเคอร์เนิ่ลผ่าน system calls [<a href='http://osr600doc.sco.com'>src</a>]                                                                                                  </td></tr>
+การเข้าถึงเคอร์เนิ่ลนั้นสามารถทำได้ผ่านการเรียกระบบ (system calls) เท่านั้น โดยที่โปรแกรมต่าง ๆ เช่น เชลล์ การเรียก library routines ต้องเรียกผ่าน system call ด้วยพารามิเตอร์ที่ถูกต้อง และตรงกับสิทธิที่ได้รับ</tbody></table>
+
+เคอร์เนิ่ลจะติดต่อกับฮาร์ดแวร์ผ่าน system call ทั้งในส่วนที่เป็น user space และ kernel space ผ่าน library function ต่าง ๆ ที่มีหน้าที่ติดต่อกับฮาร์ดแวร์ที่ถูกควบคุมไว้โดย OS เช่น การเข้าถึงไฟล์ต่าง ๆ ที่อยู่ในดีไวซ์หลายรูปแบบต้องใช้คำสั่งของ system call เช่น open(), close(), read(), write() เป็นต้น<br>
+<br>
+<table><thead><th><img src='http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg' /></th></thead><tbody>
+<tr><td>รูปที่ 1.3 การเชื่อมต่อของเคอร์เนิ่ลผ่าน system call ใน user space และ kernel space [<a href='http://www.tuxradar.com/files/LXF107.tut_adv.diagram.jpg'>src</a>]</td></tr></tbody></table>
+
+ตัวอย่างการเขียน system programming ด้วยภาษา C ผ่านการเรียก system call ที่อยู่ใน library function สำหรับการติดต่อกับไฟล์<br>
+<br>
+<pre><code>#include &lt;fcntl.h&gt;<br>
+int main()<br>
+{<br>
+    int fd, count; char buf[1000];<br>
+    fd=open("mydata", O_RDONLY);<br>
+    count = read(fd, buf, 1000);<br>
+    write(1, buf, count);<br>
+    close(fd);<br>
+}<br>
+//http://www.tuxradar.com/content/how-linux-kernel-works<br>
+</code></pre>
+
+<h2>1.2  Program แบบไหน?</h2>
+จากรูป ภาษา C, C++, และ Java ถือว่าเป็นกลุ่มภาษา system programming ที่ใช้ในการโปรแกรมระบบ ที่มีระดับการพิมพ์โค้ดมากว่าภาษา Tcl, Perl, VB ซึ่งเป็นกลุ่มภาษาที่เป็นสคริปต์ ทำงานในลักษณะ interpreter<br>
+<br>
+<table><thead><th><img src='http://www.tcl.tk/images/scripting.anc.gif' /></th></thead><tbody>
+<tr><td>รูปที่ 1.4 การจัดกลุ่มของภาษาโปรแกรมสำหรับระบบ [<a href='http://www.tcl.tk/images/scripting.anc.gif'>src</a>]</td></tr></tbody></table>
+
+<h2>1.3  System Programming</h2>
+ความหมายของ System Programming ที่เป็นที่ยอมรับสามารถดูได้จาก Wikipedia ในภาษา [<a href='http://en.wikipedia.org/wiki/System_programming'>อังกฤษ</a>] และ สามารถดูฉบับที่แปลโดย Google Translate ได้ใน [<a href='http://translate.google.com/translate?sl=en&tl=th&js=n&prev=_t&hl=th&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSystem_programming&act=url'>ภาษาไทย</a>]<br>
+<br>
+ในขอบเขตของวิชานี้ จะหมายถึงการเขียนโปรแกรมด้วยภาษา C, Perl, Shell Script เพื่อควบคุมระบบคอมพิวเตอร์ให้สามารถทำงานได้ตามต้องการของผู้ควบคุมระบบ หรือผู้ใช้ โดยจะขอยกเว้นการเขียนโปรแกรมระบบด้วยภาษาแอสเซมบลี้ เนื่องจากขอบเขตของเวลาที่จำกัด<br>
+<br>
+<h2>1.4 วัตถุประสงค์</h2>
+<ol><li>เพื่อให้นักเรียนมีความเข้าใจพื้นของระบบคอมพิวเตอร์ ที่รันด้วยระบบปฏิบัติการลิหนิกซ์<br>
+</li><li>เพื่อให้นักเรียนมีความเข้าใจคำสั่งต่าง ๆ ผ่านเชลล์ของลิหนิกซ์<br>
+</li><li>เพื่อให้นักเรียนสามารถเขียนสคริปต์ของคำสั่งในเชลล์ (shell script) ได้<br>
+</li><li>เพื่อให้นักเรียนสามารถเขียนโปรแกรมด้วยภาษา C เพื่อควบคุมระบบเบื้องต้นได้<br>
+</li><li>เพื่อให้นักเรียนสามารถประยุกต์ใช้ภาษา Perl เพื่อควบคุมระบบเบื้องต้นได้</li></ol>
+
+</td>
+</table>

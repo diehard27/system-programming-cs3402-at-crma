@@ -1,0 +1,41 @@
+<table width='500'>
+<td>
+<a href='CourseSchedule2555_2.md'>กลับไปหน้าหลัก</a>-->[<a href='https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#ตารางเรียน_๒๕๕๕/๒'>ตารางเรียน</a>]-->[<a href='https://code.google.com/p/system-programming-cs3402-at-crma/wiki/CourseSchedule2555_2#Today'>Today</a>]<br>
+<font color='red'>กำหนดส่ง จันทร์ 10 พ.ย.2557</font>
+
+1) จงเขียน perl สคริปต์ชื่อ wxyz.pl เพื่อให้ทำงานตามอัลกอริธึ่มต่อไปนี้<br>
+<br>
+1.1) ผู้ใช้ป้อนเลขเข้ามาสี่ตัว w, x, y, และ z ผ่าน STDIN หรือ ผ่านทาง command line ก็ได้ เช่น perl wxyz.pl 34 56 23 26 (ใช้ตัวแปร $ARGV)<br>
+<br>
+1.2) นำ w,x,y,z ไปใส่ไว้ในอาร์เรย์ชื่อว่า netmask ซึ่งจะทำให้ค่าของ <code>$netmask[0]=$w, ..., $netmask[3]=$z</code> ตามลำดับ โดยมีเงื่อนไขว่าเลขที่อยู่ใน netmask ต้องมีค่าระหว่าง 0-255 (นั่นคือใช้ modulo ช่วยในการปรับค่า เ่ช่น <code>$netmask[0]=$w % 256;</code>
+
+1.3) เรียงลำดับใหม่จากน้อยไปหามาก เช่นค่าของ <code>$netmask[0]</code> ต้องน้อยกว่า/หรือเท่ากับ <code>$netmask[1]</code> และค่า <code>$netmask[3]</code> จะมีค่ามากที่สุด<br>
+<br>
+1.4) เปรียบเทียบค่า w,x,y,z กับค่าของ netmask ด้วยคำสั่ง print<br>
+เช่น<br>
+<pre><code>   before  after (netmask)<br>
+-----------------<br>
+w    34    23<br>
+x    56    26<br>
+y    23    34<br>
+z    26    56<br>
+</code></pre>
+
+1.5 ปรับค่าของ w,x,y,z ให้เรียงลำดับตาม netmask<br>
+1.6 พิมพ์ค่าของ w,x,y,z ให้อยู่ในรูป netmask เช่น<br>
+<pre><code>w.x.y.z = 23.26.34.56<br>
+</code></pre>
+
+2) เขียน perl สคริปต์ชื่อ baseno2.pl เพื่อรับอินพุทจากผู้ใช้ (ผ่าน STDIN หรือ command line ก็ได้) ของเลขสองจำนวน x และ y โดยให้ x เป็นค่าเริ่มต้น ส่วน y เป็นค่าสุดท้าย ( y >= x)<br>
+<br>
+2.1) พิมพ์ตารางของเลข i จาก x ไป y โดยให้มีรูปแบบดังนี้ (ต.ย. เช่น x=7, y=10)<br>
+<br>
+<pre><code>i   base2    base8    hex<br>
+-------------------------<br>
+7   0111      7        7<br>
+8   1000      10       8<br>
+9   1001      11       9<br>
+10  1010      12       A<br>
+-------------------------<br>
+</code></pre>
+(hint: ใช้ sprintf สร้างรูปแบบที่ต้องการ

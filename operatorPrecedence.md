@@ -1,0 +1,27 @@
+|Operator	|Meaning	|Comments|
+|:--------|:-------|:-------|
+|         |        |	HIGHEST PRECEDENCE|
+|var++ var--|	post-increment, post-decrement|	C-style operators|
+|++var --var|	pre-increment, pre-decrement	|        |
+
+|! ~	|negation	|logical / bitwise, inverts sense of following operator|
+|:---|:--------|:-----------------------------------------------------|
+|`**`	|exponentiation|	arithmetic operation                                 |
+|`* / %`	|multiplication, division, modulo|	arithmetic operation                                 |
+|+ -	|addition, subtraction	|arithmetic operation                                  |
+|<< >>|	left, right shift	|bitwise                                               |
+|-z -n	|unary comparison	|string is/is-not null                                 |
+|-e -f -t -x, etc.|	unary comparison|	file-test                                            |
+|< -lt > -gt <= -le >= -ge|	compound comparison|	string and integer                                   |
+|-nt -ot -ef	|compound comparison|	file-test                                            |
+|== -eq != -ne	|equality / inequality|	test operators, string and integer                   |
+|&	  |AND	     |bitwise                                               |
+|^	  |XOR	     |exclusive OR, bitwise                                 |
+| |	 |OR	      |bitwise                                               |
+|&& -a	|AND	     |logical, compound comparison                          |
+| ` | | `  -o	|OR       |	logical, compound comparison                         |
+|?:	 |trinary operator|	C-style                                              |
+|=	  |assignment	|(do not confuse with equality test)                   |
+|`*` = /= %= += -= <<= >>= &=|	combination assignment|	times-equal, divide-equal, mod-equal, etc.           |
+|,	  |comma	   |links a sequence of operations                        |
+|    |	        |LOWEST PRECEDENCE                                     |
