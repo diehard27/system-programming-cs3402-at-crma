@@ -1,3 +1,5 @@
+Test git commit and push to GitHub.com
+
 1) Checkout project from google code
 
 svn checkout https://system-programming-cs3402-at-crma.googlecode.com/svn/trunk/ system-programming-cs3402-at-crma --username pyavinci@gmail.com
